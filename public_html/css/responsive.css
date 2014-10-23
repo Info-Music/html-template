@@ -127,6 +127,7 @@
     }
     .navbar-default .navbar-toggle {
         background-color: white;
+        border-radius: 0;
     }
     .col-xs-move-up {
         position: absolute;
