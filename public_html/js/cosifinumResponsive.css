@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@media (max-width: 991px) {
+	.customerBarRight {
+		float: left;
+	}
+
+}
