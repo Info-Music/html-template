@@ -61,9 +61,9 @@ html[xmlns] .slides {display: block;}
 
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
-.flex-direction-nav a  { text-decoration:none; display: block; width: 60px; height: 60px; margin: 0 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; cursor: pointer; color: #eeeeee; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; background-image: url('../img/arrow_background.png'); padding-top: 10px;}
-.flex-direction-nav .flex-prev { left: 0; padding-left: 15px;}
-.flex-direction-nav .flex-next { right: 0; text-align: right; padding-right: 15px;}
+.flex-direction-nav a  { width: 60px; height: 60px; margin: -20px 0 0; display: block; z-index: 10; background: url(//cdn.shopify.com/s/files/1/0332/7621/t/15/assets/arrow_sprite.png?50807) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav .flex-prev { background-position: 0 -60px; left: -36px;}
+.flex-direction-nav .flex-next { background-position: 0 -120px; right: -36px;}
 .flexslider:hover .flex-prev { opacity: 0.7; left: 0; }
 .flexslider:hover .flex-next { opacity: 0.7; right: 0; }
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
@@ -145,7 +145,7 @@ ul.slides li div.imageContainer a.productThumb img {
     max-width: 200px;
     max-height: 100px;
     margin: 0 auto;
-    }
+}
 
 .slides .largeButtons .btn-group-lg .btn{
     margin: 10px auto !important;
