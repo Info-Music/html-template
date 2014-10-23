@@ -343,6 +343,10 @@ end customerbar
     color: #73bd84;
 }
 
+.carousel-inner > .item > img {
+    width: 100%;
+}
+
 .carousel-indicators {
     left: auto;
     right: 40px;
@@ -648,7 +652,8 @@ Don't break buttons
 
 .categoryList > div {
     display: inline-block;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
 }
 
