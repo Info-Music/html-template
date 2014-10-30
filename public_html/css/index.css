@@ -738,6 +738,7 @@ Don't break buttons
     bottom: 8px;
     right: 25px;
     font-weight: normal;
+    text-transform: uppercase;
 }
 
 /*
