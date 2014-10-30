@@ -712,11 +712,11 @@ Don't break buttons
     padding-bottom: 15px;
 }
 
-.collectie > div {
+.collectie {
     border: 1px solid #e4e1dd;
 }
 
-.collectie > div > p {
+.collectie > p {
     padding: 10px;
 }
 
