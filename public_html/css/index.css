@@ -58,10 +58,15 @@ input {
 }
 
 .caret-right {
-  border-left: 4px solid black;
-  border-right: 0;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-left: 4px solid black;
+    border-right: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
 }
 
 /* Move down content because we have a fixed navbar that is 50px tall */
