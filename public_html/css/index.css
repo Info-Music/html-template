@@ -343,6 +343,10 @@ end customerbar
     color: #73bd84;
 }
 
+.navigation #righ-banner-container {
+    background: none;
+}
+
 .carousel-inner > .item > img {
     width: 100%;
 }
