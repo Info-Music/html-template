@@ -746,6 +746,14 @@ Don't break buttons
     text-transform: uppercase;
 }
 
+.largeButtons .btn-group-lg .btn {
+    margin: 10px auto !important;
+    border-radius: 0;
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: #d74a29;
+    border-color: #d74a29;
+}
 /*
  * END CATEGORY PAGE
  */
