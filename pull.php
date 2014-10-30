@@ -11,7 +11,7 @@
 	$commands = array(
 		'echo $PWD',
 		'whoami',
-		'git pull',
+		'cd /var/www/html/info-music && git pull',
 		'git status',
 		'git submodule sync',
 		'git submodule update',
