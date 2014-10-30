@@ -57,6 +57,13 @@ input {
     border: 1px solid #e4e1dd;
 }
 
+.caret-right {
+  border-left: 4px solid black;
+  border-right: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding: 0;
@@ -717,15 +724,22 @@ Don't break buttons
     height: 265px;
 }
 
+.collectie > img {
+    width: 100%;
+}
+
 .collectie > p {
     padding: 10px;
+    font-size: 15px;
 }
 
 .collectie > a {
     position: absolute;
     bottom: 8px;
     right: 25px;
+    font-weight: normal;
 }
+
 /*
  * END CATEGORY PAGE
  */
