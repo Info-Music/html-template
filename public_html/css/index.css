@@ -628,7 +628,7 @@ Don't break buttons
 }
 
 .assortiment .panel {
-    padding-top: 0 !important;
+    padding: 8px 0 15px;
 }
 
 .assortiment .list-group-item {
@@ -810,6 +810,10 @@ Don't break buttons
     border-bottom: 1px solid #f7f6f5;
 }
 
+.newsletter {
+    border: 1px solid #e4e1dd;
+    padding: 8px 15px 15px 15px;
+}
 
 .kiyoh {
     float: right;
