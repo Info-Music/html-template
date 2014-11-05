@@ -628,7 +628,7 @@ Don't break buttons
 }
 
 .assortiment .panel {
-    padding: 8px 0 15px;
+    padding: 0 0 20px;
 }
 
 .assortiment .list-group-item {
@@ -639,7 +639,7 @@ Don't break buttons
     font-weight: normal;
     font-size: 13px;
 }
-
+☻
 .assortiment .list-group-item:hover, .assortiment .list-group-item:focus {
     color: #d74f29;
 }
