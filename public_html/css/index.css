@@ -334,9 +334,13 @@ end customerbar
 
 #right-banner-container {
     background-color: #f7f6f4;
-    border: 1px solid #ebebeb;
     padding: 14px;
     margin-bottom: 20px;
+}
+
+.banner-container #righ-banner-container {
+    background: none;
+    border: 1px solid #ebebeb;
 }
 
 #right-banner-container h4 {

@@ -76,6 +76,10 @@
         width: 48% !important;
         float: left;
     }
+    .banner-container #right-banner-container {
+        width: 100% !important;
+        float: none;
+    }
     #newProductsHeader {
         margin-top: -30px;
     }
