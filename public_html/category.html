@@ -357,7 +357,7 @@
                     </div>
                     <div class="col-lg-9 col-md-8">
                         <div class="row">
-                            <div class="col-md-12 hidden-xs hidden-sm">
+                            <div class="row categoryList rowBottomMargin">
                                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                                     <!-- Indicators -->
                                     <ol class="carousel-indicators">
@@ -408,8 +408,7 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row categoryList rowBottomMargin">
+
                             <div class="col-md-12" id="newProductsHeader">
                                 <h3>Gitaar & Basgitaar</h3>
                             </div>
@@ -838,15 +837,15 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/cosifinum.js"></script>
         <script language="javascript">
-                                                    $(document).ready(function() {
-                                                        $('.list-group')
-                                                                .on('show.bs.collapse', function(e) {
-                                                                    $(e.target).prev('.list-group-item').addClass('hot');
-                                                                })
-                                                                .on('hide.bs.collapse', function(e) {
-                                                                    $(e.target).prev('.list-group-item').removeClass('hot');
-                                                                });
-                                                    });
+                                                $(document).ready(function() {
+                                                    $('.list-group')
+                                                            .on('show.bs.collapse', function(e) {
+                                                                $(e.target).prev('.list-group-item').addClass('hot');
+                                                            })
+                                                            .on('hide.bs.collapse', function(e) {
+                                                                $(e.target).prev('.list-group-item').removeClass('hot');
+                                                            });
+                                                });
         </script>
     </body>
 </html>
