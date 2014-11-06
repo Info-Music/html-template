@@ -67,10 +67,10 @@
 /* Small devices (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
     .searchBar {
- /*       background-color: #f7f6f5;
-        -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow:    0px 0px 9px 0px rgba(0, 0, 0, 0.75);
-        box-shadow:         0px 0px 9px 0px rgba(0, 0, 0, 0.75);*/
+        /*       background-color: #f7f6f5;
+               -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+               -moz-box-shadow:    0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+               box-shadow:         0px 0px 9px 0px rgba(0, 0, 0, 0.75);*/
     }
     .text-info {
         margin-right: -10px;
@@ -304,7 +304,7 @@
     .categoryThumb .imageContainer {
         width: 30%;
         float: left;
-        height: 75px;
+        height: 30%;
     }
     .imageContainer .categoryImage {
         line-height: 75px;
@@ -324,6 +324,15 @@
         line-height: 20px;
         display: inline-block;
         vertical-align: middle;
+    }
+    .collectie {
+        margin-top: 20px;
+    }
+    .collectie {
+        height: 150px;
+    }
+    .collectie > a {
+        position: inherit;
     }
 }
 
