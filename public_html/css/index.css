@@ -731,6 +731,7 @@ Don't break buttons
 .collectie {
     border: 1px solid #e4e1dd;
     height: auto;
+    padding-bottom: 30px;
 }
 
 .collectie > img {

@@ -329,6 +329,7 @@
 /*        height: 150px;*/
         margin-top: 20px;
         text-align: center;
+        padding-bottom: 0;
    }
     .collectie > a {
         margin-top: 5px;
