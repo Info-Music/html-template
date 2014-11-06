@@ -740,7 +740,7 @@ Don't break buttons
 
 .collectie > a {
     position: absolute;
-    bottom: 4px;
+    bottom: 5px;
     right: 25px;
     font-weight: normal;
     text-transform: uppercase;
