@@ -317,9 +317,11 @@
     .categoryThumb .categoryTitle {
         padding: 0;
         line-height: 75px;
+        padding-left: 10px;
+        text-align: left;
     }
     .categoryTitle > span {
-        line-height: 15px;
+        line-height: 20px;
         display: inline-block;
         vertical-align: middle;
     }
