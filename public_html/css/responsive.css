@@ -91,7 +91,7 @@
         float: none;
     }
     #newProductsHeader {
-        margin-top: -30px;
+        /* margin-top: -30px; */
     }
     .container-small .content {
         height: 320px !important;

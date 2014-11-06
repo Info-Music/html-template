@@ -313,7 +313,7 @@ end customerbar
     color: #1f1d1b;
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 
 .mainBar h4 {
@@ -643,7 +643,7 @@ Don't break buttons
     font-weight: normal;
     font-size: 13px;
 }
-☻
+
 .assortiment .list-group-item:hover, .assortiment .list-group-item:focus {
     color: #d74f29;
 }
