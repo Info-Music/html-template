@@ -326,13 +326,17 @@
         vertical-align: middle;
     }
     .collectie {
+/*        height: 150px;*/
         margin-top: 20px;
-    }
-    .collectie {
-        height: 150px;
-    }
+        text-align: center;
+   }
     .collectie > a {
+        margin-top: 5px;
+        margin-bottom: 5px;
         position: inherit;
+    }
+    .collectie > p {
+        text-align: left;
     }
 }
 
