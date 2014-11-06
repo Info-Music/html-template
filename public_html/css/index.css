@@ -770,6 +770,12 @@ Don't break buttons
     text-align: center;
     height: 50px;
     line-height: 50px;
+    opacity: 0.7;
+    transition: opacity 0.5 ease;
+}
+
+.brands_img ul li:hover {
+    opacity: 1; 
 }
 
 .brands_img ul li img {
@@ -837,7 +843,7 @@ Don't break buttons
 
 .footer2 {
     min-height: 170px;
-    background: url(../img/bck-footer-optimized.jpg) 100% 100% repeat;
+    background: url(../img/bck-footer-min.jpg) 100% 100% repeat;
     color: #fff;
 }
 
