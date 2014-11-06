@@ -291,7 +291,38 @@
 
     }
     /* CATEGORY PAGE */
-    
+    .categoryList > div {
+        display: block;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .categoryThumb {
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+    .categoryThumb .imageContainer {
+        width: 30%;
+        float: left;
+        height: 75px;
+    }
+    .imageContainer .categoryImage {
+        line-height: 75px;
+    }
+    .categoryThumb .titleContainer {
+        width: 50%;
+        float: left;
+        height: 75px;
+    }
+    .categoryThumb .categoryTitle {
+        padding: 0;
+        line-height: 75px;
+    }
+    .categoryTitle > span {
+        line-height: 15px;
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 @media (min-width: 768px) {
