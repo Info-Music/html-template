@@ -20,7 +20,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    </head>
     <body>
         <div id="fb-root"></div>
-        <script>(function(d, s, id) {
+        <script>(function (d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id))
                     return;
@@ -257,6 +257,18 @@
                         </div>
 
                         <!-- fiters hiero enzo -->
+                        <div class="filters">
+                            <div class="blockheader">
+                                filter producten op
+                            </div>
+                            <div class="pull-right">
+                                HERSTEL FILTERS
+                            </div>
+                                <div class="brand">
+                                    <h3>Merk</h3>
+                                    
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-lg-9 col-md-8">
@@ -705,18 +717,18 @@
         <script src="js/bootstrap-slider.js"></script>
         <script src="js/cosifinum.js"></script>
         <script language="javascript">
-                                                $(document).ready(function() {
-                                                    $('div.node-status').click(function() {
+                                                $(document).ready(function () {
+                                                    $('div.node-status').click(function () {
                                                         $(this).next().parent().children('ul.tree').toggle(300);
                                                         $prev = $(this).toggleClass('closed');
                                                     });
 
                                                     $('#priceSlider').slider();
                                                     $('.list-group')
-                                                            .on('show.bs.collapse', function(e) {
+                                                            .on('show.bs.collapse', function (e) {
                                                                 $(e.target).prev('.list-group-item').addClass('hot');
                                                             })
-                                                            .on('hide.bs.collapse', function(e) {
+                                                            .on('hide.bs.collapse', function (e) {
                                                                 $(e.target).prev('.list-group-item').removeClass('hot');
                                                             });
                                                 });
