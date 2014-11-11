@@ -258,16 +258,32 @@
 
                         <!-- fiters hiero enzo -->
                         <div class="filters">
-                            <div class="blockheader">
+                            <div class="blockHeader">
                                 filter producten op
                             </div>
-                            <div class="pull-right">
-                                HERSTEL FILTERS
-                            </div>
-                                <div class="brand">
-                                    <h3>Merk</h3>
-                                    
-                            </div>
+                            <form>
+                                <div class="block">
+                                    <div class="pull-right">
+                                        HERSTEL FILTERS
+                                    </div>
+
+                                    <div class="brand">
+                                        <h3>Merk</h3>
+                                        <input type="checkbox" name="brand" value="Fender" checked="checked"/><label>Fender</label>
+                                    </div>
+                                    <div class="type">
+                                        <h3>Type</h3>
+                                        <input type="checkbox" name="type" value="stratocaster" checked="checked"/><label>Stratocaster</label>
+                                        <input type="checkbox" name="type" value="telecaster" checked="checked"/><label>Telecaster</label>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <h3>Prijs</h3>
+                                    <div id="slider-range"></div>
+                                    <input type="text" id="amount_from" name="from" readonly="readonly" />
+                                    <input type="text" id="amount_to" name="to" readonly="readonly" />
+                                </div>
+                            </form>
                         </div>
                     </div>
 
