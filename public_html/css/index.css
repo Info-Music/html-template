@@ -771,19 +771,19 @@ Don't break buttons
     background-color: #f7f6f5;
 }
 
-.filter label {
+.filters label {
     font-size: 14px;
     color: black;
 }
 
-.filter h3 {
+.filters h3 {
     font-size: 14px;
     font-weight: bold;
 }
 
 .filters input[type="checkbox"] {
     height: auto;
-    margin: 10px;
+    margin: 15px;
 }
 
 .filters .reset input {
@@ -797,8 +797,8 @@ Don't break buttons
     border-top: 1px solid #ededed;
 }
 
-.filters .brand h3 {
-    margin-left: 50px;
+.filters .block h3  {
+    margin-left: 43px;
 }
 
 /*
