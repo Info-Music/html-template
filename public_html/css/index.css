@@ -775,19 +775,18 @@ Don't break buttons
     font-size: 14px;
     color: black;
     font-weight: normal;
-    line-height: 15px;
+    margin-bottom: 0;
 }
 
 .filters h3 {
     font-size: 14px;
-    font-weight: bold;
-    line-height: 15px;
+    font-weight: bolder;
+    margin-bottom: 2px;
 }
 
 .filters input[type="checkbox"] {
     height: auto;
-    margin: 15px;
-    line-height: 15px;
+    margin: 0 15px;
 }
 
 .filters .reset input {
@@ -798,11 +797,12 @@ Don't break buttons
 }
 
 .filters .brand {
-    border-top: 1px solid #ededed;
+    
 }
 
 .filters .block h3  {
-    margin-left: 43px;
+    padding-left: 43px;
+    border-top: 1px solid #ededed;
 }
 
 /*
