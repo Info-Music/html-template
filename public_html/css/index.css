@@ -452,8 +452,8 @@ Don't break buttons
 }
 
 .btn-success:hover, .btn-success:active, .btn-success:focus {
-    background-color: #b62800;
-    border-color: #b62800;
+    background-color: #b62800 !important;
+    border-color: #b62800 !important;
 }
 
 #newProductsHeader h3 {
