@@ -452,8 +452,8 @@ Don't break buttons
 }
 
 .btn-warning:hover, .btn-warning:active, .btn-warning:focus {
-    background-color: #d95a36;
-    border-color: #d95a36;
+    background-color: #b62800;
+    border-color: #b62800;
 }
 
 #newProductsHeader h3 {
