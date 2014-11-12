@@ -846,6 +846,10 @@ Don't break buttons
     height: auto;
 }
 
+.filters #brand, .filters #type {
+    padding-top: 10px;
+}
+
 /*
  * END SUBCATEGORY PAGE
  */
