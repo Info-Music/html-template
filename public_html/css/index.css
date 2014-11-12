@@ -766,9 +766,20 @@ Don't break buttons
  * START SUBCATEGORY PAGE
  */
 
+.filters .block {
+    border: 1px solid #ededed;
+    background-color: #f7f6f5;
+}
+
+.filters .reset input {
+    border: none;
+    background: none;
+    color: #d74f29;
+    font-size: 11pt;
+}
 
 /*
- * END CATEGORY PAGE
+ * END SUBCATEGORY PAGE
  */
 
 .brands_img {
