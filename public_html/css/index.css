@@ -451,7 +451,7 @@ Don't break buttons
     font-weight: 600;
 }
 
-.btn-warning:hover, .btn-warning:active, .btn-warning:focus {
+.btn-success:hover, .btn-success:active, .btn-success:focus {
     background-color: #b62800;
     border-color: #b62800;
 }
