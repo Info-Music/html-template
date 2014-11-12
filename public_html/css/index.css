@@ -769,6 +769,7 @@ Don't break buttons
 .filters .block {
     border: 1px solid #ededed;
     background-color: #f7f6f5;
+    padding-bottom: 15px;
 }
 
 .filters label {
@@ -781,7 +782,8 @@ Don't break buttons
 .filters h3 {
     font-size: 14px;
     font-weight: bolder;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
+    color: black;
 }
 
 .filters input[type="checkbox"] {
@@ -794,15 +796,24 @@ Don't break buttons
     background: none;
     color: #d74f29;
     font-size: 11px;
+    margin-bottom: -10px;
+    margin-right: 10px;
 }
 
-.filters .brand {
-    
+.filters .block .border {
+    width: 90%;
+    height: 1px;
+    background-color: #ebebeb;
+    margin: 10px auto -10px;
+    display: block;
+}
+
+.filters .block p {
+    margin-bottom: 3px;
 }
 
 .filters .block h3  {
     padding-left: 43px;
-    border-top: 1px solid #ededed;
 }
 
 /*
