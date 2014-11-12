@@ -774,16 +774,20 @@ Don't break buttons
 .filters label {
     font-size: 14px;
     color: black;
+    font-weight: normal;
+    line-height: 15px;
 }
 
 .filters h3 {
     font-size: 14px;
     font-weight: bold;
+    line-height: 15px;
 }
 
 .filters input[type="checkbox"] {
     height: auto;
     margin: 15px;
+    line-height: 15px;
 }
 
 .filters .reset input {
