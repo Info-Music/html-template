@@ -800,6 +800,37 @@ Don't break buttons
     margin-right: 10px;
 }
 
+.filters .block input[type=checkbox] {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height:1px; 
+    width:1px; 
+    margin:-1px; 
+    padding:0;
+    border:0;
+}
+
+.filters .block input[type=checkbox] + label {
+    padding-left:20px;
+    height:15px; 
+    display:inline-block;
+    line-height:15px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:15px;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+.filters .block input[type=checkbox]:checked + label {
+    background-position: 0 -15px;
+}
+
+.filters .block label { 
+    background-image: url(http://csscheckbox.com/checkboxes/lite-x-gray.png); 
+}
+
 .filters .block .border {
     width: 90%;
     height: 1px;
