@@ -850,6 +850,33 @@ Don't break buttons
     padding-top: 10px;
 }
 
+.filtersList .form-group {
+    margin-left: 30px;
+}
+.filtersList label {
+    text-transform: uppercase;
+    color: #b1b1b0;
+    font-weight: normal;
+}
+
+.filtersList .form-control {
+    border-radius: 0;
+    height: auto;
+    padding: 4px 10px; 
+    margin-left: 10px;
+    color: #1f1d1b;
+}
+
+.filtersList .btn-lg {
+    border-radius: 0;
+    line-height: 1;
+    padding: 4px 9px 4px 8px;
+}
+
+.filtersList .glyphicon {
+    color: #828282;
+}
+
 /*
  * END SUBCATEGORY PAGE
  */
