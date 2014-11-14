@@ -1020,6 +1020,10 @@ ul.socialMediaIcons a {
     background: url(../img/icon_social_media.png) 2px 0px no-repeat;
 }
 
+ul.socialMediaIcons a:hover {
+    opacity: 0.7;
+}
+
 ul.socialMediaIcons a.iconFacebook {
     background: url(../img/icon_social_media.png) -135px 0px no-repeat;
 }
