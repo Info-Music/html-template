@@ -842,8 +842,13 @@ Don't break buttons
     border: none;
     padding: 5px;
     margin: 0px;
-    width: 15.5%;
+    width: 18.885%;
     height: auto;
+}
+
+.filters .color .filter-image {
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 .filters #brand, .filters #type {
@@ -875,6 +880,11 @@ Don't break buttons
 
 .filtersList .glyphicon {
     color: #828282;
+}
+
+.productListOne {
+    margin-top: 10px;
+    border-top: 1px solid #e4e1dd;
 }
 
 /*

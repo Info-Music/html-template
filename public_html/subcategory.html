@@ -22,7 +22,7 @@
     </head>
     <body>
         <div id="fb-root"></div>
-        <script>(function (d, s, id) {
+        <script>(function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id))
                     return;
@@ -292,18 +292,18 @@
                                 <span class="border"></span>
                                 <div class="color">
                                     <h3>Kleuren</h3>
-                                    <input type="image" src="img/filter/1.png" name="color[1]" alt="color"/>
-                                    <input type="image" src="img/filter/2.png" name="color[2]" alt="color"/>
-                                    <input type="image" src="img/filter/3.png" name="color[3]" alt="color"/>
-                                    <input type="image" src="img/filter/4.png" name="color[4]" alt="color"/>
-                                    <input type="image" src="img/filter/5.png" name="color[5]" alt="color"/>
-                                    <input type="image" src="img/filter/6.png" name="color[6]" alt="color"/>
-                                    <input type="image" src="img/filter/7.png" name="color[7]" alt="color"/>
-                                    <input type="image" src="img/filter/8.png" name="color[8]" alt="color"/>
-                                    <input type="image" src="img/filter/9.png" name="color[9]" alt="color"/>
-                                    <input type="image" src="img/filter/10.png" name="color[10]" alt="color"/>
-                                    <input type="image" src="img/filter/11.png" name="color[11]" alt="color"/>
-                                    <input type="image" src="img/filter/12.png" name="color[12]" alt="color"/>
+                                    <div class="filter-image">
+                                        <input type="image" src="img/filter/1.png" name="color[1]" alt="color"/>
+                                        <input type="image" src="img/filter/2.png" name="color[2]" alt="color"/>
+                                        <input type="image" src="img/filter/3.png" name="color[3]" alt="color"/>
+                                        <input type="image" src="img/filter/4.png" name="color[4]" alt="color"/>
+                                        <input type="image" src="img/filter/5.png" name="color[5]" alt="color"/>
+                                        <input type="image" src="img/filter/6.png" name="color[6]" alt="color"/>
+                                        <input type="image" src="img/filter/7.png" name="color[7]" alt="color"/>
+                                        <input type="image" src="img/filter/8.png" name="color[8]" alt="color"/>
+                                        <input type="image" src="img/filter/9.png" name="color[9]" alt="color"/>
+                                        <input type="image" src="img/filter/10.png" name="color[10]" alt="color"/>
+                                    </div>
                                 </div>
                                 <span class="border"></span>
                                 <a href="#brand" data-toggle="collapse" data-parent="filters">Merk</a>
@@ -772,18 +772,18 @@
         <script src="js/bootstrap-slider.js"></script>
         <script src="js/cosifinum.js"></script>
         <script language="javascript">
-                                                $(document).ready(function () {
-                                                    $('div.node-status').click(function () {
+                                                $(document).ready(function() {
+                                                    $('div.node-status').click(function() {
                                                         $(this).next().parent().children('ul.tree').toggle(300);
                                                         $prev = $(this).toggleClass('closed');
                                                     });
 
                                                     $('#priceSlider').slider();
                                                     $('.list-group')
-                                                            .on('show.bs.collapse', function (e) {
+                                                            .on('show.bs.collapse', function(e) {
                                                                 $(e.target).prev('.list-group-item').addClass('hot');
                                                             })
-                                                            .on('hide.bs.collapse', function (e) {
+                                                            .on('hide.bs.collapse', function(e) {
                                                                 $(e.target).prev('.list-group-item').removeClass('hot');
                                                             });
                                                 });
