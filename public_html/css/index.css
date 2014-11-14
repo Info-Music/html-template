@@ -978,7 +978,7 @@ Don't break buttons
     padding: 8px 25px;
 }
 
-.infoPanel .action span {
+.infoPanel .action .shipping {
     text-transform: uppercase;
     color: #828282;
 }
