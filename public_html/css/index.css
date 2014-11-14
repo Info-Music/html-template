@@ -47,7 +47,7 @@ ul {
 }
 
 ul li {
-    list-style-type: none;
+-style-type: none;
 }
 
 input {
@@ -445,8 +445,8 @@ Don't break buttons
 }
 
 .btn-warning {
-    background-color: #d95a36;
-    border-color: #d95a36;
+    background-color: #d74f29;
+    border-color: #d74f29;
     padding: 3px 12px;
     font-weight: 600;
 }
@@ -755,7 +755,7 @@ Don't break buttons
 .largeButtons .btn-group-lg .btn {
     margin: 10px auto !important;
     border-radius: 0;
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     font-size: 15px;
     background-color: #d74a29;
     border-color: #d74a29;
@@ -842,13 +842,13 @@ Don't break buttons
     border: none;
     padding: 5px;
     margin: 0px;
-    width: 18.885%;
+    width: 18.8%;
     height: auto;
 }
 
 .filters .color .filter-image {
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .filters #brand, .filters #type {
@@ -884,6 +884,7 @@ Don't break buttons
 
 .productListOne {
     margin-top: 10px;
+    font-size: 13px;
 }
 
 .productHolderLarge {
@@ -907,12 +908,12 @@ Don't break buttons
 }
 
 .infoPanel .description p {
-    line-height: 25px;
+    line-height: 21px;
 }
 
 .infoPanel .description ul li {
     list-style: disc;
-    line-height: 25px;
+    line-height: 21px;
 }
 
 .infoPanel .description ul {
@@ -926,12 +927,17 @@ Don't break buttons
     margin-top: 10px;
 }
 
+.infoPanel div.stock span.stock {
+    margin-left: 5px;
+}
+
 .infoPanel div.stock img, .infoPanel div.stock span.stock {
     display: inline-block;
 }
 
 .infoPanel div.stock .deliver {
-    display: block
+    display: block;
+    line-height: 15px;
 }
 
 .infoPanel .action {
@@ -955,6 +961,21 @@ Don't break buttons
     font-size: 30px;
     line-height: 25px;
     font-weight: bold;
+}
+
+.infoPanel h2 a {
+    color: #1f1d1b;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.infoPanel h2 a:hover {
+    color: #1f1d1b;
+    text-decoration: none;
+}
+
+.infoPanel .action .btn {
+    padding: 8px 25px;
 }
 
 /*
