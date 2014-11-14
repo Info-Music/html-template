@@ -884,7 +884,77 @@ Don't break buttons
 
 .productListOne {
     margin-top: 10px;
+}
+
+.productHolderLarge {
     border-top: 1px solid #e4e1dd;
+    padding-bottom: 20px;
+}
+
+.infoPanel .rating a {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.infoPanel .rating img {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.infoPanel .rating {
+    margin-bottom: 10px;
+}
+
+.infoPanel .description p {
+    line-height: 25px;
+}
+
+.infoPanel .description ul li {
+    list-style: disc;
+    line-height: 25px;
+}
+
+.infoPanel .description ul {
+    margin-left: 20px;
+}
+
+.infoPanel div.stock {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.infoPanel div.stock img, .infoPanel div.stock span.stock {
+    display: inline-block;
+}
+
+.infoPanel div.stock .deliver {
+    display: block
+}
+
+.infoPanel .action {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.infoPanel .action .priceFrom {
+    display: block;
+    text-align: right;
+    font-size: 17px;
+    line-height: 15px;
+    text-decoration: line-through;
+}
+
+.infoPanel .action .price {
+    display: block;
+    text-align: right;
+    font-size: 30px;
+    line-height: 25px;
+    font-weight: bold;
 }
 
 /*
