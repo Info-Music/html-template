@@ -889,7 +889,6 @@ Don't break buttons
 
 .productHolderLarge {
     border-top: 1px solid #e4e1dd;
-    padding-bottom: 20px;
 }
 
 .infoPanel .rating a {
@@ -981,6 +980,26 @@ Don't break buttons
 .infoPanel .action .shipping {
     text-transform: uppercase;
     color: #828282;
+}
+
+.productHolderLarge .imgHelper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.productHolderLarge .productThumb {
+    height: 90%;
+    width: 90%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.productHolderLarge .productThumb img {
+    width: 100%;
+    height: auto;;
+    margin: 0 auto;
 }
 
 /*
