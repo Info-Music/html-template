@@ -374,6 +374,10 @@ end customerbar
     color: #73bd84;
 }
 
+#right-banner-container .glyphicon-ok:hover {
+    color: #73bc84 !important;
+}
+
 .navigation #right-banner-container {
     background: none;
 }
@@ -1315,5 +1319,5 @@ footer .paymentTypes li.ups {
 }
 
 .glyphicon:hover, .glyphicon:active {
-    color: #d74a29 !important;
+    color: #d74a29;
 }
