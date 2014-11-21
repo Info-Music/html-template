@@ -832,10 +832,10 @@ Don't break buttons
     color: #d74f29;
 }
 
-.filters .color h3 {
-    padding-left: 15px;
-    line-height: 40px;
+.filters .color a {
+    margin-top: 10px;
     border-top: 1px solid #ebebeb;
+    border-bottom: 0;
 }
 
 .filters .color input[type="image"] {
@@ -982,13 +982,6 @@ Don't break buttons
     color: #828282;
 }
 
-/*.imgHelper {
-    display: inline-block;
-    height: 100%;
-    width: 1px;
-    vertical-align: middle;
-}*/
-
 .productHolderLarge .productThumb {
     height: 250px;
     width: 90%;
@@ -1003,6 +996,13 @@ Don't break buttons
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.filtersForm .view button {
+    padding: 0;
+    border: none;
+    height: 15px;
+    width: 15px;
 }
 
 /*
