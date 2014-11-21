@@ -859,10 +859,15 @@ Don't break buttons
 
 .filters .color input[type="image"] {
     border: none;
-    padding: 5px;
-    margin: 0px;
-    width: 18.8%;
+    margin: 5px;
+    padding: 0;
+    width: 14.4%;
     height: auto;
+    transition: all 0.2s ease;
+}
+
+.filters .color input[type="image"]:hover {
+    box-shadow: 0 0 10px #8f8f8f;
 }
 
 .filters .color .filter-image {
