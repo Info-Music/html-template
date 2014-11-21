@@ -198,10 +198,16 @@ end customerbar
 #searchButton {
     display: inline-block;
     background: url(../img/icon_search.png) 100% 100% no-repeat;
+    background-color: #d74a29;
     width: 34px;
     height: 34px;
     border: none;
-}	
+    transition: all 0.3s ease;
+}
+
+#searchButton:hover{
+    background-color: #b62800;
+}
 
 .shoppingCartContainer {
     padding: 0;		
