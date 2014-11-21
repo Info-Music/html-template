@@ -982,14 +982,8 @@ Don't break buttons
     color: #828282;
 }
 
-.productHolderLarge .imgHelper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
 .productHolderLarge .productThumb {
-    height: 90%;
+    height: 250px;
     width: 90%;
     display: block;
     overflow: hidden;
@@ -997,8 +991,8 @@ Don't break buttons
 }
 
 .productHolderLarge .productThumb img {
-    width: 100%;
-    height: auto;;
+    max-width: 100%;
+    max-height: 100%;
     margin: 0 auto;
 }
 
