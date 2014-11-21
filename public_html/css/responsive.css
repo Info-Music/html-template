@@ -135,6 +135,9 @@
     #black-spacer-top > li {
         float: right;
     }
+    #right-banner-container h4 {
+        font-size: 17px;
+    }
     .headerbar .row {
         position: relative;
     }
@@ -149,7 +152,7 @@
     .navbar-nav > li > a {
         font-size: 13px;
     }
-    .navbar-nav .glyphicon {
+    #mobile-menu .navbar-nav .glyphicon {
         position: absolute;
         right: 40px;
         line-height: 40px;
@@ -185,9 +188,8 @@
     .meta .img-stock {
         margin-right: 10px;
     }
-    .product .col-xs-2 {
-        padding-top: 5%;
-        padding-bottom: 5%;
+    .product .col-xs-2 .glyphicon{
+        line-height: 90px;
     }
     .product .glyphicon {
         color: #626262;
@@ -302,6 +304,7 @@
         float: right;
         font-weight: 200;
         padding-right: 20px;
+        line-height: 20px;
 
     }
     /* CATEGORY PAGE */
