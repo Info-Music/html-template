@@ -126,6 +126,9 @@
 
 /* Extra small devices (Phones) */
 @media (max-width: 767px) { 
+    .form-control:focus{
+        border-right: none;
+    }
     #right-banner-container {
         margin-top: 40px;
     }
@@ -142,6 +145,17 @@
     .navbar-default .navbar-toggle {
         background-color: white;
         border-radius: 0;
+    }
+    .navbar-nav > li > a {
+        font-size: 13px;
+    }
+    .navbar-nav .glyphicon {
+        position: absolute;
+        right: 40px;
+        line-height: 40px;
+    }
+    .navbar-nav > li:hover {
+        background-color: white;
     }
     .col-xs-move-up {
         position: absolute;
