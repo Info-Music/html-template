@@ -984,7 +984,7 @@ Don't break buttons
 
 .productHolderLarge .productThumb {
     height: 250px;
-    width: 90%;
+    width: 100%;
     display: block;
     overflow: hidden;
     position: relative;
@@ -1001,8 +1001,7 @@ Don't break buttons
 .filtersForm .view button {
     padding: 0;
     border: none;
-    height: 15px;
-    width: 15px;
+    font-size: 2em;
 }
 
 /*
