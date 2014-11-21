@@ -27,6 +27,9 @@
     .container-small .content {
         height: 200px !important;
     }
+    #right-banner-container {
+        margin-bottom: 25px;
+    }
     #logo {
         width: 200px;
     }
@@ -42,17 +45,14 @@
 
 /* Medium devices (Desktops) */
 @media (min-width: 992px) and (max-width: 1199px) { 
-    #newProductsHeader {
-        margin-top: -40px;
-    }
     .populaire-categorie div a {
         top: -40px;
     }
-    .brands_img {
-
-    }
     #right-banner-container li {
-        font-size: 12px;
+        font-size: 11px;
+    }
+    #right-banner-container {
+        margin-bottom: 5px;
     }
     #mobile-menu {
         display: none !important;
@@ -326,11 +326,11 @@
         vertical-align: middle;
     }
     .collectie {
-/*        height: 150px;*/
+        /*        height: 150px;*/
         margin-top: 20px;
         text-align: center;
         padding-bottom: 0;
-   }
+    }
     .collectie > a {
         margin-top: 5px;
         margin-bottom: 5px;

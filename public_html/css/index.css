@@ -383,8 +383,8 @@ end customerbar
 }
 
 .carousel-indicators {
-    left: auto;
-    right: 40px;
+    right: auto;
+    left: 40px;
     bottom: 10px;
     margin-left: 0;
     width: auto;
