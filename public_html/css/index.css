@@ -263,6 +263,20 @@ end customerbar
     color: #d84f2b;
 }
 
+.breadcrumb {
+    border-radius: 0;
+}
+
+.breadcrumb a {
+    color: #777;
+    font-weight: normal;
+}
+
+.breadcrumb li.active  {
+    color: #b62800;
+    font-weight: 600;
+}
+
 .menuBar {			
     padding: 0;
     margin: 0;	
@@ -637,7 +651,7 @@ Don't break buttons
 }
 
 .assortiment .list-group-item {
-    padding: 3px 15px;
+    padding: 3px 25px;
     border-radius: 0 !important;
     margin-bottom: 0;
     border: none;
@@ -653,6 +667,7 @@ Don't break buttons
     font-weight: 600;
     color: black;
     font-size: 14px;
+    padding: 3px 15px;
 }
 
 .assortiment .big {
