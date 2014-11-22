@@ -373,6 +373,10 @@
         color: #1F1D1C;
         line-height: 5px !important;
     }
+    .infoPanel .action .price {
+        text-align: left;
+        
+    }
 }
 
 @media (min-width: 768px) {
