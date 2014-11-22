@@ -126,6 +126,9 @@
 
 /* Extra small devices (Phones) */
 @media (max-width: 767px) { 
+    .navbar-collapse.in {
+        overflow-y: hidden;
+    }
     .form-control:focus{
         border-right: none;
     }
