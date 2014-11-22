@@ -174,6 +174,7 @@
     .carousel-indicators {
         bottom: -40px;
         right: 0;
+        left: auto;
     }
     #newProductsHeader {
         margin-left: 0;
@@ -358,6 +359,19 @@
     }
     .collectie > p {
         text-align: left;
+    }
+    /* SUBCATEGORY PAGE */
+    .productHolderLarge .productThumb {
+        height: 100px;
+    }
+    .productHolderLarge {
+        padding-bottom: 0;
+    }
+    .productHolderLarge .infoPanel h2 a {
+        font-size: 13px;
+        font-weight: normal;
+        color: #1F1D1C;
+        line-height: 5px !important;
     }
 }
 
