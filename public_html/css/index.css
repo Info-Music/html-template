@@ -1225,6 +1225,28 @@ Don't break buttons
     bottom: 5px;
 }
 
+.accessoires {
+    margin-top: 80px;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.accessoires:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.accessoires h2 {
+    color: #d65028;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.accessoires h3 {
+    font-size: 12px;
+    font-weight: bold;
+}
 
 /*
  * END PRODUCT DETAIL PAGE
