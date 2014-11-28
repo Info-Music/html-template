@@ -980,18 +980,18 @@ Don't break buttons
     margin-right: 15px;
 }
 
-.infoPanel .action .priceFrom {
+.action .priceFrom {
     display: block;
     text-align: right;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 15px;
     text-decoration: line-through;
 }
 
-.infoPanel .action .price {
+.action .price {
     display: block;
     text-align: right;
-    font-size: 30px;
+    font-size: 29px;
     line-height: 25px;
     font-weight: bold;
 }
@@ -1025,8 +1025,8 @@ Don't break buttons
 }
 
 .productHolderLarge .productThumb img {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 85%;
+    max-height: 85%;
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
@@ -1062,6 +1062,100 @@ Don't break buttons
 
 /*
  * END SUBCATEGORY PAGE
+ * 
+ * START PRODUCT DETAIL PAGE
+ */
+
+.product_detail {
+    border: 1px solid #ebebeb;
+    border-bottom: none;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.product_detail:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.product_detail .rating img {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product_detail .rating a {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.product_detail .rating p {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #999999;
+}
+
+.product_detail ul li .glyphicon, .product_detail ul li .glyphicon:hover {
+    color: #73bd84;
+}
+
+.product_detail ul li {
+    font-weight: 600;
+}
+
+.product_detail .stock {
+    margin-top: 50px;
+    width: 70%;
+}
+
+.product_detail .stock img, .product_detail .stock span {
+    display: inline;
+    color: #999999;
+    font-size: 12px;
+}
+
+.product_detail .action {
+    text-align: right;
+    margin-top: -30px;
+}
+
+.product_detail .largeButtons {
+    margin-top: 10px;
+}
+
+.product_detail .largeButtons .btn-group-lg .btn {
+    padding: 12px 40px;
+    font-weight: 600;
+}
+
+.product_detail .largeButtons input {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    border-radius: 0;
+    margin: 10px;
+    font-size: 20px;
+    color: black;
+    padding-left: 15px;
+}
+
+.product_detail .largeButtons span {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 5px;
+    color: #999999;
+}
+
+.product_detail .shipping {
+    color: #999999;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+/*
+ * END PRODUCT DETAIL PAGE
  */
 
 .brands_img {
