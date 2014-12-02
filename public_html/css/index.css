@@ -1248,6 +1248,37 @@ Don't break buttons
     font-weight: bold;
 }
 
+.item {
+    border: 1px solid #ebebeb;
+    height: 150px;
+}
+
+.item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.item .image {
+    margin-top: 10px;
+    height: 130px;
+    position: relative;
+    border: none;
+}
+
+.item .image img, .item .image p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    text-align: center;
+}
+
 /*
  * END PRODUCT DETAIL PAGE
  */
