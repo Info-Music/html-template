@@ -1248,30 +1248,30 @@ Don't break buttons
     font-weight: bold;
 }
 
-.item {
+.accessoires .item {
     border: 1px solid #ebebeb;
     height: 160px;
     margin-top: 20px;
     position: relative;
 }
 
-.item:after {
+.accessoires .item:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.item div {
+.accessoires .item div {
     height: 160px;
 }
 
-.item .image {
+.accessoires .item .image {
     margin-top: 2px;
     position: relative;
     border: none;
 }
 
-.item .image img, .item .image p {
+.accessoires .item .image img, .accessoires .item .image p {
     position: absolute;
     top: 0;
     left: 0;
@@ -1283,7 +1283,7 @@ Don't break buttons
     text-align: center;
 }
 
-.item span {
+.accessoires .item span {
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -1291,7 +1291,7 @@ Don't break buttons
     font-weight: 600;
 }
 
-.item span img {
+.accessoires .item span img {
     padding-left: 10px;
 }
 
