@@ -1432,10 +1432,17 @@ Don't break buttons
 }
 
 .combideal .image .plus:after {
-    content: url(../img/plus.png);
+    content: url(../img/plus2.png);
     position: absolute;
     right: 0;
-    line-height: 280px;
+    line-height: 300px;
+}
+
+.combideal .image .equel:after {
+    content: url(../img/equel.png);
+    position: absolute;
+    right: -20px;
+    line-height: 300px;
 }
 
 /*
