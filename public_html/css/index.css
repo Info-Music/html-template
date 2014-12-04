@@ -1431,6 +1431,13 @@ Don't break buttons
     margin: auto;
 }
 
+.combideal .image .plus:after {
+    content: url(../img/plus.png);
+    position: absolute;
+    right: 0;
+    line-height: 280px;
+}
+
 /*
  * END PRODUCT DETAIL PAGE
  */
