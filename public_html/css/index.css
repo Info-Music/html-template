@@ -1400,6 +1400,37 @@ Don't break buttons
     color: #d74f29;
 }
 
+.combideal {
+    margin-top: 25px;
+}
+
+.combideal .image {
+    border: 1px solid #ebebeb;
+}
+
+.combideal .image:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.combideal .image div {
+    height: 280px;
+    position: relative;
+
+}
+
+.combideal .image div img {
+    max-height: 65%;
+    max-width: 65%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
 /*
  * END PRODUCT DETAIL PAGE
  */
