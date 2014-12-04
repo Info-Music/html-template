@@ -1390,6 +1390,16 @@ Don't break buttons
     font-weight: 600;
 }
 
+.specificatie h2 {
+    color: #1f1d1b;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.specificatie .red {
+    color: #d74f29;
+}
+
 /*
  * END PRODUCT DETAIL PAGE
  */
