@@ -1453,7 +1453,9 @@ Don't break buttons
     line-height: 300px;
 }
 
-
+.flexslider h2 {
+    text-transform: uppercase;
+}
 
 /*
  * END PRODUCT DETAIL PAGE

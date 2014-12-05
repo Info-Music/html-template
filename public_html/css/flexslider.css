@@ -123,12 +123,12 @@ ul.slides li img.img-ranking, ul.slides li .img-stock {
     float: right;
 }
 
-div.product_slider div.flex-viewport ul.slides li {
+div.flex-viewport ul.slides li {
     margin: 10px 10px 10px 0;
     border: 1px solid #ebebeb;
 }
 
-div.product_slider div.flex-viewport ul.slides li p {
+div.flex-viewport ul.slides li p {
     width: 200px;
     height: 60px;
     overflow: hidden;
