@@ -635,6 +635,22 @@ Don't break buttons
     padding-bottom: 10px;
 }
 
+.actielabel {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.actielabel span{
+    background-image: url(../img/actie-label-sprite.png);
+    width: 46px;
+    height: 46px;
+}
+
+.actielabel .rood {
+    background-position: -100px 0;
+}
+
 /*
  * Category page 
  */
