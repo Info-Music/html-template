@@ -13,9 +13,9 @@
 
 
 h2 {
-    color: #fff;
-    font-size: 35px;	
-    font-weight: bold;
+    color: #1f1d1b;
+    font-size: 21px;
+    font-weight: 600;
 }
 
 h3 {
@@ -986,6 +986,7 @@ Don't break buttons
     font-size: 15px;
     line-height: 15px;
     text-decoration: line-through;
+    float: none;
 }
 
 .action .price {
@@ -994,6 +995,7 @@ Don't break buttons
     font-size: 29px;
     line-height: 25px;
     font-weight: bold;
+    float: none;
 }
 
 .infoPanel h2 a {

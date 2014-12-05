@@ -18,10 +18,29 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css"/>
+
+        <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(window).load(function() {
+                $('.product_slider').flexslider({
+                    animation: "slide",
+                    animationLoop: true,
+                    itemWidth: 279,
+                    itemMargin: 8,
+                    maxItems: 5,
+                    move: 1,
+                    prevText: "",
+                    nextText: ""
+                });
+            });
+        </script>
     </head>
     <body>
         <div id="fb-root"></div>
-        <script>(function (d, s, id) {
+        <script>(function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id))
                     return;
@@ -407,6 +426,122 @@
                                 Wanneer een product niet in het magazijn van Infomusic.nl aanwezig is, maar uit een extern magazijn moet komen of wanneer een product niet op voorraad is dan zorgen we dat het in de regel binnen 2 tot 5 werkdagen bij Infomusic.nl op voorraad is en wordt het dezelfde dag nog verzonden. Wanneer we hier niet aan kunnen voldoen wordt dit op de website aangegeven of wordt u hiervan via e-mail op de hoogte gebracht.
                             </p>
                         </div>
+                        <h2>Populaire producten</h2>
+                        <div class="product_slider flexslider hidden-xs">
+                            <ul class="slides">
+                                <li>
+                                    <div class="imageContainer">
+
+                                        <a href="#" class="productThumb">
+                                            <img src="img/marshall.jpg" alt="marshall" class="img-responsive"  />
+                                        </a>
+                                    </div>
+                                    <img src="img/ranking_stars.png" alt="ranking" class="img-ranking" />
+                                    <p>
+                                        Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus. Quisque non sodales dui, nec dignissim augue. Nunc vehicula imperdiet cursus.                            
+                                    </p>
+                                    <img src="img/stock_status.png" alt="stock status" class="img-stock" />
+                                    <div class="priceContainer">
+                                        <span class="priceFrom">1650,-</span>
+                                        <span class="price">1246,-</span>
+                                    </div>
+                                    <div class="largeButtons">
+                                        <div class="btn-group btn-group-lg">
+                                            <a href="#" class="btn btn-primary btn-success" role="button">Bestel mij, omdat het kan</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="imageContainer">
+
+                                        <a href="#" class="productThumb">
+                                            <img src="img/fender.jpg" alt="fender"   />
+                                        </a>
+                                    </div>
+                                    <img src="img/ranking_stars.png" alt="ranking" class="img-ranking" />
+                                    <p>
+                                        Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus. Quisque non sodales dui, nec dignissim augue. Nunc vehicula imperdiet cursus.                            
+                                    </p>
+                                    <img src="img/stock_status.png" alt="stock status" class="img-stock" />
+                                    <div class="priceContainer">
+                                        <span class="priceFrom">1650,-</span>
+                                        <span class="price">1246,-</span>
+                                    </div>
+                                    <div class="largeButtons">
+                                        <div class="btn-group btn-group-lg">
+                                            <a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="imageContainer">
+
+                                        <a href="#" class="productThumb">
+                                            <img src="img/korg.jpg" alt="fender"   />
+                                        </a>
+                                    </div>
+                                    <img src="img/ranking_stars.png" alt="ranking" class="img-ranking" />
+                                    <p>
+                                        Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.                             
+                                    </p>
+                                    <img src="img/stock_status_nok.png" alt="stock status" class="img-stock" />
+                                    <div class="priceContainer">
+                                        <span class="priceFrom">1650,-</span>
+                                        <span class="price">1246,-</span>
+                                    </div>
+                                    <div class="largeButtons">
+                                        <div class="btn-group btn-group-lg">
+                                            <a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="imageContainer">
+
+                                        <a href="#" class="productThumb">
+                                            <img src="img/korg.jpg" alt="fender"   />
+                                        </a>
+                                    </div>
+                                    <img src="img/ranking_stars.png" alt="ranking" class="img-ranking" />
+                                    <p>
+                                        Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.                             
+                                    </p>
+                                    <img src="img/stock_status.png" alt="stock status" class="img-stock" />
+                                    <div class="priceContainer">
+                                        <span class="priceFrom">1650,-</span>
+                                        <span class="price">1246,-</span>
+                                    </div>
+                                    <div class="largeButtons">
+                                        <div class="btn-group btn-group-lg">
+                                            <a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="imageContainer">
+
+                                        <a href="#" class="productThumb">
+                                            <img src="img/korg.jpg" alt="fender"   />
+                                        </a>
+                                    </div>
+                                    <img src="img/ranking_stars.png" alt="ranking" class="img-ranking" />
+                                    <p>
+                                        Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.                             
+                                    </p>
+                                    <img src="img/stock_status.png" alt="stock status" class="img-stock" />
+                                    <div class="priceContainer">
+                                        <span class="priceFrom">1650,-</span>
+                                        <span class="price">1246,-</span>
+                                    </div>
+                                    <div class="largeButtons">
+                                        <div class="btn-group btn-group-lg">
+                                            <a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
                     </div><!-- end rest of content -->
                 </div>
             </div>
@@ -552,7 +687,6 @@
                 <li class="ups">UPS</li>
             </ul>
         </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/cosifinum.js"></script>
     </body>
