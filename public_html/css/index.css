@@ -1178,20 +1178,26 @@ Don't break buttons
     margin-bottom: 5px;
     padding-right: 10px;
     padding-left: 10px;
+    opacity: 0.6;
+}
+
+.product_share a:hover {
+    opacity: 1;
 }
 
 .product_share a span:hover, .product_share a:hover {
     text-decoration: none;
-    color: #d74f29;
+/*    color: #d74f29;*/
 }
 
 .product_share a span {
-    color: #9f9f9f;
+    color: #828282;
     line-height: 35px;
 }
 
 .product_share .verlanglijst {
     padding-left: 0;
+    
 }
 
 .product_share .share {
@@ -1444,6 +1450,8 @@ Don't break buttons
     right: -20px;
     line-height: 300px;
 }
+
+
 
 /*
  * END PRODUCT DETAIL PAGE
