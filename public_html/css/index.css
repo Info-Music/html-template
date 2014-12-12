@@ -1073,6 +1073,10 @@ Don't break buttons
     opacity: 1;
 }
 
+.filtersForm .view .glyphicon:hover {
+    color: black;
+}
+
 .page {
     color: #828282;
     padding-top: 3px;
