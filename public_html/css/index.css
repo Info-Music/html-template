@@ -1061,6 +1061,60 @@ Don't break buttons
     top: 0; left: 0; bottom: 0; right: 0;
 }
 
+.productHolderThumb > div {
+    border: 1px solid #ebebeb;
+    position: relative;
+    width: calc(33.33333333% - 20px);
+    height: 415px;
+    margin: 10px;
+}
+
+.productHolderThumb > div:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.productHolderThumb p {
+    text-align: center;
+}
+
+.productHolderThumb .stock img {
+    display: block;
+    margin: 0 auto;
+}
+
+.productHolderThumb .price {
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.productHolderThumb .price .priceFrom {
+    font-weight: normal;
+    text-decoration: line-through;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.productHolderThumb .largeButtons {
+    text-align: center;
+}
+
+.productHolderThumb .largeButtons .btn-group-lg .btn {
+    background-color: #d95a36;
+    border-collapse: #d95a36;
+}
+
+.productListOne:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .filtersForm .view button {
     padding: 0;
     border: none;
