@@ -1516,8 +1516,9 @@ Don't break buttons
 }
 
 .combideal .image div {
-    height: 280px;
+    height: 220px;
     position: relative;
+    margin-bottom: 50px;
 }
 
 .combideal .image div img {
@@ -1531,18 +1532,37 @@ Don't break buttons
     margin: auto;
 }
 
+.combideal .image div .stock {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+}
+
+.combideal .image div .price {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    margin: auto;
+    font-size: 20px;
+}
+
 .combideal .image .plus:after {
     content: url(../img/plus2.png);
     position: absolute;
     right: 0;
-    line-height: 300px;
+    line-height: 250px;
 }
 
 .combideal .image .equel:after {
     content: url(../img/equel.png);
     position: absolute;
     right: -47px;
-    line-height: 300px;
+    line-height: 250px;
     z-index: 2;
 }
 
