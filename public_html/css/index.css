@@ -1568,15 +1568,43 @@ Don't break buttons
     vertical-align: middle;
 }
 
+.combideal .price {
+    text-align: right;
+    display: table;
+    height: 40px;
+}
+
+.combideal .price p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
 .combideal .total input[type='checkbox'] {
     width: 25px;
     margin-right: 20px;
     vertical-align: middle;
 }
 
-.combideal .price {
-    line-height: 40px;
-    text-align: right;
+.combideal hr {
+    border-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.combideal .totaal {
+    line-height: 30px;
+    float: right;
+    font-size: 21px;
+    font-weight: 900;
+    margin-right: 25px;
+}
+
+.combideal .totaal_prijs {
+    line-height: 30px;
+    float: right;
+    font-size: 21px;
+    font-weight: 900;
 }
 
 .flexslider h2 {
