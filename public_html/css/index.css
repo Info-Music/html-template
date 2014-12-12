@@ -1459,15 +1459,23 @@ Don't break buttons
     border: none;
 }
 
-.accessoires .item .image img, .accessoires .item .image p {
+.accessoires .item .image img {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     margin: auto;
-    padding-top: 60%;
-    padding-bottom: 60%;
+}
+
+.accessoires .item .image p {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    line-height: 160px;
     text-align: center;
 }
 
