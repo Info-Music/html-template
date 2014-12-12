@@ -353,35 +353,46 @@ end customerbar
     margin-top: 15px;
 }
 
-#right-banner-container {
+#usp {
     background-color: #f7f6f4;
     border: 1px solid #ebebeb;
     padding: 14px;
     margin-bottom: 20px;
 }
 
-.banner-container #right-banner-container {
-    background-color: white;
-}
-
-#right-banner-container h4 {
+#usp h4 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
-#right-banner-container li {
+#usp li {
     font-weight: 600;
     font-size: 13px;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
-#right-banner-container .glyphicon-ok {
+#usp .glyphicon-ok {
     color: #73bd84;
 }
 
-#right-banner-container .glyphicon-ok:hover {
+#usp .glyphicon-ok:hover {
     color: #73bc84 !important;
+}
+
+.banner-container #usp {
+    background-color: white;
+}
+
+.banner-container #usp li {
+    font-size: 11px;
+}
+
+.product_detail #usp {
+    background-color: white;
+    border: none;
+    padding: 0;
 }
 
 .navigation #right-banner-container {
@@ -1205,7 +1216,7 @@ Don't break buttons
 
 .product_share a span:hover, .product_share a:hover {
     text-decoration: none;
-/*    color: #d74f29;*/
+    /*    color: #d74f29;*/
 }
 
 .product_share a span {
@@ -1215,7 +1226,7 @@ Don't break buttons
 
 .product_share .verlanglijst {
     padding-left: 0;
-    
+
 }
 
 .product_share .share {
