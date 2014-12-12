@@ -1373,6 +1373,46 @@ Don't break buttons
     bottom: 5px;
 }
 
+.bigImage .left {
+    position: absolute;
+    left: 0;
+    background: url(//cdn.shopify.com/s/files/1/0332/7621/t/15/assets/arrow_sprite.png?50807) no-repeat 0 0;
+    background-position: 0 -60px;
+    height: 60px;
+    width: 60px;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: auto;
+    margin: auto;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.bigImage .right {
+    position: absolute;
+    left: 0;
+    background: url(//cdn.shopify.com/s/files/1/0332/7621/t/15/assets/arrow_sprite.png?50807) no-repeat 0 0;
+    background-position: 0 -120px;
+    height: 60px;
+    width: 60px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: auto;
+    margin: auto;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.bigImage .left:hover, .bigImage .right:hover {
+    opacity: 1;
+}
+
+.bigImage .zoom:hover {
+    opacity: 2;
+}
+
 .accessoires {
     margin-top: 80px;
     border: 1px solid #ebebeb;
