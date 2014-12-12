@@ -951,55 +951,55 @@ Don't break buttons
     padding-bottom: 15px;
 }
 
-.infoPanel .rating a {
+.productHolderLarge .infoPanel .rating a {
     display: inline-block;
     font-weight: normal;
     font-size: 0.9em;
 }
 
-.infoPanel .rating img {
+.productHolderLarge .infoPanel .rating img {
     margin-right: 10px;
     display: inline-block;
 }
 
-.infoPanel .rating {
+.productHolderLarge .infoPanel .rating {
     margin-bottom: 10px;
 }
 
-.infoPanel .description p {
+.productHolderLarge .infoPanel .description p {
     line-height: 21px;
 }
 
-.infoPanel .description ul li {
+.productHolderLarge .infoPanel .description ul li {
     list-style: disc;
     line-height: 21px;
 }
 
-.infoPanel .description ul {
+.productHolderLarge .infoPanel .description ul {
     margin-left: 20px;
 }
 
-.infoPanel div.stock {
+.productHolderLarge .infoPanel div.stock {
     text-transform: uppercase;
     font-size: 0.7em;
     font-weight: 600;
     margin-top: 10px;
 }
 
-.infoPanel div.stock span.stock {
+.productHolderLarge .infoPanel div.stock span.stock {
     margin-left: 5px;
 }
 
-.infoPanel div.stock img, .infoPanel div.stock span.stock {
+.productHolderLarge .infoPanel div.stock img, .infoPanel div.stock span.stock {
     display: inline-block;
 }
 
-.infoPanel div.stock .deliver {
+.productHolderLarge .infoPanel div.stock .deliver {
     display: block;
     line-height: 15px;
 }
 
-.infoPanel .action {
+.productHolderLarge .infoPanel .action {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1007,7 +1007,7 @@ Don't break buttons
     margin-right: 15px;
 }
 
-.action .priceFrom {
+.productHolderLarge .action .priceFrom {
     display: block;
     text-align: right;
     font-size: 15px;
@@ -1016,7 +1016,7 @@ Don't break buttons
     float: none;
 }
 
-.action .price {
+.productHolderLarge .action .price {
     display: block;
     text-align: right;
     font-size: 29px;
@@ -1025,27 +1025,27 @@ Don't break buttons
     float: none;
 }
 
-.infoPanel h2 a {
+.productHolderLarge .infoPanel h2 a {
     color: #1f1d1b;
     font-size: 21px;
     font-weight: 600;
 }
 
-.infoPanel h2 a:hover {
+.productHolderLarge .infoPanel h2 a:hover {
     color: #1f1d1b;
     text-decoration: none;
 }
 
-.infoPanel .action .btn {
+.productHolderLarge .infoPanel .action .btn {
     padding: 8px 25px;
 }
 
-.infoPanel .action .shipping {
+.productHolderLarge .infoPanel .action .shipping {
     text-transform: uppercase;
     color: #828282;
 }
 
-.productHolderLarge .productThumb {
+.productThumb {
     height: 250px;
     width: 100%;
     display: block;
@@ -1053,7 +1053,7 @@ Don't break buttons
     position: relative;
 }
 
-.productHolderLarge .productThumb img {
+.productThumb img {
     max-width: 85%;
     max-height: 85%;
     margin: auto;
