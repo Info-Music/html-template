@@ -349,10 +349,6 @@ end customerbar
     font-size: 13px;
 }
 
-.productThumb {
-    margin-top: 15px;
-}
-
 #usp {
     background-color: #f7f6f4;
     border: 1px solid #ebebeb;
@@ -1066,7 +1062,7 @@ Don't break buttons
     border: 1px solid #ebebeb;
     position: relative;
     width: calc(33.33333333% - 20px);
-    height: 415px;
+    height: 400px;
     margin: 10px;
 }
 
