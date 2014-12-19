@@ -936,6 +936,16 @@ Don't break buttons
     color: #828282;
 }
 
+.form-control {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.btn.active {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
 .productListOne {
     margin-top: 10px;
     font-size: 13px;
@@ -1381,8 +1391,9 @@ Don't break buttons
     left: 0;
     right: auto;
     margin: auto;
-    opacity: 0.5;
+    opacity: 0.1;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .bigImage .right {
@@ -1397,8 +1408,13 @@ Don't break buttons
     right: 0;
     left: auto;
     margin: auto;
-    opacity: 0.5;
+    opacity: 0.1;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bigImage:hover .left, .bigImage:hover .right {
+    opacity: 0.7;
 }
 
 .bigImage .left:hover, .bigImage .right:hover {
