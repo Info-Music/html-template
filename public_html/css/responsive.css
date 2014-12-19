@@ -184,7 +184,6 @@
     .product {
         border-bottom: 1px solid #f6f6f6;
         padding: 10px;
-        margin-bottom: 10px;
     }
     .meta .img-stock, .meta .priceFrom, .meta .price {
         float: none;
@@ -362,7 +361,7 @@
     .collectie > p {
         text-align: left;
     }
-    /* SUBCATEGORY PAGE */
+    /* SUBCATEGORY PAGE 
     .productHolderLarge .productThumb {
         height: 100px;
     }
@@ -389,6 +388,7 @@
         float: left;
         
     }
+    */
 }
 
 @media (min-width: 768px) {
