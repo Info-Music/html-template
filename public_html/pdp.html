@@ -265,26 +265,26 @@
                             <a href="#" ><img src="img/arrow-right.png" alt="" class="right arrow"></a>
                         </div>
 
-                        <div role="tabpanel">
+                        <div class="tabs">
                             <!-- links -->
-                            <ul class="nav-tabs" role="tablist">
-                                <li role="presentation" class="active"><a href="#productinformatie" aria-controls="productinformatie" role="tab" data-toggle="tab">Product Informatie</a></li>
-                                <li role="presentation"><a href="#productspecificaties" aria-controls="productspecificaties" role="tab" data-toggle="tab">Product Specificaties</a></li>
-                                <li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">Video</a></li>
-                                <li role="presentation"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">Reviews [52]</a></li>
-                                <li role="presentation"><a href="#download" aria-controls="download" role="tab" data-toggle="tab">Download</a></li>
+                            <ul class="tab-links">
+                                <li class="active"><a href="#productinformatie">Product Informatie</a></li>
+                                <li><a href="#productspecificaties">Product Specificaties</a></li>
+                                <li><a href="#video">Video</a></li>
+                                <li><a href="#reviews">Reviews [52]</a></li>
+                                <li><a href="#download">Download</a></li>
                             </ul>
 
                             <!-- content -->
                             <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active" id="productinformatie">
+                                <div class="active" id="productinformatie">
                                     <h2>Productinformatie</h2>
                                     <p>
                                         Fender American Standard Stratocaster Rosewood 3-Color Sunburst
                                         De Fender American Standard Stratocaster lijn is werkelijk een fenomeen in de wereld van electrische gitaren, waarbij u van de beste vakmanschap, materialen en kwaliteit verzekerd bent. Ten opzichte van de eerdere modellen uit deze serie zijn de American Standard Stratocaster modellen opgewaardeerd in zowel haar uiterlijk als klank. Fender Custom Shop Fat '50s pickups geven een vollere sound terwijl nieuwe plastic onderdelen voor een meer vintage look zorgen op de Fender American Standard Stratocaster. De Fender American Standard Stratocaster heeft een elzenhouten body en een rosewood hals. Alle gitaren uit de American Standard serie worden geleverd met een SKB koffer, kabel, gitaarband en poetsdoekje. 
                                     </p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="productspecificaties">
+                                <div class="" id="productspecificaties">
                                     <h2>Product specificaties</h2>
                                     <p>
                                         Fender American Standard Stratocaster Rosewood 3-Color Sunburst
@@ -302,13 +302,13 @@
                                     </ul>
 
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="video">
+                                <div class="" id="video">
                                     <h2>Videos</h2>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="reviews">
+                                <div class="" id="reviews">
                                     <h2>Reviews</h2>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="download">
+                                <div class="" id="download">
                                     <h2>Downloads</h2>
                                 </div>
                             </div>
@@ -434,12 +434,12 @@
                             <div class="col-md-5 total">
                                 <form>
                                     <div class="row">
-<!--                                        <div class="col-md-1 check"><input type="checkbox" name="combi" /></div> -->
+                                        <!--                                        <div class="col-md-1 check"><input type="checkbox" name="combi" /></div> -->
                                         <div class="col-md-9 text"><p>Fender American Standard Stratocaster Rosewood 3-color Sunburst<p></div>
                                         <div class="col-md-2 price"><p>1.356,-</p></div>
                                     </div>
                                     <div class="row">
-<!--                                         <div class="col-md-1 check"><input type="checkbox" name="combi" /></div> -->
+                                        <!--                                         <div class="col-md-1 check"><input type="checkbox" name="combi" /></div> -->
                                         <div class="col-md-9 text"><p>Fender Ramparte Buizen versterker</p></div>
                                         <div class="col-md-2 price"><p>321,-</p></div>
                                     </div>
@@ -451,7 +451,7 @@
                                     <hr/>
                                     <span class="totaal_prijs">€ 1.356,-</span>
                                     <span class="totaal">Totaal:</span>
-                                    
+
                                     <span class="clearfix"></span>
                                     <br/>
                                     <div class="largeButtons">
@@ -870,5 +870,20 @@
         </footer>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/cosifinum.js"></script>
+        <script>
+                                                jQuery(document).ready(function() {
+                                                    jQuery('.tabs .tab-links a').on('click', function(e) {
+                                                        var currentAttrValue = jQuery(this).attr('href');
+
+                                                        // Show/Hide Tabs
+                                                        jQuery('.tab-content ' + currentAttrValue).fadeIn(400).siblings().hide();
+
+                                                        // Change/remove current tab to active
+                                                        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+                                                        e.preventDefault();
+                                                    });
+                                                });
+        </script>
     </body>
 </html>
