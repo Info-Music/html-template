@@ -814,6 +814,11 @@ Don't break buttons
  * START SUBCATEGORY PAGE
  */
 
+.productHolderThumb {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
 .filters .block {
     border: 1px solid #ededed;
     background-color: #f7f6f5;
@@ -1072,7 +1077,7 @@ Don't break buttons
     border: 1px solid #ebebeb;
     position: relative;
     width: calc(33.33333333% - 20px);
-    height: 280px;
+    height: 295px;
     margin: 10px;
 }
 
@@ -1345,7 +1350,7 @@ Don't break buttons
 
 .smallImage ul li {
     float: left;
-    width: 80px;
+    width: 12%;
     height: 60px;
     position: relative;
     border: 1px solid #ebebeb;
@@ -1570,11 +1575,12 @@ Don't break buttons
 
 .combideal {
     margin-top: 25px;
+    margin-left: 0;
 }
 
 .combideal .image {
     border: 1px solid #ebebeb;
-    width: calc(58.33333333% - 10px);
+    width: calc(58.333333% - 18px);
 }
 
 .combideal .image:after {
@@ -1636,8 +1642,8 @@ Don't break buttons
 
 .combideal .total {
     border: 1px solid #ebebeb;
-    margin-left: 24px;
-    width: calc(41.66666667% - 30px);
+    margin-left: 23px;
+    width: calc(41.666667% - 20px);
     height: 280px;
     background-color: #f7f6f5;
     padding: 20px;
