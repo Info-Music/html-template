@@ -1615,14 +1615,14 @@ Don't break buttons
     content: url(../img/plus2.png);
     position: absolute;
     right: 0;
-    line-height: 250px;
+    line-height: 300px;
 }
 
 .combideal .image .equel:after {
     content: url(../img/equel.png);
     position: absolute;
     right: -47px;
-    line-height: 250px;
+    line-height: 300px;
     z-index: 2;
 }
 
