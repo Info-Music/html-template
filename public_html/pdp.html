@@ -152,7 +152,7 @@
                                                         this.value = 'Zoeken naar...';
                                                     }" autocomplete="off" value="Zoeken naar..." class="form-control" placeholer=".col-md-4" />
                                     <div class="input-group-btn">  
-                                        <button class="btn-default" id="searchButton" type="button"><!-- <span class="glyphicon glyphicon-search">--></span></button>
+                                        <button class="btn-default" id="searchButton" type="button"><!-- <span class="glyphicon glyphicon-search"></span>--></button>
                                     </div>
                                 </div>
 
@@ -217,7 +217,7 @@
             <div class="container">
 
 
-                <div class="row">
+                <div class="row hidden-xs">
                     <div class="col-md-12">
                         <ol class="breadcrumb">
                             <li><a href="index.html">Home</a></li>
@@ -232,7 +232,7 @@
                             <h1>Fender American Standard Stratocaster Rosewood 3-Color Sunburst</h1>
                         </div>
                         <a href="">
-                            <div class="back pull-left">
+                            <div class="back pull-left hidden-xs">
                                 terug naar assortiment
                             </div>
                         </a>
@@ -242,7 +242,7 @@
                     </div>
 
 
-                    <div class="col-md-7"> <!-- START LEFT COLUMN -->
+                    <div class="col-md-7 col-xs-12"> <!-- START LEFT COLUMN -->
                         <div class="actielabel"><span class="rood"></span></div>
 
                         <div class="bigImage">
@@ -265,7 +265,7 @@
                             <a href="#" ><img src="img/arrow-right.png" alt="" class="right arrow"></a>
                         </div>
 
-                        <div class="tabs">
+                        <div class="tabs hidden-xs">
                             <!-- links -->
                             <ul class="tab-links">
                                 <li class="active"><a href="#productinformatie">Product Informatie</a></li>
@@ -317,17 +317,17 @@
                     </div> <!-- END LEFT COLUMN -->
 
 
-                    <div class="col-md-5"> <!-- START RIGHT COLUMN -->
+                    <div class="col-md-5 col-xs-12"> <!-- START RIGHT COLUMN -->
                         <div class="product_detail">
-                            <div class="pull-right">
+                            <div class="pull-right hidden-xs">
                                 <img src="img/fender.png" alt="Fender">
                             </div>
-                            <div class="rating">
+                            <div class="rating hidden-xs">
                                 <img src="img/ranking_stars.png" alt="ranking" class="img-responsive" /><a href="#">10 reviews</a>
                                 <p>schrijf de eerste review van dit product</p>
                             </div>
 
-                            <ul id="usp">
+                            <ul id="usp" class="hidden-xs">
                                 <li><span class="glyphicon glyphicon-ok">&nbsp;</span>Gratis verzending vanaf &euro; 50,-</li>
                                 <li><span class="glyphicon glyphicon-ok">&nbsp;</span>Laagste prijs garantie</li>
                                 <li><span class="glyphicon glyphicon-ok">&nbsp;</span>Vandaag besteld, morgen in huis</li>
@@ -335,7 +335,7 @@
                                 <li><span class="glyphicon glyphicon-ok">&nbsp;</span>30 dagen "niet goed geld terug"</li>
                                 <li><span class="glyphicon glyphicon-ok">&nbsp;</span>Telefonische helpdesk</li>
                             </ul>
-                            <div class="short-description">
+                            <div class="short-description hidden-xs">
                                 <p>50s Telecaster model uit de Vintage Hot Rod Series van Fender</p>
                             </div>
                             <div class="pull-left stock">
@@ -345,7 +345,7 @@
                             <div class="action pull-right">
                                 <span class="priceFrom">1650,-</span>
                                 <span class="price">1369,-</span>
-                                <div class="largeButtons">
+                                <div class="largeButtons hidden-xs">
                                     <input type="text" name="hoeveelheid" class="form-control" value="2" maxlength="1">
                                     <span>x</span>
                                     <div class="btn-group btn-group-lg pull-right">
@@ -354,8 +354,17 @@
                                 </div> 
                                 <span class="shipping hidden-xs">gratis verzending!</span>
                             </div>
+                            <span class="clearfix"></span>
+                            <div class="largeButtons visible-xs-block">
+                                <input type="text" name="hoeveelheid" class="form-control" value="2" maxlength="1">
+                                <span>x</span>
+                                <div class="btn-group btn-group-lg pull-right">
+                                    <a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
+                                </div>
+                            </div> 
+                            <span class="shipping visible-xs-block">gratis verzending!</span>
                         </div>
-                        <div class="col-md-12 product_share">
+                        <div class="col-md-12 product_share hidden-xs">
                             <a href="" class="verlanglijst">
                                 <img src="img/heart-hover.png" alt="Zet op verlanglijst" />
                                 <span>zet op verlanglijst</span>
@@ -369,7 +378,21 @@
                                 <span>share</span>
                             </a>
                         </div>
-                        <div class="accessoires">
+                        <div class="col-xs-12 product_share visible-xs-block">
+                            <a href="" class="verlanglijst">
+                                <img src="img/heart-hover.png" alt="Zet op verlanglijst" />
+                                <span>verlanglijst</span>
+                            </a>
+                            <a href="">
+                                <img src="img/email-hover.png" alt="E-mail naar een vriend" />
+                                <span>e-mail</span>
+                            </a>
+                            <a href="" class="share">
+                                <img src="img/share-icon.png" alt="Share" />
+                                <span>share</span>
+                            </a>
+                        </div>
+                        <div class="accessoires hidden-xs">
                             <h2>Bijbehordende accessoires</h2>
                             <div class="item">
                                 <div class="col-md-4 image">
@@ -410,8 +433,64 @@
                             </div>
                         </div>
                     </div> <!-- END RIGHT COLUMN -->
+                    <div class="tabs-small visible-xs-inline-block">
+                        <div class="col-xs-12 small" id="productinformatie-small">
+                            <a href="#"  onclick="$('#productinformatie-small').toggleClass('small');
+                                    return false;" class="make-small">
+                                <h2>Productinformatie</h2>
+                                <span class="glyphicon glyphicon-chevron-up pull-right"></span>
+                            </a>
 
-                    <div class="col-md-12"><!-- start rest of content -->
+                            <p>
+                                Fender American Standard Stratocaster Rosewood 3-Color Sunburst
+                                De Fender American Standard Stratocaster lijn is werkelijk een fenomeen in de wereld van electrische gitaren, waarbij u van de beste vakmanschap, materialen en kwaliteit verzekerd bent. Ten opzichte van de eerdere modellen uit deze serie zijn de American Standard Stratocaster modellen opgewaardeerd in zowel haar uiterlijk als klank. Fender Custom Shop Fat '50s pickups geven een vollere sound terwijl nieuwe plastic onderdelen voor een meer vintage look zorgen op de Fender American Standard Stratocaster. De Fender American Standard Stratocaster heeft een elzenhouten body en een rosewood hals. Alle gitaren uit de American Standard serie worden geleverd met een SKB koffer, kabel, gitaarband en poetsdoekje. 
+                            </p>
+                        </div>
+                        <div class="col-xs-12 small" id="productspecificaties-small">
+                            <a href="#"  onclick="$('#productspecificaties-small').toggleClass('small');
+                                    return false;" class="make-small">
+                                <h2>Product specificaties</h2>
+                                <span class="glyphicon glyphicon-chevron-up pull-right"></span>
+                            </a>
+                            <p>
+                                Fender American Standard Stratocaster Rosewood 3-Color Sunburst
+                            <ul>
+                                <li>American Standard  Series</li>
+                                <li>Elzenhouten body</li>
+                                <li>Moderne 'C' nek</li>
+                                <li>22 medium jumbo fretten met gestipte inleg</li>
+                                <li>Rosewood hals</li>
+                                <li>Bi-Flex Truss Rod systeem</li>
+                                <li>Fender Custom Shop Fat '50s pickups</li>
+                                <li>Chromen hardware</li>
+                                <li>2-punts gesynchroniseerde tremolo </li>
+                                <li>Inclusief SKB koffer, kabel, gitaarband en poetsdoekje</li>
+                            </ul>
+
+                        </div>
+                        <div class="col-xs-12 small" id="video-small">
+                            <a href="#"  onclick="$('#video-small').toggleClass('small');
+                                    return false;" class="make-small">
+                                <h2>Videos</h2>
+                                <span class="glyphicon glyphicon-chevron-up pull-right"></span>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 small" id="reviews-small">
+                            <a href="#"  onclick="$('#reviews-small').toggleClass('small');
+                                    return false;" class="make-small">
+                                <h2>Reviews</h2>
+                                <span class="glyphicon glyphicon-chevron-up pull-right"></span>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 small" id="download-small">
+                            <a href="#"  onclick="$('#download-small').toggleClass('small');
+                                    return false;" class="make-small">
+                                <h2>Downloads</h2>
+                                <span class="glyphicon glyphicon-chevron-up pull-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 hidden-xs"><!-- start rest of content -->
                         <div class="row combideal">
                             <h2>Combinatie voordeel:</h2>
                             <div class="col-md-7 image">
@@ -474,7 +553,7 @@
                             </p>
                         </div>
 
-                        <div class="product_slider flexslider hidden-xs">
+                        <div class="product_slider flexslider">
                             <h2>Populaire producten</h2>
                             <ul class="slides">
                                 <li>
@@ -590,7 +669,7 @@
 
                             </ul>
                         </div>
-                        <div class="product_slider1 flexslider hidden-xs">
+                        <div class="product_slider1 flexslider">
                             <h2>Laatst bekeken producten</h2>
                             <ul class="slides">
                                 <li>
@@ -871,19 +950,19 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/cosifinum.js"></script>
         <script>
-                                                jQuery(document).ready(function() {
-                                                    jQuery('.tabs .tab-links a').on('click', function(e) {
-                                                        var currentAttrValue = jQuery(this).attr('href');
+                                jQuery(document).ready(function() {
+                                    jQuery('.tabs .tab-links a').on('click', function(e) {
+                                        var currentAttrValue = jQuery(this).attr('href');
 
-                                                        // Show/Hide Tabs
-                                                        jQuery('.tab-content ' + currentAttrValue).fadeIn(400).siblings().hide();
+                                        // Show/Hide Tabs
+                                        jQuery('.tab-content ' + currentAttrValue).fadeIn(400).siblings().hide();
 
-                                                        // Change/remove current tab to active
-                                                        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+                                        // Change/remove current tab to active
+                                        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
 
-                                                        e.preventDefault();
-                                                    });
-                                                });
+                                        e.preventDefault();
+                                    });
+                                });
         </script>
     </body>
 </html>
