@@ -265,7 +265,7 @@
                             <a href="#" ><img src="img/arrow-right.png" alt="" class="right arrow"></a>
                         </div>
 
-                        <div class="tabs hidden-xs">
+                        <div class="tabs hidden-sm hidden-xs">
                             <!-- links -->
                             <ul class="tab-links">
                                 <li class="active"><a href="#productinformatie">Product Informatie</a></li>
@@ -326,8 +326,11 @@
                                 <img src="img/ranking_stars.png" alt="ranking" class="img-responsive" /><a href="#">10 reviews</a>
                                 <p>schrijf de eerste review van dit product</p>
                             </div>
-
-                            <ul id="usp" class="hidden-xs">
+                            <div class="short-description visible-sm">
+                                <p>50s Telecaster model uit de Vintage Hot Rod Series van Fender</p>
+                            </div>
+                            <span class="clearfix"></span>
+                            <ul id="usp" class="col-sm-6 hidden-xs">
                                 <li><span class="glyphicon glyphicon-ok">&nbsp;</span>Gratis verzending vanaf &euro; 50,-</li>
                                 <li><span class="glyphicon glyphicon-ok">&nbsp;</span>Laagste prijs garantie</li>
                                 <li><span class="glyphicon glyphicon-ok">&nbsp;</span>Vandaag besteld, morgen in huis</li>
@@ -335,34 +338,36 @@
                                 <li><span class="glyphicon glyphicon-ok">&nbsp;</span>30 dagen "niet goed geld terug"</li>
                                 <li><span class="glyphicon glyphicon-ok">&nbsp;</span>Telefonische helpdesk</li>
                             </ul>
-                            <div class="short-description hidden-xs">
+                            <div class="short-description hidden-sm hidden-xs">
                                 <p>50s Telecaster model uit de Vintage Hot Rod Series van Fender</p>
                             </div>
-                            <div class="pull-left stock">
-                                <img src="img/stock_status.png" alt="stock status" class="img-responsive" />
-                                <span>Op voorraad, voor 17.30u besteld, volgende werkdag in huis</span>
-                            </div>
-                            <div class="action pull-right">
-                                <span class="priceFrom">1650,-</span>
-                                <span class="price">1369,-</span>
-                                <div class="largeButtons hidden-xs">
+                            <div class="col-sm-6">
+                                <div class="pull-left stock">
+                                    <img src="img/stock_status.png" alt="stock status" class="img-responsive" />
+                                    <span>Op voorraad, voor 17.30u besteld, volgende werkdag in huis</span>
+                                </div>
+                                <div class="action pull-right">
+                                    <span class="priceFrom">1650,-</span>
+                                    <span class="price">1369,-</span>
+                                    <div class="largeButtons hidden-xs">
+                                        <input type="text" name="hoeveelheid" class="form-control" value="2" maxlength="1">
+                                        <span>x</span>
+                                        <div class="btn-group btn-group-lg pull-right">
+                                            <a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
+                                        </div>
+                                    </div> 
+                                    <span class="shipping hidden-xs">gratis verzending!</span>
+                                </div>
+                                <span class="clearfix"></span>
+                                <div class="largeButtons visible-xs-block">
                                     <input type="text" name="hoeveelheid" class="form-control" value="2" maxlength="1">
                                     <span>x</span>
                                     <div class="btn-group btn-group-lg pull-right">
                                         <a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
                                     </div>
                                 </div> 
-                                <span class="shipping hidden-xs">gratis verzending!</span>
+                                <span class="shipping visible-xs-block">gratis verzending!</span>
                             </div>
-                            <span class="clearfix"></span>
-                            <div class="largeButtons visible-xs-block">
-                                <input type="text" name="hoeveelheid" class="form-control" value="2" maxlength="1">
-                                <span>x</span>
-                                <div class="btn-group btn-group-lg pull-right">
-                                    <a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
-                                </div>
-                            </div> 
-                            <span class="shipping visible-xs-block">gratis verzending!</span>
                         </div>
                         <div class="col-md-12 product_share hidden-xs">
                             <a href="" class="verlanglijst">
@@ -395,12 +400,12 @@
                         <div class="accessoires hidden-xs">
                             <h2>Bijbehordende accessoires</h2>
                             <div class="item">
-                                <div class="col-md-4 image">
+                                <div class="col-md-4 col-sm-4 image">
                                     <img src="img/boston-btu-400.png" alt="boston shizzle">
                                     <img src="img/but-bck-quickview.png" alt="">
                                     <p>QUICKVIEW</p>
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-8 col-sm-8">
                                     <h3>Boston BTU-400 clip chromatisch</h3>
                                     <p>Supersale aanbiedin, nieuw in doos. Inclusief volledige 3 jaar garantie. OP=OP!</p>
                                     <img src="img/stock_status.png" alt="stock">
@@ -408,12 +413,12 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="col-md-4 image">
+                                <div class="col-md-4 col-sm-4 image">
                                     <img src="img/fender-gitaarband.png" alt="">
                                     <img src="img/but-bck-quickview.png" alt="">
                                     <p>QUICKVIEW</p>
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-8 col-sm-8">
                                     <h3>Fender Gitaarband Monogrammed Black/Yellow/Red</h3>
                                     <p>De klassieke Fender gitaarband met extra padding voro een comfortabel gevoel op je schouders en met su'ede einden.</p>
                                     <img src="img/stock_status.png" alt="stock">
@@ -421,10 +426,10 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="col-md-4 image">
+                                <div class="col-md-4 col-sm-4 image">
                                     <img src="img/mxr-m115.png" alt="">
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-8 col-sm-8">
                                     <h3>MXR M115 Distortion III</h3>
                                     <p>De klassieke Fender gitaarband met extra adding voor een comfortabel gevoel op je schouders en met su'ede einden.</p>
                                     <img src="img/stock_status.png" alt="stock">
@@ -490,32 +495,32 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-12 hidden-xs"><!-- start rest of content -->
+                    <div class="col-md-12 col-sm-12 hidden-xs"><!-- start rest of content -->
                         <div class="row combideal">
                             <h2>Combinatie voordeel:</h2>
-                            <div class="col-md-7 image">
-                                <div class="col-md-4 plus">
+                            <div class="col-md-7 col-sm-7 image">
+                                <div class="col-md-4 col-sm-4 plus">
                                     <img src="img/thumb-fender.png" alt="Fender"/>
                                     <img src="img/stock_status.png" alt="stock" class="stock"/>
                                     <span class="price">1356,-</span>
                                 </div>
-                                <div class="col-md-4 plus">
+                                <div class="col-md-4 col-sm-4 plus">
                                     <img src="img/versterker.png" alt="Fender" />
                                     <img src="img/stock_status.png" alt="stock" class="stock" />
                                     <span class="price">321,-</span>
                                 </div>
-                                <div class="col-md-4 equel">
+                                <div class="col-md-4 col-sm-4 equel">
                                     <img src="img/fender-cable.png" alt="Fender" />
                                     <img src="img/stock_status.png" alt="stock" class="stock" />
                                     <span class="price">7,60</span>
                                 </div>
                             </div>
-                            <div class="col-md-5 total">
+                            <div class="col-md-5 col-sm-5 total">
                                 <form>
                                     <div class="row">
                                         <!--                                        <div class="col-md-1 check"><input type="checkbox" name="combi" /></div> -->
-                                        <div class="col-md-9 text"><p>Fender American Standard Stratocaster Rosewood 3-color Sunburst<p></div>
-                                        <div class="col-md-2 price"><p>1.356,-</p></div>
+                                        <div class="col-md-9 col-sm-9 text"><p>Fender American Standard Stratocaster Rosewood 3-color Sunburst<p></div>
+                                        <div class="col-md-2 col-sm-2 price"><p>1.356,-</p></div>
                                     </div>
                                     <div class="row">
                                         <!--                                         <div class="col-md-1 check"><input type="checkbox" name="combi" /></div> -->

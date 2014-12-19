@@ -122,6 +122,9 @@
     #mobile-menu {
         display: none !important;
     }
+    .product_detail .stock {
+        margin-top: 5px;
+    }
 }
 
 /* Extra small devices (Phones) */
