@@ -1043,7 +1043,7 @@ Don't break buttons
 }
 
 .productThumb {
-    height: 250px;
+    height: 150px;
     width: 100%;
     display: block;
     overflow: hidden;
@@ -1062,7 +1062,7 @@ Don't break buttons
     border: 1px solid #ebebeb;
     position: relative;
     width: calc(33.33333333% - 20px);
-    height: 400px;
+    height: 280px;
     margin: 10px;
 }
 

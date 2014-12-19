@@ -361,34 +361,17 @@
     .collectie > p {
         text-align: left;
     }
-    /* SUBCATEGORY PAGE 
-    .productHolderLarge .productThumb {
-        height: 100px;
+    /* SUBCATEGORY PAGE */
+    .productHolderThumb > div {
+        width: calc(50% - 20px);
+        height: 280px;
     }
-    .productHolderLarge {
-        padding-bottom: 0;
+    .productHolderThumb p {
+        text-align: left;
     }
-    .productHolderLarge .infoPanel h2 {
-        width: 80%;
-        float: left;
+    .productThumb {
+        height: 150px;
     }
-    .productHolderLarge .infoPanel h2 a {
-        font-size: 13px;
-        font-weight: normal;
-        color: #1F1D1C;
-        line-height: 5px !important;
-    }
-    .productHolderLarge .infoPanel .pull-left {
-        width: 20%;
-        float: left;
-    }
-    .infoPanel .action {
-        display: block;
-        width: 20%;
-        float: left;
-        
-    }
-    */
 }
 
 @media (min-width: 768px) {
