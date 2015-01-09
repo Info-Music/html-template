@@ -642,20 +642,65 @@ Don't break buttons
     padding-bottom: 10px;
 }
 
-.actielabel {
+.actielabel:after {
+    content: '';
     position: absolute;
+    display: block;
     top: 5px;
-    left: 5px;
-}
-
-.actielabel span{
+    right: 5px;
+    bottom: auto;
+    left: auto;
     background-image: url(../img/actie-label-sprite.png);
     width: 46px;
     height: 46px;
 }
 
-.actielabel .rood {
-    background-position: -100px 0;
+.actielabel.rood:after {
+    background-position-y: 0;
+}
+
+.actielabel.geel:after {
+    background-position-y: 155px;
+}
+
+.actielabel.zwart:after {
+    background-position-y: 108px;
+}
+
+.actielabel.blauw:after {
+    background-position-y: 63px;
+}
+
+.actielabel.nieuw:after {
+    background-position-x: -100px;
+}
+
+.actielabel.salebold:after {
+    background-position-x: -146px;
+}
+
+.actielabel.sale:after {
+    background-position-x: -191px;
+}
+
+.actielabel.hotdeal:after {
+    background-position-x: -237px;
+}
+
+.actielabel.pawnshop:after {
+    background-position-x: -283px;
+}
+
+.actielabel.opisop:after {
+    background-position-x: -328px;
+}
+
+.actielabel.combideal:after {
+    background-position-x: -375px;
+}
+
+.container .bigImage {
+margin: 0 !important;
 }
 
 /*
@@ -1058,7 +1103,7 @@ Don't break buttons
 }
 
 .productThumb {
-    height: 150px;
+    height: 250px;
     width: 100%;
     display: block;
     overflow: hidden;
