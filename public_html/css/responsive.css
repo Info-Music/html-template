@@ -412,6 +412,31 @@
     .tabs-small .small .glyphicon:before {
         content: "\e114"
     }
+    .combideal {
+        margin-right: 0;
+    }
+    .combideal .image {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .combideal .total {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+        height: auto;
+    }
+    .combideal .image .equel:after {
+        content: '';
+        position: absolute;
+    }
+    .combideal .total .largeButtons .pull-right {
+        float: left !important;
+        margin-top: -40px;
+    }
+    .combideal .total br {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {

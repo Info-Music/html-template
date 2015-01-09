@@ -1391,7 +1391,7 @@ Don't break buttons
 .bigImage .left {
     position: absolute;
     left: 0;
-    background: url(//cdn.shopify.com/s/files/1/0332/7621/t/15/assets/arrow_sprite.png?50807) no-repeat 0 0;
+    background: url(http://cdn.shopify.com/s/files/1/0332/7621/t/15/assets/arrow_sprite.png?50807) no-repeat 0 0;
     background-position: 0 -60px;
     height: 60px;
     width: 60px;
@@ -1408,7 +1408,7 @@ Don't break buttons
 .bigImage .right {
     position: absolute;
     left: 0;
-    background: url(//cdn.shopify.com/s/files/1/0332/7621/t/15/assets/arrow_sprite.png?50807) no-repeat 0 0;
+    background: url(http://cdn.shopify.com/s/files/1/0332/7621/t/15/assets/arrow_sprite.png?50807) no-repeat 0 0;
     background-position: 0 -120px;
     height: 60px;
     width: 60px;
