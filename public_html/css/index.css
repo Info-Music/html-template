@@ -646,8 +646,8 @@ Don't break buttons
     content: '';
     position: absolute;
     display: block;
-    top: 5px;
-    right: 5px;
+    top: 15px;
+    right: 15px;
     bottom: auto;
     left: auto;
     background-image: url(../img/actie-label-sprite.png);
@@ -1122,7 +1122,7 @@ margin: 0 !important;
     border: 1px solid #ebebeb;
     position: relative;
     width: calc(33.33333333% - 20px);
-    height: 295px;
+    /*height: 295px;*/
     margin: 10px;
 }
 
@@ -2020,7 +2020,7 @@ footer .paymentTypes li.ups {
 .icon-bar {
     color: black;
 }
-
+/*
 .glyphicon:hover, .glyphicon:active {
     color: #d74a29;
-}
+}*/

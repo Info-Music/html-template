@@ -163,7 +163,7 @@ ul.slides li div.imageContainer a.productThumb img {
     border-color: #d74a29;
 }
 
-.btn:hover, .btn:focus, .btn:active {
+.flexslider .btn:hover, .flexslider .btn:focus, .flexslider .btn:active {
     background-color: #d77a29;
     border-color: #d77a29;
 }
