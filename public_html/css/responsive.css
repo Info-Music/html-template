@@ -128,6 +128,10 @@
     .product_detail .stock {
         margin-top: 5px;
     }
+    .brands_img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 /* Extra small devices (Phones) */
