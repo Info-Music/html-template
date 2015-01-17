@@ -188,7 +188,7 @@
         <!-- mainBar -->
         <div class="mainBar">
             <div class="container">
-                <div class="row visible-xs-block">
+                <div class="row visible-xs-block visible-sm-block">
                     <div class="col-md-12">
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
@@ -240,9 +240,94 @@
                             </a>
                         </div>
                     </div>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel assortiment">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" class="blockHeader" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Assortiment
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <div class="list-group panel">                     
+                                <a href="#" class="list-group-item big hot">SALE</a>
+                                <p class="divider"></p>
+                                <a href="#" class="list-group-item bold">Gitaar & Basgitaar</a>
+                                <a href="#" class="list-group-item">Western Gitaren</a>
+                                <a href="#" class="list-group-item">Klasieke Gitaren</a>
+                                <a href="#" class="list-group-item">Elektrische Gitaren</a>
+                                <a href="#" class="list-group-item">Basgitaren</a>
+                                <a href="#" class="list-group-item">Linkshandige Gitaren</a>
+                                <a href="#gitaarstarterpacks" class="list-group-item" data-toggle="collapse" data-parent="#gitaar">Gitaar Starter Packs</a>
+                                <div class="collapse list-group-submenu" id="gitaarstarterpacks">
+                                    <a href="#" class="list-group-item">Western Gitaar packs</a>
+                                    <a href="#" class="list-group-item">Klasieke Gitaar Packs</a>
+                                    <a href="#" class="list-group-item">Elektrische Gitaar Packs</a>
+                                    <a href="#" class="list-group-item">Basgitaar Packs</a>
+                                    <a href="#" class="list-group-item">Overige snaarinstrumenten packs</a>
+                                </div>
+                                <a href="#" class="list-group-item">Overige snaarinstrumenten</a>
+                                <a href="#snaren" class="list-group-item" data-toggle="collapse" data-parent="assortiment">Snaren</a>
+                                <div class="collapse list-group-submenu" id="snaren">
+                                    <a href="#" class="list-group-item">Snaren voor Elektrische Gitaar</a>
+                                    <a href="#" class="list-group-item">Snaren voor Western Gitaar</a>
+                                    <a href="#" class="list-group-item">Snaren voor Basgitaar</a>
+                                    <a href="#" class="list-group-item">Snaren voor Klasieke Gitaar</a>
+                                    <a href="#" class="list-group-item">Snaren voor Banjo Gitaar</a>
+                                    <a href="#" class="list-group-item">Snaren voor Ukelele Gitaar</a>
+                                    <a href="#" class="list-group-item">Snaren voor Mandoline Gitaar</a>
+                                    <a href="#" class="list-group-item">Snaren voor 12 snarige Gitaar</a>
+                                    <a href="#" class="list-group-item">Overige snaren</a>
+                                </div>
+                                <a href="#gitaarbasaccessoires" class="list-group-item" data-toggle="collapse" data-parent="assortiment">Gitaar & Bas Accessoires</a>
+                                <div class="collapse list-group-submenu" id="gitaarbasaccessoires">
+                                    <a href="#" class="list-group-item">Plectrums</a>
+                                    <a href="#" class="list-group-item">Capodasters</a>
+                                    <a href="#" class="list-group-item">Gitaar Slides</a>
+                                    <a href="#" class="list-group-item">Gitaarbanden</a>
+                                    <a href="#" class="list-group-item">Gitaarstandaard</a>
+                                    <a href="#test" class="list-group-item" data-toggle="collapse" data-parent="gitaarbasaccessoires">Test</a>
+                                    <div class="collapse list-group-submenu" id="test">
+                                        <a href="#" class="list-group-item">test</a>
+                                        <a href="#" class="list-group-item">test</a>
+                                        <a href="#test1" class="list-group-item" data-toggle="collapse" data-parent="test">test213</a>
+                                        <div class="collapse list-group-submenu" id="test1">
+                                            <a href="#" class="list-group-item">test</a>
+                                            <a href="#" class="list-group-item">test</a>
+                                            <a href="#" class="list-group-item">test</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="list-group-item">Versterking</a>
+                                <a href="#" class="list-group-item">Effect pedalen</a>
+                                <a href="#" class="list-group-item">Buizen voor buizen versterkers</a>
+                                <a href="#" class="list-group-item">Gitaar elementen</a>
+                                <p class="divider"></p>
+                                <a href="#" class="list-group-item big">Merken</a>
+                                <a href="#" class="list-group-item big">Tips & Downloads</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Filters
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                          <div class="panel-body">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
                 <!-- end mobile carousel -->
-                <div class="row hidden-xs">
+                <div class="row hidden-xs hidden-sm">
                     <div class="col-md-12">
                         <ol class="breadcrumb">
                             <li><a href="index.html">Home</a></li>
@@ -252,9 +337,9 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-12 navigation hidden-xs">
+                    <div class="col-lg-3 col-md-4 col-sm-12 navigation hidden-xs hidden-sm">
 
-                        <div class="col-md-12 col-lg-12 col-sm-6 assortiment">
+                        <div class="col-md-12 col-lg-12 assortiment">
                             <div class="blockHeader">
                                 assortiment
                             </div>
@@ -317,7 +402,7 @@
                             </div>
                         </div>
                         <!-- fiters hiero enzo -->
-                        <div class="col-md-12 col-lg-12 col-sm-6 filters hidden-xs">
+                        <div class="col-md-12 col-lg-12 filters">
                             <div class="blockHeader">
                                 filter producten op
                             </div>
@@ -398,7 +483,7 @@
                     </div>
 
                     <div class="col-lg-9 col-md-8 col-sm-12">
-                        <div class="row hidden-xs">
+                        <div class="row hidden-xs hidden-sm">
                             <div class="col-md-12">
                                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                                     <!-- Indicators -->
