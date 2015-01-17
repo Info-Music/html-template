@@ -133,6 +133,29 @@
         margin-bottom: 20px;
         height: 100px;
     }
+    .visible-xs-block.visible-sm-block  .carousel{
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-bottom: 15px;
+    }
+    .panel-group .panel-heading+.panel-collapse>.panel-body {
+        border: none;
+        padding-top: 0;
+    }
+    .panel-group .panel {
+        margin-bottom: 15px;
+    }
+    .blockHeader {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .panel-heading {
+        padding: 0 15px;
+    }
+    .mainBar h4 {
+        margin: 0;
+    }
 }
 
 /* Extra small devices (Phones) */
