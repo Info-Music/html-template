@@ -62,6 +62,9 @@
         padding-left: 0;
         padding-right: 0;
     }
+    .product_share a span {
+        font-size: 0.8em;
+    }
 }
 
 /* Small devices (tablets) */
