@@ -240,11 +240,11 @@
                             </a>
                         </div>
                     </div>
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel-group hidden-xs" id="accordion" role="tablist" aria-multiselectable="true">
                       <div class="panel assortiment">
                         <div class="panel-heading" role="tab" id="headingOne">
                           <h4 class="panel-title">
-                            <a data-toggle="collapse" class="blockHeader" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <a data-toggle="collapse" class="collapsed blockHeader" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Assortiment
                             </a>
                           </h4>
@@ -311,16 +311,76 @@
                           </div>
                         </div>
                       </div>
-                      <div class="panel">
+                      <div class="panel assortiment">
                         <div class="panel-heading" role="tab" id="headingTwo">
                           <h4 class="panel-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Filters
+                            <a class="collapsed blockHeader" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Filter producten op
                             </a>
                           </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                           <div class="panel-body">
+                          <form>
+                                <div class="block">
+                                    <div class="reset pull-right">
+                                        <input type="reset" value="HERSTEL FILTERS">
+                                    </div>
+                                    <span class="clearfix"></span>
+                                    <span class="border"></span>
+                                    <div class="brand">
+                                        <h3>Merk:</h3>
+                                        <p><input type="checkbox" name="brand" value="Fender" checked="checked"/><label>Fender</label></p>
+                                    </div>
+                                    <span class="border"></span>
+                                    <div class="type">
+                                        <h3>Type:</h3>
+                                        <p><input type="checkbox" name="type" value="stratocaster" checked="checked"/><label>Stratocaster</label></p>
+                                        <p><input type="checkbox" name="type" value="telecaster" checked="checked"/><label>Telecaster</label></p>
+                                    </div>
+                                </div>
+
+                                <div class="price">
+                                    <h3>Prijs</h3>
+                                    <div id="slider-range"></div>
+                                    <input type="text" id="amount_from" name="from" readonly />
+                                    <input type="text" id="amount_to" name="to" readonly />
+                                </div>
+
+                                <span class="border"></span>
+                                <div class="color">
+                                    <a href="#color" data-toggle="collapse" data-parent="filters">Kleuren</a>
+                                    <div class="collapse in filter-image" id="color">
+                                        <input type="image" src="img/filter/1.png" name="color[1]" alt="color"/>
+                                        <input type="image" src="img/filter/2.png" name="color[2]" alt="color"/>
+                                        <input type="image" src="img/filter/3.png" name="color[3]" alt="color"/>
+                                        <input type="image" src="img/filter/4.png" name="color[4]" alt="color"/>
+                                        <input type="image" src="img/filter/5.png" name="color[5]" alt="color"/>
+                                        <input type="image" src="img/filter/6.png" name="color[6]" alt="color"/>
+                                        <input type="image" src="img/filter/7.png" name="color[7]" alt="color"/>
+                                        <input type="image" src="img/filter/8.png" name="color[8]" alt="color"/>
+                                        <input type="image" src="img/filter/9.png" name="color[9]" alt="color"/>
+                                        <input type="image" src="img/filter/10.png" name="color[10]" alt="color"/>
+                                    </div>
+                                </div>
+                                <span class="border"></span>
+                                <a href="#brand" data-toggle="collapse" data-parent="filters">Merk</a>
+                                <div class="collapse" id="brand">
+                                    <p><input type="checkbox" name="brand" value="Alvarez" /><label>Alvarez</label></p>
+                                    <p><input type="checkbox" name="brand" value="Gibson" /><label>Gibson</label></p>
+                                    <p><input type="checkbox" name="brand" value="Ibanez" /><label>Ibanez</label></p>
+                                    <p><input type="checkbox" name="brand" value="Martin" /><label>Martin</label></p>
+                                </div>
+                                <span class="border"></span>
+                                <a href="#type" data-toggle="collapse" data-parent="filters">Type</a>
+                                <div class="collapse" id="type">
+                                    <p><input type="checkbox" name="type" value="Alvarez" /><label>Alvarez</label></p>
+                                    <p><input type="checkbox" name="type" value="Gibson" /><label>Gibson</label></p>
+                                    <p><input type="checkbox" name="type" value="Ibanez" /><label>Ibanez</label></p>
+                                    <p><input type="checkbox" name="type" value="Martin" /><label>Martin</label></p>
+                                </div>
+                                <span class="border"></span>
+                            </form>
                           </div>
                         </div>
                       </div>
