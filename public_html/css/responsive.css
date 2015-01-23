@@ -437,8 +437,13 @@
     .bigImage .left, .bigImage .right {
         opacity: 0.5;
     }
+    .tabs-small > div {
+        border-bottom: 1px solid #ebebeb;
+        margin-bottom: -10px;
+        padding-bottom: 10px;
+    }
     .tabs-small .small {
-        height: 85px;
+        height: 90px;
         overflow-y: hidden;
     }
     .tabs-small .make-small, .tabs-small .make-small:hover, .tabs-small .make-small:focus, .tabs-small .make-small:active {
@@ -494,5 +499,33 @@
     .navbar {
         min-height: 10px !important;
         margin-bottom: 0;
+    }
+}
+
+/* Bestel knop PDP */
+
+@media (max-width: 340px) {
+    .product_detail .largeButtons span {
+        margin-right: 0;
+        margin-left: -12px;
+    }
+    .combideal .total .largeButtons .pull-right {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 300px) {
+    .product_detail .largeButtons .btn-group {
+        width: 100%;
+    }
+    .product_detail .largeButtons .btn-group-lg .btn {
+        width: 100%;
+    }
+    .product_detail .action, .product_detail .stock {
+        width: 100%;
+    }
+    .product_share {
+        font-size: 0.8em;
     }
 }
