@@ -271,6 +271,8 @@ end customerbar
 
 .breadcrumb {
     border-radius: 0;
+    margin-left: 10px;
+    margin-right: -5px;
 }
 
 .breadcrumb a {
@@ -1469,8 +1471,8 @@ margin: 0 !important;
 
 .bigImage .zoom {
     position: absolute;
-    right: 5px;
-    bottom: 5px;
+    right: 15px;
+    bottom: 15px;
     opacity: 0.5;
     cursor: pointer;
 }
@@ -2122,6 +2124,10 @@ footer .paymentTypes li.ups {
 
 .modal-content .action {
     margin-bottom: 10px;
+}
+
+.modal-content .product_share a span {
+    font-size: 0.8em;
 }
 
 .scrollToTop {

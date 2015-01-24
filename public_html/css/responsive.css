@@ -403,7 +403,7 @@
     /* SUBCATEGORY PAGE */
     .productHolderThumb > div {
         width: calc(50% - 20px);
-        height: 280px;
+        height: 300px;
     }
     .productHolderThumb p {
         text-align: left;
