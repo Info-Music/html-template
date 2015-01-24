@@ -2125,9 +2125,9 @@ footer .paymentTypes li.ups {
 }
 
 .scrollToTop {
-    width: 50px;
+    width: 49px;
     position: fixed;
-    height: 50px;
+    height: 49px;
     bottom: 0;
     right: 30px;
     display: none;
