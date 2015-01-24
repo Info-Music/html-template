@@ -820,6 +820,10 @@
 
 
 		</div>
+
+		            <!-- Scroll to top button -->
+            <a href="#" class="scrollToTop"></a>
+
 		<!-- END CONTENT 
 			START FOOTER -->
 		<div class="footer1">
@@ -1074,6 +1078,17 @@
 									$(window).on("resize", function () {
 									    $('.modal:visible').each(centerModal);
 									});
+									 $(window).scroll(function(){
+                        if($(this).scrollTop() > 100){
+                            $('.scrollToTop').fadeIn();
+                        } else {
+                            $('.scrollToTop').fadeOut();
+                        }
+                    });
+                    $('.scrollToTop').click(function(){
+                        $('html, body').animate({scrollTop : 0}, 800);
+                        return false;
+                    });
 								});
 		</script>
 	</body>

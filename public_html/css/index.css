@@ -2123,3 +2123,18 @@ footer .paymentTypes li.ups {
 .modal-content .action {
     margin-bottom: 10px;
 }
+
+.scrollToTop {
+    width: 50px;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    right: 30px;
+    display: none;
+    opacity: 0.6;
+    background: url(../img/top.png) no-repeat;
+}
+
+.scrollToTop:hover{
+    opacity: 1;
+}

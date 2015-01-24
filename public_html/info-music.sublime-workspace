@@ -4,24 +4,56 @@
 		"selected_items":
 		[
 			[
+				"padd",
+				"padding-bottom"
+			],
+			[
 				"mar",
-				"margin"
+				"margin-bottom"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"tabl",
+				"table-cell"
 			],
 			[
 				"back",
 				"background-position"
-			],
-			[
-				"margi",
-				"margin-top"
-			],
-			[
-				"margin",
-				"margin-right"
-			],
-			[
-				"marg",
-				"margin-left"
 			],
 			[
 				"wid",
@@ -43,7 +75,7 @@
 			"file": "category.html",
 			"settings":
 			{
-				"buffer_size": 54818,
+				"buffer_size": 54844,
 				"line_ending": "Windows"
 			}
 		},
@@ -51,7 +83,7 @@
 			"file": "subcategory.html",
 			"settings":
 			{
-				"buffer_size": 72555,
+				"buffer_size": 84453,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,7 +91,7 @@
 			"file": "subcategory_thumb.html",
 			"settings":
 			{
-				"buffer_size": 61421,
+				"buffer_size": 61215,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,7 +99,7 @@
 			"file": "pdp.html",
 			"settings":
 			{
-				"buffer_size": 62904,
+				"buffer_size": 47134,
 				"line_ending": "Unix"
 			}
 		},
@@ -75,7 +107,7 @@
 			"file": "css/index.css",
 			"settings":
 			{
-				"buffer_size": 34131,
+				"buffer_size": 35580,
 				"line_ending": "Unix"
 			}
 		},
@@ -83,7 +115,7 @@
 			"file": "css/responsive.css",
 			"settings":
 			{
-				"buffer_size": 9663,
+				"buffer_size": 11366,
 				"line_ending": "Unix"
 			}
 		},
@@ -91,7 +123,7 @@
 			"file": "css/flexslider.css",
 			"settings":
 			{
-				"buffer_size": 6423,
+				"buffer_size": 6459,
 				"line_ending": "Unix"
 			}
 		}
@@ -127,12 +159,21 @@
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/magento/app/code/core/Mage/CatalogInventory/Block/Stockqty/Default.php",
+		"/C/xampp/htdocs/magento/app/code/core/Mage/CatalogInventory/Block/Qtyincrements.php",
+		"/C/xampp/htdocs/magento/app/design/frontend/rwd/default/template/catalog/product/view.phtml",
+		"/C/xampp/htdocs/magento/app/code/community/Phoenix/Moneybookers/Model/Abstract.php",
+		"/C/xampp/htdocs/magento/app/code/community/Phoenix/Moneybookers/controllers/MoneybookersController.php",
+		"/C/xampp/htdocs/magento/app/code/community/Phoenix/Moneybookers/Block/Payment.php",
+		"/C/Users/Pascal/Documents/GitHub/info-music/public_html/info-music.sublime-project",
+		"/C/Users/Pascal/Documents/School (sync)/Periode 3/Java/OefentoetsStudent/OefentoetsStudent/README.TXT",
+		"/C/Users/Pascal/Documents/GitHub/base/views/thema/index.php",
 		"/C/Users/Pascal/Documents/GitHub/info-music/public_html/category_1.html",
 		"/home/pascal/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -146,6 +187,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"acce",
+			"access",
+			"zoom",
+			"pull-left",
+			".infoPanel",
 			"comb",
 			"combi"
 		],
@@ -165,7 +211,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -181,8 +227,8 @@
 						"selection":
 						[
 							[
-								19985,
-								19985
+								54672,
+								54672
 							]
 						],
 						"settings":
@@ -192,10 +238,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5768.0,
+						"translation.y": 13021.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -204,15 +250,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 54818,
+						"buffer_size": 54844,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								23857,
-								23857
+								44819,
+								44819
 							]
 						],
 						"settings":
@@ -222,10 +268,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 7309.0,
+						"translation.y": 12502.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -234,28 +280,29 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 72555,
+						"buffer_size": 84453,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								45104,
-								45104
+								21858,
+								21858
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 12301.0,
+						"translation.y": 4145.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -264,15 +311,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 61421,
+						"buffer_size": 61215,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								35987,
-								35991
+								50766,
+								50766
 							]
 						],
 						"settings":
@@ -282,10 +329,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 9865.0,
+						"translation.y": 14411.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -294,34 +341,35 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 62904,
+						"buffer_size": 47134,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								34441,
-								34441
+								18712,
+								18712
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 9487.0,
+						"translation.y": 1557.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -330,15 +378,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 34131,
+						"buffer_size": 35580,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11179,
-								11179
+								35579,
+								35579
 							]
 						],
 						"settings":
@@ -348,10 +396,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 9793.0,
+						"translation.y": 31130.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -360,15 +408,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9663,
+						"buffer_size": 11366,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9188,
-								9188
+								9537,
+								9537
 							]
 						],
 						"settings":
@@ -378,10 +426,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5976.0,
+						"translation.y": 6230.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -390,15 +438,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6423,
+						"buffer_size": 6459,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								6267,
+								6267
 							]
 						],
 						"settings":
@@ -407,8 +455,8 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 171.0,
+						"translation.y": 2160.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 7,
@@ -445,7 +493,7 @@
 		"cols":
 		[
 			0.0,
-			0.618431372549,
+			0.57933358357,
 			1.0
 		],
 		"rows":
@@ -497,7 +545,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 91.0,
+	"side_bar_width": 100.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

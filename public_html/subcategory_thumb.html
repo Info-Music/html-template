@@ -720,6 +720,11 @@
                 </div>
             </div>         
         </div>
+
+            <!-- Scroll to top button -->
+            <a href="#" class="scrollToTop"></a>
+
+
         <!-- END main container -->
 
 
@@ -878,6 +883,17 @@
                                                             .on('hide.bs.collapse', function(e) {
                                                                 $(e.target).prev('.list-group-item').removeClass('hot');
                                                             });
+                                                             $(window).scroll(function(){
+                        if($(this).scrollTop() > 100){
+                            $('.scrollToTop').fadeIn();
+                        } else {
+                            $('.scrollToTop').fadeOut();
+                        }
+                    });
+                    $('.scrollToTop').click(function(){
+                        $('html, body').animate({scrollTop : 0}, 800);
+                        return false;
+                    });
                                                 });
         </script>
     </body>
