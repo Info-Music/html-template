@@ -1805,6 +1805,121 @@ margin: 0 !important;
 
 /*
  * END PRODUCT DETAIL PAGE
+ *
+ * START KASSA PAGE
+ */
+
+.titlecontainer .usp {
+    float: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+.titlecontainer > hr {
+    width: 100%;
+}
+
+.titlecontainer .usp > img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.titlecontainer .usp > p {
+    color: #a0a0a0;
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 600;
+    margin: 0;
+}
+
+.titlecontainer .usp p:first-child {
+    font-weight: normal;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.bestel_formulier .factuuradres, .bestel_formulier .verzending > div, .bestel_formulier .betaling > div, .bestel_formulier .bestelling {
+    border: 1px solid #ebebeb;
+    background-color: #f7f6f4;
+    position: relative;
+}
+
+.bestel_formulier .no-padding {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.bestel_formulier label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.bestel_formulier .factuuradres {
+    margin-bottom: 20px;
+}
+
+.factuuradres .login {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.factuuradres .form-inline {
+    padding-left: 0;
+}
+
+.bestel_formulier .form-inline input, .bestel_formulier .form-inline select {
+    width: 100%;
+}
+
+.bestel_formulier .radio input[type=radio], .bestel_formulier .checkbox input[type=checkbox] {
+    margin-top: -7px;
+}
+
+.verzending > div {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.verzending {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.betaling > div {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.betaling {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.betaling .border {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #ebebeb;
+}
+
+.betaling > div, .verzending > div {
+    height: 200px;
+}
+
+.bestelling .table {
+    position: relative;
+}
+
+.bestelling .right {
+    position: absolute;
+    right: 0;
+}
+/*
+ * END KASSA PAGE
  */
 
 .brands_img {
