@@ -264,12 +264,12 @@
                                     <label for="bedrijf">Bedrijf:</label>
                                     <input type="text" class="form-control" id="bedrijf">
                                 </div>
-                                <div class="checkbox">
+                                <div class="col-md-12 checkbox">
                                     <label><input type="checkbox" value="">
                                         Maak een account aan voor uw volgende bezoek
                                     </label>
                                 </div>
-                                <div class="checkbox">
+                                <div class="col-md-12 checkbox">
                                     <label><input type="checkbox" value="" checked>
                                         Verzenden naar hetzelfde adres
                                     </label>
@@ -356,7 +356,7 @@
                         </div>
                         <div class="col-md-4 bestelling">
                             <h2>Uw bestelling</h2>
-                            <table class="table table-condensed table-hover">
+                            <table class="table table-condensed">
                                 <tr>
                                     <th>Artikel</th>
                                     <th>Aantal</th>
@@ -368,21 +368,46 @@
                                     <td>&euro; 23,20</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
-                                    <td>Subtotaal</td>
-                                    <td>&euro; 23,20</td>
+                                    <td>dB-Technologies TC20S-Beschermhoes voor S20</td>
+                                    <td>1</td>
+                                    <td>&euro; 82,00</td>
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td>Subtotaal</td>
+                                    <td>&euro; 105,20</td>
+                                </tr>
+                                <tr>
+                                    <td class="notvisible"></td>
                                     <td>Verzending</td>
                                     <td>&euro; 2,75</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
+                                    <td class="notvisible"></td>
                                     <td>21% BTW</td>
-                                    <td>&euro; 4,50</td>
+                                    <td>&euro; 22.09</td>
                                 </tr>
                             </table>
+                            <div class="col-md-12 form-group form-inline">
+                                <label for="opmerkingen">Opmerkingen:</label>
+                                <input type="text" class="form-control" id="opmerkingen" />
+                            </div>
+                            <div class="col-md-12 checkbox">
+                                <label><input type="checkbox" value="">
+                                    Abonnement op onze nieuwsbrief
+                                </label>
+                            </div>
+                            <div class="col-md-12 checkbox">
+                                <label><input type="checkbox" value="" checked>
+                                    Product(en) inpakken in cadeaupapier &euro; 0,99
+                                </label>
+                            </div>
+                            <span class="clearfix"></span>
+                            <div class="largeButtons">
+                                <div class="btn-group btn-group-lg">
+                                    <a href="#" class="btn btn-primary btn-success" role="button">bestelling afronden</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>

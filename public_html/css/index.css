@@ -1914,10 +1914,23 @@ margin: 0 !important;
     position: relative;
 }
 
-.bestelling .right {
-    position: absolute;
-    right: 0;
+.bestelling .notvisible {
+    border: 0;
 }
+
+.bestelling .largeButtons {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 233px;
+    height: 80px;
+}
+
+.bestelling .largeButtons .btn-group .btn {
+    padding: 13px 31px !important;
+    font-weight: 600;
+}
+
 /*
  * END KASSA PAGE
  */
