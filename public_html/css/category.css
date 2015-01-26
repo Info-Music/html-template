@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/*
+ *  File: 		category.css;
+ *	Purpose:	styling the category page;
+ */
+
+.categoryThumb {
+    border: 1px solid #ebebeb;
+}
+
+.categoryThumb:hover {
+    box-shadow: 0 0 20px #dcdcdc;
+}
+
+.categoryThumb .imageContainer {
+    overflow: visible;
+    width: 100%;
+    height: 135px;
+
+}
+
+.imageContainer .categoryImage {
+    line-height: 135px;
+    text-align: center;
+    width: 100%;
+    overflow: visible;
+}
+
+.imageContainer .categoryImage img {
+    width: auto;
+    height: auto;
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.categoryThumb .titleContainer {
+    overflow: visible;
+    width: 100%;
+    height: 55px;
+}
+
+.categoryThumb .categoryTitle {
+    text-align: center;
+    vertical-align: bottom;
+    color: #1f1d1b;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.collectie {
+    border: 1px solid #e4e1dd;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.collectie > img {
+    width: 100%;
+}
+
+.collectie > p {
+    padding: 10px;
+    font-size: 15px;
+    height: 175px;
+}
+
+.collectie > a {
+    position: absolute;
+    bottom: 5px;
+    right: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
