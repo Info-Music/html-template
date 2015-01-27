@@ -46,7 +46,8 @@
 }
 
 .bestel_formulier label {
-    font-weight: normal;
+    /*font-weight: normal;*/
+    font-size: 13px;
     cursor: pointer;
 }
 
@@ -121,4 +122,13 @@
 .bestelling .largeButtons .btn-group .btn {
     padding: 13px 31px !important;
     font-weight: 600;
+}
+
+.bestelling .boldborder {
+	border-top: 1px solid #828282;
+	border-bottom: 3px double #828282;
+}
+
+.bestelling table td {
+	font-size: 13px;
 }

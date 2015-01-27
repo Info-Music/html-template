@@ -237,13 +237,17 @@
                                     <label for="achternaam">Achternaam:*</label>
                                     <input type="text" class="form-control" id="achternaam" required>
                                 </div>
-                                <div class="col-md-10 form-group form-inline">
+                                <div class="col-md-8 form-group form-inline">
                                     <label for="adres">Adres:*</label>
                                     <input type="text" class="form-control" id="adres" required>
                                 </div>
                                 <div class="col-md-2 form-group form-inline">
                                     <label for="huisnummer">Nummer:*</label>
                                     <input type="number" class="form-control" id="huisnumer" required>
+                                </div>
+                                <div class="col-md-2 form-group form-inline">
+                                    <label for="toevoeging">Toevoeging:</label>
+                                    <input type="number" class="form-control" id="toevoeging">
                                 </div>
                                 <div class="col-md-6 form-group form-inline">
                                     <label for="postcode">Postcode:*</label>
@@ -359,34 +363,39 @@
                             <h2>Uw bestelling</h2>
                             <table class="table table-condensed">
                                 <tr>
-                                    <th>Artikel</th>
-                                    <th>Aantal</th>
-                                    <th>Subtotaal</th>
+                                    <th class="notvisible">Artikel</th>
+                                    <th class="text-center notvisible">Aantal</th>
+                                    <th class="text-right notvisible">Subtotaal</th>
                                 </tr>
                                 <tr>
                                     <td>SML Paris UBSTM Pad Saver Kit tpt</td>
-                                    <td>1</td>
-                                    <td>&euro; 23,20</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-right">&euro; 23,20</td>
                                 </tr>
                                 <tr>
                                     <td>dB-Technologies TC20S-Beschermhoes voor S20</td>
-                                    <td>1</td>
-                                    <td>&euro; 82,00</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-right">&euro; 82,00</td>
                                 </tr>
                                 <tr>
                                     <td></td>
                                     <td>Subtotaal</td>
-                                    <td>&euro; 105,20</td>
+                                    <td class="text-right">&euro; 105,20</td>
                                 </tr>
                                 <tr>
                                     <td class="notvisible"></td>
                                     <td>Verzending</td>
-                                    <td>&euro; 2,75</td>
+                                    <td class="text-right">&euro; 2,75</td>
                                 </tr>
                                 <tr>
                                     <td class="notvisible"></td>
-                                    <td>21% BTW</td>
-                                    <td>&euro; 22.09</td>
+                                    <td class="notvisible">21% BTW</td>
+                                    <td class="notvisible text-right">&euro; 22.09</td>
+                                </tr>
+                                <tr>
+                                    <th class="notvisible"></td>
+                                    <th class="boldborder"><b>Totaal:</b></td>
+                                    <th class="boldborder text-right"><b>&euro; 127.29<b></td>
                                 </tr>
                             </table>
                             <div class="col-md-12 form-group form-inline">
@@ -406,7 +415,7 @@
                             <span class="clearfix"></span>
                             <div class="largeButtons">
                                 <div class="btn-group btn-group-lg">
-                                    <a href="#" class="btn btn-primary btn-success" role="button">bestelling afronden</a>
+                                    <button type="submit" class="btn btn-default">Bestelling afronden</button>
                                 </div>
                             </div>
                         </div>

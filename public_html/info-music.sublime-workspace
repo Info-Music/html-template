@@ -4,20 +4,20 @@
 		"selected_items":
 		[
 			[
-				"padding",
-				"padding-left"
-			],
-			[
 				"margin",
-				"margin-left"
+				"margin-right"
 			],
 			[
 				"paddi",
-				"padding-left"
+				"padding"
 			],
 			[
 				"margi",
-				"margin-bottom"
+				"margin-top"
+			],
+			[
+				"padding",
+				"padding-left"
 			],
 			[
 				"mar",
@@ -92,59 +92,27 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "css/general.css",
 			"settings":
 			{
-				"buffer_size": 54755,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "category.html",
-			"settings":
-			{
-				"buffer_size": 55300,
+				"buffer_size": 18137,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "subcategory.html",
+			"file": "css/pdp.css",
 			"settings":
 			{
-				"buffer_size": 85247,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "subcategory_thumb.html",
-			"settings":
-			{
-				"buffer_size": 62009,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "pdp.html",
-			"settings":
-			{
-				"buffer_size": 46819,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "kassa.html",
-			"settings":
-			{
-				"buffer_size": 34849,
+				"buffer_size": 10104,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "css/index.css",
+			"file": "css/kassa.css",
 			"settings":
 			{
-				"buffer_size": 37798,
-				"line_ending": "Unix"
+				"buffer_size": 2097,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -191,10 +159,21 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Pascal/Documents/GitHub/info-music/public_html"
+		"/C/Users/Pascal/Documents/GitHub/info-music/public_html",
+		"/C/Users/Pascal/Documents/GitHub/info-music/public_html/css"
 	],
 	"file_history":
 	[
+		"/C/Users/Pascal/Documents/GitHub/info-music/public_html/css/index.css",
+		"/C/Users/Pascal/Documents/GitHub/info-music/public_html/css/subcategory.css",
+		"/C/Users/Pascal/Documents/GitHub/info-music/public_html/css/category.css",
+		"/C/Users/Pascal/Documents/GitHub/info-music/public_html/css/homepage.css",
+		"/C/Users/Pascal/Documents/GitHub/info-music/public_html/kassa.html",
+		"/C/Users/Pascal/Documents/GitHub/info-music/public_html/pdp.html",
+		"/C/Users/Pascal/Documents/GitHub/info-music/public_html/subcategory_thumb.html",
+		"/C/Users/Pascal/Documents/GitHub/info-music/public_html/subcategory.html",
+		"/C/Users/Pascal/Documents/GitHub/info-music/public_html/category.html",
+		"/C/Users/Pascal/Documents/GitHub/info-music/public_html/css/cosifinum.css",
 		"/C/xampp/htdocs/magento/app/design/frontend/base/default/layout/catalog.xml",
 		"/C/xampp/htdocs/magento/app/design/frontend/drewes/default/layout/local.xml",
 		"/C/xampp/htdocs/magento/app/design/frontend/base/default/layout/paypal.xml",
@@ -218,9 +197,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			"<project>"
 		]
 	},
 	"find_state":
@@ -228,6 +208,42 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"text-info",
+			"titlecontainer",
+			"accessoires",
+			"bigImage",
+			"smallImage",
+			"bigImage",
+			"titleContainer",
+			"back",
+			"btn",
+			"page",
+			"filtersForm",
+			"productHolderThumb",
+			"zoom",
+			"c",
+			"productThumb",
+			"action",
+			"productHolderLarge",
+			"productListOne",
+			"collectie",
+			"categoryImage",
+			"categoryThumb",
+			"blockHeader",
+			"bigImage",
+			"faq",
+			"product_maand",
+			"populaire-categorie",
+			"more-box",
+			"extra-info",
+			"extre-info",
+			"right-border",
+			"id='right-banner-container'",
+			"id=\"right-banner-container\"",
+			"product_detail",
+			"right-banner",
+			"right-banner-container",
+			"banner-container",
 			"logo.phtml",
 			"logo",
 			"acce",
@@ -254,64 +270,60 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "css/general.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 54755,
+						"buffer_size": 18137,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2470,
-								2857
+								16242,
+								16242
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 570.0,
+						"translation.y": 12526.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "category.html",
+					"file": "css/pdp.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 55300,
+						"buffer_size": 10104,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2210,
-								2210
+								91,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 300.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -319,124 +331,30 @@
 				},
 				{
 					"buffer": 2,
-					"file": "subcategory.html",
+					"file": "css/kassa.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 85247,
+						"buffer_size": 2097,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2362,
-								2362
+								2097,
+								2097
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": false
-						},
-						"translation.x": 84.0,
-						"translation.y": 304.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "subcategory_thumb.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 62009,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2269,
-								2269
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 233.0,
+						"translation.y": 1215.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "pdp.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 46819,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2697,
-								2697
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 855.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "kassa.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 34849,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								24194,
-								24194
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 7651.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -446,37 +364,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 6,
-					"file": "css/index.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 37798,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								31871,
-								31871
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 28188.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
+					"buffer": 3,
 					"file": "css/responsive.css",
 					"semi_transient": false,
 					"settings":
@@ -502,11 +390,11 @@
 						"translation.y": 5746.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 4,
 					"file": "css/flexslider.css",
 					"semi_transient": false,
 					"settings":
@@ -532,7 +420,7 @@
 						"translation.y": 1651.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -540,7 +428,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"input":
 	{
@@ -566,7 +454,7 @@
 		"cols":
 		[
 			0.0,
-			0.57933358357,
+			0.489174479268,
 			1.0
 		],
 		"rows":
@@ -610,7 +498,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
