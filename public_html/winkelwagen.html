@@ -197,7 +197,7 @@
                     </div>
                 </div>
                 <div class="row header">
-                    <div class="col-md-5 col-md-offset-2">
+                    <div class="col-md-5 col-md-offset-3">
                         <p>Productnaam</p>
                     </div>
                     <div class="col-md-1 col-md-offset-1">
@@ -212,11 +212,12 @@
                 </div>
                 <form>
                     <div class="row product">
-                        <div class="col-md-2 thumb">
+                        <div class="col-md-3 thumb">
+                            <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
                             <img src="img/thumb-fender.png">
                         </div>
                         <div class="col-md-5 beschrijving">
-                            <a href="#">Fender American Select Stratocaster dark cherry burst</a>
+                            <p>Fender American Select Stratocaster dark cherry burst</p>
                         </div>
                         <div class="col-md-1 wijzig">
                             <a href="#">Wijzigen</a>
@@ -232,16 +233,14 @@
                         <div class="col-md-1 subtotaal">
                             <p>&euro; <input type="text" id="subtotaal0" value="229.00" readonly></p>
                         </div>
-                        <div class="col-md-1 verwijder">
-                            <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
-                        </div>
                     </div>
                     <div class="row product">
-                        <div class="col-md-2 thumb">
+                        <div class="col-md-3 thumb">
+                            <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
                             <img src="img/marshall.jpg">
                         </div>
                         <div class="col-md-5 beschrijving">
-                            <a href="#">Marshall JVM215C buizen gitaarcombo</a>
+                            <p>Marshall JVM215C buizen gitaarcombo</p>
                         </div>
                         <div class="col-md-1 wijzig">
                             <a href="#">Wijzigen</a>
@@ -257,12 +256,9 @@
                         <div class="col-md-1 subtotaal">
                             <p>&euro; <input type="text" id="subtotaal1" value="1246.00" readonly></p>
                         </div>
-                        <div class="col-md-1 verwijder">
-                            <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
-                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-5 waardebon">
+                        <div class="col-md-4 waardebon">
                             <h2>waardebonnen</h2>
                             <label for="waardebon">Voor uw code in:</label>
                             <div class="input-group">
@@ -277,8 +273,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-md-offset-4 naarkassa">
-                            <div class="row">
+                        <div class="col-md-2 col-md-offset-6 naarkassa">
+                            <div class="row subtotaal">
                                 <div class="col-md-6">
                                     <p>Subtotaal</p>
                                 </div>
@@ -288,7 +284,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p>BTW</p>
+                                    <p>21% BTW</p>
                                 </div>
                                 <div class="col-md-6">
                                     <p>&euro; <input type="text" id="btw-form" value="309.75" readonly></p>
@@ -296,9 +292,17 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p>Eindtotaal</p>
+                                    <p>Verzending</p>
                                 </div>
                                 <div class="col-md-6">
+                                    <p>&euro; <input type="text" id="btw-form" value="0.00" readonly></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 eindtotaal">
+                                    <p>Eindtotaal</p>
+                                </div>
+                                <div class="col-md-6 eindtotaal">
                                     <p>&euro; <input type="text" id="eindtotaal-form" value="1475.00" readonly></p>
                                 </div>
                             </div>

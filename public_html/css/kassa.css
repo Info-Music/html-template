@@ -111,6 +111,17 @@
     border: 0;
 }
 
+.bestelling .table input {
+    border: 0;
+    background: none;
+    margin: 0;
+    padding: 0;
+    color: #242321;
+    height: 20px;
+    width: 52px;
+    text-align: right;
+}
+
 .bestelling .largeButtons {
     margin-left: auto;
     margin-right: auto;

@@ -11,7 +11,7 @@
 }
 
 .row.header p {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 600;
 	line-height: 40px;
 	margin-bottom: 0;
@@ -35,32 +35,32 @@
 	position: absolute;
 	top: 0; right: 0; bottom: 0; left: 0;
 	margin: auto;
+	padding-left: 5%;
+}
+
+.product .thumb a {
+	position: absolute;
+	line-height: 80px;
+	left: 10px;
+	color: #1f1d1b;
+	opacity: 0.3;
+}
+
+.product .thumb a:hover {
+	opacity: 1;
 }
 
 .product .beschrijving, .product .wijzig, .product .totaal, .product .aantal, .product .subtotaal, .product .verwijder {
 	display: table;
 }
 
-.product .beschrijving a, .product .wijzig a, .product .totaal p, .product .aantal .form-group, .product .subtotaal p, .product .verwijder a {
+.product .beschrijving p, .product .wijzig a, .product .totaal p, .product .aantal .form-group, .product .subtotaal p, .product .verwijder a {
 	display: table-cell;
 	vertical-align: middle;
 }
 
-.product .beschrijving a {
-	font-size: 13px;
-	color: #1f1d1b;
-}
-
 .product .wijzig a {
 	font-size: 13px;
-	color: #1f1d1b;
-}
-
-.product .verwijder {
-	text-align: center;
-}
-
-.product .verwijder a {
 	color: #1f1d1b;
 }
 
@@ -87,13 +87,35 @@
 	text-align: right;
 }
 
+.naarkassa p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 .naarkassa .largeButtons {
 	margin-left: -12px;
+}
+
+.naarkassa .subtotaal {
+	margin-top: -5px;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.naarkassa .eindtotaal {
+	border-top: 1px solid #828282;
+	border-bottom: 3px double #828282;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.naarkassa .eindtotaal p {
+	height: 20px;
 }
 
 .waardebon {
 	border: 1px solid #ebebeb;
 	padding: 10px;
+	margin-top: 40px;
 }
 
 .waardebon label {
