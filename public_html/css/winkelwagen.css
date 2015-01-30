@@ -87,6 +87,10 @@
 	text-align: right;
 }
 
+.naarkassa .largeButtons {
+	margin-left: -12px;
+}
+
 .waardebon {
 	border: 1px solid #ebebeb;
 	padding: 10px;
