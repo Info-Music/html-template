@@ -222,15 +222,15 @@
                             <a href="#">Wijzigen</a>
                         </div>
                         <div class="col-md-1 totaal">
-                            <p>&euro; <input type="text" id="totaal[0]" value="229,00" readonly></p>
+                            <p>&euro; <input type="text" id="totaal0" value="229,00" readonly></p>
                         </div>
                         <div class="col-md-1 aantal">
                             <div class="form-group">
-                                <input type="number" step="1" min="1" class="form-control" id="aantal[0]" value="1">
+                                <input type="number" step="1" min="1" class="form-control" id="0" value="1">
                             </div>
                         </div>
                         <div class="col-md-1 subtotaal">
-                            <p>&euro; <input type="text" id="subtotaal[0]" value="229,00" readonly></p>
+                            <p>&euro; <input type="text" id="subtotaal0" value="229,00" readonly></p>
                         </div>
                         <div class="col-md-1 verwijder">
                             <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
@@ -247,15 +247,15 @@
                             <a href="#">Wijzigen</a>
                         </div>
                         <div class="col-md-1 totaal">
-                            <p>&euro; 1246,00</p>
+                            <p>&euro; <input type="text" id="totaal1" value="1246,00" readonly></p>
                         </div>
                         <div class="col-md-1 aantal">
                             <div class="form-group">
-                                <input type="number" step="1" min="1" class="form-control" value="1">
+                                <input type="number" id="1" idstep="1" min="1" class="form-control" value="1">
                             </div>
                         </div>
                         <div class="col-md-1 subtotaal">
-                            <p>&euro; 1246,00</p>
+                            <p>&euro; <input type="text" id="subtotaal1" value="1246,00" readonly></p>
                         </div>
                         <div class="col-md-1 verwijder">
                             <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
@@ -463,6 +463,27 @@
                     $('.scrollToTop').click(function(){
                         $('html, body').animate({scrollTop : 0}, 800);
                         return false;
+                    });
+                    $('.aantal input').change(function() {
+                        var aantal = parseInt($(this).val(), 10);
+                        if(/^([1-9]\d*)$/.test(aantal)) {
+                            var id = $(this).attr("id");
+                            var totaal = parseInt($('#totaal' + id).val(), 10);
+                            var subtotaal = totaal * aantal;
+                            $('#subtotaal' + id).val(subtotaal.toFixed(2));
+                            var subsubtotaal = 0;
+                            $('.aantal input').each(function() {
+                                var id = $(this).attr("id");
+                                subsubtotaal += parseInt($('#subtotaal' + id).val(), 10);
+                            });
+                            $('#subtotaal-form').val(subsubtotaal.toFixed(2));
+                            $('#eindtotaal-form').val(subsubtotaal.toFixed(2));
+                            var btw = 0.21 * subsubtotaal;
+                            $('#btw-form').val(btw.toFixed(2));
+
+                        } else {
+                            alert("Error: alleen gehele getallen invullen bij aantal");
+                        }
                     });
                 });
             </script>
