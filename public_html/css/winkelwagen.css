@@ -64,8 +64,9 @@
 	color: #1f1d1b;
 }
 
-.product .subtotaal {
+.product .subtotaal input {
 	text-align: right;
+	width: 80px;
 }
 
 .product input[type=text], .naarkassa input[type=text] {
