@@ -11,7 +11,7 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/general.css" rel="stylesheet">
-        <link href="css/kassa.css" rel="stylesheet">
+        <link href="css/winkelwagen.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -190,223 +190,122 @@
         </div> <!-- end categorybar -->
         <div class="mainBar">
             <div class="container">
-                <div class="row titlecontainer">
-                    <div class="col-md-2">
-                        <h1>Afrekenen</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Winkelwagen</h1>
                     </div>
-                    <div class="col-md-10">
-                        <div class="usp">
-                            <p>op werkdagen voor 17.30u besteld, morgen in huis*</p>
-                            <img src="img/garantie.png" alt="garantie">
-                            <p>3 jaar garantie</p>
-                            <img src="img/retour.png" alt="retour" >
-                            <p>30 dagen retour</p>
-                            <img src="img/bezorging.png" alt="bezorging" >
-                            <p>gratis bezorging v.a. 50 euro</p>
-                        </div>
+                </div>
+                <div class="row header">
+                    <div class="col-md-5 col-md-offset-2">
+                        <p>Productnaam</p>
                     </div>
-                    <hr>
+                    <div class="col-md-1 col-md-offset-1">
+                        <p>Prijs</p>
+                    </div>
+                    <div class="col-md-1">
+                        <p>Aantal</p>
+                    </div>
+                    <div class="col-md-1">
+                        <p class="pull-right">Subtotaal</p>
+                    </div>
                 </div>
                 <form>
-                    <div class="row bestel_formulier">
-                        <div class="col-md-8 no-padding">
-                            <div class="col-md-12 factuuradres">
-                                <h2>1. Factuuradres</h2>
-                                <p class="login">
-                                    Heeft u een account? <a href="#">hier inloggen</a>
-                                </p>
-                                <div class="col-md-6 form-group form-inline">
-                                    <label for="voornaam">Voornaam:*</label>
-                                    <input type="text" class="form-control" id="voornaam" required>
-                                </div>
-                                <div class="col-md-6 form-group form-inline">
-                                    <label for="achternaam">Achternaam:*</label>
-                                    <input type="text" class="form-control" id="achternaam" required>
-                                </div>
-                                <div class="col-md-8 form-group form-inline">
-                                    <label for="adres">Adres:*</label>
-                                    <input type="text" class="form-control" id="adres" required>
-                                </div>
-                                <div class="col-md-2 form-group form-inline">
-                                    <label for="huisnummer">Nummer:*</label>
-                                    <input type="number" class="form-control" id="huisnumer" required>
-                                </div>
-                                <div class="col-md-2 form-group form-inline">
-                                    <label for="toevoeging">Toevoeging:</label>
-                                    <input type="number" class="form-control" id="toevoeging">
-                                </div>
-                                <div class="col-md-6 form-group form-inline">
-                                    <label for="postcode">Postcode:*</label>
-                                    <input type="text" class="form-control" id="postcode" required>
-                                </div>
-                                <div class="col-md-6 form-group form-inline">
-                                    <label for="plaats">Plaats:*</label>
-                                    <input type="text" class="form-control" id="plaats" required>
-                                </div>
-                                <div class="col-md-6 form-group form-inline">
-                                    <label for="land">Land:*</label>
-                                    <select class="form-control" id="land">
-                                        <option>Nederland</option>
-                                        <option>België</option>
-                                        <option>Duitsland</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 form-group form-inline">
-                                    <label for="bedrijf">Bedrijf:</label>
-                                    <input type="text" class="form-control" id="bedrijf">
-                                </div>
-                                <div class="col-md-12 checkbox">
-                                    <label><input type="checkbox" value="">
-                                        Maak een account aan voor uw volgende bezoek
-                                    </label>
-                                </div>
-                                <div class="col-md-12 checkbox">
-                                    <label><input type="checkbox" value="" checked>
-                                        Verzenden naar hetzelfde adres
-                                    </label>
-                                </div>
+                    <div class="row product">
+                        <div class="col-md-2 thumb">
+                            <img src="img/thumb-fender.png">
+                        </div>
+                        <div class="col-md-5 beschrijving">
+                            <a href="#">Fender American Select Stratocaster dark cherry burst</a>
+                        </div>
+                        <div class="col-md-1 wijzig">
+                            <a href="#">Wijzigen</a>
+                        </div>
+                        <div class="col-md-1 totaal">
+                            <p>&euro; <input type="text" id="totaal[0]" value="229,00" readonly></p>
+                        </div>
+                        <div class="col-md-1 aantal">
+                            <div class="form-group">
+                                <input type="number" step="1" min="1" class="form-control" id="aantal[0]" value="1">
                             </div>
-                            <div class="col-md-6 verzending">
-                                <div>
-                                    <h2>2. Verzending</h2>
-                                    <p>Ik wil mijn pakket versturen per post</p>
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" name="verzenden" id="verzending1">
-                                            Per post &euro; 2,75
-                                        </label>
-                                    </div>
-                                    <p>Ik wil mijn pakket afhalen bij Infomusic</p>
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" name="verzenden" id="verzending2">
-                                            Afhalen &euro; 0,00
-                                        </label>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-md-1 subtotaal">
+                            <p>&euro; <input type="text" id="subtotaal[0]" value="229,00" readonly></p>
+                        </div>
+                        <div class="col-md-1 verwijder">
+                            <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
+                        </div>
+                    </div>
+                    <div class="row product">
+                        <div class="col-md-2 thumb">
+                            <img src="img/marshall.jpg">
+                        </div>
+                        <div class="col-md-5 beschrijving">
+                            <a href="#">Marshall JVM215C buizen gitaarcombo</a>
+                        </div>
+                        <div class="col-md-1 wijzig">
+                            <a href="#">Wijzigen</a>
+                        </div>
+                        <div class="col-md-1 totaal">
+                            <p>&euro; 1246,00</p>
+                        </div>
+                        <div class="col-md-1 aantal">
+                            <div class="form-group">
+                                <input type="number" step="1" min="1" class="form-control" value="1">
                             </div>
-                            <div class="col-md-6 betaling">
-                                <div>
-                                    <h2>3. Betaling</h2>
-                                    <p>Ik wil afrekenen via:</p>
-                                    <div class="pull-left">
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="betaling" id="betaling1">
-                                                Rembours
-                                            </label>
-                                        </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="betaling" id="betaling2">
-                                                PayPal
-                                            </label>
-                                        </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="betaling" id="betaling3">
-                                                Overboeking
-                                            </label>
-                                        </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="betaling" id="betaling4">
-                                                iDEAL
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="pull-left border">
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="betaling" id="betaling5">
-                                                Mastercard
-                                            </label>
-                                        </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="betaling" id="betaling6">
-                                                Maestro
-                                            </label>
-                                        </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="betaling" id="betaling7">
-                                                MisterCash
-                                            </label>
-                                        </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="betaling" id="betaling8">
-                                                Visa
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <span class="clearfix"></span>
+                        </div>
+                        <div class="col-md-1 subtotaal">
+                            <p>&euro; 1246,00</p>
+                        </div>
+                        <div class="col-md-1 verwijder">
+                            <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="#" role="button" class="btn btn-default" id="winkelen">Ga verder met winkelen</a>
+                        </div>
+                        <div class="col-md-4 waardebon">
+                            <h2>waardebonnen</h2>
+                            <div class="form-group">
+                                <label for="waardebon">Voor uw code in:</label>
+                                <input type="text" id="waardebon" class="form-control">
+                            </div>
+                            <div class="mediumButtons">
+                                <div class="btn-group-md">
+                                    <a href="#" role="button" id="waardebon" class="btn btn-success">Invoeren</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 bestelling">
-                            <h2>Uw bestelling</h2>
-                            <table class="table table-condensed">
-                                <tr>
-                                    <th class="notvisible">Artikel</th>
-                                    <th class="text-center notvisible">Aantal</th>
-                                    <th class="text-right notvisible">Subtotaal</th>
-                                </tr>
-                                <tr>
-                                    <td>SML Paris UBSTM Pad Saver Kit tpt</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-right">&euro; 23,20</td>
-                                </tr>
-                                <tr>
-                                    <td>dB-Technologies TC20S-Beschermhoes voor S20</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-right">&euro; 82,00</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Subtotaal</td>
-                                    <td class="text-right">&euro; 105,20</td>
-                                </tr>
-                                <tr>
-                                    <td class="notvisible"></td>
-                                    <td>Verzending</td>
-                                    <td class="text-right">&euro; 2,75</td>
-                                </tr>
-                                <tr>
-                                    <td class="notvisible"></td>
-                                    <td class="notvisible">21% BTW</td>
-                                    <td class="notvisible text-right">&euro; 22.09</td>
-                                </tr>
-                                <tr>
-                                    <th class="notvisible"></td>
-                                    <th class="boldborder"><b>Totaal:</b></td>
-                                    <th class="boldborder text-right"><b>&euro; 127.29<b></td>
-                                </tr>
-                            </table>
-                            <div class="col-md-12 form-group form-inline">
-                                <label for="opmerkingen">Opmerkingen:</label>
-                                <input type="text" class="form-control" id="opmerkingen" />
+                        <div class="col-md-2 col-md-offset-1 naarkassa">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>Subtotaal</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>&euro; <input type="text" id="subtotaal-form" value="1475,00" readonly></p>
+                                </div>
                             </div>
-                            <div class="col-md-12 checkbox">
-                                <label><input type="checkbox" value="">
-                                    Abonnement op onze nieuwsbrief
-                                </label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>BTW</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>&euro; <input type="text" id="btw-form" value="309,75" readonly></p>
+                                </div>
                             </div>
-                            <div class="col-md-12 checkbox">
-                                <label><input type="checkbox" value="" checked>
-                                    Product(en) inpakken in cadeaupapier &euro; 0,99
-                                </label>
-                            </div>
-                            <span class="clearfix"></span>
-                            <div class="largeButtons">
-                                <div class="btn-group btn-group-lg">
-                                    <button type="submit" class="btn btn-primary btn-success">Bestelling afronden</button>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>Eindtotaal</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>&euro; <input type="text" id="eindtotaal-form" value="1475,00" readonly></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </form>
+
+
                 <!-- Scroll to top button -->
                 <a href="#" class="scrollToTop"></a>
             </div>
