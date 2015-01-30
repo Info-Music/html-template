@@ -222,7 +222,7 @@
                             <a href="#">Wijzigen</a>
                         </div>
                         <div class="col-md-1 totaal">
-                            <p>&euro; <input type="text" id="totaal0" value="229,00" readonly></p>
+                            <p>&euro; <input type="text" id="totaal0" value="229.00" readonly></p>
                         </div>
                         <div class="col-md-1 aantal">
                             <div class="form-group">
@@ -230,7 +230,7 @@
                             </div>
                         </div>
                         <div class="col-md-1 subtotaal">
-                            <p>&euro; <input type="text" id="subtotaal0" value="229,00" readonly></p>
+                            <p>&euro; <input type="text" id="subtotaal0" value="229.00" readonly></p>
                         </div>
                         <div class="col-md-1 verwijder">
                             <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
@@ -247,7 +247,7 @@
                             <a href="#">Wijzigen</a>
                         </div>
                         <div class="col-md-1 totaal">
-                            <p>&euro; <input type="text" id="totaal1" value="1246,00" readonly></p>
+                            <p>&euro; <input type="text" id="totaal1" value="1246.00" readonly></p>
                         </div>
                         <div class="col-md-1 aantal">
                             <div class="form-group">
@@ -255,35 +255,35 @@
                             </div>
                         </div>
                         <div class="col-md-1 subtotaal">
-                            <p>&euro; <input type="text" id="subtotaal1" value="1246,00" readonly></p>
+                            <p>&euro; <input type="text" id="subtotaal1" value="1246.00" readonly></p>
                         </div>
                         <div class="col-md-1 verwijder">
                             <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">
-                            <a href="#" role="button" class="btn btn-default" id="winkelen">Ga verder met winkelen</a>
-                        </div>
-                        <div class="col-md-4 waardebon">
+                        <div class="col-md-5 waardebon">
                             <h2>waardebonnen</h2>
-                            <div class="form-group">
-                                <label for="waardebon">Voor uw code in:</label>
-                                <input type="text" id="waardebon" class="form-control">
+                            <label for="waardebon">Voor uw code in:</label>
+                            <div class="input-group">
+                                <input type="text" id="waardebon" class="form-control" value="KORTING2015">
+                                <span class="input-group-btn">
+                                    <a href="#" role="button" id="waardebon" class="btn btn-success">Invoeren</a>
+                                </span>
                             </div>
                             <div class="mediumButtons">
                                 <div class="btn-group-md">
-                                    <a href="#" role="button" id="waardebon" class="btn btn-success">Invoeren</a>
+                                    
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-md-offset-1 naarkassa">
+                        <div class="col-md-2 col-md-offset-4 naarkassa">
                             <div class="row">
                                 <div class="col-md-6">
                                     <p>Subtotaal</p>
                                 </div>
                                 <div class="col-md-6">
-                                    <p>&euro; <input type="text" id="subtotaal-form" value="1475,00" readonly></p>
+                                    <p>&euro; <input type="text" id="subtotaal-form" value="1475.00" readonly></p>
                                 </div>
                             </div>
                             <div class="row">
@@ -291,7 +291,7 @@
                                     <p>BTW</p>
                                 </div>
                                 <div class="col-md-6">
-                                    <p>&euro; <input type="text" id="btw-form" value="309,75" readonly></p>
+                                    <p>&euro; <input type="text" id="btw-form" value="309.75" readonly></p>
                                 </div>
                             </div>
                             <div class="row">
@@ -299,9 +299,14 @@
                                     <p>Eindtotaal</p>
                                 </div>
                                 <div class="col-md-6">
-                                    <p>&euro; <input type="text" id="eindtotaal-form" value="1475,00" readonly></p>
+                                    <p>&euro; <input type="text" id="eindtotaal-form" value="1475.00" readonly></p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 gaverder">
+                            <a href="#" role="button" class="btn btn-default">Ga verder met winkelen</a>
                         </div>
                     </div>
                 </form>

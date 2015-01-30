@@ -87,8 +87,9 @@
 	text-align: right;
 }
 
-#winkelen {
-	border-radius: 0;
+.waardebon {
+	border: 1px solid #ebebeb;
+	padding: 10px;
 }
 
 .waardebon label {
@@ -99,4 +100,38 @@
 .waardebon h2 {
 	text-transform: uppercase;
 	font-size: 17px;
+	margin-top: 10px;
+}
+
+.waardebon .input-group {
+	background-color: #ebebeb;
+	padding: 30px 15px;
+}
+
+.waardebon input {
+	font-weight: 600;
+	font-size: 15px;
+	text-align: center;
+}
+
+.waardebon .input-group .input-group-btn {
+	vertical-align: bottom;
+	padding-left: 10px;
+}
+
+.waardebon .input-group-btn .btn {
+	border-radius: 0;
+}
+
+.gaverder a {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: -10px;
+	border-radius: 0;
+	background-color: #e6e6e6;
+	border-color: #e6e6e6;
+}
+
+.gaverder a:hover {
+	background-color: #fff;
 }
