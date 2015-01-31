@@ -26,6 +26,26 @@
 		<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
 		<script type="text/javascript" charset="utf-8">
 			$(window).load(function() {
+				$('#thumbs').flexslider({
+				    animation: "slide",
+				    controlNav: false,
+				    animationLoop: false,
+				    slideshow: false,
+				    itemWidth: 160,
+				    itemMargin: 5,
+				    minItems: 4,
+				    maxItems, 4
+				    asNavFor: '#slider',
+				    move: 1
+				});
+				   
+				$('#slider').flexslider({
+				    animation: "slide",
+				    controlNav: false,
+				    animationLoop: false,
+				    slideshow: false,
+				    sync: "#thumbs"
+				});
 				$('.product_slider').flexslider({
 					animation: "slide",
 					animationLoop: true,
@@ -248,7 +268,7 @@
 
 					<div class="col-md-7 col-xs-12"> <!-- START LEFT COLUMN -->
 
-						<div class="bigImage actielabel oranje nieuw">
+						<!-- <div class="bigImage">
 							<img src="img/greta.png" alt="Greta" class="responsive">
 							<img src="img/zoom.png" alt="zoom" class="zoom">
 							<span class="left"></span>
@@ -266,6 +286,51 @@
 							</ul>
 							<a href="#" ><img src="img/arrow-left.png" alt="" class="left arrow"></a>
 							<a href="#" ><img src="img/arrow-right.png" alt="" class="right arrow"></a>
+						</div> -->
+
+						<div id="slider" class="flexslider bigImage">
+							<ul class="slides">
+								<li>
+									<img src="img/greta.png" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/versterker.png" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/marshall.jpg" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/greta.png" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/versterker.png" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/marshall.jpg" alt="Greta" class="responsive">
+								</li>
+							</ul>
+						</div>
+						<div id="thumbs" class="flexslider smallImage">
+							<ul class="slides">
+								<li>
+									<img src="img/greta.png" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/versterker.png" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/marshall.jpg" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/greta.png" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/versterker.png" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/marshall.jpg" alt="Greta" class="responsive">
+								</li>
+							</ul>
 						</div>
 
 						<div class="tabs hidden-sm hidden-xs">
