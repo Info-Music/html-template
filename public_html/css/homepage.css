@@ -5,6 +5,10 @@
  *	Purpose:	styling the homepage;
  */
 
+.right-banner #usp {
+    padding-bottom: 22px;
+}
+
 #newProductsHeader h3 {
     font-weight: 600;
     margin-bottom: 0;
@@ -138,12 +142,18 @@
     padding-left: 10px;
 }
 
-.faq h3, .faq p {
+.faq p {
     border-bottom: 1px solid #ebebeb;
 }
 
 .faq h3 {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
+}
+
+.faq form {
+    border-bottom: 1px solid #ebebeb;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .faq p {

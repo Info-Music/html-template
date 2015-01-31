@@ -65,6 +65,10 @@
     .product_share a span {
         font-size: 0.8em;
     }
+    .right-banner #usp {
+        padding: 0 10px;
+        margin-bottom: 16px;
+    }
 }
 
 /* Small devices (tablets) */

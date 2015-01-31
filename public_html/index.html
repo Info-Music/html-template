@@ -24,11 +24,13 @@
         <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
         <script type="text/javascript" charset="utf-8">
             $(window).load(function() {
+                var flexslider;
                 $('.product_slider').flexslider({
                     animation: "slide",
                     animationLoop: true,
-                    itemWidth: 279,
-                    itemMargin: 8,
+                    slideshow: false,
+                    itemWidth: 280,
+                    itemMargin: 9,
                     maxItems: 5,
                     move: 1,
                     prevText: "",
@@ -650,6 +652,11 @@
                     <div class="col-md-6 col-sm-6">
                         <div class="faq">
                             <h3>Meestgestelde vragen</h3>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Staat uw vraag er niet tussen?">
+                                </div>
+                            </form>
                             <p><b>Wanneer ontvang ik mijn bestelling?</b><br/>Om u zo goed mogelijk op de hoogte te houden van de status van uw order zenen wij u een e0mail toe zodra de status van uw bestelling veranderd.<br/><a href="#">LEES VERDER</a></p>
                             <p><b>Hoeveel garantie krijg ik op mijn product?</b><br/>Garantietermijn Infomusic.nl hanteert een garantietermijn van 3 jaar op alle producten (tenzij anders vermeld).<br/><a href="#">LEES VERDER</a></p>
                         </div>
