@@ -42,7 +42,10 @@
 				    controlNav: false,
 				    animationLoop: false,
 				    slideshow: false,
-				    sync: "#thumbs"
+				    sync: "#thumbs",
+				    after: function(slider){
+				    	alert(slider.currentSlide);
+				    }
 				});
 				$('.product_slider').flexslider({
 					animation: "slide",
@@ -298,13 +301,13 @@
 									<img src="img/marshall.jpg" alt="Greta" class="responsive">
 								</li>
 								<li>
-									<img src="img/greta.png" alt="Greta" class="responsive">
+									<img src="img/cable.jpg" alt="Cable" class="responsive">
 								</li>
 								<li>
-									<img src="img/versterker.png" alt="Greta" class="responsive">
+									<img src="img/fender.jpg" alt="Greta" class="responsive">
 								</li>
 								<li>
-									<img src="img/marshall.jpg" alt="Greta" class="responsive">
+									<img src="img/fender-cable.png" alt="Greta" class="responsive">
 								</li>
 							</ul>
 						</div>
@@ -320,13 +323,13 @@
 									<img src="img/marshall.jpg" alt="Greta" class="responsive">
 								</li>
 								<li>
-									<img src="img/greta.png" alt="Greta" class="responsive">
+									<img src="img/cable.jpg" alt="Cable" class="responsive">
 								</li>
 								<li>
-									<img src="img/versterker.png" alt="Greta" class="responsive">
+									<img src="img/fender.jpg" alt="Greta" class="responsive">
 								</li>
 								<li>
-									<img src="img/marshall.jpg" alt="Greta" class="responsive">
+									<img src="img/fender-cable.png" alt="Greta" class="responsive">
 								</li>
 							</ul>
 						</div>
@@ -471,11 +474,11 @@
 							<h2>Bijbehordende accessoires</h2>
 							<div class="item">
 								<div class="col-md-4 col-sm-4 image">
-								<a href="#" data-toggle="modal" data-target=".quickview">
-									<img src="img/boston-btu-400.png" alt="boston shizzle">
-									<img src="img/but-bck-quickview.png" alt="">
-									<p>QUICKVIEW</p>
-								</a>
+									<a href="#" data-toggle="modal" data-target="#quickview">
+										<img src="img/boston-btu-400.png" alt="boston shizzle">
+										<img class="quickview" src="img/but-bck-quickview.png" alt="">
+										<p class="quickview">QUICKVIEW</p>
+									</a>
 								</div>
 								<div class="col-md-8 col-sm-8">
 									<h3>Boston BTU-400 clip chromatisch</h3>
@@ -486,10 +489,10 @@
 							</div>
 							<div class="item">
 								<div class="col-md-4 col-sm-4 image">
-								<a href="#" data-toggle="modal" data-target=".quickview">
-									<img src="img/fender-gitaarband.png" alt="">
-									<img src="img/but-bck-quickview.png" alt="">
-									<p>QUICKVIEW</p>
+									<a href="#" data-toggle="modal" data-target="#quickview">
+										<img src="img/fender-gitaarband.png" alt="">
+										<img class="quickview" src="img/but-bck-quickview.png" alt="">
+										<p class="quickview">QUICKVIEW</p>
 									</a>
 								</div>
 								<div class="col-md-8 col-sm-8">
@@ -501,7 +504,11 @@
 							</div>
 							<div class="item">
 								<div class="col-md-4 col-sm-4 image">
-									<img src="img/mxr-m115.png" alt="">
+									<a href="#" data-toggle="modal" data-target="#quickview">
+										<img src="img/mxr-m115.png" alt="">
+										<img class="quickview" src="img/but-bck-quickview.png" alt="">
+										<p class="quickview">QUICKVIEW</p>
+									</a>
 								</div>
 								<div class="col-md-8 col-sm-8">
 									<h3>MXR M115 Distortion III</h3>
@@ -1003,7 +1010,7 @@
 				<li class="ups">UPS</li>
 			</ul>
 		</footer>
-		<div class="modal fade quickview" tabindex="-1" role="dialog" role="dialog" aria-hidden="true">
+		<div class="modal fade" id="quickview" tabindex="-1" role="dialog" role="dialog" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<a href="#" data-dismiss="modal" class="close">
@@ -1013,23 +1020,49 @@
 							<h2>Fender American Standard Stratocaster Rosewood 3-Color Sunburst</h2>
 					</div>
 					<div class="col-md-6">
-						<div class="bigImage actielabel oranje nieuw">
-							<img src="img/fender.jpg" alt="Greta" class="responsive">
-							<img src="img/zoom.png" alt="zoom" class="zoom">
-							<span class="left"></span>
-							<span class="right"></span>
-						</div>
-						<div class="smallImage">
-							<ul>
-								<li><a href="#"><img src="img/thumb-fender.png" alt=""></a></li>
-								<li><a href="#"><img src="img/thumb-fender-piece.png" alt=""></a></li>
-								<li><a href="#"><img src="img/thumb-fender-piece2.png" alt=""></a></li>
-								<li><a href="#"><img src="img/thumb-fender-case.png" alt=""></a></li>
-								<li><a href="#"><img src="img/play.png" alt=""></a></li>
-								<li><a href="#"><img src="img/thumb-fender-piece2.png" alt=""></a></li>
+						<div id="slider_modal" class="flexslider bigImage">
+							<ul class="slides">
+								<li>
+									<img src="img/greta.png" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/versterker.png" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/marshall.jpg" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/cable.jpg" alt="Cable" class="responsive">
+								</li>
+								<li>
+									<img src="img/fender.jpg" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/fender-cable.png" alt="Greta" class="responsive">
+								</li>
 							</ul>
-							<a href="#"><img src="img/arrow-left.png" alt="" class="left arrow"></a>
-							<a href="#"><img src="img/arrow-right.png" alt="" class="right arrow"></a>
+						</div>
+						<div id="thumbs_modal" class="flexslider smallImage">
+							<ul class="slides">
+								<li>
+									<img src="img/greta.png" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/versterker.png" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/marshall.jpg" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/cable.jpg" alt="Cable" class="responsive">
+								</li>
+								<li>
+									<img src="img/fender.jpg" alt="Greta" class="responsive">
+								</li>
+								<li>
+									<img src="img/fender-cable.png" alt="Greta" class="responsive">
+								</li>
+							</ul>
 						</div>
 					</div>
 					<div class="col-md-6 product_detail">
@@ -1092,7 +1125,7 @@
 				</div>
 			</div>
 		</div>
-		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.js"></script>
 		<script src="js/cosifinum.js"></script>
 		<script>
 								jQuery(document).ready(function() {
@@ -1113,6 +1146,25 @@
 									    var offset = ($(window).height() - $dialog.height()) / 2;
 									    // Center modal vertically in window
 									    $dialog.css("margin-top", offset);
+									    // The slides also need some loading
+									    $('#thumbs_modal').flexslider({
+										    animation: "slide",
+										    controlNav: false,
+										    animationLoop: false,
+										    slideshow: false,
+										    itemWidth: 160,
+										    itemMargin: 8,
+										    asNavFor: '#slider_modal',
+										    move: 1
+										});
+										   
+										$('#slider_modal').flexslider({
+										    animation: "slide",
+										    controlNav: false,
+										    animationLoop: false,
+										    slideshow: false,
+										    sync: "#thumbs_modal"
+										});
 									}
 
 									$('.modal').on('show.bs.modal', centerModal);
