@@ -1,6 +1,6 @@
-info-music
+HTML-template
 ==========
+Html template voor de nieuwe site.
 
-Project voor Info-Music.nl
-
-Work in progress
+Design: Jan Willem Jansen
+HTML: Pascal Drewes
