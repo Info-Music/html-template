@@ -97,7 +97,7 @@
 	}
 
 	.largeButtons .btn-group-lg .btn {
-	    margin: 10px auto !important;
+	    margin: 10px auto 15px !important;
 	    border-radius: 0;
 	    font-size: 15px;
 	    background-color: #d74a29;
