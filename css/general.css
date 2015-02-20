@@ -736,7 +736,12 @@
 
 	.newsletter {
 	    border: 1px solid #e4e1dd;
-	    padding: 8px 15px 15px 15px;
+	    padding: 8px 15px 0 15px;
+	}
+
+	.newsletter .btn-group {
+		display: block;
+		text-align: center;
 	}
 
 	.kiyoh {
