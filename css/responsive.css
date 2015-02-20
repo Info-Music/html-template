@@ -160,6 +160,9 @@
     .mainBar h4 {
         margin: 0;
     }
+    .scrollToTop {
+        right: 0;
+    }
 }
 
 /* Extra small devices (Phones) */
@@ -494,6 +497,9 @@
         width: 40px;
         height: 40px;
         background-size: 40px 40px;
+    }
+    .scrollToTop {
+        right: 0;
     }
 }
 
