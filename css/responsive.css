@@ -72,6 +72,12 @@
     ul.socialMediaIcons li {
         padding-right: 10px;
     }
+    .col-md-12 > .collectie {
+        margin-top: 15px;
+    }
+    .col-md-12 > .collectie p {
+        height: auto;
+    }
 }
 
 /* Small devices (tablets) */
