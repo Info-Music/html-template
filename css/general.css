@@ -829,6 +829,14 @@
 	    background: url(../img/icon_social_media.png) -227px 0px no-repeat;
 	}
 
+	.fb_iframe_widget {
+		width: 100% !important;
+	}
+
+	.fb_iframe_widget span[style] {
+		width: 100% !important;
+	}
+
 	.fb_iframe_widget iframe[style] {
 		width: 100% !important;
 	}
