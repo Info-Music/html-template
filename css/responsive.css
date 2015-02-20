@@ -69,6 +69,9 @@
         padding: 0 10px;
         margin-bottom: 16px;
     }
+    ul.socialMediaIcons li {
+        padding-right: 10px;
+    }
 }
 
 /* Small devices (tablets) */
