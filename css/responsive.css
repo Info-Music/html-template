@@ -212,7 +212,7 @@
     }
     #mobile-menu .navbar-nav .glyphicon {
         position: absolute;
-        right: 40px;
+        right: 10px;
         line-height: 40px;
     }
     .navbar-nav > li:hover {
@@ -330,9 +330,13 @@
     #black-spacer-top > li > #dropdownCustomerService {
         background: none;
     }
+    .customerBar {
+        background-color: #e7e7e7;
+    }
     .customerBar .navbar {
         border: none;
         margin-bottom: 0;
+        background-color: #e7e7e7;
     }
     #black-spacer-top li a {
         line-height: 45px;
