@@ -86,10 +86,12 @@
 
 .row .more-box .glyphicon {
     font-size: 10px;
+    top: -1px;
 }
 
 .row .more-box ul li a, .row .more-box ul li a:hover {
     color: #d74f29;
+    text-transform: uppercase;
 }
 
 .populaire-categorie div a {
