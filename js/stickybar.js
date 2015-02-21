@@ -16,7 +16,10 @@ $('#sticky').on('affix.bs.affix', function() {
         '-webkit-transform' : 'translate3d(0,0,0)',
         '-o-transform' : 'translate3d(0,0,0)',
         'transform' : 'translate3d(0,0,0)',
-        'z-index' : '5000'
+        'z-index' : '5000',
+        '-webkit-box-shadow' : '0px 5px 10px 0px rgba(50, 50, 50, 0.5)',
+        '-moz-box-shadow' : '0px 5px 10px 0px rgba(50, 50, 50, 0.5)',
+        'box-shadow' : '0px 5px 10px 0px rgba(50, 50, 50, 0.5)'
     });
 });
 
@@ -28,7 +31,11 @@ $('#sticky').on('affix-top.bs.affix', function() {
     $('.menuBar').css({
         'display' : 'block',
         'position' : 'relative',
-        'top' : '0'
+        'top' : '0',
+        'z-index' : '0',
+        '-webkit-box-shadow' : 'none',
+        '-moz-box-shadow' : 'none',
+        'box-shadow' : 'none'
     });
 });
 
