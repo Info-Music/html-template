@@ -212,7 +212,7 @@
     }
     #mobile-menu .navbar-nav .glyphicon {
         position: absolute;
-        right: 40px;
+        right: 10px;
         line-height: 40px;
     }
     .navbar-nav > li:hover {
