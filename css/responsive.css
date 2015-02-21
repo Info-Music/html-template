@@ -330,6 +330,9 @@
     #black-spacer-top > li > #dropdownCustomerService {
         background: none;
     }
+    .customerBar {
+        background-color: #f8f8f8;
+    }
     .customerBar .navbar {
         border: none;
         margin-bottom: 0;
