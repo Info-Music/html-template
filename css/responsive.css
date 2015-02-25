@@ -127,7 +127,9 @@
         width: 100%;
         padding: 0;
     }
-
+    .filters .color input[type="image"] {
+        width: 7.5%;
+    }
     .productMonth p {
         width: 100%;
         padding-top: 10px;
@@ -437,6 +439,25 @@
     .collectie > p {
         text-align: left;
         height: auto;
+    }
+    .filters .color input[type="image"] {
+        width: 7.5%;
+    }
+    .blockHeader {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .panel-group {
+        margin-bottom: 0;
+    }
+    .panel-heading {
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+    .panel-group .panel-heading+.panel-collapse>.panel-body {
+        border: none;
+        padding: 0 10px;
     }
     /* SUBCATEGORY PAGE */
     .productHolderThumb > div {
