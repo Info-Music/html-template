@@ -415,6 +415,16 @@
         padding-left: 10px;
         text-align: left;
     }
+    .categoryThumb .arrowContainer {
+        width: 20%;
+        line-height: 75px;
+        text-align: center;
+        float: left;
+        color: #626262;
+    }
+    .categoryThumb:hover .arrowContainer {
+        color: #D74F29;
+    }
     .categoryTitle > span {
         line-height: 20px;
         display: inline-block;
