@@ -117,7 +117,7 @@
 .filtersList .form-control {
     border-radius: 0;
     height: auto;
-    padding: 4px 10px; 
+    padding: 4px 10px;
     margin-left: 10px;
     color: #1f1d1b;
 }
@@ -125,7 +125,7 @@
 .filtersList .btn-lg {
     border-radius: 0;
     line-height: 1;
-    padding: 4px 9px 4px 6px; 
+    padding: 4px 6px 4px 5px;
 }
 
 .filtersList .glyphicon {
@@ -169,6 +169,10 @@
 
 .productHolderLarge .infoPanel {
     height: 250px;
+}
+
+.productHolderLarge .infoPanel .pull-left {
+    padding-bottom: 20px;
 }
 
 .productHolderLarge .infoPanel .rating a {
@@ -221,7 +225,7 @@
 
 .productHolderLarge .infoPanel .action {
     position: absolute;
-    bottom: 0;
+    bottom: 15px;;
     right: 0;
 
     margin-right: 15px;
