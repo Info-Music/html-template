@@ -441,6 +441,11 @@
 			display: block;
 			line-height: 70px;
 			opacity: 0.4;
+			transition: all 0.3s ease;
+		}
+
+		.affix #toggleCategories:hover a {
+			opacity: 0.6;
 		}
 
 /* = = = = CONTENT = = = = */
