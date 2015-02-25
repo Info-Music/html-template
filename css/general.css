@@ -594,6 +594,10 @@
 		    font-weight: 600;
 		}
 
+		.assortiment .list-group.panel {
+			border: none;
+		}
+
 		.assortiment .list-group-item {
 		    padding: 3px 25px;
 		    border-radius: 0 !important;
