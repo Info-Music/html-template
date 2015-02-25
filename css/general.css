@@ -502,6 +502,10 @@
 	    color: #73bc84 !important;
 	}
 
+	.banner-container {
+		margin-top: 20px;
+	}
+
 	.banner-container #usp {
 	    background-color: white;
 	}
