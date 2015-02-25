@@ -382,6 +382,14 @@
         padding-top: 0;
         padding-bottom: 0;
     }
+    .categoryList {
+        border-bottom: 1px solid #ebebeb;
+    }
+    .categoryList:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
     .categoryThumb {
         border-left: none;
         border-right: none;
@@ -394,6 +402,7 @@
     }
     .imageContainer .categoryImage {
         line-height: 75px;
+        height: 75px;
     }
     .categoryThumb .titleContainer {
         width: 50%;
