@@ -1140,13 +1140,8 @@
 
 										e.preventDefault();
 									});
-									function centerModal() {
-									    $(this).css('display', 'block');
-									    var $dialog = $(this).find(".modal-dialog");
-									    var offset = ($(window).height() - $dialog.height()) / 2;
-									    // Center modal vertically in window
-									    $dialog.css("margin-top", offset);
-									    // The slides also need some loading
+									function showFlexSlider() {
+
 									    $('#thumbs_modal').flexslider({
 										    animation: "slide",
 										    controlNav: false,
@@ -1167,10 +1162,8 @@
 										});
 									};
 
-									$('.modal').on('show.bs.modal', centerModal);
-									$(window).on("resize", function () {
-									    $('.modal:visible').each(centerModal);
-									});
+									$('.modal').on('show.bs.modal', showFlexSlider);
+									
 									 $(window).scroll(function(){
                         if($(this).scrollTop() > 100){
                             $('.scrollToTop').fadeIn();
