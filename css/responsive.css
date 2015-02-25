@@ -18,7 +18,7 @@
     height: auto;
 }
 
-.populaire-categorie img {
+.populairCategory img {
     width: 100%;
 }
 
@@ -45,7 +45,7 @@
 
 /* Medium devices (Desktops) */
 @media (min-width: 992px) and (max-width: 1199px) {
-    .populaire-categorie div a {
+    .populairCategory div a {
         top: -40px;
     }
     #right-banner-container li {
@@ -62,7 +62,7 @@
         padding-left: 0;
         padding-right: 0;
     }
-    .product_share a span {
+    .productShare a span {
         font-size: 0.8em;
     }
     .right-banner #usp {
@@ -112,19 +112,19 @@
     .container-small .content {
         height: 320px !important;
     }
-    .populaire-categorie div a {
+    .populairCategory div a {
         font-size: 14px;
         top: -30px;
     }
-    .populaire-categorie div .glyphicon {
+    .populairCategory div .glyphicon {
         display: none;
     }
-    .product_maand img {
+    .productMonth img {
         width: 100%;
         padding: 0;
     }
 
-    .product_maand p {
+    .productMonth p {
         width: 100%;
         padding-top: 10px;
     }
@@ -132,16 +132,16 @@
     .kiyoh {
         margin-top: 75px;
     }
-    .brands_img ul li {
+    .brands ul li {
         width: 20%;
     }
     #mobile-menu {
         display: none !important;
     }
-    .product_detail .stock {
+    .productDetail .stock {
         margin-top: 5px;
     }
-    .brands_img {
+    .brands {
         margin-top: 20px;
         margin-bottom: 20px;
         height: 100px;
@@ -176,7 +176,7 @@
 
 /* Extra small devices (Phones) */
 @media (max-width: 767px) {
-    .brands_img {
+    .brands {
         margin-top: 20px;
         margin-bottom: 20px;
         height: 260px;
@@ -304,12 +304,12 @@
     .extra-info, .extra-info .no-padding {
         padding: 0;
     }
-    .product_maand img {
+    .productMonth img {
         float: none;
         width: 100%;
         padding: 0;
     }
-    .product_maand p {
+    .productMonth p {
         width: 100%;
         float: none;
         padding: 10px 5px 0;
@@ -318,7 +318,7 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    .brands_img ul li {
+    .brands ul li {
         width: 50%;
     }
     .sitemap, .newsletter{
@@ -444,15 +444,15 @@
         margin-right: 5px;
         width: 14.3%;
     }
-    .product_detail .stock {
+    .productDetail .stock {
         margin-top: 5px;
         width: 50%;
     }
-    .product_detail .action {
+    .productDetail .action {
         margin-top: 5px;
         width: 50%;
     }
-    .product_detail .largeButtons input {
+    .productDetail .largeButtons input {
         margin-left: 0;
     }
     .bigImage .left, .bigImage .right {
@@ -529,7 +529,7 @@
 /* Bestel knop PDP */
 
 @media (max-width: 340px) {
-    .product_detail .largeButtons span {
+    .productDetail .largeButtons span {
         margin-right: 0;
         margin-left: -12px;
     }
@@ -540,16 +540,16 @@
 }
 
 @media (max-width: 300px) {
-    .product_detail .largeButtons .btn-group {
+    .productDetail .largeButtons .btn-group {
         width: 100%;
     }
-    .product_detail .largeButtons .btn-group-lg .btn {
+    .productDetail .largeButtons .btn-group-lg .btn {
         width: 100%;
     }
-    .product_detail .action, .product_detail .stock {
+    .productDetail .action, .productDetail .stock {
         width: 100%;
     }
-    .product_share {
+    .productShare {
         font-size: 0.8em;
     }
 }

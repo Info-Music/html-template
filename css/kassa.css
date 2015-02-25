@@ -5,23 +5,23 @@
  *	Purpose:	styling the 'kassa' page;
  */
 
- .titlecontainer .usp {
+ .titleContainer .usp {
     float: right;
     height: 70px;
     line-height: 70px;
 }
 
-.titlecontainer > hr {
+.titleContainer > hr {
     width: 100%;
 }
 
-.titlecontainer .usp > img {
+.titleContainer .usp > img {
     display: inline-block;
     vertical-align: middle;
     margin-left: 20px;
 }
 
-.titlecontainer .usp > p {
+.titleContainer .usp > p {
     color: #a0a0a0;
     font-size: 13px;
     display: inline-block;
@@ -30,46 +30,46 @@
     margin: 0;
 }
 
-.titlecontainer .usp p:first-child {
+.titleContainer .usp p:first-child {
     font-weight: normal;
 }
 
-.bestel_formulier .factuuradres, .bestel_formulier .verzending > div, .bestel_formulier .betaling > div, .bestel_formulier .bestelling {
+.orderForm .invoiceAdress, .orderForm .verzending > div, .orderForm .betaling > div, .orderForm .bestelling {
     border: 1px solid #ebebeb;
     background-color: #f7f6f4;
     position: relative;
 }
 
-.bestel_formulier .no-padding {
+.orderForm .no-padding {
     padding-left: 0;
     padding-right: 20px;
 }
 
-.bestel_formulier label {
+.orderForm label {
     /*font-weight: normal;*/
     font-size: 13px;
     cursor: pointer;
 }
 
-.bestel_formulier .factuuradres {
+.orderForm .invoiceAdress {
     margin-bottom: 20px;
 }
 
-.factuuradres .login {
+.invoiceAdress .login {
     position: absolute;
     right: 20px;
     top: 10px;
 }
 
-.factuuradres .form-inline {
+.invoiceAdress .form-inline {
     padding-left: 0;
 }
 
-.bestel_formulier .form-inline input, .bestel_formulier .form-inline select {
+.orderForm .form-inline input, .orderForm .form-inline select {
     width: 100%;
 }
 
-.bestel_formulier .radio input[type=radio], .bestel_formulier .checkbox input[type=checkbox] {
+.orderForm .radio input[type=radio], .orderForm .checkbox input[type=checkbox] {
     margin-top: -7px;
 }
 
@@ -144,6 +144,6 @@
 	font-size: 13px;
 }
 
-.bestel_formulier {
+.orderForm {
     margin-bottom: 20px;
 }

@@ -94,7 +94,7 @@
     text-transform: uppercase;
 }
 
-.populaire-categorie div a {
+.populairCategory div a {
     color: white;
     font-size: 16px;
     width: 100%;
@@ -102,38 +102,38 @@
     top: -50px;
 }
 
-.populaire-categorie .glyphicon {
+.populairCategory .glyphicon {
     font-size: 10px;
     top: -2px;
 }
 
-.populaire-categorie div {
+.populairCategory div {
     text-align: center;
 }
 
-.populaire-categorie div h3 {
+.populairCategory div h3 {
     text-align: left;
     border-top: 1px solid #ebebeb;
     margin-top: 30px;
     padding-top: 20px;
 }
 
-.product_maand_container h3, .faq h3 {
+.productMonthContainer h3, .faq h3 {
     margin-top: 0px;
 }
 
-.product_maand {
+.productMonth {
     background-color: #dbcdb3;
     overflow: auto;
 }
 
-.product_maand img {
+.productMonth img {
     float: left;
     width: 65%;
     padding: 20px;
 }
 
-.product_maand p {
+.productMonth p {
     float: left;
     width: 35%;
     padding: 20px 5px 0;

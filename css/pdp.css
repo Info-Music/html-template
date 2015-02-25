@@ -16,76 +16,76 @@
     font-size: 34px;
 }
 
-.product_detail {
+.productDetail {
     border: 1px solid #ebebeb;
     border-bottom: none;
     padding: 20px;
     margin-top: 5px;
 }
 
-.product_detail:after {
+.productDetail:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.product_detail #usp {
+.productDetail #usp {
     background-color: white;
     border: none;
     padding: 0;
 }
 
-.product_detail .rating img {
+.productDetail .rating img {
     display: inline-block;
     margin-right: 5px;
 }
 
-.product_detail .rating a {
+.productDetail .rating a {
     font-size: 11px;
     text-transform: uppercase;
 }
 
-.product_detail .rating p {
+.productDetail .rating p {
     display: block;
     text-transform: uppercase;
     font-size: 11px;
     color: #999999;
 }
 
-.product_detail ul li .glyphicon, .product_detail ul li .glyphicon:hover {
+.productDetail ul li .glyphicon, .productDetail ul li .glyphicon:hover {
     color: #73bd84;
 }
 
-.product_detail ul li {
+.productDetail ul li {
     font-weight: 600;
 }
 
-.product_detail .stock {
+.productDetail .stock {
     margin-top: 50px;
     width: 70%;
 }
 
-.product_detail .stock img, .product_detail .stock span {
+.productDetail .stock img, .productDetail .stock span {
     display: inline;
     color: #999999;
     font-size: 12px;
 }
 
-.product_detail .action {
+.productDetail .action {
     text-align: right;
     margin-top: -30px;
 }
 
-.product_detail .largeButtons {
+.productDetail .largeButtons {
     margin-top: 10px;
 }
 
-.product_detail .largeButtons .btn-group-lg .btn {
+.productDetail .largeButtons .btn-group-lg .btn {
     padding: 12px 40px;
     font-weight: 600;
 }
 
-.product_detail .largeButtons input {
+.productDetail .largeButtons input {
     display: inline-block;
     height: 45px;
     width: 45px;
@@ -96,7 +96,7 @@
     padding-left: 15px;
 }
 
-.product_detail .largeButtons span {
+.productDetail .largeButtons span {
     display: inline-block;
     font-size: 20px;
     margin-right: 20px;
@@ -104,14 +104,14 @@
     color: #999999;
 }
 
-.product_detail .shipping {
+.productDetail .shipping {
     color: #999999;
     text-transform: uppercase;
     font-size: 13px;
     float: right;
 }
 
-.product_share {
+.productShare {
     height: 45px;
     width: 100%;
     padding: 0 auto;
@@ -119,17 +119,17 @@
     background-repeat: repeat-x;
 }
 
-.product_share .center-block {
+.productShare .center-block {
     display: table;
 }
 
-.product_share .center-block:after {
+.productShare .center-block:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.product_share a {
+.productShare a {
     float: left;
     border-right: 2px solid white;
     margin-top: 5px;
@@ -139,26 +139,26 @@
     opacity: 0.6;
 }
 
-.product_share a:hover {
+.productShare a:hover {
     opacity: 1;
 }
 
-.product_share a span:hover, .product_share a:hover {
+.productShare a span:hover, .productShare a:hover {
     text-decoration: none;
     /*    color: #d74f29;*/
 }
 
-.product_share a span {
+.productShare a span {
     color: #828282;
     line-height: 35px;
 }
 
-.product_share .verlanglijst {
+.productShare .verlanglijst {
     padding-left: 0;
 
 }
 
-.product_share .share {
+.productShare .share {
     padding-right: 0;
     border-right: none;
 }
@@ -442,7 +442,7 @@
     padding-left: 10px;
 }
 
-.tab-links > li {
+.tabLinks > li {
     float: left;
     height: 50px;
     text-align: center;
@@ -456,19 +456,19 @@
     transition: all 0.3s ease;
 }
 
-.tab-links li a {
+.tabLinks li a {
     color: #1f1d1b;
     font-weight: normal;
     text-transform: uppercase;
 }
 
-.tab-links li.active a:hover, .tab-links li.active a:focus {
+.tabLinks li.active a:hover, .tabLinks li.active a:focus {
     color :#d65028;
     border: none;
     text-decoration: none;
 }
 
-.tab-links li.active {
+.tabLinks li.active {
     background: #fff no-repeat;
     border-top: 1px solid #e4e1dd;
     border-left: 1px solid #e4e1dd;
@@ -477,7 +477,7 @@
     margin-right: -2px;
 }
 
-.tab-links li.active a {
+.tabLinks li.active a {
     color: #d65028;
     font-weight: 600;
     border: none;
@@ -673,7 +673,7 @@
     height: 400px;
 }
 
-.modal-content .product_detail {
+.modal-content .productDetail {
     border: none;
 }
 
@@ -687,6 +687,6 @@
     margin-bottom: 10px;
 }
 
-.modal-content .product_share a span {
+.modal-content .productShare a span {
     font-size: 0.8em;
 }
