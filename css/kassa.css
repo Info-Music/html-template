@@ -33,3 +33,62 @@
 .titleContainer .usp p:first-child {
     font-weight: normal;
 }
+
+/** Image rewrites **/
+
+.onestepcheckout-button, .onestepcheckout-button:visited {
+    background: #222 url(../img/button-background.png) repeat-x;
+}
+
+div.onestepcheckout-threecolumns div.onestepcheckout-column-left {
+    background: transparent url(../img/line-gradient.gif) no-repeat scroll right top;
+}
+
+div.onestepcheckout-threecolumns div.onestepcheckout-column-middle {
+    background: transparent url(../img/line-gradient.gif) no-repeat scroll right top;
+}
+
+div.onestepcheckout-error {
+    background-image: url(../img/onestepcheckout-error.jpg);
+}
+
+p.onestepcheckout-numbers-1 {
+    background-image: url(../img/onestepcheckout-numbers-1.png);
+}
+
+p.onestepcheckout-numbers-2 {
+    background-image: url(../img/onestepcheckout-numbers-2.png);
+}
+
+p.onestepcheckout-numbers-3 {
+    background-image: url(../img/onestepcheckout-numbers-3.png);
+}
+
+p.onestepcheckout-numbers-4 {
+    background-image: url(../img/onestepcheckout-numbers-4.png);
+}
+
+div.onestepcheckout-skin-magento p.onestepcheckout-numbers-1 {
+    background-image: url(../img/skin-magento/onestepcheckout-numbers-1.png) !important;
+}
+
+div.onestepcheckout-skin-magento p.onestepcheckout-numbers-2 {
+    background-image: url(../img/skin-magento/onestepcheckout-numbers-2.png) !important;
+}
+
+div.onestepcheckout-skin-magento p.onestepcheckout-numbers-3 {
+    background-image: url(../img/skin-magento/onestepcheckout-numbers-3.png) !important;
+}
+
+div.onestepcheckout-skin-magento p.onestepcheckout-numbers-4 {
+    background-image: url(../img/skin-magento/onestepcheckout-numbers-4.png) !important;
+}
+
+.onestepcheckout-popup-footer {
+    background-image: url(../img/onestepcheckout-popup-footer.png);
+}
+
+.onestepcheckout-popup-wrapper {
+    background-image: url(../img/onestepcheckout-popup-header.png);
+    *background-image: url(../img/onestepcheckout-popup-header.png) !important;
+}

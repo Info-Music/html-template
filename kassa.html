@@ -10,6 +10,7 @@
         <title>Infomusic, Online-shop voor gitaar, basgitaar, dj-gear, licht en geluid</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/onestepcheckout.css" rel="stylesheet">
         <link href="css/general.css" rel="stylesheet">
         <link href="css/kassa.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
@@ -210,7 +211,472 @@
                 </div>
 
                 <div class="row">
-                    
+<!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+<form id="onestepcheckout-form" method="post" action="https://www.infomusic.nl/onestepcheckout/">
+<fieldset class="group-select" style="margin: 0;">
+
+
+
+    <p class="onestepcheckout-login-link">
+        <a id="onestepcheckout-login-link" href="javascript:void(0);">Hebt u al een account? Klik dan hier om in te loggen.</a>
+    </p>
+
+
+<div class="onestepcheckout-threecolumns checkoutcontainer onestepcheckout-skin-generic ">
+    <div class="onestepcheckout-column-left">
+        <div id="billing_address">
+<!--
+            <script type="text/javascript">
+            var billing = new Billing();
+            </script>
+-->
+            <ul>
+                <li>
+                    <p class="onestepcheckout-numbers onestepcheckout-numbers-1">Factuuradres</p>
+                                        </li>
+                                <li>
+                    <div>
+                        <ul id="billing_address_list">
+<li class="clearfix">
+        <div class="input-box input-firstname">
+            <label for="billing:firstname">Voornaam<span class="required">*</span></label><br>
+            <input class="required-entry input-text" type="text" name="billing[firstname]" id="billing:firstname" value="">
+        </div>
+        <div class="input-box input-lastname">
+            <label for="billing:lastname">Achternaam <span class="required">*</span></label><br>
+            <input class="required-entry input-text" type="text" name="billing[lastname]" id="billing:lastname" value="">
+        </div></li>
+                <li class="clearfix">
+        <div class="clearfix" id="onestepcheckout-email-error" style="display: none">
+            <div id="onestepcheckout-email-error-message" class="onestepcheckout-error">Ongeldig e-mail adres.</div>
+        </div>
+        <div class="input-box input-email">
+            <label for="billing:email">E-mailadres <span class="required">*</span></label><br>
+            <input type="text" name="billing[email]" id="billing:email" value="" title="E-mailadres" class="validate-email required-entry input-text">
+        </div>
+        <div class="input-box input-telephone">
+            <label for="billing:telephone">Telefoon</label><br>
+            <input type="text" name="billing[telephone]" value="" title="Telefoon" class="input-text" id="billing:telephone">
+        </div></li>
+                <li class="clearfix">
+                <div class="input-box input-address">
+                    <label for="billing:street1">Adres<span class="required">*</span></label><br>
+                    <input type="text" title="Street Address 1" name="billing[street][]" id="billing:street1" value="" class="required-entry input-text onestepcheckout-address-line"><br><input type="text" title="Street Address 2" name="billing[street][]" id="billing:street2" value="" class="input-text onestepcheckout-address-line">
+                </div></li>
+                <li class="clearfix">
+        <div class="input-box input-postcode">
+            <label for="billing:postcode">Postcode <span class="required">*</span></label><br>
+            <input type="text" title="Postcode" name="billing[postcode]" id="billing:postcode" value="" class="validate-zip-international required-entry input-text">
+        </div></li>
+                <li class="clearfix">
+        <div class="input-box input-city">
+            <label for="billing:city">Plaats <span class="required">*</span></label><br>
+            <input type="text" name="billing[city]" value="" title="Plaats" class="required-entry input-text" id="billing:city">
+        </div></li>
+                <li class="clearfix">
+    <div class="input-box input-country">
+        <label for="billing:country_id">Land <span class="required">*</span></label><br>
+            <select name="billing[country_id]" id="billing:country_id" class="validate-select" title="Land"><option value=""> </option><option value="BE">België</option><option value="DE">Duitsland</option><option value="FR">Frankrijk</option><option value="NL" selected="selected">Nederland</option><option value="ES">Spanje</option><option value="GB">Verenigd Koninkrijk</option></select>
+    </div></li>
+                <li class="clearfix">
+        <div class="input-box input-company">
+            <label for="billing:company">Bedrijf</label><br>
+            <input type="text" name="billing[company]" value="" title="Bedrijf" class="input-text" id="billing:company">
+        </div></li>
+                <li class="clearfix">
+        <div class="input-box">
+            <input id="id_create_account" type="checkbox" name="create_account" value="1">
+            <label for="id_create_account">Maak een account aan voor uw volgende bezoek</label>
+        </div>
+<!--
+        <script>
+        document.observe("dom:loaded", function() {
+            $("id_create_account").observe("click", function(e) {
+                var element = e.element();
+                if(element.checked) {
+                    $("onestepcheckout-li-password").show();
+                }
+                else    {
+                    $("onestepcheckout-li-password").hide();
+                }
+            });
+        });
+        </script>
+-->
+        </li>
+
+        <li id="onestepcheckout-li-password" style="display: none;">
+            <div class="input-box input-password">
+                <label for="billing:customer_password">Wachtwoord</label><br>
+                <input type="password" class="input-text required-entry validate-password" value="" title="Password" id="billing:customer_password" name="billing[customer_password]">
+            </div>
+            <div class="input-box input-password">
+                <label for="billing:confirm_password">Wachtwoord bevestigen</label><br>
+                <input type="password" class="input-text required-entry validate-cpassword" value="" id="billing:confirm_password" title="Confirm Password" name="billing[confirm_password]">
+            </div>
+        </li>
+        <li class="no-display"><input type="hidden" name="billing[save_in_address_book]" value="1"></li>                                                                                                                                            </ul>
+                    </div>
+                </li>
+                <li>
+                                                                <div class="input-box input-different-shipping">
+                            <input type="checkbox" name="billing[use_for_shipping]" id="billing:use_for_shipping_yes" value="1" checked="checked">
+                            <label for="billing:use_for_shipping_yes">Verzenden naar hetzelfde adres</label>
+                        </div>
+                                    </li>
+            </ul>
+        </div>
+            <div id="shipping_address" style="display: none">
+<!--
+            <script type="text/javascript">
+                var shipping = new Shipping();
+            </script>
+-->
+            <ul>
+                <li class="shipping-address-title">
+                    Verzendadres                </li>
+                                <li id="shipping_address_list">
+                    <div id="">
+                        <ul>
+
+
+
+
+
+            <li class="clearfix">
+        <div class="input-box input-firstname">
+            <label for="shipping:firstname">Voornaam<span class="required">*</span></label><br>
+            <input class="required-entry input-text" type="text" name="shipping[firstname]" id="shipping:firstname" value="">
+        </div>
+        <div class="input-box input-lastname">
+            <label for="shipping:lastname">Achternaam <span class="required">*</span></label><br>
+            <input class="required-entry input-text" type="text" name="shipping[lastname]" id="shipping:lastname" value="">
+        </div></li>
+                <li class="clearfix">
+                <div class="input-box input-address">
+                    <label for="shipping:street1">Adres<span class="required">*</span></label><br>
+                    <input type="text" title="Street Address 1" name="shipping[street][]" id="shipping:street1" value="" class="required-entry input-text onestepcheckout-address-line"><br><input type="text" title="Street Address 2" name="shipping[street][]" id="shipping:street2" value="" class="input-text onestepcheckout-address-line">
+                </div></li>
+                <li class="clearfix">
+        <div class="input-box input-postcode">
+            <label for="shipping:postcode">Postcode <span class="required">*</span></label><br>
+            <input type="text" title="Postcode" name="shipping[postcode]" id="shipping:postcode" value="" class="validate-zip-international required-entry input-text">
+        </div></li>
+                <li class="clearfix">
+        <div class="input-box input-city">
+            <label for="shipping:city">Plaats <span class="required">*</span></label><br>
+            <input type="text" name="shipping[city]" value="" title="Plaats" class="required-entry input-text" id="shipping:city">
+        </div></li>
+                <li class="clearfix">
+    <div class="input-box input-country">
+        <label for="shipping:country_id">Land <span class="required">*</span></label><br>
+            <select name="shipping[country_id]" id="shipping:country_id" class="validate-select" title="Land" onchange="shipping.setSameAsBilling(false);"><option value=""> </option><option value="BE">België</option><option value="DE">Duitsland</option><option value="FR">Frankrijk</option><option value="NL" selected="selected">Nederland</option><option value="ES">Spanje</option><option value="GB">Verenigd Koninkrijk</option></select>
+    </div></li>
+                <li class="clearfix">
+        <div class="input-box input-telephone">
+            <label for="shipping:telephone">Telefoon</label><br>
+            <input type="text" name="shipping[telephone]" value="" title="Telefoon" class="input-text" id="shipping:telephone">
+        </div></li>
+                <li class="clearfix">
+        <div class="input-box input-company">
+            <label for="shipping:company">Bedrijf</label><br>
+            <input type="text" name="shipping[company]" value="" title="Bedrijf" class="input-text" id="shipping:company">
+        </div></li>
+
+        <li class="no-display"><input type="hidden" name="shipping[save_in_address_book]" value="1"></li>                                                                                    </ul>
+                        <input type="hidden" name="shipping[address_id]" value="77922" id="shipping:address_id">
+                        <!-- END LIST OF SHIPPIING FIELDS -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="onestepcheckout-column-middle">
+
+
+                                    <div class="onestepcheckout-shipping-method">
+                    <p class="onestepcheckout-numbers onestepcheckout-numbers-2">Verzending</p>
+
+
+                    <div class="onestepcheckout-shipping-method-block">
+            <dl class="shipment-methods">
+                                    <dd>Per post</dd>
+                                            <dt style="margin-bottom: 5px;">
+
+                                                           <input name="shipping_method" type="radio" class="validate-one-required-by-name" value="multipletablerates_bestway_196" id="s_method_multipletablerates_bestway_196">
+                                <label for="s_method_multipletablerates_bestway_196"><!--<b>Per post:</b>--> Per post                                <strong>
+
+                                <span class="price">€&nbsp;7,95</span>                                                                </strong>
+                                </label>
+                                                   </dt>
+                                                        <dd>Afhalen bij Infomusic</dd>
+                                            <dt style="margin-bottom: 5px;">
+
+                                                           <input name="shipping_method" type="radio" class="validate-one-required-by-name" value="freeshipping_freeshipping" id="s_method_freeshipping_freeshipping" checked="checked">
+                                <label for="s_method_freeshipping_freeshipping"><!--<b>Afhalen bij Infomusic:</b>-->                                 <strong>
+
+                                <span class="price">€&nbsp;0,00</span>                                                                </strong>
+                                </label>
+                                                   </dt>
+                                        </dl>
+    </div>
+                </div>
+
+                    <p class="onestepcheckout-numbers onestepcheckout-numbers-3">Betaling</p>
+
+
+<div class="payment-methods">
+
+
+
+        <dl id="checkout-payment-method-load">
+                            <dt>
+                            <input id="p_method_paypal_standard" value="paypal_standard" type="radio" name="payment[method]" title="PayPal" class="radio validate-one-required-by-name">
+                            <label for="p_method_paypal_standard">PayPal</label>
+            </dt>
+                        <dd id="container_payment_method_paypal_standard" class="payment-method">
+                <ul class="form-list" id="payment_form_paypal_standard" style="display:none;">
+    <li class="form-alt">You will be redirected to the PayPal website when you place an order.</li>
+    </ul>
+            </dd>
+                                        <dt>
+                            <input id="p_method_ig_cashondelivery" value="ig_cashondelivery" type="radio" name="payment[method]" title="Rembours" class="radio validate-one-required-by-name">
+                            <label for="p_method_ig_cashondelivery">Rembours</label>
+            </dt>
+                        <dd id="container_payment_method_ig_cashondelivery" class="payment-method">
+                <fieldset class="form-list">
+        <ul id="payment_form_ig_cashondelivery" style="display:none;">
+                <li>
+                        Er wordt een extra toeslag gerekend van <span class="price">€&nbsp;15,17</span>                                        </li>
+        </ul>
+</fieldset>
+            </dd>
+                                        <dt>
+                            <input id="p_method_idealcheckoutideal" value="idealcheckoutideal" type="radio" name="payment[method]" title="iDEAL" class="radio validate-one-required-by-name" checked="checked">
+                            <label for="p_method_idealcheckoutideal">iDEAL</label>
+            </dt>
+
+                                        <dt>
+                            <input id="p_method_idealcheckoutvisa" value="idealcheckoutvisa" type="radio" name="payment[method]" title="Visa" class="radio validate-one-required-by-name">
+                            <label for="p_method_idealcheckoutvisa">Visa</label>
+            </dt>
+                        <dd id="container_payment_method_idealcheckoutvisa" class="payment-method"><ul class="form-list" id="payment_form_idealcheckoutvisa" style="display:none"><li class="form-alt">Je wordt in het volgende scherm doorgeleid naar de betalingspagina van onze bank. Hier kun je in een beveiligde omgeving je kaartgegevens invullen. Na betaling kom je terug op onze website</li></ul></dd>
+                                        <dt>
+                            <input id="p_method_idealcheckoutmastercard" value="idealcheckoutmastercard" type="radio" name="payment[method]" title="Mastercard" class="radio validate-one-required-by-name">
+                            <label for="p_method_idealcheckoutmastercard">Mastercard</label>
+            </dt>
+                        <dd id="container_payment_method_idealcheckoutmastercard" class="payment-method"><ul class="form-list" id="payment_form_idealcheckoutmastercard" style="display:none"><li class="form-alt">Je wordt in het volgende scherm doorgeleid naar de betalingspagina van onze bank. Hier kun je in een beveiligde omgeving je kaartgegevens invullen. Na betaling kom je terug op onze website</li></ul></dd>
+                                        <dt>
+                            <input id="p_method_idealcheckoutmaestro" value="idealcheckoutmaestro" type="radio" name="payment[method]" title="Maestro" class="radio validate-one-required-by-name">
+                            <label for="p_method_idealcheckoutmaestro">Maestro</label>
+            </dt>
+                        <dd id="container_payment_method_idealcheckoutmaestro" class="payment-method"><ul class="form-list" id="payment_form_idealcheckoutmaestro" style="display:none"><li class="form-alt">Je wordt in het volgende scherm doorgeleid naar de betalingspagina van onze bank. Hier kun je in een beveiligde omgeving je kaartgegevens invullen. Na betaling kom je terug op onze website</li></ul></dd>
+                                        <dt>
+                            <input id="p_method_idealcheckoutmistercash" value="idealcheckoutmistercash" type="radio" name="payment[method]" title="MisterCash" class="radio validate-one-required-by-name">
+                            <label for="p_method_idealcheckoutmistercash">MisterCash</label>
+            </dt>
+                        <dd id="container_payment_method_idealcheckoutmistercash" class="payment-method"><ul class="form-list" id="payment_form_idealcheckoutmistercash" style="display:none"><li class="form-alt">Je wordt in het volgende scherm doorgeleid naar de betalingspagina van onze bank. Hier kun je in een beveiligde omgeving je kaartgegevens invullen. Na betaling kom je terug op onze website</li></ul></dd>
+                                        <dt>
+                            <input id="p_method_bankpayment" value="bankpayment" type="radio" name="payment[method]" title="Overboeking" class="radio validate-one-required-by-name">
+                            <label for="p_method_bankpayment">Overboeking</label>
+            </dt>
+                        <dd id="container_payment_method_bankpayment" class="payment-method">
+                <fieldset class="form-list">
+    <ul id="payment_form_bankpayment" style="display:none">
+        <li>
+                                                        Schrijf het bedrag a.u.b. over naar de volgende rekening:
+                                        <br><br>
+            <div class="input-box">
+                                                                        <table>
+                                                            <tbody><tr><td><label>Rekeninghouder</label>: </td><td>Infomusic B.V.</td></tr>
+                                                                                        <tr><td><label>Rekeningnummer</label>: </td><td>1418.43.306</td></tr>
+                                                                                                                    <tr><td><label>Bank naam</label>: </td><td>Rabobank</td></tr>
+                                                                        <tr><td colspan="2" style="padding:10px 0">Voor internationale overschrijvingen gebruik a.u.b. de volgende gegevens:</td></tr>
+                        <tr><td><label>IBAN</label>: </td><td>NL94 RABO 0141 8433 06</td></tr>
+                        <tr><td><label>BIC</label>: </td><td>RABONL2U</td></tr>
+                                      </tbody></table>
+
+                                    Vermeld bij uw betaling het bestelnummer uit de orderbevestiging die na het afronden van uw bestelling naar uw emailadres gestuurd wordt.<br>
+<br>
+Uw bestelling wordt verzonden nadat de betaling bij ons binnen is. <br>
+                            </div>
+                </li>
+    </ul>
+</fieldset>
+            </dd>
+                            </dl>
+    </div>
+
+<!--
+<script type="text/javascript">
+//<![CDATA[
+
+$$('.cvv-what-is-this').each(function(element){
+    Event.observe(element, 'click', toggleToolTip);
+});
+
+function toggleToolTip(event){
+    if($('payment-tool-tip')){
+        $('payment-tool-tip').setStyle({
+            left: (Event.pointerX(event)-100)+'px',
+            top: (Event.pointerY(event)-300)+'px'
+        });
+        $('payment-tool-tip').toggle();
+    }
+    Event.stop(event);
+}
+
+var checkout = new Checkout();
+$$('#checkout-payment-method-load dt input').invoke('observe', 'click', function(e) {
+
+    var element = e.element();
+    var name = 'payment_form_' + element.getValue();
+    payment.currentMethod = element.getValue();
+    /* Hide all other forms */
+    $$('dd.payment-method').invoke('hide');
+
+    if(element.checked) {
+        payment.switchMethod(payment.currentMethod);
+        var form = $(name);
+        var container = $('container_payment_method_' + element.getValue());
+
+        if(element !== null && container !== null)    {
+            container.show();
+            $(name).show();
+        }
+    }
+});
+
+
+payment.switchMethod(payment.currentMethod);
+//]]>
+</script>
+-->
+            <div class="tool-tip" id="payment-tool-tip" style="display:none;">
+                <div class="btn-close">
+                    <a href="javascript:void(0);" id="payment-tool-tip-close"><img src="https://www.infomusic.nl/skin/frontend/default/default/images/btn_window_close.gif" alt="Sluiten"></a>
+                </div>
+                <div class="block-content">
+                <img src="https://www.infomusic.nl/skin/frontend/default/default/images/cvv.gif" alt="Kaart bevestigingsnummer visuele referentie">
+                </div>
+            </div>
+            </div>
+
+    <div class="onestepcheckout-column-right">
+
+        <p class="onestepcheckout-numbers onestepcheckout-numbers-4">Controleer uw bestelling</p>
+
+        <div class="onestepcheckout-summary">
+<table class="onestepcheckout-summary">
+    <thead>
+        <tr>
+            <th class="name">Artikel</th>
+            <th class="qty">Aantal</th>
+            <th class="total">Subtotaal</th>
+        </tr>
+    </thead>
+        <tbody><tr>
+        <td class="name">
+            Showtec Show Confetti Rectangle Silver 1kg                    </td>
+        <td class="qty">1</td>
+        <td class="total">
+                        <span class="price">€&nbsp;17,75</span>                    </td>
+    </tr>
+    </tbody></table>
+
+<table class="onestepcheckout-totals">
+                    <tbody><tr>
+        <td class="title">
+            Subtotaal        </td>
+        <td class="value">
+            <span class="price">€&nbsp;17,75</span>        </td>
+    </tr>
+                    <tr>
+        <td class="title">
+            Verzending        </td>
+        <td class="value">
+            <span class="price">€&nbsp;0,00</span>        </td>
+    </tr>
+                    <tr>
+        <td class="title">
+            BTW        </td>
+        <td class="value">
+            <span class="price">€&nbsp;3,08</span>        </td>
+    </tr>
+                    <tr class="grand-total">
+        <td class="title">
+            Totaal        </td>
+        <td class="value">
+            <span class="price">€&nbsp;17,75</span>        </td>
+    </tr>
+    </tbody></table>
+
+</div>
+
+
+
+                    <div class="onestepcheckout-comments">
+                <label for="id_comments">Opmerkingen</label><br>
+                <textarea id="id_comments" name="onestepcheckout_comments"></textarea>
+            </div>
+
+
+                            <div class="onestepcheckout-enable-newsletter">
+                <input type="checkbox" id="id_subscribe_newsletter" name="subscribe_newsletter" value="1" checked="checked">
+                <label for="id_subscribe_newsletter">Abonnement op onze nieuwsbrief</label>
+            </div>
+
+                                <div class="onestepcheckout-extraproducts">
+                <ul>
+                                    <li><input type="checkbox" class="onestepcheckout-extra-product" name="extra_products_16799" id="id_extra_product_16799"> &nbsp;
+                    <label for="id_extra_product_16799"> Product(en) inpakken in cadeaupapier                    <span><span class="price">€&nbsp;0,99</span></span>
+                    </label></li>
+                                    </ul>
+            </div>
+
+<!--            <script>
+            Event.observe(window, 'load', function() {
+                $$('input.onestepcheckout-extra-product').invoke('observe', 'click', function(e) {
+                    var id_temp = e.element().id.split('id_extra_product_');
+                    if(id_temp.length == 2) {
+                        var product_id = id_temp[1];
+                        var url = 'https://www.infomusic.nl/onestepcheckout/ajax/add_extra_product/';
+                        var parameters = {
+                            product_id: product_id
+                        }
+
+                        if(!e.element().checked) {
+                            parameters['remove'] = 1;
+                        }
+
+                        var summary = $$('div.onestepcheckout-summary').first();
+                        summary.update('<div class="loading-ajax">&nbsp;</div>');
+
+                        new Ajax.Request(url, {
+                            method: 'post',
+                            parameters: parameters,
+                            onSuccess: function(transport)  {
+                                summary.update(transport.responseText);
+                            }
+                        });
+                   };
+                });
+            });
+        </script>
+-->
+
+
+
+        <div class="onestepcheckout-place-order-wrapper">
+            <button type="button" title="Plaats de bestelling" id="onestepcheckout-place-order" class="large orange onestepcheckout-button onestepcheckout-place-order" onclick="javascript:void(0);"><span><span>Plaats de bestelling</span></span></button>
+        </div>
+    </div>
+    <div style="clear: both;">&nbsp;</div>
+</div>
+</fieldset>
+</form>
+<!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
                 </div>
 
                 <!-- Scroll to top button -->
