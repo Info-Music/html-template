@@ -152,6 +152,7 @@
 .productShare a span {
     color: #828282;
     line-height: 35px;
+    font-size: 1.1em;
 }
 
 .productShare .verlanglijst {
@@ -659,6 +660,10 @@
     right: 0;
     z-index: 5000;
     opacity: .5;
+}
+
+.modal-content .close img {
+    width: 42px;
 }
 
 .modal-content .close:hover {

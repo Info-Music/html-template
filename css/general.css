@@ -598,6 +598,11 @@
 		    font-weight: 600;
 		}
 
+		.assortiment {
+			padding-left: 0;
+			padding-top: 0;
+		}
+
 		.assortiment .list-group.panel {
 			border: none;
 		}
