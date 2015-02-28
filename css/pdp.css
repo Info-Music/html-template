@@ -641,6 +641,10 @@
     text-transform: uppercase;
 }
 
+.product_slider1 {
+    margin-bottom: 0 !important;
+}
+
 .modal-content:after {
     content: "";
     display: table;
