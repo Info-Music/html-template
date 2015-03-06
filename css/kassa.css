@@ -99,12 +99,36 @@ div.onestepcheckout-skin-magento p.onestepcheckout-numbers-4 {
     vertical-align: top;
 }
 
+.onestepcheckout-login-link {
+    margin-left: 23px;
+    margin-top: -24px;
+}
+
+div.onestepcheckout-threecolumns {
+    margin-top: -30px;
+}
+
+div.onestepcheckout-threecolumns div.onestepcheckout-column-left {
+    margin-left: 20px;
+}
+
+#onestepcheckout-form .group-select {
+    padding: 0 !important;
+    position: relative;
+}
+
 div.checkoutcontainer div.input-address-short .input-text, div.checkoutcontainer div.input-firstname .input-text, div.checkoutcontainer div.input-lastname .input-text, div.checkoutcontainer div.input-email .input-text, div.checkoutcontainer div.input-telephone .input-text, div.checkoutcontainer div.input-company .input-text, div.checkoutcontainer div.input-fax .input-text, div.checkoutcontainer div.input-password .input-text {
     width: 90%;
 }
 
 div.checkoutcontainer div.input-address .input-text, div.checkoutcontainer div.input-city .input-text {
     width: 93%;
+}
+
+.checkoutcontainer .input-box.input-city {
+    width: 61% !important;
+    margin-left: 36%;
+    margin-top: -67px;
 }
 
 div.checkoutcontainer div.input-country select {
