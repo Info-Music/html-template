@@ -92,3 +92,29 @@ div.onestepcheckout-skin-magento p.onestepcheckout-numbers-4 {
     background-image: url(../img/onestepcheckout-popup-header.png);
     *background-image: url(../img/onestepcheckout-popup-header.png) !important;
 }
+
+/** OVERWRITE the onestepcheckout css **/
+#onestepcheckout-form input[type=checkbox] {
+    height: 13px;
+    vertical-align: top;
+}
+
+div.checkoutcontainer div.input-address-short .input-text, div.checkoutcontainer div.input-firstname .input-text, div.checkoutcontainer div.input-lastname .input-text, div.checkoutcontainer div.input-email .input-text, div.checkoutcontainer div.input-telephone .input-text, div.checkoutcontainer div.input-company .input-text, div.checkoutcontainer div.input-fax .input-text, div.checkoutcontainer div.input-password .input-text {
+    width: 90%;
+}
+
+div.checkoutcontainer div.input-address .input-text, div.checkoutcontainer div.input-city .input-text {
+    width: 93%;
+}
+
+div.checkoutcontainer div.input-country select {
+    width: 93%;
+}
+
+div.input-box #id_create_account {
+    margin-top: 20px;
+}
+
+div.input-box label[for=id_create_account] {
+    margin-top: 16px;
+}
