@@ -160,3 +160,18 @@ div.onestepcheckout-comments textarea {
     width: 100%;
     resize: vertical;
 }
+
+.orange.onestepcheckout-button, .orange.onestepcheckout-button:visited {
+    background: none;
+    border-radius: 0;
+    background-color: #D74A29;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+    transition: all 0.3s ease;
+    padding: 12px 30px;
+}
+
+.orange.onestepcheckout-button:hover {
+    background-color: #B62800;
+}
