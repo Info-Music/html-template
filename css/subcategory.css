@@ -273,6 +273,8 @@
 
 .productHolderThumb p {
     text-align: center;
+    height: 36px;
+    overflow: hidden;
 }
 
 .productHolderThumb .stock img {
