@@ -500,27 +500,6 @@
                         $('html, body').animate({scrollTop : 0}, 800);
                         return false;
                     });
-                    $('.aantal input').change(function() {
-                        var aantal = parseInt($(this).val(), 10);
-                        if(/^([1-9]\d*)$/.test(aantal)) {
-                            var id = $(this).attr("id");
-                            var totaal = parseInt($('#totaal' + id).val(), 10);
-                            var subtotaal = totaal * aantal;
-                            $('#subtotaal' + id).val(subtotaal.toFixed(2));
-                            var subsubtotaal = 0;
-                            $('.aantal input').each(function() {
-                                var id = $(this).attr("id");
-                                subsubtotaal += parseInt($('#subtotaal' + id).val(), 10);
-                            });
-                            $('#subtotaal-form').val(subsubtotaal.toFixed(2));
-                            $('#eindtotaal-form').val(subsubtotaal.toFixed(2));
-                            var btw = 0.21 * subsubtotaal;
-                            $('#btw-form').val(btw.toFixed(2));
-
-                        } else {
-                            alert("Error: alleen gehele getallen invullen bij aantal");
-                        }
-                    });
                 });
             </script>
         </div>
