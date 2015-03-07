@@ -5,117 +5,128 @@
  *	Purpose:	styling the 'winkelwage' page;
  */
 
-.row.header {
+.cartTable {
+	width: 100%;
+}
+
+.cartTable thead {
 	border-top: 1px solid #ebebeb;
 	border-bottom: 1px solid #ebebeb;
 }
 
-.row.header p {
+.cartTable thead th {
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 40px;
 	margin-bottom: 0;
 }
 
-.row.product {
+.cartTable .buttonDelete {
+	width: 20px;
+}
+
+.cartTable .productImage {
+	width: 20%;
+}
+
+.cartTable .productTitle {
+	width: 46.66666667%;
+}
+
+.cartTable .buttonEdit, .cartTable .productPrice, .cartTable .productQty, .cartTable .productSubTotal {
+	width: 8.33333333%;
+}
+
+.cartTable tbody tr {
+	border-bottom: 1px solid #ebebeb;
+}
+
+.cartTable tbody .buttonDelete a {
+	color: #000;
+	opacity: 0.5;
+}
+
+.cartTable tbody .buttonDelete a:hover {
+	opacity: 0.8;
+}
+
+.cartTable tbody .productImage div {
 	height: 90px;
-	margin-bottom: 10px;
-	border-bottom: 1px solid #ebebeb;
-	padding-bottom: 5px;
-	padding-top: 5px;
+	width: 100%;
+	position: relative;
 }
 
-.row.product > div {
-	height: 100%;
-}
-
-.product .thumb img {
-	max-width: 80%;
-	max-height: 100%;
+.cartTable tbody .productImage div img {
+	max-width: 70%;
+	max-height: 70%;
 	position: absolute;
-	top: 0; right: 0; bottom: 0; left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	margin: auto;
-	padding-left: 5%;
 }
 
-.product .thumb a {
-	position: absolute;
-	line-height: 80px;
-	left: 10px;
-	color: #1f1d1b;
-	opacity: 0.3;
+.cartTable p {
+	margin: 0;
 }
 
-.product .thumb a:hover {
-	opacity: 1;
-}
-
-.product .beschrijving, .product .wijzig, .product .totaal, .product .aantal, .product .subtotaal, .product .verwijder {
-	display: table;
-}
-
-.product .beschrijving p, .product .wijzig a, .product .totaal p, .product .aantal .form-group, .product .subtotaal p, .product .verwijder a {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-.product .wijzig a {
+.cartTable tbody .buttonEdit a {
 	font-size: 13px;
 	color: #1f1d1b;
 }
 
-.product .subtotaal input[type=text] {
-	text-align: right;
-	width: 65px;
+.cartTable tbody .productQty {
+	padding-right: 25px;
 }
 
-.product input[type=text], .naarkassa input[type=text] {
-	border: none;
-	height: 20px;
-	padding: 0;
+.cartTable tbody .productQty .form-group {
+	margin-bottom: 0;
+}
+
+.cartTable tfoot tr td {
+	line-height: 28px;
 	font-size: 13px;
-	color: #1f1d1b;
-	cursor: text;
 }
 
-.product input[type=text] {
-	width: 65px;
-}
-
-.naarkassa input[type=text] {
-	width: 65px;
-	text-align: right;
-}
-
-.naarkassa p {
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-.naarkassa .largeButtons {
-	margin-left: -12px;
-}
-
-.naarkassa .subtotaal {
-	margin-top: -5px;
+.cartTable .cartSubTotal {
 	border-bottom: 1px solid #ebebeb;
 }
 
-.naarkassa .eindtotaal {
+.cartTable .priceWrapper {
+	width: 100%;
+	padding-right: 10px;
+}
+
+.cartTable .priceWrapper .valuta {
+	float: left;
+}
+
+.cartTable .priceWrapper .price {
+	float: right;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.cartTable .cartTotal {
 	border-top: 1px solid #828282;
 	border-bottom: 3px double #828282;
 	font-size: 14px;
-	font-weight: 600;
+	font-weight: 600 !important;
 }
 
-.naarkassa .eindtotaal p {
-	height: 20px;
+.cartTable .cartTotal .priceWrapper .price {
+	font-weight: 600 !important;
+}
+
+.cartTable .cartTotalTitle {
+	padding-left: 10px;
 }
 
 .waardebon {
 	border: 1px solid #ebebeb;
 	padding: 10px;
-	margin-top: 40px;
+	margin-top: -150px;
 }
 
 .waardebon label {

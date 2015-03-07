@@ -195,131 +195,153 @@
                     <div class="col-md-12">
                         <h1>Winkelwagen</h1>
                     </div>
+                    <table class="cartTable">
+                        <thead>
+                            <tr>
+                                <th class="buttonDelete">&nbsp;</th>
+                                <th class="productImage">&nbsp;</th>
+                                <th class="productTitle">Productnaam</th>
+                                <th class="buttonEdit">&nbsp;</th>
+                                <th class="productPrice">Prijs</th>
+                                <th class="productQty">Aantal</th>
+                                <th class="productSubTotal">Subtotaal</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <td class="spacer" colspan="5"></td>
+                                <td class="cartTotalTitle cartSubTotal">Subtotaal</td>
+                                <td  class="cartSubTotal">
+                                    <div class="priceWrapper">
+                                        <span class="valuta">&euro;</span><span class="price">1475.00</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="spacer" colspan="5"></td>
+                                <td class="cartTotalTitle">21% BTW</td>
+                                <td>
+                                    <div class="priceWrapper">
+                                        <span class="valuta">&euro;</span><span class="price">309.75</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="spacer" colspan="5"></td>
+                                <td class="cartTotalTitle">Verzending</td>
+                                <td>
+                                    <div class="priceWrapper">
+                                        <span class="valuta">&euro;</span><span class="price">0.00</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="spacer" colspan="5"></td>
+                                <td class="cartTotal cartTotalTitle">Eindtotaal</td>
+                                <td class="cartTotal">
+                                    <div class="priceWrapper">
+                                        <span class="valuta">&euro;</span><span class="price">147.00</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="spacer" colspan="5"></td>
+                                <td colspan="2">
+                                    <div class="largeButtons">
+                                        <div class="btn-group-lg">
+                                            <a href="kassa.html" role="button" class="btn btn-success">Bestelling afronden</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td class="buttonDelete">
+                                    <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+                                </td>
+                                <td class="productImage">
+                                    <div>
+                                        <img src="img/thumb-fender.png">
+                                    </div>
+                                </td>
+                                <td class="productTitle">
+                                    <p>Fender American Select Stratocaster dark cherry burst</p>
+                                </td>
+                                <td class="buttonEdit">
+                                    <a href="#">Wijzigen</a>
+                                </td>
+                                <td class="productPrice">
+                                    <div class="priceWrapper">
+                                        <span class="valuta">&euro;</span><span class="price">229.00</span>
+                                    </div>
+                                </td>
+                                <td class="productQty">
+                                    <div class="form-group">
+                                        <input type="number" step="1" min="1" class="form-control" id="0" value="1">
+                                    </div>
+                                </td>
+                                <td class="productSubTotal">
+                                    <div class="priceWrapper">
+                                        <span class="valuta">&euro;</span><span class="price">229.00</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="buttonDelete">
+                                    <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+                                </td>
+                                <td class="productImage">
+                                    <div>
+                                        <img src="img/marshall.jpg">
+                                    </div>
+                                </td>
+                                <td class="productTitle">
+                                    <p>Marshall JVM215C buizen gitaarcombo</p>
+                                </td>
+                                <td class="buttonEdit">
+                                    <a href="#">Wijzigen</a>
+                                </td>
+                                <td class="productPrice">
+                                    <div class="priceWrapper">
+                                        <span class="valuta">&euro;</span><span class="price">1246.00</span>
+                                    </div>
+                                </td>
+                                <td class="productQty">
+                                    <div class="form-group">
+                                        <input type="number" step="1" min="1" class="form-control" id="0" value="1">
+                                    </div>
+                                </td>
+                                <td class="productSubTotal">
+                                    <div class="priceWrapper">
+                                        <span class="valuta">&euro;</span><span class="price">124.00</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="row header">
-                    <div class="col-md-5 col-md-offset-3">
-                        <p>Productnaam</p>
-                    </div>
-                    <div class="col-md-1 col-md-offset-1">
-                        <p>Prijs</p>
-                    </div>
-                    <div class="col-md-1">
-                        <p>Aantal</p>
-                    </div>
-                    <div class="col-md-1">
-                        <p class="pull-right">Subtotaal</p>
+                <div class="row">
+                    <div class="col-md-4 waardebon">
+                        <h2>waardebonnen</h2>
+                        <label for="waardebon">Voor uw code in:</label>
+                        <div class="input-group">
+                            <input type="text" id="waardebon" class="form-control" value="KORTING2015">
+                            <span class="input-group-btn">
+                                <a href="#" role="button" id="waardebon" class="btn btn-success">Invoeren</a>
+                            </span>
+                        </div>
+                        <div class="mediumButtons">
+                            <div class="btn-group-md">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <form>
-                    <div class="row product">
-                        <div class="col-md-3 thumb">
-                            <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
-                            <img src="img/thumb-fender.png">
-                        </div>
-                        <div class="col-md-5 beschrijving">
-                            <p>Fender American Select Stratocaster dark cherry burst</p>
-                        </div>
-                        <div class="col-md-1 wijzig">
-                            <a href="#">Wijzigen</a>
-                        </div>
-                        <div class="col-md-1 totaal">
-                            <p>&euro; <input type="text" id="totaal0" value="229.00" readonly></p>
-                        </div>
-                        <div class="col-md-1 aantal">
-                            <div class="form-group">
-                                <input type="number" step="1" min="1" class="form-control" id="0" value="1">
-                            </div>
-                        </div>
-                        <div class="col-md-1 subtotaal">
-                            <p>&euro; <input type="text" id="subtotaal0" value="229.00" readonly></p>
-                        </div>
+                <div class="row">
+                    <div class="col-md-4 gaverder">
+                        <a href="index.html" role="button" class="btn btn-default">Ga verder met winkelen</a>
                     </div>
-                    <div class="row product">
-                        <div class="col-md-3 thumb">
-                            <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
-                            <img src="img/marshall.jpg">
-                        </div>
-                        <div class="col-md-5 beschrijving">
-                            <p>Marshall JVM215C buizen gitaarcombo</p>
-                        </div>
-                        <div class="col-md-1 wijzig">
-                            <a href="#">Wijzigen</a>
-                        </div>
-                        <div class="col-md-1 totaal">
-                            <p>&euro; <input type="text" id="totaal1" value="1246.00" readonly></p>
-                        </div>
-                        <div class="col-md-1 aantal">
-                            <div class="form-group">
-                                <input type="number" id="1" idstep="1" min="1" class="form-control" value="1">
-                            </div>
-                        </div>
-                        <div class="col-md-1 subtotaal">
-                            <p>&euro; <input type="text" id="subtotaal1" value="1246.00" readonly></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 waardebon">
-                            <h2>waardebonnen</h2>
-                            <label for="waardebon">Voor uw code in:</label>
-                            <div class="input-group">
-                                <input type="text" id="waardebon" class="form-control" value="KORTING2015">
-                                <span class="input-group-btn">
-                                    <a href="#" role="button" id="waardebon" class="btn btn-success">Invoeren</a>
-                                </span>
-                            </div>
-                            <div class="mediumButtons">
-                                <div class="btn-group-md">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-md-offset-6 naarkassa">
-                            <div class="row subtotaal">
-                                <div class="col-md-6">
-                                    <p>Subtotaal</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>&euro; <input type="text" id="subtotaal-form" value="1475.00" readonly></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p>21% BTW</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>&euro; <input type="text" id="btw-form" value="309.75" readonly></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p>Verzending</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>&euro; <input type="text" id="btw-form" value="0.00" readonly></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 eindtotaal">
-                                    <p>Eindtotaal</p>
-                                </div>
-                                <div class="col-md-6 eindtotaal">
-                                    <p>&euro; <input type="text" id="eindtotaal-form" value="1475.00" readonly></p>
-                                </div>
-                            </div>
-                            <div class="largeButtons">
-                                <div class="btn-group-lg">
-                                    <a href="kassa.html" role="button" class="btn btn-success">Bestelling afronden</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 gaverder">
-                            <a href="index.html" role="button" class="btn btn-default">Ga verder met winkelen</a>
-                        </div>
-                    </div>
-                </form>
-
+                </div>
 
                 <!-- Scroll to top button -->
                 <a href="#" class="scrollToTop"></a>
