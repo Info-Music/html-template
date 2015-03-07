@@ -78,6 +78,16 @@
     .col-md-12 > .collectie p {
         height: auto;
     }
+    .titleContainer .usp > p {
+        max-width: 177px;
+        line-height: 1.42857143;
+    }
+    .onestepcheckout-login-link {
+        margin-left: 1px;
+    }
+    div.onestepcheckout-threecolumns div.onestepcheckout-column-right {
+        width: 32%;
+    }
 }
 
 /* Small devices (tablets) */
@@ -177,6 +187,26 @@
     }
     .scrollToTop {
         right: 0;
+    }
+    .titleContainer .usp > p {
+        max-width: 168px;
+        line-height: 1.42857143;
+    }
+    .onestepcheckout-login-link {
+        margin-top: -24px;
+        margin-left: 1px;
+    }
+    div.onestepcheckout-threecolumns {
+        margin-top: -8px;
+    }
+    div.onestepcheckout-threecolumns div.onestepcheckout-column-middle {
+        width: 28%;
+    }
+    div.onestepcheckout-threecolumns div.onestepcheckout-column-right {
+        width: 32%;
+    }
+    div.input-box label[for=id_create_account] {
+        max-width: 90%;
     }
 }
 
@@ -550,6 +580,40 @@
     }
     .scrollToTop {
         right: 0;
+    }
+
+    /* Kassa */
+    .titleContainer .usp {
+        height: auto;
+        float: none;
+        line-height: 40px;
+    }
+    .titleContainer .usp > p {
+        float: left;
+        margin-left: 0;
+    }
+    .titleContainer .usp > img {
+        float: left;
+        clear: both;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .onestepcheckout-login-link {
+        margin-left: 15px;
+    }
+    div.onestepcheckout-threecolumns div.onestepcheckout-column-left {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 15px;
+    }
+    div.onestepcheckout-threecolumns div.onestepcheckout-column-middle {
+        width: 100%;
+        padding-left: 15px;
+    }
+    div.onestepcheckout-threecolumns div.onestepcheckout-column-right {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 

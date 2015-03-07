@@ -135,7 +135,6 @@
 .productListOne {
     margin-top: 10px;
     font-size: 13px;
-    padding-bottom: 30px;
     border-bottom: 1px solid #e4e1dd;
 }
 
@@ -168,7 +167,7 @@
 }
 
 .productHolderLarge .infoPanel {
-    height: 250px;
+    min-height: 250px;
 }
 
 .productHolderLarge .infoPanel .pull-left {
