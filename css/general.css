@@ -603,6 +603,10 @@
 			padding-top: 0;
 		}
 
+		.filters {
+			padding-left: 0;
+		}
+
 		.panel-group .panel-heading .panel-title {
 			margin: 0;
 		}
