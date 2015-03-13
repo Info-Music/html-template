@@ -1003,6 +1003,7 @@
 	}
 
 	.scrollToTop {
+		z-index: 50000;
 	    width: 49px;
 	    position: fixed;
 	    height: 49px;
