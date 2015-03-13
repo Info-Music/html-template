@@ -155,8 +155,20 @@
 .faq form {
     border-bottom: 1px solid #ebebeb;
     margin-left: 10px;
+    padding-bottom: 15px;
     margin-bottom: 10px;
 }
+
+.faq button {
+    display: inline-block;
+    position: relative;
+    background: url(../img/icon_newsletter.png) 100% 100% no-repeat;
+    width: 34px;
+    height: 34px;
+    border-radius: 0;
+    border: 1px solid #d84f2b;
+}
+
 
 .faq p {
     margin-left: 10px;
