@@ -100,7 +100,7 @@ div.header_slider.flexslider ul.flex-direction-nav li a {
     .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
 }
 
-ul.slides li img.img-ranking, ul.slides li .img-stock {
+ul.slides li i.rankingStars, ul.slides li .img-stock {
     display: block;
     margin: 0 auto;
 }
@@ -154,7 +154,7 @@ ul.slides li div.imageContainer a.productThumb img {
     font-size: 15px;
 }
 
-.slides .largeButtons {    
+.slides .largeButtons {
     text-align: center;
 }
 

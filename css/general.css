@@ -196,6 +196,45 @@
 		    background-position-x: -375px;
 		}
 
+	/* == RANKINGSTARS == */
+	.rankingStars {
+		background-image: url(../img/ratingStars.png);
+		background-repeat: no-repeat;
+		display: block;
+	}
+
+	.rankingStars-1 {
+		width: 115px;
+		height: 15px;
+		background-position: -1px -1px;
+	}
+
+	.rankingStars-2 {
+		width: 115px;
+		height: 15px;
+		background-position: -1px -18px;
+	}
+
+	.rankingStars-3 {
+		width: 115px;
+		height: 15px;
+		background-position: -1px -35px;
+	}
+
+	.rankingStars-4 {
+		width: 115px;
+		height: 15px;
+		background-position: -1px -52px;
+	}
+
+	.rankingStars-5 {
+		width: 115px;
+		height: 15px;
+		background-position: -1px -69px;
+	}
+
+
+
 /* = = = = HEADER = = = = */
 
 	/* == CUSTOMERBAR == */
