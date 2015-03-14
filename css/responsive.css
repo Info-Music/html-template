@@ -500,6 +500,32 @@
     .productThumb {
         height: 150px;
     }
+    .filtersList.pull-right {
+        float: none !important;
+        width: 100%;
+    }
+    .filtersList .form-group {
+        margin-left: 0;
+        float: left;
+        width: 80%;
+    }
+    .filtersList .form-group.view {
+        width: 20%;
+    }
+    .filtersList .control-label {
+        float: left;
+        line-height: 30px;
+        margin-right: 10px;
+    }
+    .filtersList .form-control {
+        width: 50%;
+        margin-left: 0;
+        float: left;
+    }
+    .filtersList .btn {
+        float: left;
+        margin-left: 10px;
+    }
     /* PRODUCT DETAIL PAGE */
     .titleContainer h1 {
         margin-top: 5px;
@@ -625,6 +651,27 @@
     .navbar {
         min-height: 10px !important;
         margin-bottom: 0;
+    }
+}
+
+/* Subcategory sorteer filters */
+@media (max-width: 400px) and (min-width: 359px) {
+    .filtersList .btn {
+        margin-left: 1px;
+    }
+}
+
+@media (max-width: 359px) {
+    .filtersList .control-label {
+        float: none;
+    }
+    .filtersList .form-control {
+        float: none;
+        width: 70%;
+    }
+    .filtersList .btn {
+        float: none;
+        margin-left: 0;
     }
 }
 
