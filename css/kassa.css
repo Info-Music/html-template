@@ -129,6 +129,20 @@ div.checkoutcontainer div.input-address .input-text, div.checkoutcontainer div.i
     width: 95%;
 }
 
+div.checkoutcontainer div.input-address .input-text {
+    float: left;
+}
+
+div.checkoutcontainer div.input-address #billing\3astreet1 {
+    width: 70%;
+}
+
+div.checkoutcontainer div.input-address #billing\3astreet2 {
+    width: 20%;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
 .checkoutcontainer .input-box.input-city {
     width: 61% !important;
     margin-left: 37%;
