@@ -11,7 +11,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet">
+    <link href="css/account.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
     <link href="css/flexslider.css" rel="stylesheet" type="text/css"/>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -192,50 +192,69 @@
 
             <div class="container">
                 <div class="row">
+
+                    <div class="col-md-12">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active">My account</li>
+                        </ol>
+                    </div>
+
                     <!-- START ACCOUNT PAGE # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
 
-                    <div class="main">
-                        <div class="col-left sidebar col-left-first">
-                            <div class="block block-account">
-                                <div class="block-title">
-                                    <strong><span>My Account</span></strong>
-                                </div>
-                                <div class="block-content">
-                                    <ul>
-                                        <li class="current"><a href="http://server1.drewes-webdesign.nl/magento/index.php/customer/account/"><strong>Account Dashboard</strong></a></li>
-                                        <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/customer/account/edit/">Account Information</a></li>
-                                        <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/customer/address/">Address Book</a></li>
-                                        <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/sales/order/history/">My Orders</a></li>
-                                        <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/sales/billing_agreement/">Billing Agreements</a></li>
-                                        <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/sales/recurring_profile/">Recurring Profiles</a></li>
-                                        <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/review/customer/">My Product Reviews</a></li>
-                                        <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/tag/customer/">My Tags</a></li>
-                                        <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/wishlist/">My Wishlist</a></li>
-                                        <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/oauth/customer_token/">My Applications</a></li>
-                                        <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/newsletter/manage/">Newsletter Subscriptions</a></li>
-                                        <li class="last"><a href="http://server1.drewes-webdesign.nl/magento/index.php/downloadable/customer/products/">My Downloadable Products</a></li>
-                                    </ul>
-                                </div>
+                    <div class="col-md-3 sidebar">
+                        <div class="block block-account">
+                            <div class="block-title">
+                                <h2>My Account</h2>
+                            </div>
+                            <div class="block-content">
+                                <ul>
+                                    <li class="current"><a href="http://server1.drewes-webdesign.nl/magento/index.php/customer/account/"><strong>Account Dashboard</strong></a></li>
+                                    <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/customer/account/edit/">Account Information</a></li>
+                                    <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/customer/address/">Address Book</a></li>
+                                    <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/sales/order/history/">My Orders</a></li>
+                                    <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/sales/billing_agreement/">Billing Agreements</a></li>
+                                    <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/sales/recurring_profile/">Recurring Profiles</a></li>
+                                    <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/review/customer/">My Product Reviews</a></li>
+                                    <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/tag/customer/">My Tags</a></li>
+                                    <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/wishlist/">My Wishlist</a></li>
+                                    <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/oauth/customer_token/">My Applications</a></li>
+                                    <li><a href="http://server1.drewes-webdesign.nl/magento/index.php/newsletter/manage/">Newsletter Subscriptions</a></li>
+                                    <li class="last"><a href="http://server1.drewes-webdesign.nl/magento/index.php/downloadable/customer/products/">My Downloadable Products</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-main">
-                            <div class="my-account"><div class="dashboard">
-                                <div class="page-title">
-                                    <h1>My Dashboard</h1>
+                        <div class="block block-list block-compare">
+                            <div class="block-title">
+                                <strong><span>
+                                    Compare Products
+                                </span></strong>
+                            </div>
+                            <div class="block-content">
+                                <p class="empty">You have no items to compare.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 col-main">
+                        <div class="my-account">
+                            <div class="dashboard">
+                                <div class="col-md-12 page-title">
+                                    <h2>My Dashboard</h2>
                                 </div>
-                                <div class="welcome-msg">
+                                <div class="col-md-12 welcome-msg">
                                     <p class="hello"><strong>Hello, Pascal Drewes!</strong></p>
                                     <p>From your My Account Dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link below to view or edit information.</p>
                                 </div>
                                 <div class="box-account box-info">
-                                    <div class="box-head">
-                                        <h2>Account Information</h2>
+                                    <div class="col-md-12 box-head">
+                                        <h3>Account Information</h3>
                                     </div>
                                     <div class="col2-set">
-                                        <div class="col-1">
+                                        <div class="col-md-6 col-1">
                                             <div class="box">
                                                 <div class="box-title">
-                                                    <h3>Contact Information</h3>
+                                                    <h4>Contact Information</h4>
                                                     <a href="http://server1.drewes-webdesign.nl/magento/index.php/customer/account/edit/">Edit</a>
                                                 </div>
                                                 <div class="box-content">
@@ -247,10 +266,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-2">
+                                        <div class="col-md-6 col-2">
                                             <div class="box">
                                                 <div class="box-title">
-                                                    <h3>Newsletters</h3>
+                                                    <h4>Newsletters</h4>
                                                     <a href="http://server1.drewes-webdesign.nl/magento/index.php/newsletter/manage/">Edit</a>
                                                 </div>
                                                 <div class="box-content">
@@ -262,15 +281,15 @@
                                         </div>
                                     </div>
                                     <div class="box-account box-info">
-                                        <div class="box-head">
-                                            <h2>Address Book</h2>
+                                        <div class="col-md-12 box-head">
+                                            <h3>Address Book</h3>
                                             <a href="http://server1.drewes-webdesign.nl/magento/index.php/customer/address/">Manage Addresses</a>
                                         </div>
                                         <div class="col2-set">
-                                            <div class="col-1">
+                                            <div class="col-md-6 col-1">
                                                 <div class="box">
                                                     <div class="box-title">
-                                                        <h3>Default Billing Address</h3>
+                                                        <h4>Default Billing Address</h4>
                                                         <a href="http://server1.drewes-webdesign.nl/magento/index.php/customer/address/edit/">Edit Address</a>
                                                     </div>
                                                     <div class="box-content">
@@ -278,10 +297,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-2">
+                                            <div class="col-md-6 col-2">
                                                 <div class="box">
                                                     <div class="box-title">
-                                                        <h3>Default Shipping Address</h3>
+                                                        <h4>Default Shipping Address</h4>
                                                         <a href="http://server1.drewes-webdesign.nl/magento/index.php/customer/address/edit/">Edit Address</a>
                                                     </div>
                                                     <div class="box-content">
@@ -291,19 +310,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div></div>                </div>
-                                <div class="col-left sidebar"><div class="block block-list block-compare">
-                                    <div class="block-title">
-                                        <strong><span>
-                                            Compare Products
-                                        </span></strong>
-                                    </div>
-                                    <div class="block-content">
-                                        <p class="empty">You have no items to compare.</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
+
 
                         <!-- END ACCOUNT PAGE # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
                     </div>
