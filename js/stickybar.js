@@ -8,7 +8,7 @@ $(window).resize(function() {
 });
 
 function stickyHeader() {
-    if($('#usp').css('margin-top') == "0px") {
+    if($('.scrollToTop').css('right') == "30px") {
         var triggerHeight = $('.customerBar').height();
         triggerHeight += $('.searchBar').height();
 

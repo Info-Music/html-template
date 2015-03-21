@@ -1,1157 +1,1210 @@
 <!DOCTYPE html>
 <html lang="nl">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<meta name="description" content="Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.">
-		<meta name="author" content="Infomusic.nl">
-		<link rel="icon" href="favicon.ico">
-		<title>Infomusic, Online-shop voor gitaar, basgitaar, dj-gear, licht en geluid</title>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/general.css" rel="stylesheet">
-		<link href="css/pdp.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet" type="text/css"/>
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.">
+	<meta name="author" content="Infomusic.nl">
+	<link rel="icon" href="favicon.ico">
+	<title>Infomusic, Online-shop voor gitaar, basgitaar, dj-gear, licht en geluid</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/general.css" rel="stylesheet">
+	<link href="css/pdp.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 
-		<link href="css/flexslider.css" rel="stylesheet" type="text/css"/>
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css"/>
 
-		<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-		<script type="text/javascript" charset="utf-8">
-			$(window).load(function() {
-				$('#thumbs').flexslider({
-				    animation: "slide",
-				    controlNav: false,
-				    animationLoop: false,
-				    slideshow: false,
-				    itemWidth: 160,
-				    itemMargin: 8,
-				    asNavFor: '#slider',
-				    move: 1
-				});
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script type="text/javascript" charset="utf-8">
+	$(window).load(function() {
+		$('#thumbs').flexslider({
+			animation: "slide",
+			controlNav: false,
+			animationLoop: false,
+			slideshow: false,
+			itemWidth: 160,
+			itemMargin: 8,
+			asNavFor: '#slider',
+			move: 1
+		});
 
-				$('#slider').flexslider({
-				    animation: "slide",
-				    controlNav: false,
-				    animationLoop: false,
-				    slideshow: false,
-				    sync: "#thumbs"
-				});
-				$('.product_slider').flexslider({
-					animation: "slide",
-					animationLoop: true,
-					itemWidth: 279,
-					itemMargin: 8,
-					maxItems: 5,
-					move: 1,
-					prevText: "",
-					nextText: ""
-				});
-				$('.product_slider1').flexslider({
-					animation: "slide",
-					animationLoop: true,
-					itemWidth: 279,
-					itemMargin: 8,
-					maxItems: 5,
-					move: 1,
-					prevText: "",
-					nextText: ""
-				});
-			});
-		</script>
-	</head>
-	<body>
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id))
-					return;
-				js = d.createElement(s);
-				js.id = id;
-				js.src = "//connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.0";
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
-		<div><a style="color: black; font-size: 12px;" href="index.html">Index!</a>
-			- <a style="color: black; font-size: 12px;" href="category.html">Category</a>
-			- <a style="color: black; font-size: 12px;" href="subcategory.html">Sub categorie</a>
-			- <a style="color: black; font-size: 12px;" href="subcategory_thumb.html">Sub categorie (thumbview)</a>
-			- <a style="color: black; font-size: 12px;" href="kassa.html">Kassa</a>
-			- <a style="color: black; font-size: 12px;" href="winkelwagen.html">Winkelwagen</a>
-			- <a style="color: black; font-size: 12px;" href="login.html">Login</a></div>
-		<div class="customerBar" role="navigation">
-			<div class="container">
+		$('#slider').flexslider({
+			animation: "slide",
+			controlNav: false,
+			animationLoop: false,
+			slideshow: false,
+			sync: "#thumbs"
+		});
+		$('.product_slider').flexslider({
+			animation: "slide",
+			animationLoop: true,
+			itemWidth: 279,
+			itemMargin: 8,
+			maxItems: 5,
+			move: 1,
+			prevText: "",
+			nextText: ""
+		});
+		$('.product_slider1').flexslider({
+			animation: "slide",
+			animationLoop: true,
+			itemWidth: 279,
+			itemMargin: 8,
+			maxItems: 5,
+			move: 1,
+			prevText: "",
+			nextText: ""
+		});
+	});
+	</script>
+</head>
+<body class="cbp-spmenu-push">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id))
+		return;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "//connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
-				<div class="navbar navbar-default" role="navigation">
-					<div class="navbar-header pull-left visible-xs-block">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu">
+	<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left visible-xs">
+		<div class="account">
+			<div class="btn-group btn-group-lg">
+				<a href="login.html" class="btn btn-primary btn-success" role="button">Inloggen</a>
+			</div>
+			<div class="btn-group btn-group-lg">
+				<a href="login.html" class="btn btn-primary btn-success" role="button">Registreren</a>
+			</div>
+		</div>
+		<ul class="mobileMenu">
+			<li class="active">
+				<a href="#">
+					<span class="glyphicon glyphicon-question-sign"></span>&nbsp;
+					Klantenservice
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;
+					Winkelwagen
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="glyphicon glyphicon-barcode"></span>&nbsp;
+					Assortiment
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="glyphicon glyphicon-download-alt"></span>&nbsp;
+					Tips & downloads
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="glyphicon glyphicon-home"></span>&nbsp;
+					Nieuws
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="glyphicon glyphicon-info-sign"></span>&nbsp;
+					Contact
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="glyphicon glyphicon-star"></span>&nbsp;
+					Sale
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="customerBar hidden-xs" role="navigation">
+		<div class="container">
+			<div class="navbar navbar-default" role="navigation">
+				<ul class="nav navbar-nav navbar-right" id="black-spacer-top">
+					<li><a href="#" role="button">blog</a></li>
+					<li><a href="#" role="button">bewaarde items</a></li>
+					<li><a href="#" role="button" id="dropdownLanguages" data-toggle="dropdown" class="dropdown-toggle">kies je taal</a>
+						<ul class="dropdown-menu languageMenu" role="menu" aria-labelledby="dropdownLanguages">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="nl">Nederlands</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="en">English</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="de">Deutsch</a></li>
+						</ul>
+
+					</li>
+					<li><a href="#" role="button">aanmelden</a></li>
+					<li><a href="#" role="button" id="dropdownCustomerService" data-toggle="dropdown" class="dropdown-toggle">klantenservice <span class="caret hidden-xs"></span></a>
+						<ul class="dropdown-menu customerServiceMenu" role="menu" aria-labelledby="dropdownCustomerService">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-comment"></span> Contact</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-time"></span> Openingstijden</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-screenshot"></span> Adres</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-user"></span> Vacatures</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-envelope"></span> Nieuwsbrief</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-tower"></span> Privacy</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-pencil"></span> Algemene voorwaarden</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-usd"></span> Betaalmogelijkheden</a></li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-question-sign"></span> Bezorgen en orderstatus</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div> <!-- end container -->
+	</div> <!-- end customerbar -->
+
+	<div id="sticky" class="searchBar navbar-default">
+		<div class="container">
+			<div class="headerbar" role="navigation">
+				<div class="row" style="">
+					<div class="visible-xs-block col-xs-3">
+						<button type="button" class="navbar-toggle" id="toggleNavigation">
+							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
 					</div>
-					<ul class="nav navbar-nav navbar-right" id="black-spacer-top">
-						<li class="hidden-xs"><a href="#" role="button">blog</a></li>
-						<li class="hidden-xs"><a href="#" role="button">bewaarde items</a></li>
-						<li class="hidden-xs"><a href="#" role="button" id="dropdownLanguages" data-toggle="dropdown" class="dropdown-toggle">kies je taal</a>
-							<ul class="dropdown-menu languageMenu" role="menu" aria-labelledby="dropdownLanguages">
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="nl">Nederlands</a></li>
-								<li role="presentation" class="divider"></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="en">English</a></li>
-								<li role="presentation" class="divider"></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="de">Deutsch</a></li>
-							</ul>
 
-						</li>
-						<li><a href="#" role="button">aanmelden</a></li>
-						<li><a href="#" role="button" id="dropdownCustomerService" data-toggle="dropdown" class="dropdown-toggle">klantenservice <span class="caret hidden-xs"></span></a>
-							<ul class="dropdown-menu customerServiceMenu" role="menu" aria-labelledby="dropdownCustomerService">
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-comment"></span> Contact</a></li>
-								<li role="presentation" class="divider"></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-time"></span> Openingstijden</a></li>
-								<li role="presentation" class="divider"></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-screenshot"></span> Adres</a></li>
-								<li role="presentation" class="divider"></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-user"></span> Vacatures</a></li>
-								<li role="presentation" class="divider"></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-envelope"></span> Nieuwsbrief</a></li>
-								<li role="presentation" class="divider"></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-tower"></span> Privacy</a></li>
-								<li role="presentation" class="divider"></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-pencil"></span> Algemene voorwaarden</a></li>
-								<li role="presentation" class="divider"></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-usd"></span> Betaalmogelijkheden</a></li>
-								<li role="presentation" class="divider"></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-question-sign"></span> Bezorgen en orderstatus</a></li>
-							</ul>
-						</li>
-					</ul>
-					<div class="collapse navbar-collapse" id="mobile-menu">
-						<ul class="nav navbar-nav navbar-left">
-							<li><a class="hot" href="#">Sale<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-							<li><a href="#">Home<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-							<li><a href="#">Categoriën<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-							<li><a href="#">Klantenservice<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-							<li><a href="#">Winkelmandje<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-							<li><a href="#">Aanmelden nieuwsbrief<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-							<li><a href="#">Contact<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-							<li><a href="#" role="button" id="dropdownLanguagesMobile" data-toggle="dropdown" class="dropdown-toggle">kies je taal<span class="glyphicon glyphicon-chevron-right"></span></a>
-								<ul class="dropdown-menu languageMenu" role="menu" aria-labelledby="dropdownLanguagesMobile">
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="nl">Nederlands</a></li>
-									<li role="presentation" class="divider"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="en">English</a></li>
-									<li role="presentation" class="divider"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="de">Deutsch</a></li>
-								</ul>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+						<h1><a href="#"><img id="logo" src="img/logo.png"  alt="Infomusic, Online-shop voor muziekinstrumenten"/></a></h1>
+					</div>
 
+					<div class="visible-xs clearfix shadow"></div>
+
+					<div class="col-lg-4 col-md-3 col-sm-3 col-md-push-0 col-xs-12">
+						<div class="searchContainer">
+							<div class="input-group">
+								<input type="text" name="q" id="searchInput" onfocus="if (this.value == 'Zoeken naar...') {
+									this.value = '';
+								}" onblur="if (this.value == '') {
+									this.value = 'Zoeken naar...';
+								}" autocomplete="off" value="Zoeken naar..." class="form-control" placeholer=".col-md-4" />
+								<div class="input-group-btn">
+									<button class="btn-default" id="searchButton" type="button"><!-- <span class="glyphicon glyphicon-search">--></span></button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-lg-1 col-md-1 col-sm-1 hidden-xs" id="toggleCategories">
+						<a href="#" onclick="return false;">
+							<img src="img/hamburger.png" alt="show categories" />
+						</a>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+						<div class="text-info">
+							<p><b>KLANTENSERVICE</b></p>
+							<p>+31 (0)591-675791</p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-sm-3 col-xs-3 col-xs-move-up">
+						<div class="shoppingCartContainer">
+							<span id="shoppingCartImage">
+								<span>
+									0
+								</span>
+							</span>
+							<span id="shoppingCartTotal">
+								0,-
+								<span>Gratis verzending!</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- end container -->
+	</div> <!-- end searchbar -->
+
+	<div class="menuBar hidden-xs" role="navigation">
+		<div class="container">
+			<div class="">
+				<ul class="nav navbar-nav" id="menu_no_hover">
+					<li><a href="#" role="button" id="dropdownGitaar" data-toggle="dropdown" class="dropdown-toggle">gitaar</a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownGitaar">
+							<div style="width: 300px; height: 300px">
+								<h3>Testing</h3>
+								<p>
+									Dit is een test
+								</p>
+							</div>
+						</ul>
+					</li>
+					<li><a href="#">drums & percussie</a></li>
+					<li><a href="#">toetsen</a></li>
+					<li><a href="#">geluid</a></li>
+					<li><a href="#">dj-gear</a></li>
+					<li><a href="#">licht</a></li>
+					<li><a href="#">blaasinstrument</a></li>
+					<li><a href="#">strijkinstrument</a></li>
+					<li><a href="#">kabels</a></li>
+					<li><a href="#">cases / hoezen / koffers</a></li>
+					<li><a href="#">accessoires</a></li>
+					<li><a href="#" class="hot">sale</a></li>
+				</ul>
+			</div>
+		</div> <!-- end container -->
+	</div> <!-- end categorybar -->
+	
+	<!-- START CONTENT -->
+	<div class="mainBar">
+		<div class="container">
+
+
+			<div class="row hidden-xs">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="index.html">Home</a></li>
+						<li class="active">Gitaar & Basgitaar</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="titleContainer">
+						<h1>Fender American Standard Stratocaster Rosewood 3-Color Sunburst</h1>
+					</div>
+					<div class="back pull-left hidden-xs">
+						<a href="#">terug naar assortiment</a>
+					</div>
+					<div class="page pull-right">
+						<span class="prev">vorige</span>|<span class="range">2 - 7</span>|<span class="next">volgende</span>
+					</div>
+				</div>
+
+				<div class="col-md-7 col-xs-12"> <!-- START LEFT COLUMN -->
+
+					<!-- <div class="bigImage">
+					<img src="img/greta.png" alt="Greta" class="responsive">
+					<img src="img/zoom.png" alt="zoom" class="zoom">
+					<span class="left"></span>
+					<span class="right"></span>
+				</div>
+
+				<div class="smallImage">
+				<ul>
+				<li><a href="#" ><img src="img/thumb-fender.png" alt=""></a></li>
+				<li><a href="#" ><img src="img/thumb-fender-piece.png" alt=""></a></li>
+				<li><a href="#" ><img src="img/thumb-fender-piece2.png" alt=""></a></li>
+				<li><a href="#" ><img src="img/thumb-fender-case.png" alt=""></a></li>
+				<li><a href="#" ><img src="img/play.png" alt=""></a></li>
+				<li><a href="#" ><img src="img/thumb-fender-piece2.png" alt=""></a></li>
+			</ul>
+			<a href="#" ><img src="img/arrow-left.png" alt="" class="left arrow"></a>
+			<a href="#" ><img src="img/arrow-right.png" alt="" class="right arrow"></a>
+		</div> -->
+
+		<div id="slider" class="flexslider bigImage">
+			<ul class="slides">
+				<li>
+					<img src="img/greta.png" alt="Greta" class="responsive">
+				</li>
+				<li>
+					<img src="img/versterker.png" alt="Greta" class="responsive">
+				</li>
+				<li>
+					<img src="img/marshall.jpg" alt="Greta" class="responsive">
+				</li>
+				<li>
+					<img src="img/cable.jpg" alt="Cable" class="responsive">
+				</li>
+				<li>
+					<img src="img/fender.jpg" alt="Greta" class="responsive">
+				</li>
+				<li>
+					<img src="img/fender-cable.png" alt="Greta" class="responsive">
+				</li>
+			</ul>
+		</div>
+		<div id="thumbs" class="flexslider smallImage">
+			<ul class="slides">
+				<li>
+					<img src="img/greta.png" alt="Greta" class="responsive">
+				</li>
+				<li>
+					<img src="img/versterker.png" alt="Greta" class="responsive">
+				</li>
+				<li>
+					<img src="img/marshall.jpg" alt="Greta" class="responsive">
+				</li>
+				<li>
+					<img src="img/cable.jpg" alt="Cable" class="responsive">
+				</li>
+				<li>
+					<img src="img/fender.jpg" alt="Greta" class="responsive">
+				</li>
+				<li>
+					<img src="img/fender-cable.png" alt="Greta" class="responsive">
+				</li>
+			</ul>
+		</div>
+
+		<div class="tabs hidden-sm hidden-xs">
+			<!-- links -->
+			<ul class="tabLinks">
+				<li class="active"><a href="#productinformatie">Product Informatie</a></li>
+				<li><a href="#productspecificaties">Product Specificaties</a></li>
+				<li><a href="#video">Video</a></li>
+				<li><a href="#reviews">Reviews [52]</a></li>
+				<li><a href="#download">Download</a></li>
+			</ul>
+			<span class="clearfix"></span>
+			<!-- content -->
+			<div class="tab-content">
+				<div class="active" id="productinformatie">
+					<h2>Productinformatie</h2>
+					<p>
+						Fender American Standard Stratocaster Rosewood 3-Color Sunburst
+						De Fender American Standard Stratocaster lijn is werkelijk een fenomeen in de wereld van electrische gitaren, waarbij u van de beste vakmanschap, materialen en kwaliteit verzekerd bent. Ten opzichte van de eerdere modellen uit deze serie zijn de American Standard Stratocaster modellen opgewaardeerd in zowel haar uiterlijk als klank. Fender Custom Shop Fat '50s pickups geven een vollere sound terwijl nieuwe plastic onderdelen voor een meer vintage look zorgen op de Fender American Standard Stratocaster. De Fender American Standard Stratocaster heeft een elzenhouten body en een rosewood hals. Alle gitaren uit de American Standard serie worden geleverd met een SKB koffer, kabel, gitaarband en poetsdoekje.
+					</p>
+				</div>
+				<div class="" id="productspecificaties">
+					<h2>Product specificaties</h2>
+					<p>
+						Fender American Standard Stratocaster Rosewood 3-Color Sunburst
+						<table class="table table-condensed">
+							<tr><td>American Standard  Series</td></tr>
+							<tr><td>Elzenhouten body</td></tr>
+							<tr><td>Moderne 'C' nek</td></tr>
+							<tr><td>22 medium jumbo fretten met gestipte inleg</td></tr>
+							<tr><td>Rosewood hals</td></tr>
+							<tr><td>Bi-Flex Truss Rod systeem</td></tr>
+							<tr><td>Fender Custom Shop Fat '50s pickups</td></tr>
+							<tr><td>Chromen hardware</td></tr>
+							<tr><td>2-punts gesynchroniseerde tremolo </td></tr>
+							<tr><td>Inclusief SKB koffer, kabel, gitaarband en poetsdoekje</td></tr>
+						</table>
+
+					</div>
+					<div class="" id="video">
+						<h2>Videos</h2>
+					</div>
+					<div class="" id="reviews">
+						<h2>Reviews</h2>
+					</div>
+					<div class="" id="download">
+						<h2>Downloads</h2>
+					</div>
+				</div>
+			</div>
+
+		</div> <!-- END LEFT COLUMN -->
+
+
+		<div class="col-md-5 col-xs-12"> <!-- START RIGHT COLUMN -->
+			<div class="productDetail">
+				<div class="pull-right hidden-xs">
+					<img src="img/fender.png" alt="Fender">
+				</div>
+				<div class="rating hidden-xs">
+					<i class="rankingStars rankingStars-3"></i>
+					<p>schrijf de eerste review van dit product</p>
+				</div>
+				<div class="short-description visible-sm col-sm-5">
+					<p>50s Telecaster model uit de Vintage Hot Rod Series van Fender</p>
+				</div>
+				<span class="clearfix"></span>
+				<ul id="usp" class="col-sm-6 col-md-12 hidden-xs">
+					<li><span class="glyphicon glyphicon-ok">&nbsp;</span>Gratis verzending vanaf &euro; 50,-</li>
+					<li><span class="glyphicon glyphicon-ok">&nbsp;</span>Laagste prijs garantie</li>
+					<li><span class="glyphicon glyphicon-ok">&nbsp;</span>Vandaag besteld, morgen in huis</li>
+					<li><span class="glyphicon glyphicon-ok">&nbsp;</span>Altijd 3 jaar garantie</li>
+					<li><span class="glyphicon glyphicon-ok">&nbsp;</span>30 dagen "niet goed geld terug"</li>
+					<li><span class="glyphicon glyphicon-ok">&nbsp;</span>Telefonische helpdesk</li>
+				</ul>
+				<div class="short-description col-md-12 hidden-sm hidden-xs">
+					<p>50s Telecaster model uit de Vintage Hot Rod Series van Fender</p>
+				</div>
+				<div class="col-sm-6 col-md-12">
+					<div class="pull-left stock">
+						<img src="img/stock_status.png" alt="stock status" class="img-responsive" />
+						<span>Op voorraad, voor 17.30u besteld, volgende werkdag in huis</span>
+					</div>
+					<div class="action pull-right">
+						<span class="priceFrom">1650,-</span>
+						<span class="price">1369,-</span>
+						<div class="largeButtons hidden-xs">
+							<input type="text" name="hoeveelheid" class="form-control" value="2" maxlength="1">
+							<span>x</span>
+							<div class="btn-group btn-group-lg pull-right">
+								<a href="winkelwagen.html" class="btn btn-primary btn-success" role="button">Bestellen</a>
+							</div>
+						</div>
+						<span class="shipping hidden-xs">gratis verzending!</span>
+					</div>
+					<span class="clearfix"></span>
+					<div class="largeButtons visible-xs-block">
+						<input type="text" name="hoeveelheid" class="form-control" value="2" maxlength="1">
+						<span>x</span>
+						<div class="btn-group btn-group-lg pull-right">
+							<a href="winkelwagen.html" class="btn btn-primary btn-success" role="button">Bestellen</a>
+						</div>
+					</div>
+					<span class="shipping visible-xs-block">gratis verzending!</span>
+				</div>
+			</div>
+			<div class="col-md-12 productShare hidden-xs">
+				<div class="center-block">
+					<a href="" class="verlanglijst">
+						<img src="img/heart-hover.png" alt="Zet op verlanglijst" />
+						<span>zet op verlanglijst</span>
+					</a>
+					<a href="">
+						<img src="img/email-hover.png" alt="E-mail naar een vriend" />
+						<span>e-mail naar een vriend</span>
+					</a>
+					<a href="" class="share">
+						<img src="img/share-icon.png" alt="Share" />
+						<span>share</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-xs-12 productShare visible-xs-block">
+				<div class="center-block">
+					<a href="" class="verlanglijst">
+						<img src="img/heart-hover.png" alt="Zet op verlanglijst" />
+						<span>verlanglijst</span>
+					</a>
+					<a href="">
+						<img src="img/email-hover.png" alt="E-mail naar een vriend" />
+						<span>e-mail</span>
+					</a>
+					<a href="" class="share">
+						<img src="img/share-icon.png" alt="Share" />
+						<span>share</span>
+					</a>
+				</div>
+			</div>
+			<div class="accessoires hidden-xs">
+				<h2>Bijbehordende accessoires</h2>
+				<div class="item">
+					<div class="col-md-4 col-sm-4 image">
+						<a href="#" data-toggle="modal" data-target="#quickview">
+							<img src="img/boston-btu-400.png" alt="boston shizzle">
+							<img class="quickview" src="img/but-bck-quickview.png" alt="">
+							<p class="quickview">QUICKVIEW</p>
+						</a>
+					</div>
+					<div class="col-md-8 col-sm-8">
+						<h3>Boston BTU-400 clip chromatisch</h3>
+						<p>Supersale aanbiedin, nieuw in doos. Inclusief volledige 3 jaar garantie. OP=OP!</p>
+						<img src="img/stock_status.png" alt="stock">
+						<span>7,94<img src="img/checked.png" alt="checked"></span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="col-md-4 col-sm-4 image">
+						<a href="#" data-toggle="modal" data-target="#quickview">
+							<img src="img/fender-gitaarband.png" alt="">
+							<img class="quickview" src="img/but-bck-quickview.png" alt="">
+							<p class="quickview">QUICKVIEW</p>
+						</a>
+					</div>
+					<div class="col-md-8 col-sm-8">
+						<h3>Fender Gitaarband Monogrammed Black/Yellow/Red</h3>
+						<p>De klassieke Fender gitaarband met extra padding voro een comfortabel gevoel op je schouders en met su'ede einden.</p>
+						<img src="img/stock_status.png" alt="stock">
+						<span>7,94<img src="img/plus.png" alt="not checked"></span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="col-md-4 col-sm-4 image">
+						<a href="#" data-toggle="modal" data-target="#quickview">
+							<img src="img/mxr-m115.png" alt="">
+							<img class="quickview" src="img/but-bck-quickview.png" alt="">
+							<p class="quickview">QUICKVIEW</p>
+						</a>
+					</div>
+					<div class="col-md-8 col-sm-8">
+						<h3>MXR M115 Distortion III</h3>
+						<p>De klassieke Fender gitaarband met extra adding voor een comfortabel gevoel op je schouders en met su'ede einden.</p>
+						<img src="img/stock_status.png" alt="stock">
+						<span>7,94<img src="img/plus.png" alt="not checked"></span>
+					</div>
+				</div>
+			</div>
+		</div> <!-- END RIGHT COLUMN -->
+		<div class="tabs-small visible-xs-inline-block">
+			<div class="col-xs-12 small" id="productinformatie-small">
+				<a href="#"  onclick="$('#productinformatie-small').toggleClass('small');
+				return false;" class="make-small">
+				<h2>Productinformatie</h2>
+				<span class="glyphicon glyphicon-chevron-up pull-right"></span>
+			</a>
+
+			<p>
+				Fender American Standard Stratocaster Rosewood 3-Color Sunburst
+				De Fender American Standard Stratocaster lijn is werkelijk een fenomeen in de wereld van electrische gitaren, waarbij u van de beste vakmanschap, materialen en kwaliteit verzekerd bent. Ten opzichte van de eerdere modellen uit deze serie zijn de American Standard Stratocaster modellen opgewaardeerd in zowel haar uiterlijk als klank. Fender Custom Shop Fat '50s pickups geven een vollere sound terwijl nieuwe plastic onderdelen voor een meer vintage look zorgen op de Fender American Standard Stratocaster. De Fender American Standard Stratocaster heeft een elzenhouten body en een rosewood hals. Alle gitaren uit de American Standard serie worden geleverd met een SKB koffer, kabel, gitaarband en poetsdoekje.
+			</p>
+		</div>
+		<div class="col-xs-12 small" id="productspecificaties-small">
+			<a href="#"  onclick="$('#productspecificaties-small').toggleClass('small');
+			return false;" class="make-small">
+			<h2>Product specificaties</h2>
+			<span class="glyphicon glyphicon-chevron-up pull-right"></span>
+		</a>
+		<p>
+			Fender American Standard Stratocaster Rosewood 3-Color Sunburst
+			<ul>
+				<li>American Standard  Series</li>
+				<li>Elzenhouten body</li>
+				<li>Moderne 'C' nek</li>
+				<li>22 medium jumbo fretten met gestipte inleg</li>
+				<li>Rosewood hals</li>
+				<li>Bi-Flex Truss Rod systeem</li>
+				<li>Fender Custom Shop Fat '50s pickups</li>
+				<li>Chromen hardware</li>
+				<li>2-punts gesynchroniseerde tremolo </li>
+				<li>Inclusief SKB koffer, kabel, gitaarband en poetsdoekje</li>
+			</ul>
+
+		</div>
+		<div class="col-xs-12 small" id="video-small">
+			<a href="#"  onclick="$('#video-small').toggleClass('small');
+			return false;" class="make-small">
+			<h2>Videos</h2>
+			<span class="glyphicon glyphicon-chevron-up pull-right"></span>
+		</a>
+	</div>
+	<div class="col-xs-12 small" id="reviews-small">
+		<a href="#"  onclick="$('#reviews-small').toggleClass('small');
+		return false;" class="make-small">
+		<h2>Reviews</h2>
+		<span class="glyphicon glyphicon-chevron-up pull-right"></span>
+	</a>
+</div>
+<div class="col-xs-12 small" id="download-small">
+	<a href="#"  onclick="$('#download-small').toggleClass('small');
+	return false;" class="make-small">
+	<h2>Downloads</h2>
+	<span class="glyphicon glyphicon-chevron-up pull-right"></span>
+</a>
+</div>
+</div>
+<div class="col-md-12 col-sm-12"><!-- start rest of content -->
+	<!-- <div class="row combideal">
+	<h2>Combinatie voordeel:</h2>
+	<div class="col-md-7 col-sm-7 col-xs-12 image">
+	<div class="col-md-4 col-sm-4 col-xs-4 ">
+	<img src="img/thumb-fender.png" alt="Fender"/>
+	<img src="img/stock_status.png" alt="stock" class="stock"/>
+	<span class="price">1356,-</span>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-4 plus actielabel salebold rood">
+<img src="img/versterker.png" alt="Fender" />
+<img src="img/stock_status.png" alt="stock" class="stock" />
+<span class="price">321,-</span>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-4 plus">
+<img src="img/fender-cable.png" alt="Fender" />
+<img src="img/stock_status.png" alt="stock" class="stock" />
+<span class="price">7,60</span>
+</div>
+</div>
+<div class="col-md-5 col-sm-5 col-xs-12 total">
+<form>
+<div class="row">
+<div class="col-md-9 col-xs-9 text"><p>Fender American Standard Stratocaster Rosewood 3-color Sunburst<p></div>
+<div class="col-md-2 col-xs-2 price"><p>1.356,-</p></div>
+</div>
+<div class="row">
+<div class="col-md-9 col-xs-9 text"><p>Fender Ramparte Buizen versterker</p></div>
+<div class="col-md-2 col-xs-2 price"><p>321,-</p></div>
+</div>
+<div class="row">
+<div class="col-md-9 col-xs-9 text"><p>Fender Performance 3m gitaarkabel haakse jack</p></div>
+<div class="col-md-2 col-xs-2 price"><p>7,60</p></div>
+</div>
+<hr/>
+<span class="totaal_prijs">€ 1.356,-</span>
+<span class="totaal">Totaal:</span>
+
+<span class="clearfix"></span>
+<div class="largeButtons">
+<div class="btn-group btn-group-lg pull-right">
+<a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
+</div>
+</div>
+</form>
+</div>
+</div> -->
+<!-- <div class="specificatie">
+<h2>Product specificaties:</h2>
+<span class="red">Op werkdagen voor 17.30 uur besteld is morgen in huis (indien op voorraad, bel voor voorraad!)</span>
+<p>
+Infomusic.nl biedt u een snelle levering wanneer u besteld en betaald via iDeal of onder rembours. Een bestelling die op voorraad is en op werkdagen voor 17.30 uur is besteld leveren we de volgende dag al af met PostNL. Een levering naar Belgie duurt in de regel 1 of 2 dagen langer.
+</p>
+<span class="red">Snel leverbaar</span>
+<p>
+Wanneer een product niet in het magazijn van Infomusic.nl aanwezig is, maar uit een extern magazijn moet komen of wanneer een product niet op voorraad is dan zorgen we dat het in de regel binnen 2 tot 5 werkdagen bij Infomusic.nl op voorraad is en wordt het dezelfde dag nog verzonden. Wanneer we hier niet aan kunnen voldoen wordt dit op de website aangegeven of wordt u hiervan via e-mail op de hoogte gebracht.
+</p>
+</div> -->
+
+<div class="product_slider flexslider">
+	<h2>Populaire producten</h2>
+	<ul class="slides">
+		<li>
+			<div class="imageContainer">
+
+				<a href="#" class="productThumb">
+					<img src="img/marshall.jpg" alt="marshall" class="img-responsive"  />
+				</a>
+			</div>
+			<i class="rankingStars rankingStars-1"></i>
+			<p>
+				Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus. Quisque non sodales dui, nec dignissim augue. Nunc vehicula imperdiet cursus.
+			</p>
+			<img src="img/stock_status.png" alt="stock status" class="img-stock" />
+			<div class="priceContainer">
+				<span class="priceFrom">1650,-</span>
+				<span class="price">1246,-</span>
+			</div>
+			<div class="largeButtons">
+				<div class="btn-group btn-group-lg">
+					<a href="#" class="btn btn-primary btn-success" role="button">Bestel mij, omdat het kan</a>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="imageContainer">
+
+				<a href="#" class="productThumb">
+					<img src="img/fender.jpg" alt="fender"   />
+				</a>
+			</div>
+			<i class="rankingStars rankingStars-2"></i>
+			<p>
+				Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus. Quisque non sodales dui, nec dignissim augue. Nunc vehicula imperdiet cursus.
+			</p>
+			<img src="img/stock_status.png" alt="stock status" class="img-stock" />
+			<div class="priceContainer">
+				<span class="priceFrom">1650,-</span>
+				<span class="price">1246,-</span>
+			</div>
+			<div class="largeButtons">
+				<div class="btn-group btn-group-lg">
+					<a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="imageContainer">
+
+				<a href="#" class="productThumb">
+					<img src="img/korg.jpg" alt="fender"   />
+				</a>
+			</div>
+			<i class="rankingStars rankingStars-3"></i>
+			<p>
+				Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.
+			</p>
+			<img src="img/stock_status_nok.png" alt="stock status" class="img-stock" />
+			<div class="priceContainer">
+				<span class="priceFrom">1650,-</span>
+				<span class="price">1246,-</span>
+			</div>
+			<div class="largeButtons">
+				<div class="btn-group btn-group-lg">
+					<a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="imageContainer">
+
+				<a href="#" class="productThumb">
+					<img src="img/korg.jpg" alt="fender"   />
+				</a>
+			</div>
+			<i class="rankingStars rankingStars-4"></i>
+			<p>
+				Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.
+			</p>
+			<img src="img/stock_status.png" alt="stock status" class="img-stock" />
+			<div class="priceContainer">
+				<span class="priceFrom">1650,-</span>
+				<span class="price">1246,-</span>
+			</div>
+			<div class="largeButtons">
+				<div class="btn-group btn-group-lg">
+					<a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="imageContainer">
+
+				<a href="#" class="productThumb">
+					<img src="img/korg.jpg" alt="fender"   />
+				</a>
+			</div>
+			<i class="rankingStars rankingStars-5"></i>
+			<p>
+				Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.
+			</p>
+			<img src="img/stock_status.png" alt="stock status" class="img-stock" />
+			<div class="priceContainer">
+				<span class="priceFrom">1650,-</span>
+				<span class="price">1246,-</span>
+			</div>
+			<div class="largeButtons">
+				<div class="btn-group btn-group-lg">
+					<a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
+				</div>
+			</div>
+		</li>
+
+	</ul>
+</div>
+<div class="product_slider1 flexslider">
+	<h2>Laatst bekeken producten</h2>
+	<ul class="slides">
+		<li>
+			<div class="imageContainer">
+
+				<a href="#" class="productThumb">
+					<img src="img/marshall.jpg" alt="marshall" class="img-responsive"  />
+				</a>
+			</div>
+			<i class="rankingStars rankingStars-1"></i>
+			<p>
+				Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus. Quisque non sodales dui, nec dignissim augue. Nunc vehicula imperdiet cursus.
+			</p>
+			<img src="img/stock_status.png" alt="stock status" class="img-stock" />
+			<div class="priceContainer">
+				<span class="priceFrom">1650,-</span>
+				<span class="price">1246,-</span>
+			</div>
+		</li>
+		<li>
+			<div class="imageContainer">
+
+				<a href="#" class="productThumb">
+					<img src="img/fender.jpg" alt="fender"   />
+				</a>
+			</div>
+			<i class="rankingStars rankingStars-2"></i>
+			<p>
+				Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus. Quisque non sodales dui, nec dignissim augue. Nunc vehicula imperdiet cursus.
+			</p>
+			<img src="img/stock_status.png" alt="stock status" class="img-stock" />
+			<div class="priceContainer">
+				<span class="priceFrom">1650,-</span>
+				<span class="price">1246,-</span>
+			</div>
+		</li>
+		<li>
+			<div class="imageContainer">
+
+				<a href="#" class="productThumb">
+					<img src="img/korg.jpg" alt="fender"   />
+				</a>
+			</div>
+			<i class="rankingStars rankingStars-3"></i>
+			<p>
+				Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.
+			</p>
+			<img src="img/stock_status_nok.png" alt="stock status" class="img-stock" />
+			<div class="priceContainer">
+				<span class="priceFrom">1650,-</span>
+				<span class="price">1246,-</span>
+			</div>
+		</li>
+		<li>
+			<div class="imageContainer">
+
+				<a href="#" class="productThumb">
+					<img src="img/korg.jpg" alt="fender"   />
+				</a>
+			</div>
+			<i class="rankingStars rankingStars-4"></i>
+			<p>
+				Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.
+			</p>
+			<img src="img/stock_status.png" alt="stock status" class="img-stock" />
+			<div class="priceContainer">
+				<span class="priceFrom">1650,-</span>
+				<span class="price">1246,-</span>
+			</div>
+		</li>
+		<li>
+			<div class="imageContainer">
+				<a href="#" class="productThumb">
+					<img src="img/korg.jpg" alt="fender"   />
+				</a>
+			</div>
+			<i class="rankingStars rankingStars-5"></i>
+			<p>
+				Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.
+			</p>
+			<img src="img/stock_status.png" alt="stock status" class="img-stock" />
+			<div class="priceContainer">
+				<span class="priceFrom">1650,-</span>
+				<span class="price">1246,-</span>
+			</div>
+		</li>
+
+	</ul>
+</div>
+</div><!-- end rest of content -->
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="brands">
+			<ul>
+				<li><img src="img/fender.png" alt="Fender" /></li>
+				<li><img src="img/yamaha.png" alt="Yamaha" /></li>
+				<li><img src="img/vox.png" alt="VOX" /></li>
+				<li><img src="img/daddario.png" alt="D'Addario" /></li>
+				<li><img src="img/ibanez.png" alt="Ibanez" /></li>
+				<li><img src="img/marshall_1.png" alt="Marshall" /></li>
+				<li><img src="img/korg.png" alt="KORG" /></li>
+				<li><img src="img/martingo.png" alt="Marting & Go" /></li>
+				<li><img src="img/beats.png" alt="Beats" /></li>
+				<li><img src="img/pearl.png" alt="Pearl" /></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+
+
+</div>
+
+<!-- Scroll to top button -->
+<a href="#" class="scrollToTop"></a>
+
+<!-- END CONTENT
+START FOOTER -->
+<div class="footer1">
+	<div class="container">
+		<div class="row sitemap">
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<h3>Klantenservice</h3>
+				<ul>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Openingstijden</a></li>
+					<li><a href="#">Adres</a></li>
+					<li><a href="#">Vacatures</a></li>
+					<li><a href="#">Nieuwsbrief</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Algemene voorwaarden</a></li>
+					<li><a href="#">Betaalmogelijkheden</a></li>
+					<li><a href="#">Bezorgen en orderstatus</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<h3>Explore</h3>
+				<ul>
+					<li><a href="#">Over ons</a></li>
+					<li><a href="#">Elektrische gitaar</a></li>
+					<li><a href="#">Akoustische gitaar</a></li>
+					<li><a href="#">Versterkers</a></li>
+					<li><a href="#">Populaire zoektermen</a></li>
+					<li><a href="#">Geavanceerd zoeken</a></li>
+					<li><a href="#">Merken</a></li>
+				</ul>
+			</div>
+			<div class="clearfix visible-xs-block"></div>
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<h3>Populaire Merken</h3>
+				<ul>
+					<li><a href="#">Gibson</a></li>
+					<li><a href="#">Fender</a></li>
+					<li><a href="#">Ibanez</a></li>
+					<li><a href="#">Yamaha</a></li>
+					<li><a href="#">Marshall</a></li>
+					<li><a href="#">VOX</a></li>
+					<li><a href="#">Korg</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 col-sm-3 col-xs-5">
+				<h3>Overig</h3>
+				<ul>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Infomusic TV</a></li>
+					<li><a href="#">Prijsvragen &amp; Uitslagen</a></li>
+					<li><a href="#">Nieuws</a></li>
+					<li><a href="#">Tips &amp; Downloads</a></li>
+					<li><a href="#">Meet the team</a></li>
+					<li><a href="#">Werken bij Infomusic</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+			</div>
+			<div class="clearfix visible-sm-block"></div>
+			<div class="col-md-4 col-sm-8 hidden-xs">
+				<div class="latestNewsContainer">
+					<h3>Laatste nieuws</h3>
+					<p>
+						<span>29 juli 2014 - Lag Roxane Racing gitaren exclusief bij Infomusic.</span>Infomusic.nl gaat vanaf juni van dit jaar de vintage lijn van Lag voeren; De Lag Roxane Racing gitaren. De Roxane gitaar is reeds een bekende van Lag ...
+						<a href="#">Lees meer &raquo;</a>
+					</p>
+				</div>
+
+			</div>
+			<div class="col-md-2 col-sm-2 hidden-xs pull-right">
+				<div class="kiyoh">
+					<a href="https://www.kiyoh.nl/infomusic_nl/" target="_blank"><img src="https://www.kiyoh.nl/img/logo/124x67.png" style="border:0px" align="left"/></a>
+					<span>9.2</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer2">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<h3>Volg ons op:</h3>
+				<ul class="socialMediaIcons">
+					<li><a href="#" class="iconFacebook" title="Facebook">Facebook</a></li>
+					<li><a href="#" class="iconTwitter" title="Twitter">Twitter</a></li>
+					<li><a href="#" class="iconPinterest" title="Pinterest">Pinterest</a></li>
+					<li><a href="#" class="iconYoutube" title="Youtube">Youtube</a></li>
+					<li><a href="#" class="iconGooglePlus" title="Google+">Google+</a></li>
+				</ul>
+				<p class="quote">
+					&#8220;One good thing about music, when it hits you, you feel no pain.&#8221;
+					<span>Bob Marley</span>
+				</p>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<h3>Zij vinden ons leuk: Jij ook?</h3>
+				<div class="fb-like-box" data-href="https://www.facebook.com/Infomusic" data-width="260" data-height="180" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>                        </div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<h3>Contactgegevens</h3>
+					<p>
+						Infomusic.nl Muziekwinkel<br />
+						Kaptein Nemostraat 1 L Emmen<br />
+						Tel.: +31 (0)591-675791<br />
+						Email: <a href="mailto:helpdesk@infomusic.nl" class="email">helpdesk@infomusic.nl</a><br />
+					</p>
+
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="">
+						<h3>Aanmelden nieuwsbrief</h3>
+						<p>
+							Meld je aan voor de nieuwsbrief en blijf op de hoogte van de leukste aanbiedingen.
+						</p>
+						<div class="input-group">
+							<input type="text" name="email" id="newsletterInput" autocomplete="off" value="Aanmelden nieuwsbrief..." class="form-control" placeholer=".col-md-4" />
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button" id="newsletterButton"></button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		&copy; 2006 - 2014 Infomusic.nl - Alle rechten voorbehouden. <br /> <br />
+		<ul class="paymentTypes">
+			<li class="visa">Visa</li>
+			<li class="mastercard">Mastercard</li>
+			<li class="maestro">Maestro</li>
+			<li class="paypal">Paypal</li>
+			<li class="misterCash">Mister Cash</li>
+			<li class="sofortUberweisung">Sofort Uberweisung</li>
+			<li class="ideal">iDeal</li>
+			<li class="postNl">PostNL</li>
+			<li class="ups">UPS</li>
+		</ul>
+	</footer>
+	<div class="modal fade" id="quickview" tabindex="-1" role="dialog" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<a href="#" data-dismiss="modal" class="close">
+					<img src="img/close.png">
+				</a>
+				<div class="col-md-12">
+					<h2>Fender American Standard Stratocaster Rosewood 3-Color Sunburst</h2>
+				</div>
+				<div class="col-md-6">
+					<div id="slider_modal" class="flexslider bigImage">
+						<ul class="slides">
+							<li>
+								<img src="img/greta.png" alt="Greta" class="responsive">
+							</li>
+							<li>
+								<img src="img/versterker.png" alt="Greta" class="responsive">
+							</li>
+							<li>
+								<img src="img/marshall.jpg" alt="Greta" class="responsive">
+							</li>
+							<li>
+								<img src="img/cable.jpg" alt="Cable" class="responsive">
+							</li>
+							<li>
+								<img src="img/fender.jpg" alt="Greta" class="responsive">
+							</li>
+							<li>
+								<img src="img/fender-cable.png" alt="Greta" class="responsive">
 							</li>
 						</ul>
 					</div>
-
-				</div>
-			</div> <!-- end container -->
-		</div> <!-- end customerbar -->
-
-		<div class="searchBar navbar-default">
-			<div class="container">
-				<div class="headerbar" role="navigation">
-					<div class="row">
-						<div class="col-md-3 col-sm-3 col-xs-6">
-							<h1><a href="#"><img id="logo" src="img/logo.png"  alt="Infomusic, Online-shop voor muziekinstrumenten"/></a></h1>
-						</div>
-
-						<div class="col-md-4 col-sm-4 col-md-push-0 col-xs-12">
-							<div class="searchContainer">
-								<div class="input-group">
-									<input type="text" name="q" id="searchInput" onfocus="if (this.value == 'Zoeken naar...') {
-												this.value = '';
-											}" onblur="if (this.value == '') {
-														this.value = 'Zoeken naar...';
-													}" autocomplete="off" value="Zoeken naar..." class="form-control" placeholer=".col-md-4" />
-									<div class="input-group-btn">
-										<button class="btn-default" id="searchButton" type="button"><!-- <span class="glyphicon glyphicon-search"></span>--></button>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-2 col-md-push-1 hidden-xs">
-							<div class="text-info">
-								<p><b>KLANTENSERVICE</b></p>
-								<p>+31 (0)591-675791</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-3 col-xs-7 col-xs-move-up">
-							<div class="shoppingCartContainer">
-								<span id="shoppingCartImage">
-									<span>
-										0
-									</span>
-								</span>
-								<span id="shoppingCartTotal">
-									0,-
-									<span>Gratis verzending!</span>
-								</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> <!-- end container -->
-		</div> <!-- end searchbar -->
-
-		<div class="menuBar hidden-xs" role="navigation">
-			<div class="container">
-				<div class="">
-					<ul class="nav navbar-nav" id="menu_no_hover">
-						<li><a href="#" role="button" id="dropdownGitaar" data-toggle="dropdown" class="dropdown-toggle">gitaar</a>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownGitaar">
-								<div style="width: 300px; height: 300px">
-									<h3>Testing</h3>
-									<p>
-										Dit is een test
-									</p>
-								</div>
-							</ul>
-						</li>
-						<li><a href="#">drums & percussie</a></li>
-						<li><a href="#">toetsen</a></li>
-						<li><a href="#">geluid</a></li>
-						<li><a href="#">dj-gear</a></li>
-						<li><a href="#">licht</a></li>
-						<li><a href="#">blaasinstrument</a></li>
-						<li><a href="#">strijkinstrument</a></li>
-						<li><a href="#">kabels</a></li>
-						<li><a href="#">cases / hoezen / koffers</a></li>
-						<li><a href="#">accessoires</a></li>
-						<li><a href="#" class="hot">sale</a></li>
-					</ul>
-				</div>
-			</div> <!-- end container -->
-		</div> <!-- end categorybar -->
-
-		<!-- START CONTENT -->
-		<div class="mainBar">
-			<div class="container">
-
-
-				<div class="row hidden-xs">
-					<div class="col-md-12">
-						<ol class="breadcrumb">
-							<li><a href="index.html">Home</a></li>
-							<li class="active">Gitaar & Basgitaar</li>
-						</ol>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-12">
-						<div class="titleContainer">
-							<h1>Fender American Standard Stratocaster Rosewood 3-Color Sunburst</h1>
-						</div>
-						<div class="back pull-left hidden-xs">
-							<a href="#">terug naar assortiment</a>
-						</div>
-						<div class="page pull-right">
-							<span class="prev">vorige</span>|<span class="range">2 - 7</span>|<span class="next">volgende</span>
-						</div>
-					</div>
-
-					<div class="col-md-7 col-xs-12"> <!-- START LEFT COLUMN -->
-
-						<!-- <div class="bigImage">
-							<img src="img/greta.png" alt="Greta" class="responsive">
-							<img src="img/zoom.png" alt="zoom" class="zoom">
-							<span class="left"></span>
-							<span class="right"></span>
-						</div>
-
-						<div class="smallImage">
-							<ul>
-								<li><a href="#" ><img src="img/thumb-fender.png" alt=""></a></li>
-								<li><a href="#" ><img src="img/thumb-fender-piece.png" alt=""></a></li>
-								<li><a href="#" ><img src="img/thumb-fender-piece2.png" alt=""></a></li>
-								<li><a href="#" ><img src="img/thumb-fender-case.png" alt=""></a></li>
-								<li><a href="#" ><img src="img/play.png" alt=""></a></li>
-								<li><a href="#" ><img src="img/thumb-fender-piece2.png" alt=""></a></li>
-							</ul>
-							<a href="#" ><img src="img/arrow-left.png" alt="" class="left arrow"></a>
-							<a href="#" ><img src="img/arrow-right.png" alt="" class="right arrow"></a>
-						</div> -->
-
-						<div id="slider" class="flexslider bigImage">
-							<ul class="slides">
-								<li>
-									<img src="img/greta.png" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/versterker.png" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/marshall.jpg" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/cable.jpg" alt="Cable" class="responsive">
-								</li>
-								<li>
-									<img src="img/fender.jpg" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/fender-cable.png" alt="Greta" class="responsive">
-								</li>
-							</ul>
-						</div>
-						<div id="thumbs" class="flexslider smallImage">
-							<ul class="slides">
-								<li>
-									<img src="img/greta.png" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/versterker.png" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/marshall.jpg" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/cable.jpg" alt="Cable" class="responsive">
-								</li>
-								<li>
-									<img src="img/fender.jpg" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/fender-cable.png" alt="Greta" class="responsive">
-								</li>
-							</ul>
-						</div>
-
-						<div class="tabs hidden-sm hidden-xs">
-							<!-- links -->
-							<ul class="tabLinks">
-								<li class="active"><a href="#productinformatie">Product Informatie</a></li>
-								<li><a href="#productspecificaties">Product Specificaties</a></li>
-								<li><a href="#video">Video</a></li>
-								<li><a href="#reviews">Reviews [52]</a></li>
-								<li><a href="#download">Download</a></li>
-							</ul>
-							<span class="clearfix"></span>
-							<!-- content -->
-							<div class="tab-content">
-								<div class="active" id="productinformatie">
-									<h2>Productinformatie</h2>
-									<p>
-										Fender American Standard Stratocaster Rosewood 3-Color Sunburst
-										De Fender American Standard Stratocaster lijn is werkelijk een fenomeen in de wereld van electrische gitaren, waarbij u van de beste vakmanschap, materialen en kwaliteit verzekerd bent. Ten opzichte van de eerdere modellen uit deze serie zijn de American Standard Stratocaster modellen opgewaardeerd in zowel haar uiterlijk als klank. Fender Custom Shop Fat '50s pickups geven een vollere sound terwijl nieuwe plastic onderdelen voor een meer vintage look zorgen op de Fender American Standard Stratocaster. De Fender American Standard Stratocaster heeft een elzenhouten body en een rosewood hals. Alle gitaren uit de American Standard serie worden geleverd met een SKB koffer, kabel, gitaarband en poetsdoekje.
-									</p>
-								</div>
-								<div class="" id="productspecificaties">
-									<h2>Product specificaties</h2>
-									<p>
-										Fender American Standard Stratocaster Rosewood 3-Color Sunburst
-									<table class="table table-condensed">
-										<tr><td>American Standard  Series</td></tr>
-										<tr><td>Elzenhouten body</td></tr>
-										<tr><td>Moderne 'C' nek</td></tr>
-										<tr><td>22 medium jumbo fretten met gestipte inleg</td></tr>
-										<tr><td>Rosewood hals</td></tr>
-										<tr><td>Bi-Flex Truss Rod systeem</td></tr>
-										<tr><td>Fender Custom Shop Fat '50s pickups</td></tr>
-										<tr><td>Chromen hardware</td></tr>
-										<tr><td>2-punts gesynchroniseerde tremolo </td></tr>
-										<tr><td>Inclusief SKB koffer, kabel, gitaarband en poetsdoekje</td></tr>
-									</table>
-
-								</div>
-								<div class="" id="video">
-									<h2>Videos</h2>
-								</div>
-								<div class="" id="reviews">
-									<h2>Reviews</h2>
-								</div>
-								<div class="" id="download">
-									<h2>Downloads</h2>
-								</div>
-							</div>
-						</div>
-
-					</div> <!-- END LEFT COLUMN -->
-
-
-					<div class="col-md-5 col-xs-12"> <!-- START RIGHT COLUMN -->
-						<div class="productDetail">
-							<div class="pull-right hidden-xs">
-								<img src="img/fender.png" alt="Fender">
-							</div>
-							<div class="rating hidden-xs">
-								<i class="rankingStars rankingStars-3"></i>
-								<p>schrijf de eerste review van dit product</p>
-							</div>
-							<div class="short-description visible-sm col-sm-5">
-								<p>50s Telecaster model uit de Vintage Hot Rod Series van Fender</p>
-							</div>
-							<span class="clearfix"></span>
-							<ul id="usp" class="col-sm-6 col-md-12 hidden-xs">
-								<li><span class="glyphicon glyphicon-ok">&nbsp;</span>Gratis verzending vanaf &euro; 50,-</li>
-								<li><span class="glyphicon glyphicon-ok">&nbsp;</span>Laagste prijs garantie</li>
-								<li><span class="glyphicon glyphicon-ok">&nbsp;</span>Vandaag besteld, morgen in huis</li>
-								<li><span class="glyphicon glyphicon-ok">&nbsp;</span>Altijd 3 jaar garantie</li>
-								<li><span class="glyphicon glyphicon-ok">&nbsp;</span>30 dagen "niet goed geld terug"</li>
-								<li><span class="glyphicon glyphicon-ok">&nbsp;</span>Telefonische helpdesk</li>
-							</ul>
-							<div class="short-description col-md-12 hidden-sm hidden-xs">
-								<p>50s Telecaster model uit de Vintage Hot Rod Series van Fender</p>
-							</div>
-							<div class="col-sm-6 col-md-12">
-								<div class="pull-left stock">
-									<img src="img/stock_status.png" alt="stock status" class="img-responsive" />
-									<span>Op voorraad, voor 17.30u besteld, volgende werkdag in huis</span>
-								</div>
-								<div class="action pull-right">
-									<span class="priceFrom">1650,-</span>
-									<span class="price">1369,-</span>
-									<div class="largeButtons hidden-xs">
-										<input type="text" name="hoeveelheid" class="form-control" value="2" maxlength="1">
-										<span>x</span>
-										<div class="btn-group btn-group-lg pull-right">
-											<a href="winkelwagen.html" class="btn btn-primary btn-success" role="button">Bestellen</a>
-										</div>
-									</div>
-									<span class="shipping hidden-xs">gratis verzending!</span>
-								</div>
-								<span class="clearfix"></span>
-								<div class="largeButtons visible-xs-block">
-									<input type="text" name="hoeveelheid" class="form-control" value="2" maxlength="1">
-									<span>x</span>
-									<div class="btn-group btn-group-lg pull-right">
-										<a href="winkelwagen.html" class="btn btn-primary btn-success" role="button">Bestellen</a>
-									</div>
-								</div>
-								<span class="shipping visible-xs-block">gratis verzending!</span>
-							</div>
-						</div>
-						<div class="col-md-12 productShare hidden-xs">
-							<div class="center-block">
-								<a href="" class="verlanglijst">
-									<img src="img/heart-hover.png" alt="Zet op verlanglijst" />
-									<span>zet op verlanglijst</span>
-								</a>
-								<a href="">
-									<img src="img/email-hover.png" alt="E-mail naar een vriend" />
-									<span>e-mail naar een vriend</span>
-								</a>
-								<a href="" class="share">
-									<img src="img/share-icon.png" alt="Share" />
-									<span>share</span>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-12 productShare visible-xs-block">
-							<div class="center-block">
-								<a href="" class="verlanglijst">
-									<img src="img/heart-hover.png" alt="Zet op verlanglijst" />
-									<span>verlanglijst</span>
-								</a>
-								<a href="">
-									<img src="img/email-hover.png" alt="E-mail naar een vriend" />
-									<span>e-mail</span>
-								</a>
-								<a href="" class="share">
-									<img src="img/share-icon.png" alt="Share" />
-									<span>share</span>
-								</a>
-							</div>
-						</div>
-						<div class="accessoires hidden-xs">
-							<h2>Bijbehordende accessoires</h2>
-							<div class="item">
-								<div class="col-md-4 col-sm-4 image">
-									<a href="#" data-toggle="modal" data-target="#quickview">
-										<img src="img/boston-btu-400.png" alt="boston shizzle">
-										<img class="quickview" src="img/but-bck-quickview.png" alt="">
-										<p class="quickview">QUICKVIEW</p>
-									</a>
-								</div>
-								<div class="col-md-8 col-sm-8">
-									<h3>Boston BTU-400 clip chromatisch</h3>
-									<p>Supersale aanbiedin, nieuw in doos. Inclusief volledige 3 jaar garantie. OP=OP!</p>
-									<img src="img/stock_status.png" alt="stock">
-									<span>7,94<img src="img/checked.png" alt="checked"></span>
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-md-4 col-sm-4 image">
-									<a href="#" data-toggle="modal" data-target="#quickview">
-										<img src="img/fender-gitaarband.png" alt="">
-										<img class="quickview" src="img/but-bck-quickview.png" alt="">
-										<p class="quickview">QUICKVIEW</p>
-									</a>
-								</div>
-								<div class="col-md-8 col-sm-8">
-									<h3>Fender Gitaarband Monogrammed Black/Yellow/Red</h3>
-									<p>De klassieke Fender gitaarband met extra padding voro een comfortabel gevoel op je schouders en met su'ede einden.</p>
-									<img src="img/stock_status.png" alt="stock">
-									<span>7,94<img src="img/plus.png" alt="not checked"></span>
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-md-4 col-sm-4 image">
-									<a href="#" data-toggle="modal" data-target="#quickview">
-										<img src="img/mxr-m115.png" alt="">
-										<img class="quickview" src="img/but-bck-quickview.png" alt="">
-										<p class="quickview">QUICKVIEW</p>
-									</a>
-								</div>
-								<div class="col-md-8 col-sm-8">
-									<h3>MXR M115 Distortion III</h3>
-									<p>De klassieke Fender gitaarband met extra adding voor een comfortabel gevoel op je schouders en met su'ede einden.</p>
-									<img src="img/stock_status.png" alt="stock">
-									<span>7,94<img src="img/plus.png" alt="not checked"></span>
-								</div>
-							</div>
-						</div>
-					</div> <!-- END RIGHT COLUMN -->
-					<div class="tabs-small visible-xs-inline-block">
-						<div class="col-xs-12 small" id="productinformatie-small">
-							<a href="#"  onclick="$('#productinformatie-small').toggleClass('small');
-									return false;" class="make-small">
-								<h2>Productinformatie</h2>
-								<span class="glyphicon glyphicon-chevron-up pull-right"></span>
-							</a>
-
-							<p>
-								Fender American Standard Stratocaster Rosewood 3-Color Sunburst
-								De Fender American Standard Stratocaster lijn is werkelijk een fenomeen in de wereld van electrische gitaren, waarbij u van de beste vakmanschap, materialen en kwaliteit verzekerd bent. Ten opzichte van de eerdere modellen uit deze serie zijn de American Standard Stratocaster modellen opgewaardeerd in zowel haar uiterlijk als klank. Fender Custom Shop Fat '50s pickups geven een vollere sound terwijl nieuwe plastic onderdelen voor een meer vintage look zorgen op de Fender American Standard Stratocaster. De Fender American Standard Stratocaster heeft een elzenhouten body en een rosewood hals. Alle gitaren uit de American Standard serie worden geleverd met een SKB koffer, kabel, gitaarband en poetsdoekje.
-							</p>
-						</div>
-						<div class="col-xs-12 small" id="productspecificaties-small">
-							<a href="#"  onclick="$('#productspecificaties-small').toggleClass('small');
-									return false;" class="make-small">
-								<h2>Product specificaties</h2>
-								<span class="glyphicon glyphicon-chevron-up pull-right"></span>
-							</a>
-							<p>
-								Fender American Standard Stratocaster Rosewood 3-Color Sunburst
-							<ul>
-								<li>American Standard  Series</li>
-								<li>Elzenhouten body</li>
-								<li>Moderne 'C' nek</li>
-								<li>22 medium jumbo fretten met gestipte inleg</li>
-								<li>Rosewood hals</li>
-								<li>Bi-Flex Truss Rod systeem</li>
-								<li>Fender Custom Shop Fat '50s pickups</li>
-								<li>Chromen hardware</li>
-								<li>2-punts gesynchroniseerde tremolo </li>
-								<li>Inclusief SKB koffer, kabel, gitaarband en poetsdoekje</li>
-							</ul>
-
-						</div>
-						<div class="col-xs-12 small" id="video-small">
-							<a href="#"  onclick="$('#video-small').toggleClass('small');
-									return false;" class="make-small">
-								<h2>Videos</h2>
-								<span class="glyphicon glyphicon-chevron-up pull-right"></span>
-							</a>
-						</div>
-						<div class="col-xs-12 small" id="reviews-small">
-							<a href="#"  onclick="$('#reviews-small').toggleClass('small');
-									return false;" class="make-small">
-								<h2>Reviews</h2>
-								<span class="glyphicon glyphicon-chevron-up pull-right"></span>
-							</a>
-						</div>
-						<div class="col-xs-12 small" id="download-small">
-							<a href="#"  onclick="$('#download-small').toggleClass('small');
-									return false;" class="make-small">
-								<h2>Downloads</h2>
-								<span class="glyphicon glyphicon-chevron-up pull-right"></span>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-12 col-sm-12"><!-- start rest of content -->
-						<!-- <div class="row combideal">
-							<h2>Combinatie voordeel:</h2>
-							<div class="col-md-7 col-sm-7 col-xs-12 image">
-								<div class="col-md-4 col-sm-4 col-xs-4 ">
-									<img src="img/thumb-fender.png" alt="Fender"/>
-									<img src="img/stock_status.png" alt="stock" class="stock"/>
-									<span class="price">1356,-</span>
-								</div>
-								<div class="col-md-4 col-sm-4 col-xs-4 plus actielabel salebold rood">
-									<img src="img/versterker.png" alt="Fender" />
-									<img src="img/stock_status.png" alt="stock" class="stock" />
-									<span class="price">321,-</span>
-								</div>
-								<div class="col-md-4 col-sm-4 col-xs-4 plus">
-									<img src="img/fender-cable.png" alt="Fender" />
-									<img src="img/stock_status.png" alt="stock" class="stock" />
-									<span class="price">7,60</span>
-								</div>
-							</div>
-							<div class="col-md-5 col-sm-5 col-xs-12 total">
-								<form>
-									<div class="row">
-										<div class="col-md-9 col-xs-9 text"><p>Fender American Standard Stratocaster Rosewood 3-color Sunburst<p></div>
-										<div class="col-md-2 col-xs-2 price"><p>1.356,-</p></div>
-									</div>
-									<div class="row">
-										<div class="col-md-9 col-xs-9 text"><p>Fender Ramparte Buizen versterker</p></div>
-										<div class="col-md-2 col-xs-2 price"><p>321,-</p></div>
-									</div>
-									<div class="row">
-										<div class="col-md-9 col-xs-9 text"><p>Fender Performance 3m gitaarkabel haakse jack</p></div>
-										<div class="col-md-2 col-xs-2 price"><p>7,60</p></div>
-									</div>
-									<hr/>
-									<span class="totaal_prijs">€ 1.356,-</span>
-									<span class="totaal">Totaal:</span>
-
-									<span class="clearfix"></span>
-									<div class="largeButtons">
-										<div class="btn-group btn-group-lg pull-right">
-											<a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div> -->
-						<!-- <div class="specificatie">
-							<h2>Product specificaties:</h2>
-							<span class="red">Op werkdagen voor 17.30 uur besteld is morgen in huis (indien op voorraad, bel voor voorraad!)</span>
-							<p>
-								Infomusic.nl biedt u een snelle levering wanneer u besteld en betaald via iDeal of onder rembours. Een bestelling die op voorraad is en op werkdagen voor 17.30 uur is besteld leveren we de volgende dag al af met PostNL. Een levering naar Belgie duurt in de regel 1 of 2 dagen langer.
-							</p>
-							<span class="red">Snel leverbaar</span>
-							<p>
-								Wanneer een product niet in het magazijn van Infomusic.nl aanwezig is, maar uit een extern magazijn moet komen of wanneer een product niet op voorraad is dan zorgen we dat het in de regel binnen 2 tot 5 werkdagen bij Infomusic.nl op voorraad is en wordt het dezelfde dag nog verzonden. Wanneer we hier niet aan kunnen voldoen wordt dit op de website aangegeven of wordt u hiervan via e-mail op de hoogte gebracht.
-							</p>
-						</div> -->
-
-						<div class="product_slider flexslider">
-							<h2>Populaire producten</h2>
-							<ul class="slides">
-								<li>
-									<div class="imageContainer">
-
-										<a href="#" class="productThumb">
-											<img src="img/marshall.jpg" alt="marshall" class="img-responsive"  />
-										</a>
-									</div>
-									<i class="rankingStars rankingStars-1"></i>
-									<p>
-										Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus. Quisque non sodales dui, nec dignissim augue. Nunc vehicula imperdiet cursus.
-									</p>
-									<img src="img/stock_status.png" alt="stock status" class="img-stock" />
-									<div class="priceContainer">
-										<span class="priceFrom">1650,-</span>
-										<span class="price">1246,-</span>
-									</div>
-									<div class="largeButtons">
-										<div class="btn-group btn-group-lg">
-											<a href="#" class="btn btn-primary btn-success" role="button">Bestel mij, omdat het kan</a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="imageContainer">
-
-										<a href="#" class="productThumb">
-											<img src="img/fender.jpg" alt="fender"   />
-										</a>
-									</div>
-									<i class="rankingStars rankingStars-2"></i>
-									<p>
-										Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus. Quisque non sodales dui, nec dignissim augue. Nunc vehicula imperdiet cursus.
-									</p>
-									<img src="img/stock_status.png" alt="stock status" class="img-stock" />
-									<div class="priceContainer">
-										<span class="priceFrom">1650,-</span>
-										<span class="price">1246,-</span>
-									</div>
-									<div class="largeButtons">
-										<div class="btn-group btn-group-lg">
-											<a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="imageContainer">
-
-										<a href="#" class="productThumb">
-											<img src="img/korg.jpg" alt="fender"   />
-										</a>
-									</div>
-									<i class="rankingStars rankingStars-3"></i>
-									<p>
-										Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.
-									</p>
-									<img src="img/stock_status_nok.png" alt="stock status" class="img-stock" />
-									<div class="priceContainer">
-										<span class="priceFrom">1650,-</span>
-										<span class="price">1246,-</span>
-									</div>
-									<div class="largeButtons">
-										<div class="btn-group btn-group-lg">
-											<a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="imageContainer">
-
-										<a href="#" class="productThumb">
-											<img src="img/korg.jpg" alt="fender"   />
-										</a>
-									</div>
-									<i class="rankingStars rankingStars-4"></i>
-									<p>
-										Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.
-									</p>
-									<img src="img/stock_status.png" alt="stock status" class="img-stock" />
-									<div class="priceContainer">
-										<span class="priceFrom">1650,-</span>
-										<span class="price">1246,-</span>
-									</div>
-									<div class="largeButtons">
-										<div class="btn-group btn-group-lg">
-											<a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="imageContainer">
-
-										<a href="#" class="productThumb">
-											<img src="img/korg.jpg" alt="fender"   />
-										</a>
-									</div>
-									<i class="rankingStars rankingStars-5"></i>
-									<p>
-										Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.
-									</p>
-									<img src="img/stock_status.png" alt="stock status" class="img-stock" />
-									<div class="priceContainer">
-										<span class="priceFrom">1650,-</span>
-										<span class="price">1246,-</span>
-									</div>
-									<div class="largeButtons">
-										<div class="btn-group btn-group-lg">
-											<a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
-										</div>
-									</div>
-								</li>
-
-							</ul>
-						</div>
-						<div class="product_slider1 flexslider">
-							<h2>Laatst bekeken producten</h2>
-							<ul class="slides">
-								<li>
-									<div class="imageContainer">
-
-										<a href="#" class="productThumb">
-											<img src="img/marshall.jpg" alt="marshall" class="img-responsive"  />
-										</a>
-									</div>
-									<i class="rankingStars rankingStars-1"></i>
-									<p>
-										Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus. Quisque non sodales dui, nec dignissim augue. Nunc vehicula imperdiet cursus.
-									</p>
-									<img src="img/stock_status.png" alt="stock status" class="img-stock" />
-									<div class="priceContainer">
-										<span class="priceFrom">1650,-</span>
-										<span class="price">1246,-</span>
-									</div>
-								</li>
-								<li>
-									<div class="imageContainer">
-
-										<a href="#" class="productThumb">
-											<img src="img/fender.jpg" alt="fender"   />
-										</a>
-									</div>
-									<i class="rankingStars rankingStars-2"></i>
-									<p>
-										Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus. Quisque non sodales dui, nec dignissim augue. Nunc vehicula imperdiet cursus.
-									</p>
-									<img src="img/stock_status.png" alt="stock status" class="img-stock" />
-									<div class="priceContainer">
-										<span class="priceFrom">1650,-</span>
-										<span class="price">1246,-</span>
-									</div>
-								</li>
-								<li>
-									<div class="imageContainer">
-
-										<a href="#" class="productThumb">
-											<img src="img/korg.jpg" alt="fender"   />
-										</a>
-									</div>
-									<i class="rankingStars rankingStars-3"></i>
-									<p>
-										Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.
-									</p>
-									<img src="img/stock_status_nok.png" alt="stock status" class="img-stock" />
-									<div class="priceContainer">
-										<span class="priceFrom">1650,-</span>
-										<span class="price">1246,-</span>
-									</div>
-								</li>
-								<li>
-									<div class="imageContainer">
-
-										<a href="#" class="productThumb">
-											<img src="img/korg.jpg" alt="fender"   />
-										</a>
-									</div>
-									<i class="rankingStars rankingStars-4"></i>
-									<p>
-										Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.
-									</p>
-									<img src="img/stock_status.png" alt="stock status" class="img-stock" />
-									<div class="priceContainer">
-										<span class="priceFrom">1650,-</span>
-										<span class="price">1246,-</span>
-									</div>
-								</li>
-								<li>
-									<div class="imageContainer">
-										<a href="#" class="productThumb">
-											<img src="img/korg.jpg" alt="fender"   />
-										</a>
-									</div>
-									<i class="rankingStars rankingStars-5"></i>
-									<p>
-										Nullam nunc lectus, rutrum sit amet eros a, vehicula dictum lacus.
-									</p>
-									<img src="img/stock_status.png" alt="stock status" class="img-stock" />
-									<div class="priceContainer">
-										<span class="priceFrom">1650,-</span>
-										<span class="price">1246,-</span>
-									</div>
-								</li>
-
-							</ul>
-						</div>
-					</div><!-- end rest of content -->
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="brands">
-							<ul>
-								<li><img src="img/fender.png" alt="Fender" /></li>
-								<li><img src="img/yamaha.png" alt="Yamaha" /></li>
-								<li><img src="img/vox.png" alt="VOX" /></li>
-								<li><img src="img/daddario.png" alt="D'Addario" /></li>
-								<li><img src="img/ibanez.png" alt="Ibanez" /></li>
-								<li><img src="img/marshall_1.png" alt="Marshall" /></li>
-								<li><img src="img/korg.png" alt="KORG" /></li>
-								<li><img src="img/martingo.png" alt="Marting & Go" /></li>
-								<li><img src="img/beats.png" alt="Beats" /></li>
-								<li><img src="img/pearl.png" alt="Pearl" /></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-		</div>
-
-		            <!-- Scroll to top button -->
-            <a href="#" class="scrollToTop"></a>
-
-		<!-- END CONTENT
-			START FOOTER -->
-		<div class="footer1">
-			<div class="container">
-				<div class="row sitemap">
-					<div class="col-md-2 col-sm-3 col-xs-6">
-						<h3>Klantenservice</h3>
-						<ul>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Openingstijden</a></li>
-							<li><a href="#">Adres</a></li>
-							<li><a href="#">Vacatures</a></li>
-							<li><a href="#">Nieuwsbrief</a></li>
-							<li><a href="#">Privacy</a></li>
-							<li><a href="#">Algemene voorwaarden</a></li>
-							<li><a href="#">Betaalmogelijkheden</a></li>
-							<li><a href="#">Bezorgen en orderstatus</a></li>
+					<div id="thumbs_modal" class="flexslider smallImage">
+						<ul class="slides">
+							<li>
+								<img src="img/greta.png" alt="Greta" class="responsive">
+							</li>
+							<li>
+								<img src="img/versterker.png" alt="Greta" class="responsive">
+							</li>
+							<li>
+								<img src="img/marshall.jpg" alt="Greta" class="responsive">
+							</li>
+							<li>
+								<img src="img/cable.jpg" alt="Cable" class="responsive">
+							</li>
+							<li>
+								<img src="img/fender.jpg" alt="Greta" class="responsive">
+							</li>
+							<li>
+								<img src="img/fender-cable.png" alt="Greta" class="responsive">
+							</li>
 						</ul>
 					</div>
-					<div class="col-md-2 col-sm-3 col-xs-6">
-						<h3>Explore</h3>
-						<ul>
-							<li><a href="#">Over ons</a></li>
-							<li><a href="#">Elektrische gitaar</a></li>
-							<li><a href="#">Akoustische gitaar</a></li>
-							<li><a href="#">Versterkers</a></li>
-							<li><a href="#">Populaire zoektermen</a></li>
-							<li><a href="#">Geavanceerd zoeken</a></li>
-							<li><a href="#">Merken</a></li>
-						</ul>
-					</div>
-					<div class="clearfix visible-xs-block"></div>
-					<div class="col-md-2 col-sm-3 col-xs-6">
-						<h3>Populaire Merken</h3>
-						<ul>
-							<li><a href="#">Gibson</a></li>
-							<li><a href="#">Fender</a></li>
-							<li><a href="#">Ibanez</a></li>
-							<li><a href="#">Yamaha</a></li>
-							<li><a href="#">Marshall</a></li>
-							<li><a href="#">VOX</a></li>
-							<li><a href="#">Korg</a></li>
-						</ul>
-					</div>
-					<div class="col-md-2 col-sm-3 col-xs-5">
-						<h3>Overig</h3>
-						<ul>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Infomusic TV</a></li>
-							<li><a href="#">Prijsvragen &amp; Uitslagen</a></li>
-							<li><a href="#">Nieuws</a></li>
-							<li><a href="#">Tips &amp; Downloads</a></li>
-							<li><a href="#">Meet the team</a></li>
-							<li><a href="#">Werken bij Infomusic</a></li>
-							<li><a href="#">Sitemap</a></li>
-						</ul>
-					</div>
-					<div class="clearfix visible-sm-block"></div>
-					<div class="col-md-4 col-sm-8 hidden-xs">
-						<div class="latestNewsContainer">
-							<h3>Laatste nieuws</h3>
-							<p>
-								<span>29 juli 2014 - Lag Roxane Racing gitaren exclusief bij Infomusic.</span>Infomusic.nl gaat vanaf juni van dit jaar de vintage lijn van Lag voeren; De Lag Roxane Racing gitaren. De Roxane gitaar is reeds een bekende van Lag ...
-								<a href="#">Lees meer &raquo;</a>
-							</p>
-						</div>
-
-					</div>
-					<div class="col-md-2 col-sm-2 hidden-xs pull-right">
-						<div class="kiyoh">
-							<a href="https://www.kiyoh.nl/infomusic_nl/" target="_blank"><img src="https://www.kiyoh.nl/img/logo/124x67.png" style="border:0px" align="left"/></a>
-							<span>9.2</span>
-						</div>
-					</div>
 				</div>
-			</div>
-		</div>
-		<div class="footer2">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<h3>Volg ons op:</h3>
-						<ul class="socialMediaIcons">
-							<li><a href="#" class="iconFacebook" title="Facebook">Facebook</a></li>
-							<li><a href="#" class="iconTwitter" title="Twitter">Twitter</a></li>
-							<li><a href="#" class="iconPinterest" title="Pinterest">Pinterest</a></li>
-							<li><a href="#" class="iconYoutube" title="Youtube">Youtube</a></li>
-							<li><a href="#" class="iconGooglePlus" title="Google+">Google+</a></li>
-						</ul>
-						<p class="quote">
-							&#8220;One good thing about music, when it hits you, you feel no pain.&#8221;
-							<span>Bob Marley</span>
-						</p>
+				<div class="col-md-6 productDetail">
+					<div class="pull-right hidden-xs">
+						<img src="img/fender.png" alt="Fender">
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<h3>Zij vinden ons leuk: Jij ook?</h3>
-						<div class="fb-like-box" data-href="https://www.facebook.com/Infomusic" data-width="260" data-height="180" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>                        </div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<h3>Contactgegevens</h3>
-						<p>
-							Infomusic.nl Muziekwinkel<br />
-							Kaptein Nemostraat 1 L Emmen<br />
-							Tel.: +31 (0)591-675791<br />
-							Email: <a href="mailto:helpdesk@infomusic.nl" class="email">helpdesk@infomusic.nl</a><br />
-						</p>
-
+					<div class="rating hidden-xs">
+						<img src="img/ranking_stars.png" alt="ranking" class="img-responsive"><a href="#">10 reviews</a>
+						<p>schrijf de eerste review van dit product</p>
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="">
-							<h3>Aanmelden nieuwsbrief</h3>
-							<p>
-								Meld je aan voor de nieuwsbrief en blijf op de hoogte van de leukste aanbiedingen.
-							</p>
-							<div class="input-group">
-								<input type="text" name="email" id="newsletterInput" autocomplete="off" value="Aanmelden nieuwsbrief..." class="form-control" placeholer=".col-md-4" />
-								<span class="input-group-btn">
-									<button class="btn btn-default" type="button" id="newsletterButton"></button>
-								</span>
-							</div>
-						</div>
+					<div class="short-description visible-sm">
+						<p>50s Telecaster model uit de Vintage Hot Rod Series van Fender</p>
 					</div>
-				</div>
-			</div>
-		</div>
-		<footer>
-			&copy; 2006 - 2014 Infomusic.nl - Alle rechten voorbehouden. <br /> <br />
-			<ul class="paymentTypes">
-				<li class="visa">Visa</li>
-				<li class="mastercard">Mastercard</li>
-				<li class="maestro">Maestro</li>
-				<li class="paypal">Paypal</li>
-				<li class="misterCash">Mister Cash</li>
-				<li class="sofortUberweisung">Sofort Uberweisung</li>
-				<li class="ideal">iDeal</li>
-				<li class="postNl">PostNL</li>
-				<li class="ups">UPS</li>
-			</ul>
-		</footer>
-		<div class="modal fade" id="quickview" tabindex="-1" role="dialog" role="dialog" aria-hidden="true">
-			<div class="modal-dialog modal-lg">
-				<div class="modal-content">
-					<a href="#" data-dismiss="modal" class="close">
-						<img src="img/close.png">
-					</a>
-					<div class="col-md-12">
-							<h2>Fender American Standard Stratocaster Rosewood 3-Color Sunburst</h2>
+					<span class="clearfix"></span>
+					<div class="short-description col-md-12 hidden-sm hidden-xs">
+						<p>50s Telecaster model uit de Vintage Hot Rod Series van Fender</p>
 					</div>
-					<div class="col-md-6">
-						<div id="slider_modal" class="flexslider bigImage">
-							<ul class="slides">
-								<li>
-									<img src="img/greta.png" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/versterker.png" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/marshall.jpg" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/cable.jpg" alt="Cable" class="responsive">
-								</li>
-								<li>
-									<img src="img/fender.jpg" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/fender-cable.png" alt="Greta" class="responsive">
-								</li>
-							</ul>
+					<div class="bottom">
+						<div class="pull-left stock">
+							<img src="img/stock_status.png" alt="stock status" class="img-responsive">
+							<span>Op voorraad, voor 17.30u besteld, volgende werkdag in huis</span>
 						</div>
-						<div id="thumbs_modal" class="flexslider smallImage">
-							<ul class="slides">
-								<li>
-									<img src="img/greta.png" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/versterker.png" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/marshall.jpg" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/cable.jpg" alt="Cable" class="responsive">
-								</li>
-								<li>
-									<img src="img/fender.jpg" alt="Greta" class="responsive">
-								</li>
-								<li>
-									<img src="img/fender-cable.png" alt="Greta" class="responsive">
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-6 productDetail">
-						<div class="pull-right hidden-xs">
-							<img src="img/fender.png" alt="Fender">
-						</div>
-						<div class="rating hidden-xs">
-							<img src="img/ranking_stars.png" alt="ranking" class="img-responsive"><a href="#">10 reviews</a>
-							<p>schrijf de eerste review van dit product</p>
-						</div>
-						<div class="short-description visible-sm">
-							<p>50s Telecaster model uit de Vintage Hot Rod Series van Fender</p>
-						</div>
-						<span class="clearfix"></span>
-						<div class="short-description col-md-12 hidden-sm hidden-xs">
-							<p>50s Telecaster model uit de Vintage Hot Rod Series van Fender</p>
-						</div>
-						<div class="bottom">
-							<div class="pull-left stock">
-								<img src="img/stock_status.png" alt="stock status" class="img-responsive">
-								<span>Op voorraad, voor 17.30u besteld, volgende werkdag in huis</span>
-							</div>
-							<div class="action pull-right">
-								<span class="priceFrom">1650,-</span>
-								<span class="price">1369,-</span>
-								<div class="largeButtons hidden-xs">
-									<div class="btn-group btn-group-lg pull-right">
-										<a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
-									</div>
-								</div>
-								<span class="shipping hidden-xs">gratis verzending!</span>
-							</div>
-							<span class="clearfix"></span>
-							<div class="largeButtons visible-xs-block">
-								<input type="text" name="hoeveelheid" class="form-control" value="2" maxlength="1">
-								<span>x</span>
+						<div class="action pull-right">
+							<span class="priceFrom">1650,-</span>
+							<span class="price">1369,-</span>
+							<div class="largeButtons hidden-xs">
 								<div class="btn-group btn-group-lg pull-right">
 									<a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
 								</div>
 							</div>
-							<span class="shipping visible-xs-block">gratis verzending!</span>
+							<span class="shipping hidden-xs">gratis verzending!</span>
 						</div>
+						<span class="clearfix"></span>
+						<div class="largeButtons visible-xs-block">
+							<input type="text" name="hoeveelheid" class="form-control" value="2" maxlength="1">
+							<span>x</span>
+							<div class="btn-group btn-group-lg pull-right">
+								<a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
+							</div>
+						</div>
+						<span class="shipping visible-xs-block">gratis verzending!</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script src="js/bootstrap.js"></script>
-		<script src="js/cosifinum.js"></script>
-		<script>
-								jQuery(document).ready(function() {
-									jQuery('.tabs .tabLinks a').on('click', function(e) {
-										var currentAttrValue = jQuery(this).attr('href');
+	</div>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/stickybar.js"></script>
+	<script>
+	jQuery(document).ready(function() {
+		jQuery('.tabs .tabLinks a').on('click', function(e) {
+			var currentAttrValue = jQuery(this).attr('href');
 
-										// Show/Hide Tabs
-										jQuery('.tab-content ' + currentAttrValue).fadeIn(400).siblings().hide();
+			// Show/Hide Tabs
+			jQuery('.tab-content ' + currentAttrValue).fadeIn(400).siblings().hide();
 
-										// Change/remove current tab to active
-										jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+			// Change/remove current tab to active
+			jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
 
-										e.preventDefault();
-									});
-									function showFlexSlider() {
+			e.preventDefault();
+		});
+		function showFlexSlider() {
 
-									    $('#thumbs_modal').flexslider({
-										    animation: "slide",
-										    controlNav: false,
-										    animationLoop: false,
-										    slideshow: false,
-										    itemWidth: 160,
-										    itemMargin: 8,
-										    asNavFor: '#slider_modal',
-										    move: 1
-										});
+			$('#thumbs_modal').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				itemWidth: 160,
+				itemMargin: 8,
+				asNavFor: '#slider_modal',
+				move: 1
+			});
 
-										$('#slider_modal').flexslider({
-										    animation: "slide",
-										    controlNav: false,
-										    animationLoop: false,
-										    slideshow: false,
-										    sync: "#thumbs_modal"
-										});
-									};
+			$('#slider_modal').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				sync: "#thumbs_modal"
+			});
+		};
 
-									$('.modal').on('show.bs.modal', showFlexSlider);
+		$('.modal').on('show.bs.modal', showFlexSlider);
 
-									 $(window).scroll(function(){
-                        if($(this).scrollTop() > 100){
-                            $('.scrollToTop').fadeIn();
-                        } else {
-                            $('.scrollToTop').fadeOut();
-                        }
-                    });
-                    $('.scrollToTop').click(function(){
-                        $('html, body').animate({scrollTop : 0}, 800);
-                        return false;
-                    });
-								});
-		</script>
-	</body>
+		$(window).scroll(function(){
+			if($(this).scrollTop() > 100){
+				$('.scrollToTop').fadeIn();
+			} else {
+				$('.scrollToTop').fadeOut();
+			}
+		});
+		$('.scrollToTop').click(function(){
+			$('html, body').animate({scrollTop : 0}, 800);
+			return false;
+		});
+		$("#toggleNavigation").click(function(event) {
+			$(".cbp-spmenu").toggleClass("cbp-spmenu-open");
+			$(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
+			event.stopPropagation();
+		});
+		$(".cbp-spmenu-push").click(function(e) {
+			if($(this).hasClass("cbp-spmenu-push-toright") && !$(e.target).is(".cbp-spmenu-open")){
+				$(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
+				$(".cbp-spmenu").toggleClass("cbp-spmenu-open");
+			}
+		});
+	});
+	</script>
+</body>
 </html>
