@@ -171,6 +171,9 @@
         border: none;
         padding-top: 0;
     }
+    .filters {
+        padding-left: 15px;
+    }
     .panel-group .panel {
         margin-bottom: 15px;
     }
@@ -212,13 +215,32 @@
 
 /* Extra small devices (Phones) */
 @media (max-width: 767px) {
+    #shoppingCartTotal {
+        display: none;
+    }
+    .headerbar .navbar-toggle {
+        background-color: #F7F6F4;
+        border: none;
+        border-radius: 0;
+        float: none;
+        padding: 13px;
+        margin-top: 15px;
+    }
+    .headerbar .shadow {
+        -webkit-box-shadow: 0px -2px 30px 0px rgba(50, 50, 50, 0.5);
+        -moz-box-shadow:    0px -2px 30px 0px rgba(50, 50, 50, 0.5);
+        box-shadow:         0px -2px 30px 0px rgba(50, 50, 50, 0.5);
+    }
+    .headerbar .navbar-toggle .icon-bar {
+        background-color: black;
+        height: 4px;
+        width: 25px;
+    }
+
     .brands {
         margin-top: 20px;
         margin-bottom: 20px;
         height: 260px;
-    }
-    .navbar-collapse.in {
-        overflow-y: hidden;
     }
     .form-control:focus{
         border-right: none;
@@ -234,25 +256,6 @@
     }
     .headerbar .row {
         position: relative;
-    }
-    .navbar-toggle .icon-bar {
-        height: 4px;
-        background-color: #3b3b3a !important;
-    }
-    .navbar-default .navbar-toggle {
-        background-color: white;
-        border-radius: 0;
-    }
-    .navbar-nav > li > a {
-        font-size: 13px;
-    }
-    #mobile-menu .navbar-nav .glyphicon {
-        position: absolute;
-        right: 10px;
-        line-height: 40px;
-    }
-    .navbar-nav > li:hover {
-        background-color: white;
     }
     .col-xs-move-up {
         position: absolute;
@@ -359,28 +362,6 @@
     }
     .sitemap, .newsletter{
         padding-bottom: 20px;
-    }
-    ul.customerServiceMenu {
-        display: none !important;
-    }
-    #black-spacer-top > li > #dropdownCustomerService {
-        background: none;
-    }
-    .customerBar {
-        background-color: #f8f8f8;
-    }
-    .customerBar .navbar {
-        border: none;
-        margin-bottom: 0;
-    }
-    #black-spacer-top li a {
-        line-height: 45px;
-    }
-    .languageMenu li a {
-        line-height: 10px !important;
-    }
-    #mobile-menu ul li a {
-        padding: 10px !important;
     }
     .mobile_categories {
         background-color: #1f1d1b;
