@@ -493,7 +493,7 @@
 
 		.cbp-spmenu {
 			background: #1E1D1B;
-			position: fixed;
+			position: absolute;
 		}
 
 		/* Orientation-dependent styles for the content of the menu */
@@ -511,9 +511,9 @@
 			left: -240px;
 		}
 
-		.cbp-spmenu-left.cbp-spmenu-open {
-			left: 0px;
-		}
+		/*.cbp-spmenu-left.cbp-spmenu-open {
+			left: -240px;
+		}*/
 
 		/* Push classes applied to the body */
 
@@ -552,7 +552,7 @@
 			border-radius: 0;
 			font-size: 14px;
 			padding: 5px 10px;
-			background-color: #828282;
+			background-color: #d74f29;
 			border-color: transparent;
 		}
 
