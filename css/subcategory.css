@@ -181,13 +181,13 @@
 }
 
 .productHolderLarge .infoPanel .rating i {
-    margin-right: 10px;
+    margin-right: 5px;
     display: inline-block;
 }
 
 .productHolderLarge .infoPanel .rating {
     margin-bottom: 10px;
-    line-height: 15px;
+    line-height: 13px;
 }
 
 .productHolderLarge .infoPanel .description p {
