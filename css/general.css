@@ -493,7 +493,7 @@
 
 		.cbp-spmenu {
 			background: #1E1D1B;
-			position: fixed;
+			position: absolute;
 		}
 
 		/* Orientation-dependent styles for the content of the menu */
@@ -509,12 +509,11 @@
 
 		.cbp-spmenu-left {
 			left: -240px;
-			height: 100%;
 		}
 
-		.cbp-spmenu-left.cbp-spmenu-open {
-			left: -0;
-		}
+		/*.cbp-spmenu-left.cbp-spmenu-open {
+			left: -240px;
+		}*/
 
 		/* Push classes applied to the body */
 
