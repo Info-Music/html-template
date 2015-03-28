@@ -21,7 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link href="css/flexslider.css" rel="stylesheet" type="text/css"/>
     <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-    <script src="js/hammer.min.js" type="text/javascript"></script>
+    <script src="js/jquery.event.swipe.js" type="text/javascript"></script>
     <script type="text/javascript" charset="utf-8">
     $(window).load(function() {
         var flexslider;
@@ -920,19 +920,26 @@
             });
 
 
-            hammer('html').on("swipeleft", function() {
+            $(".cbp-spmenu-push").on('swipeleft', function(e) {
                 if(!$(".cbp-spmenu").hasClass(".cbp-spmenu-open")) {
                     $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
                     $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
                 }
             });
-
-            hammer('html').on("swiperight", function() {
-                if($(".cbp-spmenu").hasClass(".cbp-spmenu-open")) {
-                    $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
-                    $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
-                }
-            });
+            //
+            // Hammer(".cbp-spmenu").on("swipeleft", function() {
+            //     if(!$(".cbp-spmenu").hasClass(".cbp-spmenu-open")) {
+            //         $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
+            //         $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
+            //     }
+            // });
+            //
+            // Hammer(".cbp-spmenu").on("swiperight", function() {
+            //     if($(".cbp-spmenu").hasClass(".cbp-spmenu-open")) {
+            //         $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
+            //         $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
+            //     }
+            // });
         });
         </script>
     </div>
