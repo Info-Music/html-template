@@ -21,6 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link href="css/flexslider.css" rel="stylesheet" type="text/css"/>
     <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+    <script src="js/hammer.min.js" type="text/javascript"></script>
     <script type="text/javascript" charset="utf-8">
     $(window).load(function() {
         var flexslider;
@@ -35,6 +36,7 @@
             prevText: "",
             nextText: ""
         });
+
     });
     </script>
 
@@ -705,7 +707,7 @@
                         <div class="input-group">
                             <input type="text" autocomplete="off" value="Staat uw vraag er niet tussen?" class="form-control" placeholer=".col-md-4">
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button"></button>
+                                <button class="btn btn-default" type="button">Stel nu je vraag</button>
                             </span>
                         </div>
                     </form>
@@ -870,8 +872,6 @@
                             <div class="input-group">
                                 <input type="text" name="email" id="newsletterInput" autocomplete="off" value="Aanmelden nieuwsbrief..." class="form-control" placeholer=".col-md-4" />
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="newsletterButton"></button>
-                                </span>
                             </div>
                         </div>
                     </div>
@@ -916,6 +916,21 @@
                 if($(this).hasClass("cbp-spmenu-push-toright") && !$(e.target).is(".cbp-spmenu-open")){
                     $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
                     $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
+                }
+            });
+
+
+            hammer('html').on("swipeleft", function() {
+                if(!$(".cbp-spmenu").hasClass(".cbp-spmenu-open")) {
+                    $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
+                    $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
+                }
+            });
+
+            hammer('html').on("swiperight", function() {
+                if($(".cbp-spmenu").hasClass(".cbp-spmenu-open")) {
+                    $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
+                    $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
                 }
             });
         });
