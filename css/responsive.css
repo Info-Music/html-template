@@ -133,7 +133,7 @@
     .populairCategory div .glyphicon {
         display: none;
     }
-    .productMonth img {
+    .productMonth iframe {
         width: 100%;
         padding: 0;
     }
@@ -621,6 +621,14 @@
         width: 100%;
         padding-left: 15px;
         padding-right: 15px;
+    }
+    /* LOGIN PAGE */
+    .new-users, .registered-users {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .registered-users {
+        border-top: 1px solid #ebebeb;
     }
 }
 

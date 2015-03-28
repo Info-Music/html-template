@@ -127,7 +127,7 @@
     overflow: auto;
 }
 
-.productMonth img {
+.productMonth iframe {
     float: left;
     width: 65%;
     padding: 20px;
