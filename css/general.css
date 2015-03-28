@@ -476,15 +476,28 @@
 			display: none;
 		}
 
-		.affix #toggleCategories a {
+		.affix #toggleCategories .navbar-toggle {
+			background-color: #fff;
+			border: none;
+			border-radius: 0;
+			float: none;
+			padding: 14px 12px;
+			margin-top: 13px;
 			display: block;
-			line-height: 70px;
-			opacity: 0.4;
-			transition: all 0.3s ease;
 		}
 
-		.affix #toggleCategories:hover a {
-			opacity: 0.6;
+		.affix #toggleCategories .navbar-toggle .icon-bar {
+			display: block;
+		  	width: 24px;
+		  	height: 3px;
+		  	border-radius: 1px;
+			background-color: #000;
+			opacity: 0.5;
+			transition: all 0.2s ease;
+		}
+
+		.affix #toggleCategories:hover .navbar-toggle .icon-bar {
+			opacity: 0.7;
 		}
 
 		/* ==== push menu ==== */
