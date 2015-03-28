@@ -20,6 +20,8 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.event.move.js" type="text/javascript"></script>
+    <script src="js/jquery.event.swipe.js" type="text/javascript"></script>
     <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
 </head>
 <body class="cbp-spmenu-push">
@@ -532,6 +534,30 @@
                             $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
                             $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
                         }
+                    });
+                    $(".cbp-spmenu-push")
+                    .on("swipeleft", function(e) {
+                        if($(".cbp-spmenu").hasClass("cbp-spmenu-open")) {
+                            $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
+                            $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
+                        }
+                    })
+                    .on("movestart", function(e) {
+                        if( (e.distX > e.distY && e.distX < -e.distY) ||
+                            (e.distX < e.distY && e.distX > -e.distY)) {
+                            e.preventDefault();
+                            return;
+                        }
+                    })
+                    .on("move", function(e) {
+                        var left = 240 - (-e.distX);
+
+                        if(e.distX < 0) {
+                            $(".cbp-spmenu-push-toright").css("left", left + "px");
+                        }
+                    })
+                    .on("moveend", function(e){
+                        $(".cbp-spmenu-push").removeAttr("style");
                     });
                 });
                 </script>

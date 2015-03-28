@@ -922,12 +922,10 @@
 
 
             $(".cbp-spmenu-push")
-
             .on("swipeleft", function(e) {
                 if($(".cbp-spmenu").hasClass("cbp-spmenu-open")) {
                     $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
                     $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
-
                 }
             })
             .on("movestart", function(e) {
@@ -947,20 +945,6 @@
             .on("moveend", function(e){
                 $(".cbp-spmenu-push").removeAttr("style");
             });
-            //
-            // Hammer(".cbp-spmenu").on("swipeleft", function() {
-            //     if(!$(".cbp-spmenu").hasClass(".cbp-spmenu-open")) {
-            //         $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
-            //         $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
-            //     }
-            // });
-            //
-            // Hammer(".cbp-spmenu").on("swiperight", function() {
-            //     if($(".cbp-spmenu").hasClass(".cbp-spmenu-open")) {
-            //         $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
-            //         $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
-            //     }
-            // });
         });
         </script>
     </div>
