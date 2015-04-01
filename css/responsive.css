@@ -625,10 +625,11 @@
     /* LOGIN PAGE */
     .new-users, .registered-users {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
-    .registered-users {
+    .new-users {
         border-top: 1px solid #ebebeb;
+        margin-bottom: 40px;
     }
     .my-account .form-list input[type=text], .my-account .form-list input[type=email], .my-account .form-list input[type=password] {
         width: 100%;

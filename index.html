@@ -709,7 +709,7 @@
                         <div class="input-group">
                             <input type="text" autocomplete="off" value="Staat uw vraag er niet tussen?" class="form-control" placeholer=".col-md-4">
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Stel nu je vraag</button>
+                                <button class="btn btn-default" type="button">Stel je vraag</button>
                             </span>
                         </div>
                     </form>
@@ -874,6 +874,8 @@
                             <div class="input-group">
                                 <input type="text" name="email" id="newsletterInput" autocomplete="off" value="Aanmelden nieuwsbrief..." class="form-control" placeholer=".col-md-4" />
                                 <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" id="newsletterButton"></button>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -931,7 +933,7 @@
             })
             .on("movestart", function(e) {
                 if( (e.distX > e.distY && e.distX < -e.distY) ||
-                    (e.distX < e.distY && e.distX > -e.distY)) {
+                (e.distX < e.distY && e.distX > -e.distY)) {
                     e.preventDefault();
                     return;
                 }
