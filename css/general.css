@@ -525,9 +525,9 @@
 		}
 
 		.cbp-spmenu-left.cbp-spmenu-open {
-			-webkit-box-shadow: 5px 0px 5px 0px rgba(50, 50, 50, 0.5);
-			-moz-box-shadow:    5px 0px 5px 0px rgba(50, 50, 50, 0.5);
-			box-shadow:         5px 0px 5px 0px rgba(50, 50, 50, 0.5);
+			-webkit-box-shadow: 2px 0px 5px 0px rgba(50, 50, 50, 0.5);
+			-moz-box-shadow:    2px 0px 5px 0px rgba(50, 50, 50, 0.5);
+			box-shadow:         2px 0px 5px 0px rgba(50, 50, 50, 0.5);
 		}
 
 		/* Push classes applied to the body */
