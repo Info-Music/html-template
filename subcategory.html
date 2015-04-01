@@ -601,433 +601,422 @@
         <div class="row hidden-xs hidden-sm">
             <div class="col-md-12">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                     </ol>
 
                     <div class="carousel-inner header_slider">
                         <div class="item active">
-                            <img src="img/category_slider.png" alt="Test" />
+                            <img src="img/fender-blues-junior-III-woody-butter.jpg" alt="Test" />
                             <div class="carousel-caption">
-                                <!--<div class="mediumButtons hidden-xs hidden-sm">
-                                <div class="btn-group btn-group-md">
-                                <a href="#" class="btn btn-primary btn-warning" role="button">meer info</a>
                             </div>
-                        </div>-->
+                        </div>
+                        <div class="item">
+                            <img src="img/fender-greta-748.jpg" alt="Test" />
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/hercules-dj-control-instinct-748.jpg" alt="Test" />
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/yamaha-akoestische-gitaren.jpg" alt="Test" />
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
                     </div>
+
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
                 </div>
-                <div class="item">
-                    <img src="img/category_slider.png" alt="Test" />
-                    <div class="carousel-caption">
-                        <!--<div class="mediumButtons hidden-xs hidden-sm">
-                        <div class="btn-group btn-group-md">
-                        <a href="#" class="btn btn-primary btn-warning" role="button">meer info</a>
-                    </div>
-                </div>-->
             </div>
         </div>
-        <div class="item">
-            <img src="img/category_slider.png" alt="Test" />
-            <div class="carousel-caption">
-                <!--<div class="mediumButtons hidden-xs hidden-sm">
-                <div class="btn-group btn-group-md">
-                <a href="#" class="btn btn-primary btn-warning" role="button">meer info</a>
+        <!-- Filters -->
+        <div class="row">
+            <div class="col-md-12" id="subcategory">
+                <h3>Elektrische gitaren</h3>
             </div>
-        </div>-->
-    </div>
+            <div class="col-md-12">
+                <div class="pull-right filtersList">
+                    <form class="form-inline filtersForm" role="form">
+                        <div class="form-group">
+                            <label class="control-label" for="sort">sorteren op</label>
+                            <select class="form-control" name="sort">
+                                <option>Beschikbaarheid</option>
+                                <option>Prijs</option>
+                                <option>Naam</option>
+                            </select>
+                            <button type="button" class="btn btn-default btn-lg">
+                                <span class="glyphicon glyphicon-arrow-up"></span>
+                            </button>
+                        </div>
 
-</div>
-</div>
+                        <div class="form-group hidden-xs">
+                            <label class="control-label" for="sort">toon</label>
+                            <select class="form-control" name="sort">
+                                <option>25</option>
+                                <option>50</option>
+                                <option>75</option>
+                            </select>
+                        </div>
 
-<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-</a>
-<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-</a>
-</div>
-</div>
-</div>
-<!-- Filters -->
-<div class="row">
-    <div class="col-md-12" id="subcategory">
-        <h3>Elektrische gitaren</h3>
-    </div>
-    <div class="col-md-12">
-        <div class="pull-right filtersList">
-            <form class="form-inline filtersForm" role="form">
-                <div class="form-group">
-                    <label class="control-label" for="sort">sorteren op</label>
-                    <select class="form-control" name="sort">
-                        <option>Beschikbaarheid</option>
-                        <option>Prijs</option>
-                        <option>Naam</option>
-                    </select>
-                    <button type="button" class="btn btn-default btn-lg">
-                        <span class="glyphicon glyphicon-arrow-up"></span>
-                    </button>
+                        <div class="form-group view">
+                            <button type="button" onclick="window.location='./subcategory_thumb.html'" class="btn btn-default btn-lg">
+                                <span class="glyphicon glyphicon-th"></span>
+                            </button>
+                            <button type="button" class="btn btn-default btn-lg active">
+                                <span class="glyphicon glyphicon-align-justify"></span>
+                            </button>
+                        </div>
+                    </form>
                 </div>
-
-                <div class="form-group hidden-xs">
-                    <label class="control-label" for="sort">toon</label>
-                    <select class="form-control" name="sort">
-                        <option>25</option>
-                        <option>50</option>
-                        <option>75</option>
-                    </select>
-                </div>
-
-                <div class="form-group view">
-                    <button type="button" onclick="window.location='./subcategory_thumb.html'" class="btn btn-default btn-lg">
-                        <span class="glyphicon glyphicon-th"></span>
-                    </button>
-                    <button type="button" class="btn btn-default btn-lg active">
-                        <span class="glyphicon glyphicon-align-justify"></span>
-                    </button>
-                </div>
-            </form>
+            </div>
         </div>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col-md-12">
-        <ul class="productListOne hidden-xs">
-            <li>
-                <!-- BEGIN Product Holder Large -->
-                <div class="productHolderLarge">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="productListOne hidden-xs">
+                    <li>
+                        <!-- BEGIN Product Holder Large -->
+                        <div class="productHolderLarge">
 
-                    <div class="row ">
-                        <div class="col-md-4 col-sm-4 col-xs-4">
-                            <a href="#" class="pull-left productThumb actielabel geel hotdeal" data-toggle="modal" data-target="#quickview">
-                                <img src="img/marshall.jpg" alt="marshall" class="img-responsive"  />
-                                <img class="quickview" src="img/but-bck-quickview.png" alt="">
-                                <p class="quickview">QUICKVIEW</p>
+                            <div class="row ">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <a href="#" class="pull-left productThumb actielabel geel hotdeal" data-toggle="modal" data-target="#quickview">
+                                        <img src="img/marshall.jpg" alt="marshall" class="img-responsive"  />
+                                        <img class="quickview" src="img/but-bck-quickview.png" alt="">
+                                        <p class="quickview">QUICKVIEW</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-7 infoPanel">
+                                    <h2><a href="pdp.html">Marshall JVM215C buizen gitaarcombo</a></h2>
+                                    <div class="pull-left">
+                                        <div class="rating hidden-xs">
+                                            <i class="rankingStars rankingStars-3"></i><a href="#">10 reviews</a>
+                                        </div>
+                                        <div class="description hidden-xs">
+                                            <p>
+                                                Tobacco Sunburst Stratocaster uit de Fender Select 2013 serie
+                                            </p>
+                                            <ul>
+                                                <li>Vermogen: 50 Watt</li>
+                                                <li>Luidsprekers: 1x G12B 12'</li>
+                                                <li>Voorversterkerbuizen: 4x ECC83 buis</li>
+                                                <li>Eindversterkers: 1x ECC83, 2x EL34</li>
+                                            </ul>
+                                        </div>
+                                        <div class="stock">
+                                            <img src="img/stock_status.png" alt="stock status" class="img-responsive" />
+                                            <span class="stock hidden-xs">Op voorraad</span>
+                                            <span class="deliver hidden-xs">voor 17.30u besteld, volgende werkdag in huis</span>
+                                        </div>
+                                    </div>
+                                    <div class="action">
+                                        <span class="priceFrom">1650,-</span>
+                                        <span class="price">1246,-</span>
+
+                                        <div class="largeButtons hidden-xs">
+                                            <div class="btn-group btn-group-lg pull-right">
+                                                <a href="winkelwage.html" class="btn btn-primary btn-success" role="button">Bestellen</a>
+                                            </div>
+                                        </div>
+                                        <span class="shipping hidden-xs">gratis verzending!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Product Holder Large -->
+                    </li>
+                    <li>
+                        <!-- BEGIN Product Holder Large -->
+                        <div class="productHolderLarge">
+                            <div class="row ">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <a href="#" class="pull-left productThumb actielabel geel hotdeal" data-toggle="modal" data-target="#quickview">
+                                        <img src="img/fender.jpg" alt="fender" class="img-responsive"  />
+                                        <img class="quickview" src="img/but-bck-quickview.png" alt="">
+                                        <p class="quickview">QUICKVIEW</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-7 infoPanel">
+                                    <h2><a href="pdp.html">Fender American Select Stratocaster dark</a></h2>
+                                    <div class="pull-left">
+                                        <div class="rating hidden-xs">
+                                            <i class="rankingStars rankingStars-3"></i><a href="#">10 reviews</a>
+                                        </div>
+                                        <div class="description hidden-xs">
+                                            <p>
+                                                Tobacco Sunburst Stratocaster uit de Fender Select 2013 serie
+                                            </p>
+                                            <ul>
+                                                <li>Vermogen: 50 Watt</li>
+                                                <li>Luidsprekers: 1x G12B 12'</li>
+                                                <li>Voorversterkerbuizen: 4x ECC83 buis</li>
+                                                <li>Eindversterkers: 1x ECC83, 2x EL34</li>
+                                            </ul>
+                                        </div>
+                                        <div class="stock">
+                                            <img src="img/stock_status.png" alt="stock status" class="img-responsive" />
+                                            <span class="stock hidden-xs">Op voorraad</span>
+                                            <span class="deliver hidden-xs">voor 17.30u besteld, volgende werkdag in huis</span>
+                                        </div>
+                                    </div>
+                                    <div class="action">
+                                        <span class="priceFrom"></span>
+                                        <span class="price">1.884,-</span>
+
+                                        <div class="largeButtons hidden-xs">
+                                            <div class="btn-group btn-group-lg pull-right">
+                                                <a href="winkelwagen.html" class="btn btn-primary btn-success" role="button">Bestellen</a>
+                                            </div>
+                                        </div>
+                                        <span class="shipping hidden-xs">gratis verzending!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Product Holder Large -->
+                    </li>
+                    <li>
+                        <!-- BEGIN Product Holder Large -->
+                        <div class="productHolderLarge">
+                            <div class="row ">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <a href="#" class="pull-left productThumb actielabel geel hotdeal" data-toggle="modal" data-target="#quickview">
+                                        <img src="img/korg.jpg" alt="Korg" class="img-responsive"  />
+                                        <img class="quickview" src="img/but-bck-quickview.png" alt="">
+                                        <p class="quickview">QUICKVIEW</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-7 infoPanel">
+                                    <h2><a href="pdp.html">Korg PA900 Arranger Keyboard</a></h2>
+                                    <div class="pull-left">
+                                        <div class="rating hidden-xs">
+                                            <i class="rankingStars rankingStars-3"></i><a href="#">10 reviews</a>
+                                        </div>
+                                        <div class="description hidden-xs">
+                                            <p>
+                                                Tobacco Sunburst Stratocaster uit de Fender Select 2013 serie
+                                            </p>
+                                            <ul>
+                                                <li>Vermogen: 50 Watt</li>
+                                                <li>Luidsprekers: 1x G12B 12'</li>
+                                                <li>Voorversterkerbuizen: 4x ECC83 buis</li>
+                                                <li>Eindversterkers: 1x ECC83, 2x EL34</li>
+                                            </ul>
+                                        </div>
+                                        <div class="stock">
+                                            <img src="img/stock_status.png" alt="stock status" class="img-responsive" />
+                                            <span class="stock hidden-xs">Op voorraad</span>
+                                            <span class="deliver hidden-xs">voor 17.30u besteld, volgende werkdag in huis</span>
+                                        </div>
+                                    </div>
+                                    <div class="action">
+                                        <span class="priceFrom">2.395,-</span>
+                                        <span class="price">1.899,-</span>
+
+                                        <div class="largeButtons hidden-xs">
+                                            <div class="btn-group btn-group-lg pull-right">
+                                                <a href="winkelwagen.html" class="btn btn-primary btn-success" role="button">Bestellen</a>
+                                            </div>
+                                        </div>
+                                        <span class="shipping hidden-xs">gratis verzending!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Product Holder Large -->
+                    </li>
+                    <li>
+                        <!-- BEGIN Product Holder Large -->
+                        <div class="productHolderLarge">
+                            <div class="row ">
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <a href="#" class="pull-left productThumb" data-toggle="modal" data-target="#quickview">
+                                        <img src="img/cable.jpg" alt="Fender Cable" class="img-responsive"  />
+                                        <img class="quickview" src="img/but-bck-quickview.png" alt="">
+                                        <p class="quickview">QUICKVIEW</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-7 infoPanel">
+                                    <h2><a href="#">Fender Custom Shop Gold Tweed 5,5 meter gitaarkabel</a></h2>
+                                    <div class="pull-left">
+                                        <div class="rating hidden-xs">
+                                            <i class="rankingStars rankingStars-3"></i><a href="#">10 reviews</a>
+                                        </div>
+                                        <div class="description hidden-xs">
+                                            <p>
+                                                Tobacco Sunburst Stratocaster uit de Fender Select 2013 serie
+                                            </p>
+                                            <ul>
+                                                <li>Vermogen: 50 Watt</li>
+                                                <li>Luidsprekers: 1x G12B 12'</li>
+                                                <li>Voorversterkerbuizen: 4x ECC83 buis</li>
+                                                <li>Eindversterkers: 1x ECC83, 2x EL34</li>
+                                            </ul>
+                                        </div>
+                                        <div class="stock">
+                                            <img src="img/stock_status.png" alt="stock status" class="img-responsive" />
+                                            <span class="stock hidden-xs">Op voorraad</span>
+                                            <span class="deliver hidden-xs">voor 17.30u besteld, volgende werkdag in huis</span>
+                                        </div>
+                                    </div>
+                                    <div class="action">
+                                        <span class="priceFrom"></span>
+                                        <span class="price">13,65</span>
+
+                                        <div class="largeButtons hidden-xs">
+                                            <div class="btn-group btn-group-lg pull-right">
+                                                <a href="winkelwagen.html" class="btn btn-primary btn-success" role="button">Bestellen</a>
+                                            </div>
+                                        </div>
+                                        <span class="shipping hidden-xs">gratis verzending!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Product Holder Large -->
+                    </li>
+                </ul>
+                <div class="visible-xs-block">
+                    <div class="row product">
+                        <div class="col-xs-3">
+                            <a href="#" class="productThumb">
+                                <img src="img/marshall.jpg" alt="marshall" />
                             </a>
                         </div>
-                        <div class="col-md-8 col-sm-8 col-xs-7 infoPanel">
-                            <h2><a href="pdp.html">Marshall JVM215C buizen gitaarcombo</a></h2>
-                            <div class="pull-left">
-                                <div class="rating hidden-xs">
-                                    <i class="rankingStars rankingStars-3"></i><a href="#">10 reviews</a>
-                                </div>
-                                <div class="description hidden-xs">
-                                    <p>
-                                        Tobacco Sunburst Stratocaster uit de Fender Select 2013 serie
-                                    </p>
-                                    <ul>
-                                        <li>Vermogen: 50 Watt</li>
-                                        <li>Luidsprekers: 1x G12B 12'</li>
-                                        <li>Voorversterkerbuizen: 4x ECC83 buis</li>
-                                        <li>Eindversterkers: 1x ECC83, 2x EL34</li>
-                                    </ul>
-                                </div>
-                                <div class="stock">
-                                    <img src="img/stock_status.png" alt="stock status" class="img-responsive" />
-                                    <span class="stock hidden-xs">Op voorraad</span>
-                                    <span class="deliver hidden-xs">voor 17.30u besteld, volgende werkdag in huis</span>
-                                </div>
-                            </div>
-                            <div class="action">
+                        <div class="col-xs-7">
+                            <p>
+                                Fender American Standard Stratocaster Rosewood 3-color Sunburst
+                            </p>
+                            <div class="meta">
+                                <img src="img/stock_status.png" alt="stock status" class="img-stock" />
                                 <span class="priceFrom">1650,-</span>
                                 <span class="price">1246,-</span>
-
-                                <div class="largeButtons hidden-xs">
-                                    <div class="btn-group btn-group-lg pull-right">
-                                        <a href="winkelwage.html" class="btn btn-primary btn-success" role="button">Bestellen</a>
-                                    </div>
-                                </div>
-                                <span class="shipping hidden-xs">gratis verzending!</span>
                             </div>
                         </div>
+                        <div class="col-xs-2">
+                            <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
                     </div>
-                </div>
-                <!-- END Product Holder Large -->
-            </li>
-            <li>
-                <!-- BEGIN Product Holder Large -->
-                <div class="productHolderLarge">
-                    <div class="row ">
-                        <div class="col-md-4 col-sm-4 col-xs-4">
-                            <a href="#" class="pull-left productThumb actielabel geel hotdeal" data-toggle="modal" data-target="#quickview">
-                                <img src="img/fender.jpg" alt="fender" class="img-responsive"  />
-                                <img class="quickview" src="img/but-bck-quickview.png" alt="">
-                                <p class="quickview">QUICKVIEW</p>
+                    <div class="row product">
+                        <div class="col-xs-3">
+                            <a href="#" class="productThumb">
+                                <img src="img/fender.jpg" alt="fender" />
                             </a>
                         </div>
-                        <div class="col-md-8 col-sm-8 col-xs-7 infoPanel">
-                            <h2><a href="pdp.html">Fender American Select Stratocaster dark</a></h2>
-                            <div class="pull-left">
-                                <div class="rating hidden-xs">
-                                    <i class="rankingStars rankingStars-3"></i><a href="#">10 reviews</a>
-                                </div>
-                                <div class="description hidden-xs">
-                                    <p>
-                                        Tobacco Sunburst Stratocaster uit de Fender Select 2013 serie
-                                    </p>
-                                    <ul>
-                                        <li>Vermogen: 50 Watt</li>
-                                        <li>Luidsprekers: 1x G12B 12'</li>
-                                        <li>Voorversterkerbuizen: 4x ECC83 buis</li>
-                                        <li>Eindversterkers: 1x ECC83, 2x EL34</li>
-                                    </ul>
-                                </div>
-                                <div class="stock">
-                                    <img src="img/stock_status.png" alt="stock status" class="img-responsive" />
-                                    <span class="stock hidden-xs">Op voorraad</span>
-                                    <span class="deliver hidden-xs">voor 17.30u besteld, volgende werkdag in huis</span>
-                                </div>
-                            </div>
-                            <div class="action">
-                                <span class="priceFrom"></span>
-                                <span class="price">1.884,-</span>
-
-                                <div class="largeButtons hidden-xs">
-                                    <div class="btn-group btn-group-lg pull-right">
-                                        <a href="winkelwagen.html" class="btn btn-primary btn-success" role="button">Bestellen</a>
-                                    </div>
-                                </div>
-                                <span class="shipping hidden-xs">gratis verzending!</span>
+                        <div class="col-xs-7">
+                            <p>
+                                Fender American Standard Stratocaster Rosewood 3-color Sunburst
+                            </p>
+                            <div class="meta">
+                                <img src="img/stock_status.png" alt="stock status" class="img-stock" />
+                                <span class="priceFrom">1650,-</span>
+                                <span class="price">1246,-</span>
                             </div>
                         </div>
+                        <div class="col-xs-2">
+                            <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
                     </div>
-                </div>
-                <!-- END Product Holder Large -->
-            </li>
-            <li>
-                <!-- BEGIN Product Holder Large -->
-                <div class="productHolderLarge">
-                    <div class="row ">
-                        <div class="col-md-4 col-sm-4 col-xs-4">
-                            <a href="#" class="pull-left productThumb actielabel geel hotdeal" data-toggle="modal" data-target="#quickview">
-                                <img src="img/korg.jpg" alt="Korg" class="img-responsive"  />
-                                <img class="quickview" src="img/but-bck-quickview.png" alt="">
-                                <p class="quickview">QUICKVIEW</p>
+                    <div class="row product">
+                        <div class="col-xs-3">
+                            <a href="#" class="productThumb">
+                                <img src="img/korg.jpg" alt="KORG" />
                             </a>
                         </div>
-                        <div class="col-md-8 col-sm-8 col-xs-7 infoPanel">
-                            <h2><a href="pdp.html">Korg PA900 Arranger Keyboard</a></h2>
-                            <div class="pull-left">
-                                <div class="rating hidden-xs">
-                                    <i class="rankingStars rankingStars-3"></i><a href="#">10 reviews</a>
-                                </div>
-                                <div class="description hidden-xs">
-                                    <p>
-                                        Tobacco Sunburst Stratocaster uit de Fender Select 2013 serie
-                                    </p>
-                                    <ul>
-                                        <li>Vermogen: 50 Watt</li>
-                                        <li>Luidsprekers: 1x G12B 12'</li>
-                                        <li>Voorversterkerbuizen: 4x ECC83 buis</li>
-                                        <li>Eindversterkers: 1x ECC83, 2x EL34</li>
-                                    </ul>
-                                </div>
-                                <div class="stock">
-                                    <img src="img/stock_status.png" alt="stock status" class="img-responsive" />
-                                    <span class="stock hidden-xs">Op voorraad</span>
-                                    <span class="deliver hidden-xs">voor 17.30u besteld, volgende werkdag in huis</span>
-                                </div>
-                            </div>
-                            <div class="action">
-                                <span class="priceFrom">2.395,-</span>
-                                <span class="price">1.899,-</span>
-
-                                <div class="largeButtons hidden-xs">
-                                    <div class="btn-group btn-group-lg pull-right">
-                                        <a href="winkelwagen.html" class="btn btn-primary btn-success" role="button">Bestellen</a>
-                                    </div>
-                                </div>
-                                <span class="shipping hidden-xs">gratis verzending!</span>
+                        <div class="col-xs-7">
+                            <p>
+                                Fender American Standard Stratocaster Rosewood 3-color Sunburst
+                            </p>
+                            <div class="meta">
+                                <img src="img/stock_status_nok.png" alt="stock status" class="img-stock" />
+                                <span class="priceFrom">1265,-</span>
+                                <span class="price">1246,-</span>
                             </div>
                         </div>
+                        <div class="col-xs-2">
+                            <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
                     </div>
-                </div>
-                <!-- END Product Holder Large -->
-            </li>
-            <li>
-                <!-- BEGIN Product Holder Large -->
-                <div class="productHolderLarge">
-                    <div class="row ">
-                        <div class="col-md-4 col-sm-4 col-xs-4">
-                            <a href="#" class="pull-left productThumb" data-toggle="modal" data-target="#quickview">
-                                <img src="img/cable.jpg" alt="Fender Cable" class="img-responsive"  />
-                                <img class="quickview" src="img/but-bck-quickview.png" alt="">
-                                <p class="quickview">QUICKVIEW</p>
+                    <div class="row product">
+                        <div class="col-xs-3">
+                            <a href="#" class="productThumb">
+                                <img src="img/korg.jpg" alt="KORG" />
                             </a>
                         </div>
-                        <div class="col-md-8 col-sm-8 col-xs-7 infoPanel">
-                            <h2><a href="#">Fender Custom Shop Gold Tweed 5,5 meter gitaarkabel</a></h2>
-                            <div class="pull-left">
-                                <div class="rating hidden-xs">
-                                    <i class="rankingStars rankingStars-3"></i><a href="#">10 reviews</a>
-                                </div>
-                                <div class="description hidden-xs">
-                                    <p>
-                                        Tobacco Sunburst Stratocaster uit de Fender Select 2013 serie
-                                    </p>
-                                    <ul>
-                                        <li>Vermogen: 50 Watt</li>
-                                        <li>Luidsprekers: 1x G12B 12'</li>
-                                        <li>Voorversterkerbuizen: 4x ECC83 buis</li>
-                                        <li>Eindversterkers: 1x ECC83, 2x EL34</li>
-                                    </ul>
-                                </div>
-                                <div class="stock">
-                                    <img src="img/stock_status.png" alt="stock status" class="img-responsive" />
-                                    <span class="stock hidden-xs">Op voorraad</span>
-                                    <span class="deliver hidden-xs">voor 17.30u besteld, volgende werkdag in huis</span>
-                                </div>
+                        <div class="col-xs-7">
+                            <p>
+                                Fender American Standard Stratocaster Rosewood 3-color Sunburst
+                            </p>
+                            <div class="meta">
+                                <img src="img/stock_status_nok.png" alt="stock status" class="img-stock" />
+                                <span class="priceFrom">1265,-</span>
+                                <span class="price">1246,-</span>
                             </div>
-                            <div class="action">
-                                <span class="priceFrom"></span>
-                                <span class="price">13,65</span>
-
-                                <div class="largeButtons hidden-xs">
-                                    <div class="btn-group btn-group-lg pull-right">
-                                        <a href="winkelwagen.html" class="btn btn-primary btn-success" role="button">Bestellen</a>
-                                    </div>
-                                </div>
-                                <span class="shipping hidden-xs">gratis verzending!</span>
-                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
                         </div>
                     </div>
                 </div>
-                <!-- END Product Holder Large -->
-            </li>
-        </ul>
-        <div class="visible-xs-block">
-            <div class="row product">
-                <div class="col-xs-3">
-                    <a href="#" class="productThumb">
-                        <img src="img/marshall.jpg" alt="marshall" />
-                    </a>
+                <div class="page pull-right">
+                    <span class="prev">vorige</span>|<span class="range">2 - 7</span>|<span class="next">volgende</span>
                 </div>
-                <div class="col-xs-7">
-                    <p>
-                        Fender American Standard Stratocaster Rosewood 3-color Sunburst
-                    </p>
-                    <div class="meta">
-                        <img src="img/stock_status.png" alt="stock status" class="img-stock" />
-                        <span class="priceFrom">1650,-</span>
-                        <span class="price">1246,-</span>
-                    </div>
-                </div>
-                <div class="col-xs-2">
-                    <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
-                </div>
-            </div>
-            <div class="row product">
-                <div class="col-xs-3">
-                    <a href="#" class="productThumb">
-                        <img src="img/fender.jpg" alt="fender" />
-                    </a>
-                </div>
-                <div class="col-xs-7">
-                    <p>
-                        Fender American Standard Stratocaster Rosewood 3-color Sunburst
-                    </p>
-                    <div class="meta">
-                        <img src="img/stock_status.png" alt="stock status" class="img-stock" />
-                        <span class="priceFrom">1650,-</span>
-                        <span class="price">1246,-</span>
-                    </div>
-                </div>
-                <div class="col-xs-2">
-                    <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
-                </div>
-            </div>
-            <div class="row product">
-                <div class="col-xs-3">
-                    <a href="#" class="productThumb">
-                        <img src="img/korg.jpg" alt="KORG" />
-                    </a>
-                </div>
-                <div class="col-xs-7">
-                    <p>
-                        Fender American Standard Stratocaster Rosewood 3-color Sunburst
-                    </p>
-                    <div class="meta">
-                        <img src="img/stock_status_nok.png" alt="stock status" class="img-stock" />
-                        <span class="priceFrom">1265,-</span>
-                        <span class="price">1246,-</span>
-                    </div>
-                </div>
-                <div class="col-xs-2">
-                    <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
-                </div>
-            </div>
-            <div class="row product">
-                <div class="col-xs-3">
-                    <a href="#" class="productThumb">
-                        <img src="img/korg.jpg" alt="KORG" />
-                    </a>
-                </div>
-                <div class="col-xs-7">
-                    <p>
-                        Fender American Standard Stratocaster Rosewood 3-color Sunburst
-                    </p>
-                    <div class="meta">
-                        <img src="img/stock_status_nok.png" alt="stock status" class="img-stock" />
-                        <span class="priceFrom">1265,-</span>
-                        <span class="price">1246,-</span>
-                    </div>
-                </div>
-                <div class="col-xs-2">
-                    <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
-                </div>
+
             </div>
         </div>
-        <div class="page pull-right">
-            <span class="prev">vorige</span>|<span class="range">2 - 7</span>|<span class="next">volgende</span>
+        <br/>
+        <div class="row visible-xs-block mobile_categories">
+            <ul class="nav navbar-nav">
+                <li><a href="#">gitaar<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                <li><a href="#">drums &amp; percussie<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                <li><a href="#">toetsen<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                <li><a href="#">geluid<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                <li><a href="#">dj-gear<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                <li><a href="#">licht<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                <li><a href="#">blaasinstrument<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                <li><a href="#">strijkinstrument<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                <li><a href="#">kabels<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                <li><a href="#">cases / hoezen / koffers<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                <li><a href="#">accessoires<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Informatie over de verschillen en soorten gitaren</h3>
+                <p>
+                    Een gitaar en een basgitaar zijn ongetwijfeld de populairste instrumenten van de afgelopen decennia, u hoort het in muziek variërend van jazz tot aan de meest extreme metal. Er zijn dan ook gitaren en basgitaren in alle soorten en maten. Er zijn western gitaren, dat zijn akoestische gitaren met stalen snaren. Er zijn klassieke gitaren, die ook wel bekend staan als Spaanse gitaren en zijn bespannen met nylon snaren.
+                </p>
+
+                <h4>Akoestische gitaren</h4>
+                <p>
+                    Ook zijn er akoestische gitaren die elektrisch zijn uit te versterken, die worden dan elektro akoestische gitaren genoemd. Volledig elektrische gitaren zijn er ook, deze hebben stalen snaren, waarvan magnetische elementen de trillingen opvangen en doorsturen naar een versterker door middel van een kabel of een draadloos systeem. Om uw signaal nog meer te vervormen is het ook mogelijk om één of meerdere effectenpedalen te gebruiken.
+                </p>
+
+                <h4>Soorten gitaren</h4>
+                <p>
+                    Naast de keuze uit verschillende soorten gitaren zit er ook nog verschil in de hoeveelheid snaren. Normaal gesproken hebben gitaren zes snaren, maar er zijn bijvoorbeeld ook twaalf en zeven snarige gitaren. Basgitaren zijn gitaren die normaliter een octaaf lager in stemming zijn dan andere gitaren. Er zijn akoestische basgitaren en ook elektrische basgitaren. Bovendien zijn er ook bij basgitaren verschillende snaarsamenstellingen. De vier snarige basgitaar is de standaard, maar vijf en zes snarige basgitaren komen ook veel voor.
+                </p>
+
+                <h4>Gitaar accessoires</h4>
+                <p>
+                    Tevens hebben wij ook andere snaarinstrumenten in ons assortiment zoals banjos, mandolines, ukeleles en autoharpen. Een handige accessoire als u veel onderweg bent met uw instrument zijn de tassen en koffers voor uw gitaar en basgitaar, zodat uw instrument de reis ongeschonden overleeft.
+                </p>
+            </div>
         </div>
 
+
     </div>
-</div>
-<br/>
-<div class="row visible-xs-block mobile_categories">
-    <ul class="nav navbar-nav">
-        <li><a href="#">gitaar<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-        <li><a href="#">drums &amp; percussie<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-        <li><a href="#">toetsen<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-        <li><a href="#">geluid<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-        <li><a href="#">dj-gear<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-        <li><a href="#">licht<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-        <li><a href="#">blaasinstrument<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-        <li><a href="#">strijkinstrument<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-        <li><a href="#">kabels<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-        <li><a href="#">cases / hoezen / koffers<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-        <li><a href="#">accessoires<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-    </ul>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <h3>Informatie over de verschillen en soorten gitaren</h3>
-        <p>
-            Een gitaar en een basgitaar zijn ongetwijfeld de populairste instrumenten van de afgelopen decennia, u hoort het in muziek variërend van jazz tot aan de meest extreme metal. Er zijn dan ook gitaren en basgitaren in alle soorten en maten. Er zijn western gitaren, dat zijn akoestische gitaren met stalen snaren. Er zijn klassieke gitaren, die ook wel bekend staan als Spaanse gitaren en zijn bespannen met nylon snaren.
-        </p>
-
-        <h4>Akoestische gitaren</h4>
-        <p>
-            Ook zijn er akoestische gitaren die elektrisch zijn uit te versterken, die worden dan elektro akoestische gitaren genoemd. Volledig elektrische gitaren zijn er ook, deze hebben stalen snaren, waarvan magnetische elementen de trillingen opvangen en doorsturen naar een versterker door middel van een kabel of een draadloos systeem. Om uw signaal nog meer te vervormen is het ook mogelijk om één of meerdere effectenpedalen te gebruiken.
-        </p>
-
-        <h4>Soorten gitaren</h4>
-        <p>
-            Naast de keuze uit verschillende soorten gitaren zit er ook nog verschil in de hoeveelheid snaren. Normaal gesproken hebben gitaren zes snaren, maar er zijn bijvoorbeeld ook twaalf en zeven snarige gitaren. Basgitaren zijn gitaren die normaliter een octaaf lager in stemming zijn dan andere gitaren. Er zijn akoestische basgitaren en ook elektrische basgitaren. Bovendien zijn er ook bij basgitaren verschillende snaarsamenstellingen. De vier snarige basgitaar is de standaard, maar vijf en zes snarige basgitaren komen ook veel voor.
-        </p>
-
-        <h4>Gitaar accessoires</h4>
-        <p>
-            Tevens hebben wij ook andere snaarinstrumenten in ons assortiment zoals banjos, mandolines, ukeleles en autoharpen. Een handige accessoire als u veel onderweg bent met uw instrument zijn de tassen en koffers voor uw gitaar en basgitaar, zodat uw instrument de reis ongeschonden overleeft.
-        </p>
-    </div>
-</div>
-
-
-</div>
 </div>
 <div class="col-md-12">
     <div class="brands">
@@ -1367,7 +1356,7 @@
         })
         .on("movestart", function(e) {
             if( (e.distX > e.distY && e.distX < -e.distY) ||
-                (e.distX < e.distY && e.distX > -e.distY)) {
+            (e.distX < e.distY && e.distX > -e.distY)) {
                 e.preventDefault();
                 return;
             }
