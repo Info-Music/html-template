@@ -630,6 +630,9 @@
     .registered-users {
         border-top: 1px solid #ebebeb;
     }
+    .my-account .form-list input[type=text], .my-account .form-list input[type=email], .my-account .form-list input[type=password] {
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) {
