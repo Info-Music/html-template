@@ -505,7 +505,7 @@
 		/* General styles for all menus */
 
 		.cbp-spmenu {
-			background: #1E1D1B;
+			background: #c3c3cb;
 			position: absolute;
 		}
 
@@ -565,7 +565,7 @@
 			border-radius: 0;
 			font-size: 14px;
 			padding: 5px 10px;
-			background-color: #d74f29;
+			background-color: #515150;
 			border-color: transparent;
 		}
 
