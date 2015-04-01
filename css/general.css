@@ -565,7 +565,7 @@
 			border-radius: 0;
 			font-size: 14px;
 			padding: 5px 10px;
-			background-color: #515150;
+			background-color: #d74f29;
 			border-color: transparent;
 		}
 
@@ -585,7 +585,7 @@
 
 		.cbp-spmenu .mobileMenu li {
 			padding: 10px;
-			border-bottom: 1px solid #302F2D;
+			border-bottom: 1px solid #515150;
 			transition: all 0.2s ease;
 		}
 
