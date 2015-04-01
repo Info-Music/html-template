@@ -341,12 +341,18 @@
 
 		#searchButton {
 		    display: inline-block;
-		    background: url(../img/icon_search.png) 100% 100% no-repeat;
+		    /*background: url(../img/icon_search.png) 100% 100% no-repeat;*/
 		    background-color: #d74a29;
+			color: white;
 		    width: 34px;
 		    height: 34px;
 		    border: none;
 		    transition: all 0.3s ease;
+		}
+
+		#searchButton .glyphicon {
+			margin-top: -3px;
+			font-size: 20px;
 		}
 
 		#searchButton:hover{
