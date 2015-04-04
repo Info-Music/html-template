@@ -467,9 +467,15 @@
         margin-top: 30px;
         padding: 0 10px;
     }
+    #headingTwo {
+        margin-top: 10px;
+    }
     .panel-group .panel-heading+.panel-collapse>.panel-body {
         border: none;
         padding: 0 10px;
+    }
+    .mainBar h3 {
+        margin-top: 5px;
     }
     /* SUBCATEGORY PAGE */
     .productHolderThumb > div {
@@ -513,7 +519,7 @@
         margin-top: 5px;
         font-size: 22px;
     }
-    .bigImage {
+    .bigImage ul.slides li {
         height: 200px;
     }
     .smallImage ul li {
