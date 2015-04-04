@@ -551,6 +551,14 @@
     margin-bottom: 0 !important;
 }
 
+.modal {
+    z-index: 10001;
+}
+
+.modal-backgrop {
+    z-index: 10000;
+}
+
 .modal-content:after {
     content: "";
     display: table;

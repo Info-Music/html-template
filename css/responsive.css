@@ -453,6 +453,10 @@
         text-align: left;
         height: auto;
     }
+    .collectie > a {
+        font-size: 0.8em;
+        right: 15px;
+    }
     .filters .color input[type="image"] {
         width: 7.5%;
     }
