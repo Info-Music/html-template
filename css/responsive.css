@@ -364,7 +364,8 @@
         padding-bottom: 20px;
     }
     .mobile_categories {
-        margin-top: 20px;
+        margin-top: 5px;
+        margin-bottom: 20px;
         background-color: #3c3c3b;
     }
     .mobile_categories ul {
