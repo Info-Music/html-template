@@ -1197,7 +1197,11 @@
 	    right: 30px;
 	    display: none;
 	    opacity: 0.6;
-	    background: url(../img/top.png) no-repeat;
+	    background-color: #242321;
+		color: white;
+		font-size: 25px;
+		padding-top: 9px;
+		padding-left: 13px;
 	}
 
 	.scrollToTop:hover{
