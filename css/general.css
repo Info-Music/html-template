@@ -1201,9 +1201,10 @@
 		color: white;
 		font-size: 25px;
 		padding-top: 9px;
-		padding-left: 13px;
+		padding-left: 10px;
 	}
 
 	.scrollToTop:hover{
 	    opacity: 1;
+		color: white;
 	}
