@@ -211,6 +211,15 @@
     div.input-box label[for=id_create_account] {
         max-width: 90%;
     }
+    .cartTable .productTitle {
+        width: 45%;
+    }
+    .cartTable .buttonEdit {
+        width: 8.7%;
+    }
+    .cartTable .buttonEdit, .cartTable .productPrice, .cartTable .productQty, .cartTable .productSubTotal {
+        width: 10%;
+    }
 }
 
 /* Extra small devices (Phones) */
@@ -645,6 +654,9 @@
     }
     .my-account .form-list input[type=text], .my-account .form-list input[type=email], .my-account .form-list input[type=password] {
         width: 100%;
+    }
+    .waardebon {
+        margin-top: 0;
     }
 }
 
