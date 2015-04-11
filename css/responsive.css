@@ -255,7 +255,7 @@
         border-right: none;
     }
     #usp {
-        margin-top: 40px;
+        margin-top: 20px;
     }
     #black-spacer-top > li {
         float: right;
@@ -373,8 +373,10 @@
         padding-bottom: 20px;
     }
     .mobileCategories {
-        margin-top: 20px;
+        margin-top: 40px;
         background-color: #3c3c3b;
+        float: left;
+        width: 100%;
     }
     .mobileCategories ul {
         height: auto;
