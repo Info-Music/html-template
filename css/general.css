@@ -377,7 +377,8 @@
 		    left: 35px;
 		    display: inline-block;
 		    position: relative;
-		    background: url(../img/icon_shopping_bag_dot.png) 100% 100% no-repeat;
+		    background-color: #d74f29;
+			border-radius: 20px;
 		    width: 22px;
 		    height: 22px;
 		    text-align: center;
