@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=utf-8 />
+
+    <title>InfoMusic</title>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+    <div class="navmenu navmenu-default navmenu-fixed-left">
+        <a class="navmenu-brand pull-left" href="#">InfoMusic</a>
+        <a class="addButton btn btn-success pull-right" href="#" data-toggle="modal" data-target="#addLinkModal">
+            <span class="glyphicon glyphicon-plus"></span>&nbsp;Nieuwe link
+        </a>
+        <span class="clearfix"></span>
+        <ul class="nav navmenu-nav">
+        </ul>
+    </div>
+
+    <div class="canvas">
+        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="fullFrameWrapper">
+            <iframe src="http://www.infomusic.nl" class="fullFrame">
+            </iframe>
+        </div>
+    </div>
+
+    <div id="contextMenu" class="dropdown clearfix">
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;position:static;margin-bottom:5px;">
+            <li><a tabindex="-1" href="#" class="editLink">Edit</a></li>
+            <li class="divider"></li>
+            <li><a tabindex="-1" href="#" class="removeLink">Remove</a></li>
+        </ul>
+    </div>
+
+    <div class="modal fade" id="addLinkModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="addLinkForm">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Nieuwe link toevoegen</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Het is helaas wegens technische aspecten niet mogelijk om google sites hier te bebruiken.</p>
+                        <div class="form-group">
+                            <label for="titleInput">Titel:</label>
+                            <input type="text" name="linkTitle" class="form-control" id="titleInput" placeholder="Enter the title">
+                        </div>
+                        <div class="form-group">
+                            <label for="linkInput">Link:</label>
+                            <input type="url" name="linkHref" class="form-control" id="linkInput" placeholder="Enter the link">
+                            <small>Let op dat de url http:// bevat aan het begin!</small>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Sluiten</button>
+                        <button type="submit" class="btn btn-primary">Opslaan</button>
+                    </div>
+                </form>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+
+    <div class="modal fade" id="editLinkModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="editLinkForm">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Link bewerken</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="editTitleInput">Titel:</label>
+                            <input type="text" name="linkTitle" class="form-control" id="editTitleInput" placeholder="Enter the title">
+                        </div>
+                        <div class="form-group">
+                            <label for="editLinkInput">Link:</label>
+                            <input type="url" name="linkHref" class="form-control" id="editLinkInput" placeholder="Enter the link">
+                        </div>
+                    </div>
+                    <input type="hidden" name="id" id="editIDInput" value="">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Sluiten</button>
+                        <button type="submit" class="btn btn-primary">Opslaan</button>
+                    </div>
+                </form>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

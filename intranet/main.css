@@ -1,0 +1,76 @@
+#contextMenu {
+    position: absolute;
+    display: none;
+    z-index: 5000;
+}
+
+html, body {
+    height: 100%;
+}
+
+.navmenu {
+    z-index: 1;
+    background-color: #3c3c3b;
+}
+
+.navmenu-brand {
+    color: white !important;
+}
+
+.navmenu-nav > li {
+    border-bottom: 1px solid #515150;
+}
+
+.navmenu-nav > li a {
+    color: white !important;
+}
+
+.canvas {
+    position: relative;
+    left: 0;
+    z-index: 2;
+    min-height: 100%;
+    padding: 50px 0 0 0;
+    background: #fff;
+}
+
+.navbar-toggle {
+    display: block;
+    position: fixed;
+    top: 2px;
+    left: 10px;
+    border: 1px solid #F7F6F4;
+    background-color: #F7F6F4;
+    border-radius: 0;
+}
+
+.navbar-toggle:hover {
+    background-color: #F7F6F4;
+}
+
+.navbar-toggle .icon-bar {
+    background: black;
+}
+
+.fullFrame {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border: none;
+}
+
+.addButton {
+    margin: 10px;
+    border: 1px solid #D74F29;
+    background-color: #D74F29;
+    border-radius: 0;
+}
+
+.addButton:hover, .addButton:active, .addButton:focus, .addButton:visited {
+    border: 1px solid #D74F29;
+    background-color: #D74F29;
+}
