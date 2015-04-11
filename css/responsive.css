@@ -298,6 +298,8 @@
     }
     .product .col-xs-2 .glyphicon{
         line-height: 90px;
+        float: right;
+        padding-right: 10px;
     }
     .product .glyphicon {
         color: #626262;
@@ -332,7 +334,7 @@
     .container-small .content .make-small {
         position: absolute;
         bottom: 25px;
-        right: 40px;
+        right: 30px;
         font-size: 14px;
     }
     .container-small .small .glyphicon:before {
@@ -399,7 +401,10 @@
         font-weight: 200;
         padding-right: 20px;
         line-height: 20px;
-
+    }
+    .faq h3, .faq form, .faq p {
+        padding-left: 0;
+        margin-left: 0;
     }
     /* CATEGORY PAGE */
     .categoryList > div {
