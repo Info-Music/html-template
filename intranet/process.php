@@ -12,6 +12,7 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
             );
             file_put_contents("array.json", json_encode($previousLinks));
             die(json_encode(array("result" => true)));
+            
         case "delete":
             $linkID = filter_input(INPUT_POST, "id", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
             $links = json_decode(file_get_contents('array.json'), true);
