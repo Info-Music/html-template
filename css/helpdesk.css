@@ -1,0 +1,42 @@
+﻿.page-head {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.ticket-create-form:hover {
+    text-decoration: none;
+}
+
+#helpdesk-ticket-form {
+    border-top: 1px solid #ebebeb;
+    padding-top: 10px;
+}
+
+.pager {
+    margin: 10px 0;
+}
+
+    .pager .amount {
+        text-align: left;
+        float: left;
+    }
+
+    .pager .limiter {
+        text-align: right;
+        float: right;
+    }
+
+.overview {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 10px;
+}
+
+#helpdesk-ticket-form .btn-group {
+    display: block;
+}
+
+#helpdesk-ticket-form .largeButtons .left {
+    line-height: 60px;
+}
