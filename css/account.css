@@ -18,10 +18,10 @@
     background-color: #f5f5f5;
 }
 
-.sidebar ul li:active a {
-    color: #d74f29;
-    text-decoration: none;
-}
+    .sidebar ul li:active a {
+        color: #d74f29;
+        text-decoration: none;
+    }
 
 .sidebar ul li {
     padding: 4px 0;
@@ -64,10 +64,10 @@
     /*padding: 10px;*/
 }
 
-.my-account .box a {
-    font-size: 13px;
-    font-weight: normal;
-}
+    .my-account .box a {
+        font-size: 13px;
+        font-weight: normal;
+    }
 
 p.required {
     float: right;
@@ -79,14 +79,14 @@ p.required {
 }
 
 label.required:after, span.required:after {
-  content: ' *';
-  color: #F15429;
-  font-weight: normal;
-  font-size: 12px;
+    content: ' *';
+    color: #F15429;
+    font-weight: normal;
+    font-size: 12px;
 }
 
 label.required em {
-  display: none;
+    display: none;
 }
 
 input[type=checkbox] {
@@ -107,22 +107,22 @@ label[for=change_password] {
     vertical-align: middle;
 }
 
-.buttons-set .button {
-    margin: 10px auto 15px !important;
-    padding: 5px 30px;
-    border-radius: 0;
-    font-size: 15px;
-    color: #fff;
-    background-color: #d74a29;
-    border-color: transparent;
-    transition: all 0.3s ease;
-}
+    .buttons-set .button {
+        margin: 10px auto 15px !important;
+        padding: 5px 30px;
+        border-radius: 0;
+        font-size: 15px;
+        color: #fff;
+        background-color: #d74a29;
+        border-color: transparent;
+        transition: all 0.3s ease;
+    }
 
-.buttons-set .button:hover {
-    background-color: #b62800 !important;
-    border-color: #b62800 !important;
-    text-decoration: none;
-}
+        .buttons-set .button:hover {
+            background-color: #b62800 !important;
+            border-color: #b62800 !important;
+            text-decoration: none;
+        }
 
 .page-title h1 {
     font-size: 1.9em;

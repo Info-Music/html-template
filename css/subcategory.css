@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 /*
  *  File: 		subcategory.css;
@@ -57,7 +57,7 @@
     margin-bottom: 3px;
 }
 
-.filters .block h3  {
+.filters .block h3 {
     padding-left: 43px;
 }
 
@@ -71,11 +71,11 @@
     border-bottom: 1px solid #ebebeb;
 }
 
-.filters a:hover, .filters .color h3:hover {
-    text-decoration: none;
-    background-color: #f5f5f5;
-    color: #d74f29;
-}
+    .filters a:hover, .filters .color h3:hover {
+        text-decoration: none;
+        background-color: #f5f5f5;
+        color: #d74f29;
+    }
 
 .filters .color a {
     margin-top: 10px;
@@ -92,9 +92,9 @@
     transition: all 0.2s ease;
 }
 
-.filters .color input[type="image"]:hover {
-    box-shadow: 0 0 10px #8f8f8f;
-}
+    .filters .color input[type="image"]:hover {
+        box-shadow: 0 0 10px #8f8f8f;
+    }
 
 .filters .color .filter-image {
     margin-left: 10px;
@@ -108,6 +108,7 @@
 .filtersList .form-group {
     margin-left: 30px;
 }
+
 .filtersList label {
     text-transform: uppercase;
     color: #b1b1b0;
@@ -138,11 +139,11 @@
     border-bottom: 1px solid #e4e1dd;
 }
 
-.productListOne:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+    .productListOne:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
 .productHolderLarge {
     border-top: 1px solid #e4e1dd;
@@ -170,86 +171,85 @@
     min-height: 250px;
 }
 
-.productHolderLarge .infoPanel .pull-left {
-    padding-bottom: 20px;
-}
+    .productHolderLarge .infoPanel .pull-left {
+        padding-bottom: 20px;
+    }
 
-.productHolderLarge .infoPanel .rating a {
-    display: inline-block;
-    font-weight: normal;
-    font-size: 1.07em;
-}
+    .productHolderLarge .infoPanel .rating a {
+        display: inline-block;
+        font-weight: normal;
+        font-size: 1.07em;
+    }
 
-.productHolderLarge .infoPanel .rating i {
-    margin-right: 10px;
-    display: inline-block;
-}
+    .productHolderLarge .infoPanel .rating i {
+        margin-right: 10px;
+        display: inline-block;
+    }
 
-.productHolderLarge .infoPanel .rating {
-    margin-bottom: 5px;
-    line-height: 15px;
-}
+    .productHolderLarge .infoPanel .rating {
+        margin-bottom: 5px;
+        line-height: 15px;
+    }
 
-.productHolderLarge .infoPanel .description p {
-    line-height: 21px;
-}
+    .productHolderLarge .infoPanel .description p {
+        line-height: 21px;
+    }
 
-.productHolderLarge .infoPanel .description ul li {
-    list-style: disc;
-    line-height: 21px;
-}
+    .productHolderLarge .infoPanel .description ul li {
+        list-style: disc;
+        line-height: 21px;
+    }
 
-.productHolderLarge .infoPanel .description ul {
-    margin-left: 20px;
-}
+    .productHolderLarge .infoPanel .description ul {
+        margin-left: 20px;
+    }
 
-.productHolderLarge .infoPanel div.stock {
-    text-transform: uppercase;
-    font-size: 0.7em;
-    font-weight: 600;
-    margin-top: 10px;
-}
+    .productHolderLarge .infoPanel div.stock {
+        text-transform: uppercase;
+        font-size: 0.7em;
+        font-weight: 600;
+        margin-top: 10px;
+    }
 
-.productHolderLarge .infoPanel div.stock span.stock {
-    margin-left: 5px;
-}
+        .productHolderLarge .infoPanel div.stock span.stock {
+            margin-left: 5px;
+        }
 
-.productHolderLarge .infoPanel div.stock img, .infoPanel div.stock span.stock {
-    display: inline-block;
-}
+        .productHolderLarge .infoPanel div.stock img, .infoPanel div.stock span.stock {
+            display: inline-block;
+        }
 
-.productHolderLarge .infoPanel div.stock .deliver {
-    display: block;
-    line-height: 15px;
-}
+        .productHolderLarge .infoPanel div.stock .deliver {
+            display: block;
+            line-height: 15px;
+        }
 
-.productHolderLarge .infoPanel .action {
-    position: absolute;
-    bottom: 15px;;
-    right: 0;
+    .productHolderLarge .infoPanel .action {
+        position: absolute;
+        bottom: 15px;
+        right: 0;
+        margin-right: 15px;
+    }
 
-    margin-right: 15px;
-}
+    .productHolderLarge .infoPanel h2 a {
+        color: #1f1d1b;
+        font-size: 21px;
+        font-weight: 600;
+    }
 
-.productHolderLarge .infoPanel h2 a {
-    color: #1f1d1b;
-    font-size: 21px;
-    font-weight: 600;
-}
+        .productHolderLarge .infoPanel h2 a:hover {
+            color: #1f1d1b;
+            text-decoration: none;
+        }
 
-.productHolderLarge .infoPanel h2 a:hover {
-    color: #1f1d1b;
-    text-decoration: none;
-}
+    .productHolderLarge .infoPanel .action .btn {
+        padding: 8px 25px;
+    }
 
-.productHolderLarge .infoPanel .action .btn {
-    padding: 8px 25px;
-}
-
-.productHolderLarge .infoPanel .action .shipping {
-    text-transform: uppercase;
-    color: #828282;
-}
+    .productHolderLarge .infoPanel .action .shipping {
+        text-transform: uppercase;
+        color: #828282;
+    }
 
 .productHolderThumb > div {
     border: 1px solid #ebebeb;
@@ -260,11 +260,11 @@
     transition: all 0.2s ease;
 }
 
-.productHolderThumb > div:hover {
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.2);
-    box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.2);
-}
+    .productHolderThumb > div:hover {
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.2);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.2);
+        box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.2);
+    }
 
 .productHolderThumb .infoPanel {
     display: table-cell;
@@ -298,22 +298,22 @@
     font-size: 21px;
 }
 
-.productHolderThumb .price .priceFrom {
-    font-weight: normal;
-    text-decoration: line-through;
-    font-size: 13px;
-    font-weight: normal;
-}
+    .productHolderThumb .price .priceFrom {
+        font-weight: normal;
+        text-decoration: line-through;
+        font-size: 13px;
+        font-weight: normal;
+    }
 
 .productHolderThumb .largeButtons {
     text-align: center;
 }
 
-.productHolderThumb .largeButtons .btn-group-lg .btn {
-    background-color: #d95a36;
-    border-color: #d95a36;
-    padding: 5px 10px;
-}
+    .productHolderThumb .largeButtons .btn-group-lg .btn {
+        background-color: #d95a36;
+        border-color: #d95a36;
+        padding: 5px 10px;
+    }
 
 .filtersForm .view button {
     padding: 0;
@@ -323,9 +323,9 @@
     background-color: white;
 }
 
-.filtersForm .view button.active {
-    opacity: 1;
-}
+    .filtersForm .view button.active {
+        opacity: 1;
+    }
 
 .filtersForm .view .glyphicon:hover {
     color: black;
