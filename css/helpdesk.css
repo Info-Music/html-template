@@ -40,3 +40,48 @@
 #helpdesk-ticket-form .largeButtons .left {
     line-height: 60px;
 }
+
+.helpdesk .page-title {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 10px;
+}
+
+#my-reviews-table {
+    margin-top: -10px;
+}
+
+#helpdesk-reply-form .btn-group-lg {
+    margin-top: 25px;
+}
+
+    #helpdesk-reply-form .btn-group-lg > .btn {
+        padding: 5px 15px;
+        margin: 0 auto 15px !important;
+    }
+
+.helpdesk .message-box {
+    border: 1px solid #cccccc;
+}
+
+.message-box .message-header {
+    padding-top: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid #cccccc;
+    background-color: #ebebeb;
+}
+
+    .message-box .message-header h5 {
+        margin-top: 0;
+    }
+
+.message-box .message-body {
+    padding: 10px;
+}
+
+.helpdesk .back {
+    margin-bottom: 15px;
+}
+
+.helpdesk h3.legend {
+    font-size: 19px;
+}

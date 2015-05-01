@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="utf-8">
@@ -306,17 +306,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-7 col-xs-12 ">
+                <div class="col-md-4 col-sm-7 col-xs-12 helpdesk">
                     <a class="ticket-create-form" name="ticket-create-form">
                         <h2>Create new ticket</h2>
                     </a>
                     <form action="https://www.infomusic.nl/helpdeskultimate/customer/new/" method="post" id="helpdesk-ticket-form" enctype="multipart/form-data">
                         <div class="form-group">
-                            <label for="title_field">Titel<span class="required">*</span></label><br>
+                            <label for="title_field">Titel<span class="required"></span></label><br>
                             <input class="form-control input-text required-entry" name="title" id="title" type="text" value="">
                         </div>
                         <div class="form-group">
-                            <label for="title_field">Department<span class="required">*</span></label><br>
+                            <label for="title_field">Department<span class="required"></span></label><br>
 
                             <select class="form-control" name="department_id" id="department_id">
 
@@ -331,7 +331,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="content_field">Bericht<span class="required">*</span></label><br>
+                            <label for="content_field">Bericht<span class="required"></span></label><br>
                             <textarea class="form-control required-entry" name="content" id="content_field" rows="10"></textarea>
                         </div>
                         <div class="form-group">
@@ -352,48 +352,25 @@
                     <div class="block-title overview">
                         <h2>Ticket overview</h2>
                     </div>
-                    <div class="pager">
-
-                        <p class="amount">
-                            <strong>1 artikel(en)</strong>
-                        </p>
-
-                        <div class="limiter">
-                            <label>Toon</label>
-                            <select onchange="setLocation(this.value)">
-                                <option value="https://www.infomusic.nl/helpdeskultimate/customer/index/?limit=10" selected="selected">
-                                    10
-                                </option>
-                                <option value="https://www.infomusic.nl/helpdeskultimate/customer/index/?limit=20">
-                                    20
-                                </option>
-                                <option value="https://www.infomusic.nl/helpdeskultimate/customer/index/?limit=50">
-                                    50
-                                </option>
-                            </select> per pagina
-                        </div>
-
-
-                    </div>
 
                     <table class="table data-table box-table" id="my-reviews-table" cellspacing="0">
                         <thead>
-                        <tr class="first last">
-                            <th>ID</th>
-                            <th>Department</th>
-                            <th>Titel</th>
-                            <th>Replies</th>
-                            <th>Status</th>
-                        </tr>
+                            <tr class="first last">
+                                <th>ID</th>
+                                <th>Department</th>
+                                <th>Titel</th>
+                                <th>Replies</th>
+                                <th>Status</th>
+                            </tr>
                         </thead>
                         <tbody>
-                        <tr class="ticket-row first last odd">
-                            <td style="white-space: nowrap;">DFL-06832</td>
-                            <td>Helpdesk Infomusic.nl</td>
-                            <td title="Test ticket">Test ticket</td>
-                            <td>0</td>
-                            <td class="last">Open</td>
-                        </tr>
+                            <tr class="ticket-row first last odd">
+                                <td style="white-space: nowrap;">DFL-06832</td>
+                                <td>Helpdesk Infomusic.nl</td>
+                                <td title="Test ticket">Test ticket</td>
+                                <td>0</td>
+                                <td class="last">Open</td>
+                            </tr>
                         </tbody>
                     </table>
                     <div class="pager">
@@ -438,7 +415,7 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
 
     </div>
 
