@@ -1,0 +1,42 @@
+﻿.brand {
+    border: 1px solid #ebebeb;
+    width: 23%;
+    margin: 1%;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+    .brand:hover {
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.2);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.2);
+        -ms-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.2);
+        box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.2);
+    }
+
+    .brand .image {
+        position: relative;
+        height: 200px;
+        display: block;
+    }
+
+        .brand .image img {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+    .brand .title:hover {
+        text-decoration: none;
+    }
+
+    .brand .title h2 {
+        text-align: center;
+    }
