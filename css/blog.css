@@ -1,0 +1,68 @@
+﻿.blogItem {
+    border-top: 1px solid #ebebeb;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+    .blogItem .blogInfo {
+        border-left: 1px solid #ebebeb;
+        padding-left: 20px;
+    }
+
+        .blogItem .blogInfo .blogDate {
+            margin-top: 20px;
+        }
+
+        .blogItem .blogInfo .largeButtons {
+            float: right;
+        }
+
+            .blogItem .blogInfo .largeButtons .btn {
+                text-transform: capitalize !important;
+                padding: 6px 16px;
+            }
+
+    .blogItem .userInfo {
+        padding-top: 20px;
+        position: relative;
+        height: 100%;
+    }
+
+        .blogItem .userInfo .shareIcons {
+            margin-top: 20px;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -ms-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+
+            .blogItem .userInfo .shareIcons a {
+                opacity: 0.5;
+                padding-right: 10px;
+            }
+
+                .blogItem .userInfo .shareIcons a:hover {
+                    text-decoration: none;
+                    opacity: 1;
+                }
+
+                .blogItem .userInfo .shareIcons a span {
+                    color: #828282;
+                }
+
+        .blogItem .userInfo .userImage {
+            max-width: 50%;
+            max-height: 50%;
+        }
+
+        .blogItem .userInfo .userName {
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 40%
+        }
+
+            .blogItem .userInfo .userName p {
+                font-size: 14px;
+            }
