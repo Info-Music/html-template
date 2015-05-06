@@ -53,16 +53,44 @@
                 }
 
         .blogItem .userInfo .userImage {
-            max-width: 50%;
-            max-height: 50%;
+            max-width: 45%;
+            max-height: 45%;
         }
 
         .blogItem .userInfo .userName {
             margin-left: 20px;
             margin-top: 20px;
-            width: 40%
+            width: 40%;
         }
 
             .blogItem .userInfo .userName p {
                 font-size: 14px;
             }
+
+    .blogItem.singleItem {
+        margin-bottom: 20px;
+        float: left;
+    }
+
+        .blogItem.singleItem .blogInfo {
+            border-left: none;
+            padding-left: 10px;
+        }
+
+        .blogItem.singleItem .userInfo {
+            border-left: 1px solid #ebebeb;
+        }
+
+        .blogItem.singleItem .blogInfo .largeButtons .btn {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: -10px;
+            border-radius: 0;
+            background-color: #e6e6e6;
+            border-color: #e6e6e6;
+        }
+
+        .blogItem.singleItem .userInfo {
+            padding-bottom: 50px;
+        }
+
