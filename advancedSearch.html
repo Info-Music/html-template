@@ -1,0 +1,892 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.">
+    <meta name="author" content="Infomusic.nl">
+    <link rel="icon" href="favicon.ico">
+    <title>Infomusic, Online-shop voor gitaar, basgitaar, dj-gear, licht en geluid</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/search.css" rel="stylesheet">
+    <link href="css/pdp.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.event.move.js" type="text/javascript"></script>
+    <script src="js/jquery.event.swipe.js" type="text/javascript"></script>
+    <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+</head>
+<body class="cbp-spmenu-push">
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+                return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left visible-xs">
+        <div class="account">
+            <div class="btn-group btn-group-lg">
+                <a href="login.html" class="btn btn-primary btn-success" role="button">Inloggen</a>
+            </div>
+            <div class="btn-group btn-group-lg">
+                <a href="login.html" class="btn btn-primary btn-success" role="button">Registreren</a>
+            </div>
+        </div>
+        <ul class="mobileMenu">
+            <li class="active">
+                <a href="#">
+                    <span class="glyphicon glyphicon-question-sign"></span>&nbsp;
+                    Klantenservice
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;
+                    Winkelwagen
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="glyphicon glyphicon-barcode"></span>&nbsp;
+                    Assortiment
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="glyphicon glyphicon-download-alt"></span>&nbsp;
+                    Tips & downloads
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="glyphicon glyphicon-home"></span>&nbsp;
+                    Nieuws
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="glyphicon glyphicon-info-sign"></span>&nbsp;
+                    Contact
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="glyphicon glyphicon-star"></span>&nbsp;
+                    Sale
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="customerBar hidden-xs" role="navigation">
+        <div class="container">
+            <div class="navbar navbar-default" role="navigation">
+                <ul class="nav navbar-nav navbar-right" id="black-spacer-top">
+                    <li><a href="#" role="button">blog</a></li>
+                    <li><a href="#" role="button">bewaarde items</a></li>
+                    <li>
+                        <a href="#" role="button" id="dropdownLanguages" data-toggle="dropdown" class="dropdown-toggle">kies je taal</a>
+                        <ul class="dropdown-menu languageMenu" role="menu" aria-labelledby="dropdownLanguages">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="nl">Nederlands</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="en">English</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="de">Deutsch</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#" role="button">aanmelden</a></li>
+                    <li>
+                        <a href="#" role="button" id="dropdownCustomerService" data-toggle="dropdown" class="dropdown-toggle">klantenservice <span class="caret hidden-xs"></span></a>
+                        <ul class="dropdown-menu customerServiceMenu" role="menu" aria-labelledby="dropdownCustomerService">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-comment"></span> Contact</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-time"></span> Openingstijden</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-screenshot"></span> Adres</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-user"></span> Vacatures</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-envelope"></span> Nieuwsbrief</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-tower"></span> Privacy</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-pencil"></span> Algemene voorwaarden</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-usd"></span> Betaalmogelijkheden</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-question-sign"></span> Bezorgen en orderstatus</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- end container -->
+    </div> <!-- end customerbar -->
+
+    <div id="sticky" class="searchBar navbar-default">
+        <div class="container">
+            <div class="headerbar" role="navigation">
+                <div class="row" style="">
+                    <div class="visible-xs-block col-xs-3">
+                        <button type="button" class="navbar-toggle" id="toggleNavigation">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <h1><a href="index.html"><img id="logo" src="img/logo.png" alt="Infomusic, Online-shop voor muziekinstrumenten" /></a></h1>
+                    </div>
+
+                    <div class="visible-xs clearfix shadow"></div>
+
+                    <div class="col-lg-4 col-md-3 col-sm-3 col-md-push-0 col-xs-12">
+                        <div class="searchContainer">
+                            <div class="input-group">
+                                <input type="text" name="q" id="searchInput" onfocus="if (this.value == 'Zoeken naar...') {
+                                    this.value = '';
+                                }" onblur="if (this.value == '') {
+                                    this.value = 'Zoeken naar...';
+                                }" autocomplete="off" value="Zoeken naar..." class="form-control" placeholer=".col-md-4" />
+                                <div class="input-group-btn">
+                                    <button class="btn-default" id="searchButton" type="button">
+                                        <span class="glyphicon glyphicon-search">
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs" id="toggleCategories">
+                        <button type="button" class="navbar-toggle" id="toggleNavigation">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+                        <div class="text-info">
+                            <p><b>KLANTENSERVICE</b></p>
+                            <p>+31 (0)591-675791</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3 col-xs-move-up">
+                        <div class="shoppingCartContainer">
+                            <span id="shoppingCartImage">
+                                <span>
+                                    0
+                                </span>
+                            </span>
+                            <span id="shoppingCartTotal">
+                                0,-
+                                <span>Gratis verzending!</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end container -->
+    </div> <!-- end searchbar -->
+
+    <div class="menuBar hidden-xs" role="navigation">
+        <div class="container">
+            <div class="">
+                <ul class="nav navbar-nav" id="menu_no_hover">
+                    <li>
+                        <a href="#" role="button" id="dropdownGitaar" data-toggle="dropdown" class="dropdown-toggle">gitaar</a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownGitaar">
+                            <div style="width: 300px; height: 300px">
+                                <h3>Testing</h3>
+                                <p>
+                                    Dit is een test
+                                </p>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#">drums & percussie</a></li>
+                    <li><a href="#">toetsen</a></li>
+                    <li><a href="#">geluid</a></li>
+                    <li><a href="#">dj-gear</a></li>
+                    <li><a href="#">licht</a></li>
+                    <li><a href="#">blaasinstrument</a></li>
+                    <li><a href="#">strijkinstrument</a></li>
+                    <li><a href="#">kabels</a></li>
+                    <li><a href="#">cases / hoezen / koffers</a></li>
+                    <li><a href="#">accessoires</a></li>
+                    <li><a href="#" class="hot">sale</a></li>
+                </ul>
+            </div>
+        </div> <!-- end container -->
+    </div> <!-- end categorybar -->
+    <!-- mainBar -->
+    <div class="mainBar">
+        <div class="container">
+            <div class="row visible-xs-block visible-sm-block">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel assortiment">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" class="collapsed blockHeader" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Assortiment
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <div class="list-group panel">
+                                    <a href="#" class="list-group-item big hot">SALE</a>
+                                    <p class="divider"></p>
+                                    <a href="#" class="list-group-item bold">Gitaar & Basgitaar</a>
+                                    <a href="#" class="list-group-item">Western Gitaren</a>
+                                    <a href="#" class="list-group-item">Klasieke Gitaren</a>
+                                    <a href="#" class="list-group-item">Elektrische Gitaren</a>
+                                    <a href="#" class="list-group-item">Basgitaren</a>
+                                    <a href="#" class="list-group-item">Linkshandige Gitaren</a>
+                                    <a href="#gitaarstarterpacks" class="list-group-item" data-toggle="collapse" data-parent="#gitaar">Gitaar Starter Packs</a>
+                                    <div class="collapse list-group-submenu" id="gitaarstarterpacks">
+                                        <a href="#" class="list-group-item">Western Gitaar packs</a>
+                                        <a href="#" class="list-group-item">Klasieke Gitaar Packs</a>
+                                        <a href="#" class="list-group-item">Elektrische Gitaar Packs</a>
+                                        <a href="#" class="list-group-item">Basgitaar Packs</a>
+                                        <a href="#" class="list-group-item">Overige snaarinstrumenten packs</a>
+                                    </div>
+                                    <a href="#" class="list-group-item">Overige snaarinstrumenten</a>
+                                    <a href="#snaren" class="list-group-item" data-toggle="collapse" data-parent="assortiment">Snaren</a>
+                                    <div class="collapse list-group-submenu" id="snaren">
+                                        <a href="#" class="list-group-item">Snaren voor Elektrische Gitaar</a>
+                                        <a href="#" class="list-group-item">Snaren voor Western Gitaar</a>
+                                        <a href="#" class="list-group-item">Snaren voor Basgitaar</a>
+                                        <a href="#" class="list-group-item">Snaren voor Klasieke Gitaar</a>
+                                        <a href="#" class="list-group-item">Snaren voor Banjo Gitaar</a>
+                                        <a href="#" class="list-group-item">Snaren voor Ukelele Gitaar</a>
+                                        <a href="#" class="list-group-item">Snaren voor Mandoline Gitaar</a>
+                                        <a href="#" class="list-group-item">Snaren voor 12 snarige Gitaar</a>
+                                        <a href="#" class="list-group-item">Overige snaren</a>
+                                    </div>
+                                    <a href="#gitaarbasaccessoires" class="list-group-item" data-toggle="collapse" data-parent="assortiment">Gitaar & Bas Accessoires</a>
+                                    <div class="collapse list-group-submenu" id="gitaarbasaccessoires">
+                                        <a href="#" class="list-group-item">Plectrums</a>
+                                        <a href="#" class="list-group-item">Capodasters</a>
+                                        <a href="#" class="list-group-item">Gitaar Slides</a>
+                                        <a href="#" class="list-group-item">Gitaarbanden</a>
+                                        <a href="#" class="list-group-item">Gitaarstandaard</a>
+                                        <a href="#test" class="list-group-item" data-toggle="collapse" data-parent="gitaarbasaccessoires">Test</a>
+                                        <div class="collapse list-group-submenu" id="test">
+                                            <a href="#" class="list-group-item">test</a>
+                                            <a href="#" class="list-group-item">test</a>
+                                            <a href="#test1" class="list-group-item" data-toggle="collapse" data-parent="test">test213</a>
+                                            <div class="collapse list-group-submenu" id="test1">
+                                                <a href="#" class="list-group-item">test</a>
+                                                <a href="#" class="list-group-item">test</a>
+                                                <a href="#" class="list-group-item">test</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="list-group-item">Versterking</a>
+                                    <a href="#" class="list-group-item">Effect pedalen</a>
+                                    <a href="#" class="list-group-item">Buizen voor buizen versterkers</a>
+                                    <a href="#" class="list-group-item">Gitaar elementen</a>
+                                    <p class="divider"></p>
+                                    <a href="#" class="list-group-item big">Merken</a>
+                                    <a href="#" class="list-group-item big">Tips & Downloads</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed blockHeader" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Filter producten op
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body filters">
+                                <form>
+                                    <div class="block">
+                                        <div class="reset pull-right">
+                                            <input type="reset" value="HERSTEL FILTERS">
+                                        </div>
+                                        <span class="clearfix"></span>
+                                        <span class="border"></span>
+                                        <div class="brand">
+                                            <h3>Merk:</h3>
+                                            <p><input type="checkbox" name="brand" value="Fender" checked="checked" /><label>Fender</label></p>
+                                        </div>
+                                        <span class="border"></span>
+                                        <div class="type">
+                                            <h3>Type:</h3>
+                                            <p><input type="checkbox" name="type" value="stratocaster" checked="checked" /><label>Stratocaster</label></p>
+                                            <p><input type="checkbox" name="type" value="telecaster" checked="checked" /><label>Telecaster</label></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="price">
+                                        <h3>Prijs</h3>
+                                        <div id="slider-range"></div>
+                                        <input type="text" id="amount_from" name="from" readonly />
+                                        <input type="text" id="amount_to" name="to" readonly />
+                                    </div>
+
+                                    <span class="border"></span>
+                                    <div class="color">
+                                        <a href="#color" data-toggle="collapse" data-parent="filters">Kleuren</a>
+                                        <div class="collapse in filter-image" id="color">
+                                            <input type="image" src="img/filter/1.png" name="color[1]" alt="color" />
+                                            <input type="image" src="img/filter/2.png" name="color[2]" alt="color" />
+                                            <input type="image" src="img/filter/3.png" name="color[3]" alt="color" />
+                                            <input type="image" src="img/filter/4.png" name="color[4]" alt="color" />
+                                            <input type="image" src="img/filter/5.png" name="color[5]" alt="color" />
+                                            <input type="image" src="img/filter/6.png" name="color[6]" alt="color" />
+                                            <input type="image" src="img/filter/7.png" name="color[7]" alt="color" />
+                                            <input type="image" src="img/filter/8.png" name="color[8]" alt="color" />
+                                            <input type="image" src="img/filter/9.png" name="color[9]" alt="color" />
+                                            <input type="image" src="img/filter/10.png" name="color[10]" alt="color" />
+                                        </div>
+                                    </div>
+                                    <span class="border"></span>
+                                    <a href="#brand" data-toggle="collapse" data-parent="filters">Merk</a>
+                                    <div class="collapse" id="brand">
+                                        <p><input type="checkbox" name="brand" value="Alvarez" /><label>Alvarez</label></p>
+                                        <p><input type="checkbox" name="brand" value="Gibson" /><label>Gibson</label></p>
+                                        <p><input type="checkbox" name="brand" value="Ibanez" /><label>Ibanez</label></p>
+                                        <p><input type="checkbox" name="brand" value="Martin" /><label>Martin</label></p>
+                                    </div>
+                                    <span class="border"></span>
+                                    <a href="#type" data-toggle="collapse" data-parent="filters">Type</a>
+                                    <div class="collapse" id="type">
+                                        <p><input type="checkbox" name="type" value="Alvarez" /><label>Alvarez</label></p>
+                                        <p><input type="checkbox" name="type" value="Gibson" /><label>Gibson</label></p>
+                                        <p><input type="checkbox" name="type" value="Ibanez" /><label>Ibanez</label></p>
+                                        <p><input type="checkbox" name="type" value="Martin" /><label>Martin</label></p>
+                                    </div>
+                                    <span class="border"></span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end mobile carousel -->
+            <div class="row hidden-xs hidden-sm">
+                <div class="col-md-12">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Geavanceerd zoeken</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-4 navigation hidden-xs hidden-sm">
+
+                    <div class="col-md-12 col-lg-12 assortiment">
+                        <div class="blockHeader">
+                            assortiment
+                        </div>
+                        <div class="list-group panel">
+                            <a href="#" class="list-group-item big hot">SALE</a>
+                            <p class="divider"></p>
+                            <a href="#" class="list-group-item bold">Gitaar & Basgitaar</a>
+                            <a href="#" class="list-group-item">Western Gitaren</a>
+                            <a href="#" class="list-group-item">Klasieke Gitaren</a>
+                            <a href="#" class="list-group-item">Elektrische Gitaren</a>
+                            <a href="#" class="list-group-item">Basgitaren</a>
+                            <a href="#" class="list-group-item">Linkshandige Gitaren</a>
+                            <a href="#gitaarstarterpacks" class="list-group-item" data-toggle="collapse" data-parent="#gitaar">Gitaar Starter Packs</a>
+                            <div class="collapse list-group-submenu" id="gitaarstarterpacks">
+                                <a href="#" class="list-group-item">Western Gitaar packs</a>
+                                <a href="#" class="list-group-item">Klasieke Gitaar Packs</a>
+                                <a href="#" class="list-group-item">Elektrische Gitaar Packs</a>
+                                <a href="#" class="list-group-item">Basgitaar Packs</a>
+                                <a href="#" class="list-group-item">Overige snaarinstrumenten packs</a>
+                            </div>
+                            <a href="#" class="list-group-item">Overige snaarinstrumenten</a>
+                            <a href="#snaren" class="list-group-item" data-toggle="collapse" data-parent="assortiment">Snaren</a>
+                            <div class="collapse list-group-submenu" id="snaren">
+                                <a href="#" class="list-group-item">Snaren voor Elektrische Gitaar</a>
+                                <a href="#" class="list-group-item">Snaren voor Western Gitaar</a>
+                                <a href="#" class="list-group-item">Snaren voor Basgitaar</a>
+                                <a href="#" class="list-group-item">Snaren voor Klasieke Gitaar</a>
+                                <a href="#" class="list-group-item">Snaren voor Banjo Gitaar</a>
+                                <a href="#" class="list-group-item">Snaren voor Ukelele Gitaar</a>
+                                <a href="#" class="list-group-item">Snaren voor Mandoline Gitaar</a>
+                                <a href="#" class="list-group-item">Snaren voor 12 snarige Gitaar</a>
+                                <a href="#" class="list-group-item">Overige snaren</a>
+                            </div>
+                            <a href="#gitaarbasaccessoires" class="list-group-item" data-toggle="collapse" data-parent="assortiment">Gitaar & Bas Accessoires</a>
+                            <div class="collapse list-group-submenu" id="gitaarbasaccessoires">
+                                <a href="#" class="list-group-item">Plectrums</a>
+                                <a href="#" class="list-group-item">Capodasters</a>
+                                <a href="#" class="list-group-item">Gitaar Slides</a>
+                                <a href="#" class="list-group-item">Gitaarbanden</a>
+                                <a href="#" class="list-group-item">Gitaarstandaard</a>
+                                <a href="#test" class="list-group-item" data-toggle="collapse" data-parent="gitaarbasaccessoires">Test</a>
+                                <div class="collapse list-group-submenu" id="test">
+                                    <a href="#" class="list-group-item">test</a>
+                                    <a href="#" class="list-group-item">test</a>
+                                    <a href="#test1" class="list-group-item" data-toggle="collapse" data-parent="test">test213</a>
+                                    <div class="collapse list-group-submenu" id="test1">
+                                        <a href="#" class="list-group-item">test</a>
+                                        <a href="#" class="list-group-item">test</a>
+                                        <a href="#" class="list-group-item">test</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="list-group-item">Versterking</a>
+                            <a href="#" class="list-group-item">Effect pedalen</a>
+                            <a href="#" class="list-group-item">Buizen voor buizen versterkers</a>
+                            <a href="#" class="list-group-item">Gitaar elementen</a>
+                            <p class="divider"></p>
+                            <a href="#" class="list-group-item big">Merken</a>
+                            <a href="#" class="list-group-item big">Tips & Downloads</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-md-8 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form action="http://www.infomusic.nl/catalogsearch/advanced/result/" method="get" id="form-validate">
+                                <div class="fieldset advanced-search">
+                                    <h2 class="legend">Zoekinstellingen</h2>
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" id="name" value="" title="Name" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description">Description</label>
+                                        <input type="text" name="description" id="description" value="" title="Description" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="short_description">Short Description</label>
+                                        <input type="text" name="short_description" id="short_description" value="" title="Short Description" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sku">SKU</label>
+                                        <input type="text" name="sku" id="sku" value="" title="SKU" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="price">Price</label>
+                                        <i class="clearfix"></i>
+                                        <input name="price[from]" value="" id="price" title="Price" class=" col-xs-5" type="text">
+                                        <span class="col-xs-1 text-center">-</span>
+                                        <input name="price[to]" value="" id="price_to" title="Price" class=" col-xs-5" type="text">
+                                        <small class="col-xs-1 text-center">(EUR)</small>
+                                        <i class="clearfix"></i>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="color">Kleur</label>
+                                        <select name="color[]" id="color" class="form-control" title="Kleur" multiple="multiple" size="4">
+                                            <option value="89">Blauw</option>
+                                            <option value="90">Geel</option>
+                                            <option value="91">Groen</option>
+                                            <option value="92">Paars</option>
+                                            <option value="93">Rood</option>
+                                            <option value="94">Roze</option>
+                                            <option value="255">VRADM5</option>
+                                            <option value="256">VRADM8</option>
+                                            <option value="88">Wit</option>
+                                            <option value="95">Zwart</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="aw_shopbybrand_brand">Merken</label>
+                                        <select name="aw_shopbybrand_brand[]" id="aw_shopbybrand_brand" class="form-control" title="Merken" multiple="multiple" size="4"><option value="0" selected="selected">Not defined</option><option value="1">Alpine</option><option value="2">Antari</option><option value="3">Aria</option><option value="4">Artecta</option><option value="5">Audio Technica</option><option value="6">Augustine</option><option value="7">Azahar</option><option value="8">BeamZ</option><option value="9">Behringer</option><option value="10">Boston</option><option value="11">Casio</option><option value="12">Celestion</option><option value="13">D-Tar</option><option value="14">Danelectro</option><option value="15">DAP Audio</option><option value="1172">KRK</option><option value="16">Dateq</option><option value="17">Dean Markley</option><option value="18">Dimarzio</option><option value="19">Earsonics</option><option value="20">EMG</option><option value="21">ESP</option><option value="22">Evans</option><option value="23">Fishman</option><option value="24">Focusrite</option><option value="25">G7th</option><option value="26">GE</option><option value="27">Get'm Get'm</option><option value="28">Godin</option><option value="29">Gon Bops</option><option value="30">Gretsch</option><option value="31">Groove Tubes</option><option value="32">Herald</option><option value="33">Hudson</option><option value="34">LA Audio</option><option value="35">LAG</option><option value="36">Lanikai</option><option value="37">Larrivee</option><option value="38">LP Percussion</option><option value="39">LTD</option><option value="40">Manhasset</option><option value="41">Mapex</option><option value="42">Mesa Boogie</option><option value="43">Mix Vibes</option><option value="44">Mode Machines</option><option value="45">Morpheus</option><option value="46">Music Man</option><option value="47">Novation</option><option value="48">Osram</option><option value="49">Paco Castillo</option><option value="50">Paiste</option><option value="51">Philips</option><option value="52">Phonic</option><option value="53">Radial</option><option value="54">Richwood</option><option value="55">Rickenbacker</option><option value="56">Sabian</option><option value="57">Savarez</option><option value="58">Schecter</option><option value="59">sE Electronics</option><option value="60">Seymour Duncan</option><option value="61">Showtec</option><option value="62">Shubb</option><option value="63">Sigma</option><option value="64">Skull</option><option value="65">Stagg</option><option value="66">Sterling</option><option value="67">Sylvania</option><option value="68">T-REX</option><option value="69">TC Electronic</option><option value="70">TC Helicon</option><option value="71">Tech21</option><option value="72">Way Huge</option><option value="73">Yamaha</option><option value="1173">Reloop</option><option value="74">Yellow Cable</option><option value="75">Yellow Parts</option><option value="76">Zildjian</option><option value="77">Zoom</option><option value="78">AER</option><option value="79">Alesis</option><option value="80">Allen &amp; Heath</option><option value="81">Baff</option><option value="82">Beats by dr Dre</option><option value="83">Blackstar</option><option value="84">Boss</option><option value="85">D`addario</option><option value="86">Digitech</option><option value="87">Dunlop</option><option value="88">Electro Harmonix</option><option value="89">Elixir</option><option value="90">Ernie Ball</option><option value="91">Fender</option><option value="92">Gator</option><option value="93">Hering</option><option value="94">HK audio</option><option value="95">Hohner</option><option value="96">Ibanez</option><option value="97">Jamhub</option><option value="98">K&amp;M</option><option value="99">Korg</option><option value="1174">Meinl</option><option value="100">Marshall</option><option value="101">Martin</option><option value="102">Mollenhauer</option><option value="103">Monster</option><option value="104">MXR</option><option value="105">Neumann</option><option value="106">Neutrik</option><option value="107">Orange</option><option value="108">Pearl</option><option value="109">Planet Waves</option><option value="110">Power Dynamics</option><option value="111">PRS</option><option value="112">Remo</option><option value="113">Roland</option><option value="114">Rotosound</option><option value="115">RTX</option><option value="116">Santos y Mayor</option><option value="117">Sennheiser</option><option value="118">Shure</option><option value="119">Skytec</option><option value="120">Squier</option><option value="121">Suzuki</option><option value="122">Tama</option><option value="123">Tanglewood</option><option value="124">Tobago</option><option value="125">Vandoren</option><option value="126">Vic Firth</option><option value="128">Vox</option><option value="129">Washburn</option><option value="130">Crossrock</option><option value="131">Morley</option><option value="132">DMT</option><option value="133">Ampeg</option><option value="134">Ashdown</option><option value="135">Duracell</option><option value="526">Alpine</option><option value="527">Antari</option><option value="528">Aria</option><option value="529">Artecta</option><option value="530">Audio Technica</option><option value="531">Augustine</option><option value="532">Azahar</option><option value="533">BeamZ</option><option value="534">Behringer</option><option value="535">Boston</option><option value="536">Casio</option><option value="537">Celestion</option><option value="538">D-Tar</option><option value="539">Danelectro</option><option value="540">DAP Audio</option><option value="541">Dateq</option><option value="542">Dean Markley</option><option value="543">Dimarzio</option><option value="544">Earsonics</option><option value="545">EMG</option><option value="546">ESP</option><option value="547">Evans</option><option value="548">Fishman</option><option value="549">Focusrite</option><option value="550">G7th</option><option value="551">GE</option><option value="552">Get'm Get'm</option><option value="553">Godin</option><option value="554">Gon Bops</option><option value="555">Gretsch</option><option value="556">Groove Tubes</option><option value="557">Herald</option><option value="558">Hudson</option><option value="559">LA Audio</option><option value="560">LAG</option><option value="561">Lanikai</option><option value="562">Larrivee</option><option value="563">LP Percussion</option><option value="564">LTD</option><option value="565">Manhasset</option><option value="566">Mapex</option><option value="567">Mesa Boogie</option><option value="568">Mix Vibes</option><option value="569">Mode Machines</option><option value="570">Morpheus</option><option value="571">Music Man</option><option value="572">Novation</option><option value="573">Osram</option><option value="574">Paco Castillo</option><option value="575">Paiste</option><option value="576">Philips</option><option value="577">Phonic</option><option value="578">Radial</option><option value="579">Richwood</option><option value="580">Rickenbacker</option><option value="581">Sabian</option><option value="582">Savarez</option><option value="583">Schecter</option><option value="584">sE Electronics</option><option value="585">Seymour Duncan</option><option value="586">Showtec</option><option value="587">Shubb</option><option value="588">Sigma</option><option value="589">Skull</option><option value="590">Stagg</option><option value="591">Sterling</option><option value="592">Sylvania</option><option value="593">T-REX</option><option value="594">TC Electronic</option><option value="595">TC Helicon</option><option value="596">Tech21</option><option value="597">Way Huge</option><option value="598">Yamaha</option><option value="599">Yellow Cable</option><option value="600">Yellow Parts</option><option value="601">Zildjian</option><option value="602">Zoom</option><option value="603">AER</option><option value="604">Alesis</option><option value="605">Allen &amp; Heath</option><option value="606">Baff</option><option value="607">Beats by dr Dre</option><option value="608">Blackstar</option><option value="609">Boss</option><option value="610">D`addario</option><option value="611">Digitech</option><option value="612">Dunlop</option><option value="613">Electro Harmonix</option><option value="614">Elixir</option><option value="615">Ernie Ball</option><option value="616">Fender</option><option value="617">Gator</option><option value="618">Hering</option><option value="619">HK audio</option><option value="620">Hohner</option><option value="621">Ibanez</option><option value="622">Jamhub</option><option value="623">K&amp;M</option><option value="624">Korg</option><option value="625">Marshall</option><option value="626">Martin</option><option value="627">Mollenhauer</option><option value="628">Monster</option><option value="629">MXR</option><option value="630">Neumann</option><option value="631">Neutrik</option><option value="632">Orange</option><option value="633">Pearl</option><option value="634">Planet Waves</option><option value="635">Power Dynamics</option><option value="636">PRS</option><option value="637">Remo</option><option value="638">Roland</option><option value="639">Rotosound</option><option value="640">RTX</option><option value="641">Santos y Mayor</option><option value="642">Sennheiser</option><option value="643">Shure</option><option value="644">Skytec</option><option value="645">Squier</option><option value="646">Suzuki</option><option value="647">Tama</option><option value="648">Tanglewood</option><option value="649">Tobago</option><option value="650">Vandoren</option><option value="651">Vic Firth</option><option value="653">Vox</option><option value="654">Washburn</option><option value="655">Crossrock</option><option value="656">Morley</option><option value="657">DMT</option><option value="658">Ampeg</option><option value="659">Ashdown</option><option value="660">Duracell</option><option value="1036">Alpine</option><option value="1037">Antari</option><option value="1038">Aria</option><option value="1039">Artecta</option><option value="1040">Audio Technica</option><option value="1041">Augustine</option><option value="1042">Azahar</option><option value="1043">BeamZ</option><option value="1044">Behringer</option><option value="1045">Boston</option><option value="1046">Casio</option><option value="1047">Celestion</option><option value="1048">D-Tar</option><option value="1049">Danelectro</option><option value="1050">DAP Audio</option><option value="1051">Dateq</option><option value="1052">Dean Markley</option><option value="1053">Dimarzio</option><option value="1054">Earsonics</option><option value="1055">EMG</option><option value="1056">ESP</option><option value="1057">Evans</option><option value="1058">Fishman</option><option value="1059">Focusrite</option><option value="1060">G7th</option><option value="1061">GE</option><option value="1062">Get'm Get'm</option><option value="1063">Godin</option><option value="1064">Gon Bops</option><option value="1065">Gretsch</option><option value="1066">Groove Tubes</option><option value="1067">Herald</option><option value="1068">Hudson</option><option value="1069">LA Audio</option><option value="1070">LAG</option><option value="1071">Lanikai</option><option value="1072">Larrivee</option><option value="1073">LP Percussion</option><option value="1074">LTD</option><option value="1075">Manhasset</option><option value="1076">Mapex</option><option value="1077">Mesa Boogie</option><option value="1078">Mix Vibes</option><option value="1079">Mode Machines</option><option value="1080">Morpheus</option><option value="1081">Music Man</option><option value="1082">Novation</option><option value="1083">Osram</option><option value="1084">Paco Castillo</option><option value="1085">Paiste</option><option value="1086">Philips</option><option value="1087">Phonic</option><option value="1088">Radial</option><option value="1089">Richwood</option><option value="1090">Rickenbacker</option><option value="1091">Sabian</option><option value="1092">Savarez</option><option value="1093">Schecter</option><option value="1094">sE Electronics</option><option value="1095">Seymour Duncan</option><option value="1096">Showtec</option><option value="1097">Shubb</option><option value="1098">Sigma</option><option value="1099">Skull</option><option value="1100">Stagg</option><option value="1101">Sterling</option><option value="1102">Sylvania</option><option value="1103">T-REX</option><option value="1104">TC Electronic</option><option value="1105">TC Helicon</option><option value="1106">Tech21</option><option value="1107">Way Huge</option><option value="1108">Yamaha</option><option value="1109">Yellow Cable</option><option value="1110">Yellow Parts</option><option value="1111">Zildjian</option><option value="1112">Zoom</option><option value="1113">AER</option><option value="1114">Alesis</option><option value="1115">Allen &amp; Heath</option><option value="1116">Baff</option><option value="1117">Beats by dr Dre</option><option value="1118">Blackstar</option><option value="1119">Boss</option><option value="1120">D`addario</option><option value="1121">Digitech</option><option value="1122">Dunlop</option><option value="1123">Electro Harmonix</option><option value="1124">Elixir</option><option value="1125">Ernie Ball</option><option value="1126">Fender</option><option value="1127">Gator</option><option value="1128">Hering</option><option value="1129">HK audio</option><option value="1130">Hohner</option><option value="1131">Ibanez</option><option value="1132">Jamhub</option><option value="1133">K&amp;M</option><option value="1134">Korg</option><option value="1135">Marshall</option><option value="1136">Martin</option><option value="1137">Mollenhauer</option><option value="1138">Monster</option><option value="1139">MXR</option><option value="1140">Neumann</option><option value="1141">Neutrik</option><option value="1142">Orange</option><option value="1143">Pearl</option><option value="1144">Planet Waves</option><option value="1145">Power Dynamics</option><option value="1146">PRS</option><option value="1147">Remo</option><option value="1148">Roland</option><option value="1149">Rotosound</option><option value="1150">RTX</option><option value="1151">Santos y Mayor</option><option value="1152">Sennheiser</option><option value="1153">Shure</option><option value="1154">Skytec</option><option value="1155">Squier</option><option value="1156">Suzuki</option><option value="1157">Tama</option><option value="1158">Tanglewood</option><option value="1159">Tobago</option><option value="1160">Vandoren</option><option value="1161">Vic Firth</option><option value="1163">Vox</option><option value="1164">Washburn</option><option value="1165">Crossrock</option><option value="1166">Morley</option><option value="1167">DMT</option><option value="1168">Ampeg</option><option value="1169">Ashdown</option><option value="1170">Duracell</option><option value="1171">Hayman</option></select>
+                                    </div>
+                                </div>
+                                <div class="largeButtons">
+                                    <div class="btn-group-lg">
+                                        <a href="#" role="button" class="btn btn-success">Zoeken</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="brands">
+                    <ul>
+                        <li><img src="img/fender.png" alt="Fender" /></li>
+                        <li><img src="img/yamaha.png" alt="Yamaha" /></li>
+                        <li><img src="img/vox.png" alt="VOX" /></li>
+                        <li><img src="img/daddario.png" alt="D'Addario" /></li>
+                        <li><img src="img/ibanez.png" alt="Ibanez" /></li>
+                        <li><img src="img/marshall_1.png" alt="Marshall" /></li>
+                        <li><img src="img/korg.png" alt="KORG" /></li>
+                        <li><img src="img/martingo.png" alt="Marting & Go" /></li>
+                        <li><img src="img/beats.png" alt="Beats" /></li>
+                        <li><img src="img/pearl.png" alt="Pearl" /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to top button -->
+    <a href="#" class="scrollToTop"><span class="glyphicon glyphicon-arrow-up"></span></a>
+
+
+    <!-- END main container -->
+
+
+    <div class="footer1">
+        <div class="container">
+            <div class="row sitemap">
+                <div class="col-md-2 col-sm-3 col-xs-6">
+                    <h3>Klantenservice</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Openingstijden</a></li>
+                        <li><a href="#">Adres</a></li>
+                        <li><a href="#">Vacatures</a></li>
+                        <li><a href="#">Nieuwsbrief</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Algemene voorwaarden</a></li>
+                        <li><a href="#">Betaalmogelijkheden</a></li>
+                        <li><a href="#">Bezorgen en orderstatus</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#">Over ons</a></li>
+                        <li><a href="#">Elektrische gitaar</a></li>
+                        <li><a href="#">Akoustische gitaar</a></li>
+                        <li><a href="#">Versterkers</a></li>
+                        <li><a href="#">Populaire zoektermen</a></li>
+                        <li><a href="#">Geavanceerd zoeken</a></li>
+                        <li><a href="#">Merken</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+                <div class="col-md-2 col-sm-3 col-xs-6">
+                    <h3>Populaire Merken</h3>
+                    <ul>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Ibanez</a></li>
+                        <li><a href="#">Yamaha</a></li>
+                        <li><a href="#">Marshall</a></li>
+                        <li><a href="#">VOX</a></li>
+                        <li><a href="#">Korg</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-5">
+                    <h3>Overig</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Infomusic TV</a></li>
+                        <li><a href="#">Prijsvragen &amp; Uitslagen</a></li>
+                        <li><a href="#">Nieuws</a></li>
+                        <li><a href="#">Tips &amp; Downloads</a></li>
+                        <li><a href="#">Meet the team</a></li>
+                        <li><a href="#">Werken bij Infomusic</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-md-4 col-sm-8 hidden-xs">
+                    <div class="latestNewsContainer">
+                        <h3>Laatste nieuws</h3>
+                        <p>
+                            <span>29 juli 2014 - Lag Roxane Racing gitaren exclusief bij Infomusic.</span>Infomusic.nl gaat vanaf juni van dit jaar de vintage lijn van Lag voeren; De Lag Roxane Racing gitaren. De Roxane gitaar is reeds een bekende van Lag ...
+                            <a href="#">Lees meer &raquo;</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-md-2 col-sm-2 hidden-xs pull-right">
+                    <div class="kiyoh">
+                        <a href="https://www.kiyoh.nl/infomusic_nl/" target="_blank"><img src="https://www.kiyoh.nl/img/logo/124x67.png" style="border:0px" align="left" /></a>
+                        <span>9.2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h3>Volg ons op:</h3>
+                    <ul class="socialMediaIcons">
+                        <li><a href="#" class="iconFacebook" title="Facebook">Facebook</a></li>
+                        <li><a href="#" class="iconTwitter" title="Twitter">Twitter</a></li>
+                        <li><a href="#" class="iconPinterest" title="Pinterest">Pinterest</a></li>
+                        <li><a href="#" class="iconYoutube" title="Youtube">Youtube</a></li>
+                        <li><a href="#" class="iconGooglePlus" title="Google+">Google+</a></li>
+                    </ul>
+                    <p class="quote">
+                        &#8220;One good thing about music, when it hits you, you feel no pain.&#8221;
+                        <span>Bob Marley</span>
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h3>Zij vinden ons leuk: Jij ook?</h3>
+                    <div class="fb-like-box" data-href="https://www.facebook.com/Infomusic" data-width="260" data-height="180" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h3>Contactgegevens</h3>
+                    <p>
+                        Infomusic.nl Muziekwinkel<br />
+                        Kaptein Nemostraat 1 L Emmen<br />
+                        Tel.: +31 (0)591-675791<br />
+                        Email: <a href="mailto:helpdesk@infomusic.nl" class="email">helpdesk@infomusic.nl</a><br />
+                    </p>
+
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="">
+                        <h3>Aanmelden nieuwsbrief</h3>
+                        <p>
+                            Meld je aan voor de nieuwsbrief en blijf op de hoogte van de leukste aanbiedingen.
+                        </p>
+                        <div class="input-group">
+                            <input type="text" name="email" id="newsletterInput" autocomplete="off" value="Aanmelden nieuwsbrief..." class="form-control" placeholer=".col-md-4" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" id="newsletterButton"></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2006 - 2014 Infomusic.nl - Alle rechten voorbehouden. <br /> <br />
+        <ul class="paymentTypes">
+            <li class="visa">Visa</li>
+            <li class="mastercard">Mastercard</li>
+            <li class="maestro">Maestro</li>
+            <li class="paypal">Paypal</li>
+            <li class="misterCash">Mister Cash</li>
+            <li class="sofortUberweisung">Sofort Uberweisung</li>
+            <li class="ideal">iDeal</li>
+            <li class="postNl">PostNL</li>
+            <li class="ups">UPS</li>
+        </ul>
+    </footer>
+    <div class="modal fade" id="quickview" tabindex="-1" role="dialog" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <a href="#" data-dismiss="modal" class="close">
+                    <img src="img/close.png">
+                </a>
+                <div class="col-md-12">
+                    <h2>Fender American Standard Stratocaster Rosewood 3-Color Sunburst</h2>
+                </div>
+                <div class="col-md-6">
+                    <div id="slider_modal" class="flexslider bigImage">
+                        <ul class="slides">
+                            <li>
+                                <img src="img/greta.png" alt="Greta" class="responsive">
+                            </li>
+                            <li>
+                                <img src="img/versterker.png" alt="Greta" class="responsive">
+                            </li>
+                            <li>
+                                <img src="img/marshall.jpg" alt="Greta" class="responsive">
+                            </li>
+                            <li>
+                                <img src="img/cable.jpg" alt="Cable" class="responsive">
+                            </li>
+                            <li>
+                                <img src="img/fender.jpg" alt="Greta" class="responsive">
+                            </li>
+                            <li>
+                                <img src="img/fender-cable.png" alt="Greta" class="responsive">
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="thumbs_modal" class="flexslider smallImage">
+                        <ul class="slides">
+                            <li>
+                                <img src="img/greta.png" alt="Greta" class="responsive">
+                            </li>
+                            <li>
+                                <img src="img/versterker.png" alt="Greta" class="responsive">
+                            </li>
+                            <li>
+                                <img src="img/marshall.jpg" alt="Greta" class="responsive">
+                            </li>
+                            <li>
+                                <img src="img/cable.jpg" alt="Cable" class="responsive">
+                            </li>
+                            <li>
+                                <img src="img/fender.jpg" alt="Greta" class="responsive">
+                            </li>
+                            <li>
+                                <img src="img/fender-cable.png" alt="Greta" class="responsive">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 productDetail">
+                    <div class="pull-right hidden-xs">
+                        <img src="img/fender.png" alt="Fender">
+                    </div>
+                    <div class="rating hidden-xs">
+                        <img src="img/ranking_stars.png" alt="ranking" class="img-responsive"><a href="#">10 reviews</a>
+                        <p>schrijf de eerste review van dit product</p>
+                    </div>
+                    <div class="short-description visible-sm">
+                        <p>50s Telecaster model uit de Vintage Hot Rod Series van Fender</p>
+                    </div>
+                    <span class="clearfix"></span>
+                    <div class="short-description col-md-12 hidden-sm hidden-xs">
+                        <p>50s Telecaster model uit de Vintage Hot Rod Series van Fender</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="pull-left stock">
+                            <img src="img/stock_status.png" alt="stock status" class="img-responsive">
+                            <span>Op voorraad, voor 17.30u besteld, volgende werkdag in huis</span>
+                        </div>
+                        <div class="action pull-right">
+                            <span class="priceFrom">1650,-</span>
+                            <span class="price">1369,-</span>
+                            <div class="largeButtons hidden-xs">
+                                <div class="btn-group btn-group-lg pull-right">
+                                    <a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
+                                </div>
+                            </div>
+                            <span class="shipping hidden-xs">gratis verzending!</span>
+                        </div>
+                        <span class="clearfix"></span>
+                        <div class="largeButtons visible-xs-block">
+                            <input type="text" name="hoeveelheid" class="form-control" value="2" maxlength="1">
+                            <span>x</span>
+                            <div class="btn-group btn-group-lg pull-right">
+                                <a href="#" class="btn btn-primary btn-success" role="button">Bestellen</a>
+                            </div>
+                        </div>
+                        <span class="shipping visible-xs-block">gratis verzending!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/stickybar.js"></script>
+    <script language="javascript">
+        $(document).ready(function () {
+            $('div.node-status').click(function () {
+                $(this).next().parent().children('ul.tree').toggle(300);
+                $prev = $(this).toggleClass('closed');
+            });
+            function centerModal() {
+                $(this).css('display', 'block');
+                var $dialog = $(this).find(".modal-dialog");
+                var offset = ($(window).height() - $dialog.height()) / 2;
+                // Center modal vertically in window
+                $dialog.css("margin-top", offset);
+                // The slides also need some loading
+                $('#thumbs_modal').flexslider({
+                    animation: "slide",
+                    controlNav: false,
+                    animationLoop: false,
+                    slideshow: false,
+                    itemWidth: 160,
+                    itemMargin: 8,
+                    asNavFor: '#slider_modal',
+                    move: 1
+                });
+
+                $('#slider_modal').flexslider({
+                    animation: "slide",
+                    controlNav: false,
+                    animationLoop: false,
+                    slideshow: false,
+                    sync: "#thumbs_modal"
+                });
+            };
+            $('.modal').on('show.bs.modal', centerModal);
+            $(window).on("resize", function () {
+                $('.modal:visible').each(centerModal);
+            });
+            $('.list-group')
+            .on('show.bs.collapse', function (e) {
+                $(e.target).prev('.list-group-item').addClass('hot');
+            })
+            .on('hide.bs.collapse', function (e) {
+                $(e.target).prev('.list-group-item').removeClass('hot');
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollToTop').fadeIn();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                }
+            });
+            $('.scrollToTop').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+            $("#toggleNavigation").click(function (event) {
+                $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
+                $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
+                event.stopPropagation();
+            });
+            $(".cbp-spmenu-push").click(function (e) {
+                if ($(this).hasClass("cbp-spmenu-push-toright") && !$(e.target).is(".cbp-spmenu-open")) {
+                    $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
+                    $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
+                }
+            });
+            $(".cbp-spmenu-push")
+            .on("swipeleft", function (e) {
+                if ($(".cbp-spmenu").hasClass("cbp-spmenu-open")) {
+                    $(".cbp-spmenu").toggleClass("cbp-spmenu-open");
+                    $(".cbp-spmenu-push").toggleClass("cbp-spmenu-push-toright");
+                }
+            })
+            .on("movestart", function (e) {
+                if ((e.distX > e.distY && e.distX < -e.distY) ||
+                (e.distX < e.distY && e.distX > -e.distY)) {
+                    e.preventDefault();
+                    return;
+                }
+            })
+            .on("move", function (e) {
+                var left = 240 - (-e.distX);
+
+                if (e.distX < 0) {
+                    $(".cbp-spmenu-push-toright").css("left", left + "px");
+                }
+            })
+            .on("moveend", function (e) {
+                $(".cbp-spmenu-push").removeAttr("style");
+            });
+        });
+    </script>
+</body>
+</html>
