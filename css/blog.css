@@ -57,6 +57,11 @@
             max-height: 45%;
         }
 
+        .blogItem .userInfo .newsImage {
+            max-width: 70%;
+            max-height: 70%;
+        }
+
         .blogItem .userInfo .userName {
             margin-left: 20px;
             margin-top: 20px;

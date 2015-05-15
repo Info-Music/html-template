@@ -1,11 +1,4 @@
-﻿@charset "UTF-8";
-
-/*
- *  File: 		subcategory.css;
- *	Purpose:	styling the subcategory page;
- */
-
-.productHolderThumb {
+﻿.productHolderThumb {
     margin-left: -10px;
     margin-right: -10px;
 }
